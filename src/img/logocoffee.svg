@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+    <path fill="none" stroke="#000" stroke-width="0.5" d="M13.18186 47.022h53.63626M13.18186 32.978h53.63626M6.21902 40L40 6.3672 73.78094 40 40 73.6328zM.38676 40L40 .5605 79.61323 40 40 79.4395z" />
+    <g fill="#000">
+        <path d="M41.6392 14.15252a2.71023 3.2775 30 0 0-3.98642 1.4828 2.71023 3.2775 30 0 0 .2178 3.80635c.03243-.3869.11958-.84645.37364-1.26825.30624-.50844 1.023-.97033 1.7204-1.44467.3487-.23718.6925-.47083.96896-.69.27645-.21917.4835-.43073.56244-.57964.23854-.45017.2077-.94065.15332-1.3007a2.71023 3.2775 30 0 0-.01015-.0059zm.44014.3353c.0091.36143-.0261.77533-.22974 1.15964-.13248.25002-.374.4707-.6679.7037-.29387.23298-.64227.47154-.99107.7088-.6976.47447-1.39834.97584-1.60526 1.31944-.29873.49598-.33078 1.00928-.32377 1.385a2.71023 3.2775 30 0 0 .09928.06633 2.71023 3.2775 30 0 0 3.9857-1.48546 2.71023 3.2775 30 0 0-.26724-3.85745z" />
+        <g font-weight="300" font-family="Roboto Condensed" letter-spacing="0" word-spacing="0" text-anchor="middle">
+            <text x="39.70137" y="45.23859" style="line-height:125%;-inkscape-font-specification:'Roboto Condensed, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center" font-size="14" writing-mode="lr">
+                <tspan x="39.70137" y="45.23859" style="-inkscape-font-specification:'Roboto Condensed, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center" letter-spacing=".19">HIPSTER</tspan>
+            </text>
+            <text x="39.87305" y="56.25534" style="line-height:125%;-inkscape-font-specification:'Roboto Condensed, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center" font-size="10">
+                <tspan x="39.87305" y="56.25534" style="-inkscape-font-specification:'Roboto Condensed, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center">COFFEE</tspan>
+            </text>
+            <text x="39.92188" y="30.91534" style="line-height:125%;-inkscape-font-specification:'Roboto Condensed, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center" font-size="10">
+                <tspan x="39.77687" y="30.91534" dx="0" style="-inkscape-font-specification:'Roboto Condensed, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center" letter-spacing="-.29">GENERIC</tspan>
+            </text>
+            <text x="39.96712" y="63.48445" style="line-height:125%;-inkscape-font-specification:'Roboto Condensed, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center" font-size="3.33333">
+                <tspan x="39.96712" y="63.48445" style="-inkscape-font-specification:'Roboto Condensed, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center">EST. 2010</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

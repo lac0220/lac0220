@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" /> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> <!-- linkedin and github -->
+    <link rel="shortcut icon" href="img/logofavicon.png" type="image/png" /> <!-- favicon -->
+
+    <title>Portfolio - Laszlo Nemeth</title>
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav__header">
+                <img class="nav__header__logo" src="/img/logo.png" alt="Logo">
+                <h3>Laszlo Nemeth</h3>
+                <p>Front-End</p>
+                <p>Web Developer</p>
+
+                <div class="drop__bar">
+                    <span class="drop__bar__line1"></span>
+                    <span class="drop__bar__line2"></span>
+                    <span class="drop__bar__line3"></span>
+                </div>
+            </div>
+            
+            <ul class="nav__menu">
+                <li class="nav__menu__item">
+                    <a href="#home" class="nav__menu__item__link">Home</a>
+                </li>
+                <li class="nav__menu__item">
+                  <a href="#projects" class="nav__menu__item__link">Projects</a>
+                </li>
+                <li class="nav__menu__item">
+                    <a href="#aboutme" class="nav__menu__item__link">About Me</a>
+                </li>
+                <li class="nav__menu__item">
+                    <a href="#contact" class="nav__menu__item__link">Contact</a>
+                </li>
+                <li class="nav__menu__item">
+                    <a href="img/Laszlo_Nemeth_Resume.pdf" class="nav__menu__item__link" download>Resume</a>
+                </li>
+            </ul>
+
+            <div class="nav__socialmedia">
+                <a href="https://www.linkedin.com/in/nemeth0220" target="_blank"><i class="fab fa-linkedin"></i></a>    <!-- linkedin -->
+                <a href="https://github.com/lac0220" target="_blank"><i class="fab fa-github"></i></a>      <!-- github -->
+            </div>        
+
+        </nav>
+    </header>
+
+    <section>
+        <h1 id="home"></h1>
+        
+        <div class="home">
+
+            <ul class="home__name">
+                <li><button><a href="#contact" class="home__name__link1">LET'S WORK TOGETHER</a></button></li>
+                <li><a href="#aboutme" class="home__name__hover">Laszlo Nemeth</a></li>
+                <li>Front-End Web Developer</li>
+                <li>"Write code, not excuses"</li>
+                <li><button><a href="#contact" class="home__name__link2">LET'S WORK TOGETHER</a></button></li>
+            </ul>
+        </div> 
+    </section>
+
+    <section>
+        <h1 id="projects">Projects</h1>
+    
+        <hr class="container__horizontal">
+
+        <div class="projects">
+            <p class="projects__text__intro">My goal is to develop user-friendly and fast-loading web sites that are easy to navigate. I am passionate about UI design by adding motion to elements for enjoyable user experience. I build responsive websites by using the following Front-End Development Technologies:</p>
+
+            <div class="projects__skills__text">
+
+                <div class="projects__skills__text1">  
+                    <p>HTML5</p>
+                </div>
+                <img class="projects__skills__img1" src="/img/html.jpg" alt="Html">
+
+                <div class="projects__skills__text2">  
+                    <p>CSS</p>
+                </div>
+                <img class="projects__skills__img2" src="/img/css.jpg" alt="CSS">
+
+                <div class="projects__skills__text3">  
+                    <p>JavaScript</p>
+                </div>
+                <img class="projects__skills__img3" src="/img/js.jpg" alt="JS">
+
+                <div class="projects__skills__text4">  
+                    <p>React JS</p>
+                </div>
+                <img class="projects__skills__img4" src="/img/react.jpg" alt="React">
+
+            </div>
+
+        </div>
+
+        <div class="projects__portfolio">
+
+                <div class="projects__portfolio__item">
+                    <h3>GENERIC HIPSTER COFFEE</h3>
+                    <div style="text-align:center; padding-bottom: 10px;">  
+                        <a href="https://github.com/lac0220/hackaton-coffeeshop" style="text-align:center" target="_blank"><i class="fab fa-github"></i></a> 
+                        </div>
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front animated pulse">
+                                <img class="flip__img1" src="img/logocoffee.svg" alt="Coffee website" />                      
+                            </div>
+                            <div class="flip-box-back">
+                                <img id="myImg1" class="myImages myImg1" src="img/coffehomepage.png" alt="Coffee shop website" />
+                            </div>
+                        </div>
+                    </div>
+                    <p><span style="font-weight:bold; color:#FF0700">Bootcamp hackathon project:</span> creating a responsive coffee shop website</p>
+                    <p><span style="font-weight:bold; color:#FF0700">Tech stack:</span> <span style="font-family: 'Times New Roman', Times, serif";>HTML5, CSS, SASS</span></p>
+
+                </div>
+
+                <div class="projects__portfolio__item">
+                    <h3>LEGENDARY QUOTES</h3>
+                    <div style="text-align:center; padding-bottom: 10px;">  
+                        <a href="https://github.com/lac0220/finalproject-quotes" target="_blank"><i class="fab fa-github"></i></a> 
+                        </div>
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                          <div class="flip-box-front1 animated pulse">
+                            <img class="flip__img2" src="img/logoquotes.png" alt="Quotes website" />                      
+                        </div>
+                        <div class="flip-box-back">
+                            <img id="myImg1" class="myImages myImg2" src="img/legendaryquotes.png" alt="Legendary Quotes website" />
+                          </div>
+                        </div>
+                      </div>
+                      <p><span style="font-weight:bold; color:#FF0700">Bootcamp final project:</span> web application that generates random famous quotes in different categories. It provides text-keyword searching, alphabetical filtering, contact form submission and mobile-friendly web design with navigation bar</p>
+                      <p><span style="font-weight:bold; color:#FF0700">Tech stack:</span> <span style="font-family: 'Times New Roman', Times, serif";>HTML5, CSS, SASS, JavaScript, jQuery</span></p>
+                    </div>
+
+                    <div class="projects__portfolio__item">
+                        <h3>MODEL PORTFOLIO</h3>
+                        <div style="text-align:center; padding-bottom: 10px;">  
+                            <a href="https://github.com/lac0220/model-portfolio" target="_blank"><i class="fab fa-github"></i></a> 
+                            </div>
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                              <div class="flip-box-front2 animated pulse">
+                                <img class="flip__img2" src="img/logomodel.png" alt="Quotes website" />                      
+                            </div>
+                            <div class="flip-box-back">
+                                <img id="myImg1" class="myImages myImg2" src="img/legendaryquotes.png" alt="Model Portfolio" />
+                              </div>
+                            </div>
+                          </div>
+                          <p><span style="font-weight:bold; color:#FF0700">Freelancing:</span> designing a portfolio website for a model</p>
+                          <p><span style="font-weight:bold; color:#FF0700">Tech stack:</span> <span style="font-family: 'Times New Roman', Times, serif";>React JS, SASS</span></p>
+                        </div>
+
+                        <!-- <div class="projects__portfolio__item">
+                            <h3>LEGENDARY QUOTES</h3>
+                            <div style="text-align:center; padding-bottom: 10px;">  
+                                <a href="https://github.com/lac0220/finalproject-quotes" target="_blank"><i class="fab fa-github"></i></a> 
+                                </div>
+                            <div class="flip-box">
+                                <div class="flip-box-inner">
+                                  <div class="flip-box-front1 animated pulse">
+                                    <img class="flip__img2" src="img/logoquotes.png" alt="Quotes website" />                      
+                                </div>
+                                <div class="flip-box-back">
+                                    <img id="myImg1" class="myImages myImg2" src="img/legendaryquotes.png" alt="Legendary Quotes website" />
+                                  </div>
+                                </div>
+                              </div>
+                              <p><span style="font-weight:bold; color:#FF0700">Bootcamp final project:</span> web application that generates random famous quotes in different categories. It provides text-keyword searching, alphabetical filtering, contact form submission and mobile-friendly web design with navigation bar</p>
+                              <p><span style="font-weight:bold; color:#FF0700">Tech stack:</span> <span style="font-family: 'Times New Roman', Times, serif";>HTML5, CSS, SASS, JavaScript, jQuery</span></p>
+                            </div> -->
+        </div>
+
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01"/>
+                <div id="caption"></div>
+            </div>
+
+        
+
+    </section>
+
+    <section>
+        <h1 id="aboutme">About Me</h1>
+
+        <hr class="container__horizontal">
+
+        <div class="aboutme">
+            <div class="aboutme__photo">
+                <img class="aboutme__img" src="/img/profile.png" alt="Laszlo">
+            </div>
+            <div class="aboutme__text">
+                <p>My first job experience in IT was at Hewlett-Packard in Ireland back in 2015. I worked as German Technical Support Analyst providing first-line technical support on the full range of products and applications. My mission was, among others, to deliver solution through analytical trouble shooting and problem research. Then I have spent a few years in taxation analysing and remodelling processing practises, implementing new automated tax services but my passion for IT got me back on track.</p>
+                <p>I decided to dive into The World of Coding and I graduated from a coding bootcamp - 12 weeks intense fullstack web development course - in Prague, Czech Republic in November 2021. I became a well trained Front-end web developer.</p>
+                <p>My prior experiences made me detail-oriented and analytical with a practical approach to problem-solving and now I am seeking to expand the scope of my programming skills in front-end positions and projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 id="contact">Contact</h1>
+
+        <hr class="container__horizontal">
+
+        <div class="contact">
+        
+            <div class="contact__form">
+                <form action="https://formsubmit.co/nemeth0220@gmail.com" method="POST">
+                    <label class="contact__form__name" for="name">Name</label>
+                    <input type="text" id="name" name="name">
+        
+                    <label class="contact__form__email" for="email">Email address</label>
+                    <input type="text" id="email" name="email" required>
+                    <input type="hidden" name="_next" value="http://localhost:3000/thankyou.html">
+        
+                    <label class="contact__form__subject" for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+        
+                    <label class="contact__form__message" for="message">Message</label>
+                    <textarea id="comment" name="comment" required style="height:200px"></textarea>
+        
+                    <input class="contact__form__submitbtn" type="submit" value="SEND">
+                </form>
+            </div>
+
+            <div class="contact__verticalline"></div>
+        
+            <hr class="contact__horizontal">
+
+            <div class="contact__text">
+           
+                <div class="contact__text__phone animated bounce">
+                    <img class="contact__text__phone__img1" src="/img/phone.jpg" alt="Contact logo">
+                    <p>+420 792 588 255</p>
+                </div>
+                <div class="contact__text__email animated bounce">
+                    <img class="contact__text__email__img2" src="/img/contact.jpg" alt="Contact logo">
+                    <p>nemeth0220@gmail.com</p>
+                </div>
+                <div class="contact__text__address">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.4916669857494!2d14.411178515871843!3d50.02088232610443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b96ae5345e725%3A0x3123d83174ecb1fd!2zVSBaw6F0acWhw60gNTQ1LCAxNDcgMDAgUHJhaGEgNC1Ib2Rrb3ZpxI1reQ!5e0!3m2!1sen!2scz!4v1641166073063!5m2!1sen!2scz" width="300" height="250" style="border: 2px solid white; border-radius: 50px; filter: drop-shadow(1px 1px 12px #87CEFA);" allowfullscreen="" loading="lazy"></iframe>
+                    <p>U Zátiší 545/1, 147 00 Prague 4</p>
+                    <p>Czech Republic</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="footer__socialmedia">
+            <a href="https://www.linkedin.com/in/nemeth0220" target="_blank"><i class="fab fa-linkedin"></i></a>    <!-- linkedin -->
+            <a href="https://github.com/lac0220" target="_blank"><i class="fab fa-github"></i></a>      <!-- github -->
+        </div>
+
+        <div class="footer__copyright">
+            <p>Copyright &copy; Laszlo Nemeth 2022</p>
+        </div>
+        
+    </footer>
+
+<script src="/js/script.js" charset="utf-8"></script>
+
+</body>
+</html>
