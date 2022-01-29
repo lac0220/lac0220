@@ -1,3 +1,38 @@
+footer {
+  background-color: #464866;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  margin: auto -40px;
+  text-align: center;
+}
+
+.footer__socialmedia a {
+  display: inline-block;
+  border-radius: 2px;
+  color: #ffffff;
+  margin: 10px;
+  font-size: 50px;
+}
+
+.footer__copyright {
+  color: white;
+}
+
+/* hover social media logo */
+.footer__socialmedia a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  color: #FF0700;
+}
+
+/* Media Queries */
+@media screen and (max-width: 700px) {
+  footer {
+    background-color: #0C0032;
+    margin: auto;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -111,6 +146,7 @@ a {
 
   .aboutme {
     margin: 0 25px;
+    padding-bottom: 30px;
   }
 }
 .nav__header {
@@ -221,13 +257,12 @@ a {
     border-bottom-left-radius: 10px;
     text-align: center;
     transition: 0.5s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
   .navbar ul li {
-    margin: 20px;
+    margin: 5px;
   }
   .navbar ul li a {
-    font-size: 26px;
+    font-size: 25px;
     color: #ffffff;
   }
   .navbar ul li a:hover {
@@ -341,7 +376,7 @@ form > label {
 }
 
 .contact__text {
-  padding-top: 10px;
+  padding-top: 5px;
   display: grid;
   columns: 1;
   row-gap: 22px;
@@ -385,8 +420,12 @@ form > label {
 
   .contact__text {
     padding-top: 20px;
-    row-gap: 25px;
-    margin-bottom: -10px;
+    row-gap: 30px;
+    margin-bottom: -20px;
+  }
+
+  .contact__text__address p:nth-child(2) {
+    padding-top: 20px;
   }
 
   .contact__form {
@@ -738,6 +777,11 @@ form > label {
     width: 90%;
     margin: auto;
     padding-bottom: 90px;
+  }
+
+  .projects__skills__text1, .projects__skills__img1 {
+    grid-column: 1;
+    grid-row: 1;
   }
 
   .projects__skills__text1, .projects__skills__img1 {
@@ -1143,41 +1187,6 @@ form > label {
 
   .thankyou__smile {
     max-width: 80px;
-  }
-}
-footer {
-  background-color: #464866;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-  margin: auto -40px;
-  text-align: center;
-}
-
-.footer__socialmedia a {
-  display: inline-block;
-  border-radius: 2px;
-  color: #ffffff;
-  margin: 10px;
-  font-size: 50px;
-}
-
-.footer__copyright {
-  color: white;
-}
-
-/* hover social media logo */
-.footer__socialmedia a:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  color: #FF0700;
-}
-
-/* Media Queries */
-@media screen and (max-width: 700px) {
-  footer {
-    background-color: #0C0032;
-    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
