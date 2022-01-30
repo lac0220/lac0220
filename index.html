@@ -17,16 +17,15 @@
         <nav class="nav">
 
             <div class="nav__header">
-                <img class="nav__header__logo" src="/img/logo.webp" alt="Laszlo Nemeth logo">
-                <h3>Laszlo Nemeth</h3>
-                <p>Front-End</p>
-                <p>Web Developer</p>
-
                 <div class="drop__bar">
                     <span class="drop__bar__line1"></span>
                     <span class="drop__bar__line2"></span>
                     <span class="drop__bar__line3"></span>
                 </div>
+                <img class="nav__header__logo" src="/img/logo.webp" alt="Laszlo Nemeth logo">
+                <h3>Laszlo Nemeth</h3>
+                <p>Front-End</p>
+                <p>Web Developer</p>
             </div>
             
             <ul class="nav__menu">
@@ -77,9 +76,9 @@
         <hr class="horizontal__line">
 
         <div class="projects">
-            <p class="projects__text__intro">My goal is to develop user-friendly and fast-loading web sites that are easy to navigate. I am passionate about UI design by adding motion to elements for enjoyable user experience. I build responsive websites by using the following Front-End Development Technologies:</p>
+            <p class="projects__text">My goal is to develop user-friendly and fast-loading web sites that are easy to navigate. I am passionate about UI design by adding motion to elements for enjoyable user experience. I build responsive websites by using the following Front-End Development Technologies:</p>
 
-            <div class="projects__skills__text">
+            <div class="projects__skills">
 
                 <div class="projects__skills__text1">  
                     <p>HTML5</p>
@@ -111,12 +110,12 @@
                     <div style="text-align:center; padding-bottom: 10px;">  
                         <a href="https://github.com/lac0220/hackaton-coffeeshop" style="text-align:center" target="_blank" alt="Github link"><i class="fab fa-github"></i></a> 
                         </div>
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front animated pulse">
+                    <div class="flipbox">
+                        <div class="flipbox__inner">
+                            <div class="flipbox__front animated pulse">
                                 <img class="flip__img1" src="img/logocoffee.svg" alt="Coffee shop website logo" />                      
                             </div>
-                            <div class="flip-box-back">
+                            <div class="flipbox__back">
                                 <img id="myImg1" class="myImages myImg1" src="img/coffehomepage.webp" alt="Coffee shop screenshot website" />
                             </div>
                         </div>
@@ -131,12 +130,12 @@
                     <div style="text-align:center; padding-bottom: 10px;">  
                         <a href="https://github.com/lac0220/finalproject-quotes" target="_blank" alt="Github link"><i class="fab fa-github"></i></a> 
                         </div>
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                          <div class="flip-box-front1 animated pulse">
+                    <div class="flipbox">
+                        <div class="flipbox__inner">
+                          <div class="flipbox__front1 animated pulse">
                             <img class="flip__img2" src="img/logoquotes.webp" alt="Quotes website logo" />                      
                         </div>
-                        <div class="flip-box-back">
+                        <div class="flipbox__back">
                             <img id="myImg1" class="myImages myImg2" src="img/legendaryquotes.webp" alt="Legendary Quotes screenshot website" />
                           </div>
                         </div>
@@ -150,12 +149,12 @@
                         <div style="text-align:center; padding-bottom: 10px;">  
                             <a href="https://github.com/lac0220/model-portfolio" target="_blank" alt="Github link"><i class="fab fa-github"></i></a> 
                             </div>
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                              <div class="flip-box-front2 animated pulse">
+                        <div class="flipbox">
+                            <div class="flipbox__inner">
+                              <div class="flipbox__front2 animated pulse">
                                 <img class="flip__img2" src="img/logomodel.webp" alt="Model portfolio logo" />                      
                             </div>
-                            <div class="flip-box-back">
+                            <div class="flipbox__back">
                                 <img id="myImg1" class="myImages myImg2" src="" alt="Model Portfolio screenshot website" />
                               </div>
                             </div>
@@ -169,12 +168,12 @@
                             <div style="text-align:center; padding-bottom: 10px;">  
                                 <a href="https://github.com/lac0220/finalproject-quotes" target="_blank"><i class="fab fa-github"></i></a> 
                                 </div>
-                            <div class="flip-box">
-                                <div class="flip-box-inner">
-                                  <div class="flip-box-front1 animated pulse">
+                            <div class="flipbox">
+                                <div class="flipbox__inner">
+                                  <div class="flipbox__front1 animated pulse">
                                     <img class="flip__img2" src="img/logoquotes.png" alt="Quotes website" />                      
                                 </div>
-                                <div class="flip-box-back">
+                                <div class="flipbox__back">
                                     <img id="myImg1" class="myImages myImg2" src="img/legendaryquotes.png" alt="Legendary Quotes website" />
                                   </div>
                                 </div>
@@ -186,7 +185,7 @@
 
             <div id="myModal" class="modal">
                 <span class="close">&times;</span>
-                <img class="modal-content" id="img01"/>
+                <img class="modal__content" id="img01"/>
                 <div id="caption"></div>
             </div>
 
@@ -220,20 +219,20 @@
         
             <div class="contact__form">
                 <form action="https://formsubmit.co/nemeth0220@gmail.com" method="POST">
-                    <label class="contact__form__name" for="name">Name</label>
+                    <label for="name">Name</label>
                     <input type="text" id="name" name="name">
         
-                    <label class="contact__form__email" for="email">Email address</label>
+                    <label for="email">Email address</label>
                     <input type="text" id="email" name="email" required>
                     <input type="hidden" name="_next" value="http://lac0220.github.io/thankyou.html">
         
-                    <label class="contact__form__subject" for="subject">Subject</label>
+                    <label for="subject">Subject</label>
                     <input type="text" id="subject" name="subject">
         
-                    <label class="contact__form__message" for="message">Message</label>
+                    <label for="message">Message</label>
                     <textarea id="comment" name="comment" required style="height:200px" alt="Textarea"></textarea>
         
-                    <input class="contact__form__submitbtn" type="submit" value="SEND">
+                    <input type="submit" value="SEND">
                 </form>
             </div>
 
