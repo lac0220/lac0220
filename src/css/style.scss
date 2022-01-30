@@ -50,23 +50,20 @@ $text-color:white;
     color: $text-color;	
     text-align: justify;
     hyphens: auto;
+    -webkit-hyphens: auto;
+    -webkit-hyphenate-limit-before: 3;
+    -webkit-hyphenate-limit-after: 3;
+    -webkit-hyphenate-limit-chars: 6 3 3;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphenate-limit-last: always;
+    -webkit-hyphenate-limit-zone: 8%;
   }
 
-  .container__horizontal {
+  .horizontal__line {
     border: 2px solid $hover-menu;
     border-radius: 100%;
     width: 30%;
     margin: auto;  
-  }
-
-  @media screen and (max-width: 700px) {
-    section h1 {
-      font-size: 35px;
-				
-    }
-    .container__horizontal {
-      width: 70%;
-    }
   }
 
   li {
@@ -77,6 +74,18 @@ $text-color:white;
     text-decoration: none;
   }
 
+  @media screen and (max-width: 700px) {
+    section h1 {
+      font-size: 35px;
+      padding: 0px;
+				
+    }
+    .horizontal__line {
+      width: 70%;
+    }
+  }
+
+ 
 
   
 
@@ -95,11 +104,11 @@ $text-color:white;
   
   .aboutme p {
     text-align:justify;
-    padding: 10px 0;
+    padding: 5px 0;
   }
   
   .aboutme__photo {
-		margin: 10px 40px 5px 20px;
+		margin: 0 40px 0 20px;
 		float: left;
   }
 
@@ -115,25 +124,29 @@ $text-color:white;
       display: flex;
       flex-direction: column-reverse;
       margin: 0 20px;
+      padding: 10px 0;
     }
 
     .aboutme__text p { 
-      padding-bottom: 20px;
+      padding-bottom: 10px;
     }
 
     .aboutme__photo {
       margin: auto;
-      padding-top:10px;
+      padding-top:20px;
      }
   }
   
   @media only screen and (max-width: 700px) {
 
     .aboutme__text p { 
-        line-height: 1.2;    
+        text-align: left;
+   
     }
     .aboutme {
       margin: 0 25px;
+      padding-bottom: 30px;
+
     }
   }
 
@@ -167,7 +180,7 @@ $text-color:white;
     margin: 50px auto 40px;
   }
   
-  .navbar {
+  .nav {
     height: 100%;
     width: 200px;
     position: fixed;
@@ -201,22 +214,22 @@ $text-color:white;
         display: block;
         width: 25px;
         height: 4px;
-        margin: 5px auto;
+        margin: 6px auto;
         background-color: white;
     }
   }
 
   .nav__socialmedia  { 
     text-align: center;
-    padding: 25px;
   }
 
   .nav__socialmedia a { 
     display: inline-block;
     border-radius: 2px;
     color: #ffffff;
-    margin:10px;
     font-size: 50px; 
+    justify-content: center;
+    margin: 35px 5px;
   }
 
   .nav__socialmedia a:hover {
@@ -227,22 +240,30 @@ $text-color:white;
 
   @media screen and (max-width: 700px) {
     .nav__header{
-      padding: 10px;
+      padding: 0px;
+      h3 { 
+      padding: 0px;
+      }
+      p {
+      padding-bottom:0px;
+      }
     }
-
+  
+  
     .nav__header__logo {
       height:5rem;
-      margin: 50px auto 10px;
+      margin: 40px auto 5px;
     }
     
-    .navbar {
+    .nav {
       width: 100%;
       position: relative;
       margin-top: -20px;
         ul {
           position: fixed;
           left: -150%;
-          top: 323px;
+          top: 267px;
+          z-index: 1;
           flex-direction: column;
           background-color: $second-color;
           width: 100%;
@@ -250,11 +271,10 @@ $text-color:white;
           border-bottom-left-radius: 10px;
           text-align: center;
           transition: 0.5s;
-          box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
             li {
-              margin: 20px;
+              margin: 5px;
                 a {
-                  font-size: 26px;
+                  font-size: 25px;
                   color: #ffffff;
                 &:hover {
                   color: $hover-menu;           
@@ -267,7 +287,7 @@ $text-color:white;
      .drop__bar {
           display: block;
           cursor: pointer;
-          padding: 10px;
+          padding-bottom: 5px;
           margin: auto;
       }
 
@@ -277,7 +297,7 @@ $text-color:white;
 
       .change .drop__bar__line1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 9px) ;
-        transform: rotate(-45deg) translate(-8px, 5px) ;
+        transform: rotate(-45deg) translate(-8px, 6px) ;
         height: 4px;
       }
       
@@ -288,7 +308,7 @@ $text-color:white;
       
       .change .drop__bar__line3 {
         -webkit-transform: rotate(45deg) translate(-9px, -9px) ;
-        transform: rotate(45deg) translate(-8px, -5px) ;
+        transform: rotate(45deg) translate(-8px, -6px) ;
         height: 4px;
       }
 
@@ -316,13 +336,6 @@ $text-color:white;
   justify-content: center;
   padding: 20px 0 40px;
 }
- 
-.contact__verticalline {
-      border: 2px solid $text-color;	;
-      height: 500px;
-      margin: 80px 100px 0 100px;
-      border-radius: 100%;
-    }
 
 .contact__form {
   width: 37%;
@@ -376,14 +389,22 @@ form > label {
   color: $text-color;
 }
 
-.contact__horizontal {
+.contact__vertical__line {
+  border: 2px solid $text-color;	;
+  height: 500px;
+  margin: 80px 100px 0 100px;
+  border-radius: 100%;
+}
+
+.contact__horizontal__line {
   display: none;
 }
 
 .contact__text {
+  padding-top: 5px;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  columns: 1;
+  row-gap: 22px;
   text-align: center;
   font-size: 22px;
       p {
@@ -393,51 +414,48 @@ form > label {
     }
 
 .contact__text__phone__img1, .contact__text__email__img2 {
- height:4rem;
+ font-size: 80px;
+ color: $hover;
 }
 
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-.bounce:hover img {
-  animation-name: bounce;
-  cursor: pointer;
+.icon-default {
+  transition: opacity .3s, transform .3s;
 }
 
-.contact__text__email {
-  position: relative;
-  bottom: 10px;
+.contact__text__phone i:hover, .contact__text__email i:hover {
+  transform: scale(1.2); 
 }
 
+.contact__text__phone p {
+    padding-top: 10px;
+  }
+
+.contact__text__email p {
+    padding-bottom: 10px;
+  }
+  
 .contact__text__address {
-  position: relative;
-  top: 20px;
+  p:nth-child(2) {
+    padding-top: 10px;
+  }
 }   
 
 @media only screen and (max-width: 1100px) {
   .contact {
     flex-direction: column;
+    padding: 10px 0 40px;
   }
 
   .contact__text {
-    padding: 20px;
+    padding-top: 20px;
+    row-gap: 30px;
+    margin-bottom:-20px;
  }
-
-.contact__text__email {
-  top: 18px;
+ .contact__text__address {
+  p:nth-child(2) {
+    padding-top: 20px;
+  } 
 }
-
-.contact__text__address {
-  top: 40px;
-}   
 
   .contact__form {
     width: 90%;
@@ -449,7 +467,7 @@ form > label {
     display: none;
   }
 
-  .contact__horizontal {
+  .contact__horizontal__line {
     display: inline-block;
     border: 2px solid white;
     border-radius: 100%;
@@ -502,7 +520,7 @@ form > label {
 
 
 .projects {
-  padding: 20px 0 40px;
+  padding: 20px 0 20px;
   margin: auto;
 }
 
@@ -518,7 +536,6 @@ form > label {
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 30px;
     column-gap: 60px;
-    padding-bottom: 30px;
     }
 
 .projects__portfolio__item {
@@ -533,7 +550,7 @@ form > label {
       }
       p {
         padding: 10px 20px;
-        text-align: center justify;
+        text-align: left;
       }
         a {
           color:$text-color;
@@ -552,7 +569,6 @@ form > label {
       max-width: 200px;
       height: 200px;
       cursor: pointer;
-      padding-bottom: 10px;
       margin: auto;
     }
     
@@ -602,7 +618,7 @@ form > label {
     .flip__img1,  .flip__img2 {
       max-width: 70%;
       position: relative;
-      top: 13%;
+      top: 15%;
     }
     
     .animated img {
@@ -623,17 +639,15 @@ form > label {
     .myImg1 {
       max-width: 90%;
       position: relative;
-      top: 7%;
+      top: 9%;
     }
 
     .myImg2 {
       max-width: 90%;
       position: relative;
-      top: 12%;
+      top: 14%;
     }
-    
-    
-    
+
       .modal {
       display: none; 
       position: fixed; 
@@ -700,7 +714,7 @@ form > label {
   column-gap: 30px;
   width: 80%;
   margin: auto;
-  padding-bottom: 70px;
+  padding-bottom: 90px;
 }
 
 .projects__skills__text1, .projects__skills__img1 {
@@ -774,7 +788,12 @@ form > label {
     grid-template-columns: 1fr 1fr;
     row-gap: 30px;
     column-gap: 60px;
-    padding-bottom: 30px;
+    }
+    .modal-content {
+      width: 80%;
+    }
+    .close {
+      font-size: 50px;
     }
   }
   
@@ -788,7 +807,6 @@ form > label {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 30px;
-    padding-bottom: 30px;
     margin: auto 100px;
     }
 
@@ -799,7 +817,12 @@ form > label {
   row-gap: 80px;
   width: 90%;
   margin: auto;
-  padding-bottom: 70px;
+  padding-bottom: 90px;
+}
+
+.projects__skills__text1, .projects__skills__img1 {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .projects__skills__text1, .projects__skills__img1 {
@@ -836,8 +859,6 @@ form > label {
   }
 }
 
-
-
 .projects__skills__img1, .projects__skills__img2 {
   max-width: 60px;
   height: auto;
@@ -862,6 +883,18 @@ form > label {
   top:90%;
 }
 
+.modal {
+  padding-top: 100px;
+}
+
+.modal-content {
+  width: 85%;
+} 
+
+.close {
+  bottom: 100%;
+  right: 45%;
+}
 }
 
 @media only screen and (max-width: 900px) {
@@ -874,10 +907,21 @@ form > label {
     grid-template-columns: 1fr;
     row-gap: 30px;
     margin: auto 20px;
+    p {
+      text-align: left;    
+    }
+    }
+    .modal-content {
+      width: 90%;
     }
 }
 
 @media only screen and (max-width: 700px) {
+  .projects {
+    padding: 10px 0 30px;
+    margin: auto;
+  }
+  
   .projects__portfolio__item {
         h3 {
           font-size: 20px;
@@ -885,7 +929,7 @@ form > label {
       }
   
   .projects__text__intro {
-    line-height: 1.2;
+    text-align: left;    
     margin: auto 25px;
     padding-bottom:40px;
   }
@@ -896,13 +940,13 @@ form > label {
     row-gap: 30px;
     margin: auto 50px;
     p {
-      line-height: 1.2;
-    }
+      text-align: left;    }
     }
 
     .projects__skills__text {
       grid-template-columns: repeat(1, 1fr);  /* same sized column */
       width: 50%;
+      padding-bottom: 100px;
     }
 
   .projects__skills__text1, .projects__skills__img1 {
@@ -922,9 +966,22 @@ form > label {
     grid-column: 1;
     grid-row: 4;
     }
+
+    .projects__skills__img3 {
+      max-width: 65px;
+      height: auto;
+      margin: auto;
+      position: relative;
+      top:93%;
+      }
+
+    .modal-content {
+      width: 90%;
+    }
   }
 
   @media only screen and (max-width: 500px) {
+    
     .projects__portfolio {
       display: grid;
       grid-template-columns: 1fr;
@@ -938,12 +995,18 @@ form > label {
 
 
 .home {
-  background-image: url(/img/background.png);		
-  background-repeat: no-repeat;
+  background: url(/img/background.webp) center center no-repeat;		
   background-attachment: fixed;
-  background-position: center;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -moz-background-size: cover;
   margin: -17px -40px 20px;
+  z-index: -100;
+  height: auto;
+  width: auto;
+  min-width: 100%;
+  min-height: 100%;
   color: $text-color;
   font-weight: bold;
   display: block;
@@ -1046,7 +1109,7 @@ li:nth-child(3) {
   }  
     li:nth-child(5) {   
   visibility: visible;
-  padding: 26.5px 0;
+  padding: 26.7px 0;
   text-align: center;
       a {
         color: $text-color;
@@ -1094,13 +1157,13 @@ li:nth-child(3) {
         padding: 30px 0 31.5px;
       } 
       li:nth-child(5) {   
-        padding: 41px 0;
+        padding: 40.5px 0;
             a {
               font-size: 10px;
               letter-spacing: 1px; 
             }
             button {
-              padding:4px;
+              padding: 3px 4px 5px 4px;
             } 
   }  
 }
@@ -1117,6 +1180,7 @@ li:nth-child(3) {
  }
     li:nth-child(2) {
         animation: typing 2s steps(100, end) both;
+        margin: auto;
       a {
         font-size: 40px;
     }
@@ -1196,6 +1260,7 @@ li:nth-child(3) {
   }
 
   .thankyou h2 {
+    font-size: 25px;
     margin: 0;
   }
 
@@ -1212,38 +1277,3 @@ li:nth-child(3) {
 
 
 
-footer {
-  background-color: $second-color;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
-  margin:auto -40px;
-  text-align: center;
-}
-
-.footer__socialmedia a {
-  display: inline-block;
-  border-radius: 2px;
-  color: #ffffff;
-  margin:10px;
-  font-size: 50px;
-}
-
-.footer__copyright {
-  color: white;
-}
-
-/* hover social media logo */
-.footer__socialmedia a:hover {
-  transform:scale(1.1); 
-  -webkit-transform:scale(1.1);
-  color: $hover-menu;
-}
-
-/* Media Queries */
-@media screen and (max-width: 700px) { 
-  footer {
-      background-color: $first-color;	
-      margin:auto;
-  }
-}
