@@ -88,7 +88,8 @@ a {
   html, body {
     margin-left: 0;
     padding: 0;
-    margin-top: 120px;
+    scroll-padding-top: 110px;
+    /* Equals to fixed navbar height for mobile usage*/
   }
 
   section h1 {
@@ -177,7 +178,7 @@ a {
 }
 .nav ul li {
   padding: 5px 0;
-  margin: 31.9px 0;
+  margin: 37px 0;
 }
 .nav ul li a {
   font-weight: bold;
@@ -218,10 +219,12 @@ a {
 
 @media screen and (max-width: 700px) {
   .nav__header {
-    padding-bottom: 10px;
+    padding-bottom: 0px;
+    margin: 0;
   }
   .nav__header h3, .nav__header p {
     padding: 0px;
+    visibility: hidden;
   }
 
   .nav__header__logo {
@@ -230,15 +233,14 @@ a {
   }
 
   .nav {
-    overflow: hidden;
-    position: fixed;
     width: 100%;
-    height: 210px;
+    height: 110px;
+    position: fixed;
   }
   .nav ul {
     position: fixed;
     left: -150%;
-    top: 210px;
+    top: 110px;
     z-index: 1;
     flex-direction: column;
     background-color: #464866;
@@ -263,8 +265,8 @@ a {
     display: block;
     cursor: pointer;
     position: absolute;
-    left: 90%;
-    top: 6%;
+    left: 85%;
+    top: 30%;
   }
 
   .drop__bar__line1, .drop__bar__line2, .drop__bar__line3 {
@@ -1027,7 +1029,7 @@ form > label {
 }
 @media only screen and (max-width: 700px) {
   .home {
-    margin: auto auto 20px;
+    margin: 130px auto 20px;
   }
 
   .home__name li:nth-child(1) {
