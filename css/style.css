@@ -75,23 +75,13 @@ section p {
   -webkit-hyphenate-limit-zone: 8%;
 }
 
-.container__horizontal {
+.horizontal__line {
   border: 2px solid #FF0700;
   border-radius: 100%;
   width: 30%;
   margin: auto;
 }
 
-@media screen and (max-width: 700px) {
-  section h1 {
-    font-size: 35px;
-    padding: 0px;
-  }
-
-  .container__horizontal {
-    width: 70%;
-  }
-}
 li {
   list-style: none;
 }
@@ -100,6 +90,16 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 700px) {
+  section h1 {
+    font-size: 35px;
+    padding: 0px;
+  }
+
+  .horizontal__line {
+    width: 70%;
+  }
+}
 .aboutme {
   max-width: 1600px;
   padding: 20px 0;
@@ -166,7 +166,7 @@ a {
   margin: 50px auto 40px;
 }
 
-.navbar {
+.nav {
   height: 100%;
   width: 200px;
   position: fixed;
@@ -175,22 +175,22 @@ a {
   left: 0;
   background-color: #0C0032;
 }
-.navbar ul {
+.nav ul {
   background-color: #464866;
   display: block;
   text-align: center;
   padding: 1px 0;
 }
-.navbar ul li {
+.nav ul li {
   padding: 5px 0;
   margin: 37px 0;
 }
-.navbar ul li a {
+.nav ul li a {
   font-weight: bold;
   color: #ffffff;
   font-size: 25px;
 }
-.navbar ul li a:hover {
+.nav ul li a:hover {
   color: #FF0700;
 }
 
@@ -207,15 +207,15 @@ a {
 
 .nav__socialmedia {
   text-align: center;
-  padding: 25px;
 }
 
 .nav__socialmedia a {
   display: inline-block;
   border-radius: 2px;
   color: #ffffff;
-  margin: 10px;
   font-size: 50px;
+  justify-content: center;
+  margin: 35px 5px;
 }
 
 .nav__socialmedia a:hover {
@@ -240,12 +240,12 @@ a {
     margin: 40px auto 5px;
   }
 
-  .navbar {
+  .nav {
     width: 100%;
     position: relative;
     margin-top: -20px;
   }
-  .navbar ul {
+  .nav ul {
     position: fixed;
     left: -150%;
     top: 267px;
@@ -258,14 +258,14 @@ a {
     text-align: center;
     transition: 0.5s;
   }
-  .navbar ul li {
+  .nav ul li {
     margin: 5px;
   }
-  .navbar ul li a {
+  .nav ul li a {
     font-size: 25px;
     color: #ffffff;
   }
-  .navbar ul li a:hover {
+  .nav ul li a:hover {
     color: #FF0700;
   }
 
@@ -310,13 +310,6 @@ a {
   flex-direction: row;
   justify-content: center;
   padding: 20px 0 40px;
-}
-
-.contact__verticalline {
-  border: 2px solid white;
-  height: 500px;
-  margin: 80px 100px 0 100px;
-  border-radius: 100%;
 }
 
 .contact__form {
@@ -371,7 +364,14 @@ form > label {
   color: white;
 }
 
-.contact__horizontal {
+.contact__vertical__line {
+  border: 2px solid white;
+  height: 500px;
+  margin: 80px 100px 0 100px;
+  border-radius: 100%;
+}
+
+.contact__horizontal__line {
   display: none;
 }
 
@@ -389,23 +389,24 @@ form > label {
 }
 
 .contact__text__phone__img1, .contact__text__email__img2 {
-  height: 4rem;
+  font-size: 80px;
+  color: #659DBD;
 }
 
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
+.icon-default {
+  transition: opacity 0.3s, transform 0.3s;
 }
-.bounce:hover img {
-  animation-name: bounce;
-  cursor: pointer;
+
+.contact__text__phone i:hover, .contact__text__email i:hover {
+  transform: scale(1.2);
+}
+
+.contact__text__phone p {
+  padding-top: 10px;
+}
+
+.contact__text__email p {
+  padding-bottom: 10px;
 }
 
 .contact__text__address p:nth-child(2) {
@@ -438,7 +439,7 @@ form > label {
     display: none;
   }
 
-  .contact__horizontal {
+  .contact__horizontal__line {
     display: inline-block;
     border: 2px solid white;
     border-radius: 100%;
@@ -930,6 +931,14 @@ form > label {
     grid-row: 4;
   }
 
+  .projects__skills__img3 {
+    max-width: 65px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 93%;
+  }
+
   .modal-content {
     width: 90%;
   }
@@ -943,12 +952,18 @@ form > label {
   }
 }
 .home {
-  background-image: url(/img/background.png);
-  background-repeat: no-repeat;
+  background: url(/img/background.webp) center center no-repeat;
   background-attachment: fixed;
-  background-position: center;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -moz-background-size: cover;
   margin: -17px -40px 20px;
+  z-index: -100;
+  height: auto;
+  width: auto;
+  min-width: 100%;
+  min-height: 100%;
   color: white;
   font-weight: bold;
   display: block;
@@ -1051,7 +1066,7 @@ form > label {
   }
   .home__name li:nth-child(5) {
     visibility: visible;
-    padding: 26.5px 0;
+    padding: 26.7px 0;
     text-align: center;
   }
   .home__name li:nth-child(5) a {
@@ -1095,14 +1110,14 @@ form > label {
     padding: 30px 0 31.5px;
   }
   .home__name li:nth-child(5) {
-    padding: 41px 0;
+    padding: 40.5px 0;
   }
   .home__name li:nth-child(5) a {
     font-size: 10px;
     letter-spacing: 1px;
   }
   .home__name li:nth-child(5) button {
-    padding: 4px;
+    padding: 3px 4px 5px 4px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -1182,6 +1197,7 @@ form > label {
   }
 
   .thankyou h2 {
+    font-size: 25px;
     margin: 0;
   }
 
