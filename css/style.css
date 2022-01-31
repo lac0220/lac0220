@@ -215,9 +215,9 @@ a {
   display: inline-block;
   border-radius: 2px;
   color: #ffffff;
-  font-size: 50px;
+  font-size: 40px;
   justify-content: center;
-  margin: 35px 5px;
+  margin: 40px 5px;
 }
 .nav__socialmedia a:hover {
   transform: scale(1.1);
@@ -245,7 +245,7 @@ a {
     height: 110px;
     position: fixed;
   }
-  .nav ul {
+  .nav .nav__menu {
     position: fixed;
     left: -150%;
     top: 110px;
@@ -258,14 +258,14 @@ a {
     text-align: center;
     transition: 0.5s;
   }
-  .nav ul li {
+  .nav .nav__menu .nav__menu__item {
     margin: 10px;
   }
-  .nav ul li a {
+  .nav .nav__menu .nav__menu__item a {
     font-size: 25px;
     color: #ffffff;
   }
-  .nav ul li a:hover {
+  .nav .nav__menu .nav__menu__item a:hover {
     color: #FF0700;
   }
 
