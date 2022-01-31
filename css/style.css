@@ -146,7 +146,7 @@ a {
 @media only screen and (max-width: 700px) {
   .aboutme {
     margin: 0 25px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
   .aboutme .aboutme__text p {
     text-align: left;
@@ -157,6 +157,7 @@ a {
   flex-direction: column;
   justify-content: space-evenly;
   padding-bottom: 50px;
+  text-align: center;
 }
 .nav__header h3, .nav__header p {
   color: #ffffff;
@@ -166,7 +167,7 @@ a {
 
 .nav__header__logo {
   height: 5rem;
-  margin: 50px auto 40px;
+  margin: 58px auto 25px;
 }
 
 .nav {
@@ -182,11 +183,10 @@ a {
   background-color: #464866;
   display: block;
   text-align: center;
-  padding: 1px 0;
+  padding: 10px 0;
 }
 .nav .nav__menu .nav__menu__item {
-  padding: 5px 0;
-  margin: 37px 0;
+  padding: 25.5px 0;
 }
 .nav .nav__menu .nav__menu__item a {
   font-weight: bold;
@@ -259,7 +259,7 @@ a {
     transition: 0.5s;
   }
   .nav .nav__menu .nav__menu__item {
-    margin: 10px;
+    padding: 10px 0;
   }
   .nav .nav__menu .nav__menu__item a {
     font-size: 25px;
