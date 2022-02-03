@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" /> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> <!-- linkedin, github and codepen -->
     <link rel="shortcut icon" href="img/logofavicon.webp" type="image/webp" /> <!-- favicon -->
@@ -17,19 +18,27 @@
         <nav class="nav">
 
             <div class="nav__header">
-                <img class="nav__header__logo" src="/img/logo.webp" alt="Laszlo Nemeth logo">
-                <h3>Laszlo Nemeth</h3>
-                <p>Front-End</p>
-                <p>Web Developer</p>
-
                 <div class="drop__bar">
                     <span class="drop__bar__line1"></span>
                     <span class="drop__bar__line2"></span>
                     <span class="drop__bar__line3"></span>
                 </div>
+                <a href="#home"><img class="nav__header__logo" src="/img/logo.webp" alt="Laszlo Nemeth logo"/></a>
+                <h3>Laszlo Nemeth</h3>
+                <p>Front-End</p>
+                <p>Web Developer</p>
+                <div class="header__socialmedia">
+                    <a href="https://www.linkedin.com/in/nemeth0220" target="_blank" alt="Linkedin logo"><i class="fab fa-linkedin"></i></a>    <!-- linkedin -->
+                    <a href="https://github.com/lac0220" target="_blank"><i class="fab fa-github" alt="Github logo"></i></a>      <!-- github -->
+                    <a href="https://codepen.io/lac0220/" target="_blank"><i class="fab fa-codepen" alt="Codepen logo"></i></a>  <!-- codepen-->      
+                </div>  
             </div>
             
             <ul class="nav__menu">
+                <h3>Laszlo Nemeth</h3>
+                <p>Front-End Web Developer</p>
+                <hr class="nav__horizontal__line">
+
                 <li class="nav__menu__item">
                     <a href="#home" class="nav__menu__item__link">Home</a>
                 </li>
@@ -45,21 +54,27 @@
                 <li class="nav__menu__item">
                     <a href="img/Laszlo_Nemeth_Resume.pdf" class="nav__menu__item__link" alt="Resume" download>Resume</a>
                 </li>
-            </ul>
 
-            <div class="nav__socialmedia">
-                <a href="https://www.linkedin.com/in/nemeth0220" target="_blank" alt="Linkedin logo"><i class="fab fa-linkedin"></i></a>    <!-- linkedin -->
-                <a href="https://github.com/lac0220" target="_blank"><i class="fab fa-github" alt="Github logo"></i></a>      <!-- github -->
-                <a href="https://codepen.io/lac0220/" target="_blank"><i class="fab fa-codepen" alt="Codepen logo"></i></a>  <!-- codepen-->      
-            </div>  
+                <div class="nav__empty">
+                    <p></p>
+                </div>
+
+                <hr class="nav__horizontal__line">
+
+                <div class="nav__socialmedia">
+                    <a href="https://www.linkedin.com/in/nemeth0220" target="_blank" alt="Linkedin logo"><i class="fab fa-linkedin"></i></a>    <!-- linkedin -->
+                    <a href="https://github.com/lac0220" target="_blank"><i class="fab fa-github" alt="Github logo"></i></a>      <!-- github -->
+                    <a href="https://codepen.io/lac0220/" target="_blank"><i class="fab fa-codepen" alt="Codepen logo"></i></a>  <!-- codepen-->      
+                </div>  
+
+            </ul>
 
         </nav>
     </header>
 
     <section>
-        <h1 id="home"></h1>
         
-        <div class="home">
+        <div class="home" id="home">
 
             <ul class="home__name">
                 <li><button><a href="#contact" alt="Work together link1">LET'S WORK TOGETHER</a></button></li>
@@ -68,6 +83,33 @@
                 <li>"Write code, not excuses"</li>
                 <li><button><a href="#contact" alt="Work together link2">LET'S WORK TOGETHER</a></button></li>
             </ul>
+            
+            <p class="home__text">I am passionate about UI design by adding motion to elements and maintaining high discoverability for enjoyable user experience. My goal is to develop user-friendly and fast-loading web sites that are easy to navigate. I build responsive environment by using the following Front-End Development Technologies:</p>
+
+            <div class="home__skills">
+
+                <div class="home__skills__text1">  
+                    <p>HTML5</p>
+                </div>
+                <img class="home__skills__img1" src="/img/html.webp" alt="HTML5 icon">
+
+                <div class="home__skills__text2">  
+                    <p>CSS</p>
+                </div>
+                <img class="home__skills__img2" src="/img/css.webp" alt="CSS icon">
+
+                <div class="home__skills__text3">  
+                    <p>JavaScript</p>
+                </div>
+                <img class="home__skills__img3" src="/img/js.webp" alt="JavaScript icon">
+
+                <div class="home__skills__text4">  
+                    <p>React JS</p>
+                </div>
+                <img class="home__skills__img4" src="/img/react.webp" alt="React JS icon">
+
+            </div>
+
         </div> 
     </section>
 
@@ -77,32 +119,6 @@
         <hr class="horizontal__line">
 
         <div class="projects">
-            <p class="projects__text__intro">My goal is to develop user-friendly and fast-loading web sites that are easy to navigate. I am passionate about UI design by adding motion to elements for enjoyable user experience. I build responsive websites by using the following Front-End Development Technologies:</p>
-
-            <div class="projects__skills__text">
-
-                <div class="projects__skills__text1">  
-                    <p>HTML5</p>
-                </div>
-                <img class="projects__skills__img1" src="/img/html.webp" alt="HTML5 icon">
-
-                <div class="projects__skills__text2">  
-                    <p>CSS</p>
-                </div>
-                <img class="projects__skills__img2" src="/img/css.webp" alt="CSS icon">
-
-                <div class="projects__skills__text3">  
-                    <p>JavaScript</p>
-                </div>
-                <img class="projects__skills__img3" src="/img/js.webp" alt="JavaScript icon">
-
-                <div class="projects__skills__text4">  
-                    <p>React JS</p>
-                </div>
-                <img class="projects__skills__img4" src="/img/react.webp" alt="React JS icon">
-
-            </div>
-
 
             <div class="projects__portfolio">
 
@@ -111,13 +127,13 @@
                     <div style="text-align:center; padding-bottom: 10px;">  
                         <a href="https://github.com/lac0220/hackaton-coffeeshop" style="text-align:center" target="_blank" alt="Github link"><i class="fab fa-github"></i></a> 
                         </div>
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front animated pulse">
+                    <div class="flipbox">
+                        <div class="flipbox__inner">
+                            <div class="flipbox__front pulse">
                                 <img class="flip__img1" src="img/logocoffee.svg" alt="Coffee shop website logo" />                      
                             </div>
-                            <div class="flip-box-back">
-                                <img id="myImg1" class="myImages myImg1" src="img/coffehomepage.webp" alt="Coffee shop screenshot website" />
+                            <div class="flipbox__back">
+                                <img id="myImg1" class="myImages myImg1" src="img/coffehomepage.webp" alt="Coffee shop website" />
                             </div>
                         </div>
                     </div>
@@ -131,13 +147,13 @@
                     <div style="text-align:center; padding-bottom: 10px;">  
                         <a href="https://github.com/lac0220/finalproject-quotes" target="_blank" alt="Github link"><i class="fab fa-github"></i></a> 
                         </div>
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                          <div class="flip-box-front1 animated pulse">
+                    <div class="flipbox">
+                        <div class="flipbox__inner">
+                          <div class="flipbox__front1 pulse">
                             <img class="flip__img2" src="img/logoquotes.webp" alt="Quotes website logo" />                      
                         </div>
-                        <div class="flip-box-back">
-                            <img id="myImg1" class="myImages myImg2" src="img/legendaryquotes.webp" alt="Legendary Quotes screenshot website" />
+                        <div class="flipbox__back">
+                            <img id="myImg1" class="myImages myImg2" src="img/legendaryquotes.webp" alt="Legendary Quotes website" />
                           </div>
                         </div>
                       </div>
@@ -150,13 +166,13 @@
                         <div style="text-align:center; padding-bottom: 10px;">  
                             <a href="https://github.com/lac0220/model-portfolio" target="_blank" alt="Github link"><i class="fab fa-github"></i></a> 
                             </div>
-                        <div class="flip-box">
-                            <div class="flip-box-inner">
-                              <div class="flip-box-front2 animated pulse">
+                        <div class="flipbox">
+                            <div class="flipbox__inner">
+                              <div class="flipbox__front2 pulse">
                                 <img class="flip__img2" src="img/logomodel.webp" alt="Model portfolio logo" />                      
                             </div>
-                            <div class="flip-box-back">
-                                <img id="myImg1" class="myImages myImg2" src="" alt="Model Portfolio screenshot website" />
+                            <div class="flipbox__back">
+                                <img id="myImg1" class="myImages myImg2" src="" alt="Model Portfolio website" />
                               </div>
                             </div>
                           </div>
@@ -169,12 +185,12 @@
                             <div style="text-align:center; padding-bottom: 10px;">  
                                 <a href="https://github.com/lac0220/finalproject-quotes" target="_blank"><i class="fab fa-github"></i></a> 
                                 </div>
-                            <div class="flip-box">
-                                <div class="flip-box-inner">
-                                  <div class="flip-box-front1 animated pulse">
+                            <div class="flipbox">
+                                <div class="flipbox__inner">
+                                  <div class="flipbox__front1 pulse">
                                     <img class="flip__img2" src="img/logoquotes.png" alt="Quotes website" />                      
                                 </div>
-                                <div class="flip-box-back">
+                                <div class="flipbox__back">
                                     <img id="myImg1" class="myImages myImg2" src="img/legendaryquotes.png" alt="Legendary Quotes website" />
                                   </div>
                                 </div>
@@ -186,7 +202,7 @@
 
             <div id="myModal" class="modal">
                 <span class="close">&times;</span>
-                <img class="modal-content" id="img01"/>
+                <img class="modal__content" id="img01"/>
                 <div id="caption"></div>
             </div>
 
@@ -220,20 +236,20 @@
         
             <div class="contact__form">
                 <form action="https://formsubmit.co/nemeth0220@gmail.com" method="POST">
-                    <label class="contact__form__name" for="name">Name</label>
+                    <label for="name">Name</label>
                     <input type="text" id="name" name="name">
         
-                    <label class="contact__form__email" for="email">Email address</label>
+                    <label for="email">Email address</label>
                     <input type="text" id="email" name="email" required>
                     <input type="hidden" name="_next" value="http://lac0220.github.io/thankyou.html">
         
-                    <label class="contact__form__subject" for="subject">Subject</label>
+                    <label for="subject">Subject</label>
                     <input type="text" id="subject" name="subject">
         
-                    <label class="contact__form__message" for="message">Message</label>
+                    <label for="message">Message</label>
                     <textarea id="comment" name="comment" required style="height:200px" alt="Textarea"></textarea>
         
-                    <input class="contact__form__submitbtn" type="submit" value="SEND">
+                    <input type="submit" value="SEND">
                 </form>
             </div>
 
@@ -244,16 +260,16 @@
             <div class="contact__text">
            
                 <div class="contact__text__phone">
-                    <i class="contact__text__phone__img1 icon-default fas fa-mobile-alt" alt="Phone icon"></i>
+                    <i class="contact__text__phone__icon1 fas fa-mobile-alt" alt="Phone icon"></i>
                     <p>+420 792 588 255</p>
                 </div>
                 
                 <div class="contact__text__email">
-                    <i class="contact__text__email__img2 icon-default far fa-envelope" alt="Email icon"></i>
+                    <i class="contact__text__email__icon2 far fa-envelope" alt="Email icon"></i>
                     <p>nemeth0220@gmail.com</p>
                 </div>
                 <div class="contact__text__address">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.4916669857494!2d14.411178515871843!3d50.02088232610443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b96ae5345e725%3A0x3123d83174ecb1fd!2zVSBaw6F0acWhw60gNTQ1LCAxNDcgMDAgUHJhaGEgNC1Ib2Rrb3ZpxI1reQ!5e0!3m2!1sen!2scz!4v1641166073063!5m2!1sen!2scz" width="300" height="250" style="border: 2px solid white; border-radius: 50px; filter: drop-shadow(1px 1px 12px #87CEFA);" allowfullscreen="" loading="lazy" alt="Map"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.4916669857494!2d14.411178515871843!3d50.02088232610443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b96ae5345e725%3A0x3123d83174ecb1fd!2zVSBaw6F0acWhw60gNTQ1LCAxNDcgMDAgUHJhaGEgNC1Ib2Rrb3ZpxI1reQ!5e0!3m2!1sen!2scz!4v1641166073063!5m2!1sen!2scz" width="300" height="250" style="border: 2px solid white; border-radius: 50px; filter: drop-shadow(1px 1px 5px #87CEFA);" allowfullscreen="" loading="lazy" alt="Map"></iframe>
                     <p>U Zátiší 545/1, 147 00 Prague 4</p>
                     <p>Czech Republic</p>
                 </div>
@@ -263,7 +279,7 @@
     </section>
 
     <footer>
-
+        
         <div class="footer__socialmedia">
             <a href="https://www.linkedin.com/in/nemeth0220" target="_blank" alt="Linkedin logo"><i class="fab fa-linkedin"></i></a>    <!-- linkedin -->
             <a href="https://github.com/lac0220" target="_blank"><i class="fab fa-github" alt="Github logo"></i></a>      <!-- github -->
@@ -273,7 +289,7 @@
         <div class="footer__copyright">
             <p>Copyright &copy; Laszlo Nemeth 2022</p>
         </div>
-        
+
     </footer>
 
 <script src="/js/script.js" charset="utf-8"></script>

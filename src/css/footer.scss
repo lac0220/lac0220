@@ -7,39 +7,3 @@ $hover:#659DBD;
 $hover-menu:#FF0700;
 $text-color:white;
 
-footer {
-    background-color: $second-color;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    margin:auto -40px;
-    text-align: center;
-  }
-  
-  .footer__socialmedia a {
-    display: inline-block;
-    border-radius: 2px;
-    color: #ffffff;
-    margin:10px;
-    font-size: 50px;
-  }
-  
-  .footer__copyright {
-    color: white;
-  }
-  
-  /* hover social media logo */
-  .footer__socialmedia a:hover {
-    transform:scale(1.1); 
-    -webkit-transform:scale(1.1);
-    color: $hover-menu;
-  }
-  
-  /* Media Queries */
-  @media screen and (max-width: 700px) { 
-    footer {
-        background-color: $first-color;	
-        margin:auto;
-    }
-  }
-  
