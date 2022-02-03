@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" /> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> <!-- linkedin, github and codepen -->
     <link rel="shortcut icon" href="img/logofavicon.webp" type="image/webp" /> <!-- favicon -->
@@ -26,9 +27,18 @@
                 <h3>Laszlo Nemeth</h3>
                 <p>Front-End</p>
                 <p>Web Developer</p>
+                <div class="header__socialmedia">
+                    <a href="https://www.linkedin.com/in/nemeth0220" target="_blank" alt="Linkedin logo"><i class="fab fa-linkedin"></i></a>    <!-- linkedin -->
+                    <a href="https://github.com/lac0220" target="_blank"><i class="fab fa-github" alt="Github logo"></i></a>      <!-- github -->
+                    <a href="https://codepen.io/lac0220/" target="_blank"><i class="fab fa-codepen" alt="Codepen logo"></i></a>  <!-- codepen-->      
+                </div>  
             </div>
             
             <ul class="nav__menu">
+                <h3>Laszlo Nemeth</h3>
+                <p>Front-End Web Developer</p>
+                <hr class="nav__horizontal__line">
+
                 <li class="nav__menu__item">
                     <a href="#home" class="nav__menu__item__link">Home</a>
                 </li>
@@ -44,21 +54,27 @@
                 <li class="nav__menu__item">
                     <a href="img/Laszlo_Nemeth_Resume.pdf" class="nav__menu__item__link" alt="Resume" download>Resume</a>
                 </li>
-            </ul>
 
-            <div class="nav__socialmedia">
-                <a href="https://www.linkedin.com/in/nemeth0220" target="_blank" alt="Linkedin logo"><i class="fab fa-linkedin"></i></a>    <!-- linkedin -->
-                <a href="https://github.com/lac0220" target="_blank"><i class="fab fa-github" alt="Github logo"></i></a>      <!-- github -->
-                <a href="https://codepen.io/lac0220/" target="_blank"><i class="fab fa-codepen" alt="Codepen logo"></i></a>  <!-- codepen-->      
-            </div>  
+                <div class="nav__empty">
+                    <p></p>
+                </div>
+
+                <hr class="nav__horizontal__line">
+
+                <div class="nav__socialmedia">
+                    <a href="https://www.linkedin.com/in/nemeth0220" target="_blank" alt="Linkedin logo"><i class="fab fa-linkedin"></i></a>    <!-- linkedin -->
+                    <a href="https://github.com/lac0220" target="_blank"><i class="fab fa-github" alt="Github logo"></i></a>      <!-- github -->
+                    <a href="https://codepen.io/lac0220/" target="_blank"><i class="fab fa-codepen" alt="Codepen logo"></i></a>  <!-- codepen-->      
+                </div>  
+
+            </ul>
 
         </nav>
     </header>
 
     <section>
-        <h1 id="home"></h1>
         
-        <div class="home">
+        <div class="home" id="home">
 
             <ul class="home__name">
                 <li><button><a href="#contact" alt="Work together link1">LET'S WORK TOGETHER</a></button></li>
@@ -67,6 +83,33 @@
                 <li>"Write code, not excuses"</li>
                 <li><button><a href="#contact" alt="Work together link2">LET'S WORK TOGETHER</a></button></li>
             </ul>
+            
+            <p class="home__text">I am passionate about UI design by adding motion to elements and maintaining high discoverability for enjoyable user experience. My goal is to develop user-friendly and fast-loading web sites that are easy to navigate. I build responsive environment by using the following Front-End Development Technologies:</p>
+
+            <div class="home__skills">
+
+                <div class="home__skills__text1">  
+                    <p>HTML5</p>
+                </div>
+                <img class="home__skills__img1" src="/img/html.webp" alt="HTML5 icon">
+
+                <div class="home__skills__text2">  
+                    <p>CSS</p>
+                </div>
+                <img class="home__skills__img2" src="/img/css.webp" alt="CSS icon">
+
+                <div class="home__skills__text3">  
+                    <p>JavaScript</p>
+                </div>
+                <img class="home__skills__img3" src="/img/js.webp" alt="JavaScript icon">
+
+                <div class="home__skills__text4">  
+                    <p>React JS</p>
+                </div>
+                <img class="home__skills__img4" src="/img/react.webp" alt="React JS icon">
+
+            </div>
+
         </div> 
     </section>
 
@@ -76,32 +119,6 @@
         <hr class="horizontal__line">
 
         <div class="projects">
-            <p class="projects__text">My goal is to develop user-friendly and fast-loading web sites that are easy to navigate. I am passionate about UI design by adding motion to elements for enjoyable user experience. I build responsive websites by using the following Front-End Development Technologies:</p>
-
-            <div class="projects__skills">
-
-                <div class="projects__skills__text1">  
-                    <p>HTML5</p>
-                </div>
-                <img class="projects__skills__img1" src="/img/html.webp" alt="HTML5 icon">
-
-                <div class="projects__skills__text2">  
-                    <p>CSS</p>
-                </div>
-                <img class="projects__skills__img2" src="/img/css.webp" alt="CSS icon">
-
-                <div class="projects__skills__text3">  
-                    <p>JavaScript</p>
-                </div>
-                <img class="projects__skills__img3" src="/img/js.webp" alt="JavaScript icon">
-
-                <div class="projects__skills__text4">  
-                    <p>React JS</p>
-                </div>
-                <img class="projects__skills__img4" src="/img/react.webp" alt="React JS icon">
-
-            </div>
-
 
             <div class="projects__portfolio">
 
@@ -262,7 +279,7 @@
     </section>
 
     <footer>
-
+        
         <div class="footer__socialmedia">
             <a href="https://www.linkedin.com/in/nemeth0220" target="_blank" alt="Linkedin logo"><i class="fab fa-linkedin"></i></a>    <!-- linkedin -->
             <a href="https://github.com/lac0220" target="_blank"><i class="fab fa-github" alt="Github logo"></i></a>      <!-- github -->
@@ -272,7 +289,7 @@
         <div class="footer__copyright">
             <p>Copyright &copy; Laszlo Nemeth 2022</p>
         </div>
-        
+
     </footer>
 
 <script src="/js/script.js" charset="utf-8"></script>
