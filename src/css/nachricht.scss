@@ -1,0 +1,67 @@
+$first-color: #0C0032;						
+$second-color: #464866;		
+$third-color: #211A36;	
+$contact-form: #edf5e1;
+$main-font: Georgia, 'Times New Roman', Times, serif;
+$hover:#659DBD;
+$hover-menu:#FF0700;
+$text-color:white;
+
+.nachricht {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.nachricht h1, h2 {
+  color: $text-color;
+  padding: 20px 0;
+}
+
+.nachricht a {
+  color: $hover-menu;
+}
+
+.nachricht a:hover {
+  filter: drop-shadow(1px 1px 10px red);
+}
+
+.nachricht__smile {
+  max-width: 100px;
+  position: absolute;
+  right: 60px;
+  bottom: 190px;
+}
+
+@media only screen and (max-width: 1023px) {
+  
+.nachricht h1 {
+  padding: 0;
+}
+
+.nachricht__smile {
+  position: relative;
+  right: 0px;
+  top: 5px;
+}
+}
+
+@media only screen and (max-width: 700px) {
+
+.nachricht h1 {
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.nachricht h2 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.nachricht__smile {
+   max-width: 80px;
+  }
+}

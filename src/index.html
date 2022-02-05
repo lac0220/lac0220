@@ -27,11 +27,6 @@
                 <h3>Laszlo Nemeth</h3>
                 <p>Front-End</p>
                 <p>Web Developer</p>
-                <div class="header__socialmedia">
-                    <a href="https://www.linkedin.com/in/nemeth0220" target="_blank" alt="Linkedin logo"><i class="fab fa-linkedin"></i></a>    <!-- linkedin -->
-                    <a href="https://github.com/lac0220" target="_blank"><i class="fab fa-github" alt="Github logo"></i></a>      <!-- github -->
-                    <a href="https://codepen.io/lac0220/" target="_blank"><i class="fab fa-codepen" alt="Codepen logo"></i></a>  <!-- codepen-->      
-                </div>  
             </div>
             
             <ul class="nav__menu">
@@ -55,10 +50,6 @@
                     <a href="img/Laszlo_Nemeth_Resume.pdf" class="nav__menu__item__link" alt="Resume" download>Resume</a>
                 </li>
 
-                <div class="nav__empty">
-                    <p></p>
-                </div>
-
                 <hr class="nav__horizontal__line">
 
                 <div class="nav__socialmedia">
@@ -77,11 +68,21 @@
         <div class="home" id="home">
 
             <ul class="home__name">
-                <li><button><a href="#contact" alt="Work together link1">LET'S WORK TOGETHER</a></button></li>
-                <li><a href="#aboutme" alt="Laszlo Nemeth contact link">Laszlo Nemeth</a></li>
-                <li>Front-End Web Developer</li>
-                <li>"Write code, not excuses"</li>
-                <li><button><a href="#contact" alt="Work together link2">LET'S WORK TOGETHER</a></button></li>
+                <div class="home__name__language">
+                    <img class="home__flag1" src="/img/ukflag.svg" alt="Laszlo Nemeth logo"/>
+                    <li><b>English</b> <i class="fa fa-angle-down"></i>
+                    <div class="home__triangle"></div>
+                        <ul>
+                            <li><a href="index_ger.html"><i class="home__flag2"></i> <span>German</span></a></li>                      
+                        </ul>
+                    </li>
+                </div>
+                <div class="home__name__header">
+                    <li><a href="#aboutme" alt="Laszlo Nemeth contact link">Laszlo Nemeth</a></li>
+                    <li>Front-End Web Developer</li>
+                    <li>"Write code, not excuses"</li>
+                    <li><button><a href="#contact" alt="Work together link2">LET'S WORK TOGETHER</a></button></li>
+                </div>
             </ul>
             
             <p class="home__text">I am passionate about UI design by adding motion to elements and maintaining high discoverability for enjoyable user experience. My goal is to develop user-friendly and fast-loading web sites that are easy to navigate. I build responsive environment by using the following Front-End Development Technologies:</p>
@@ -137,7 +138,7 @@
                             </div>
                         </div>
                     </div>
-                    <p><span style="font-weight:bold; color:#FF0700">Bootcamp hackathon project:</span> creating a responsive coffee shop website</p>
+                    <p><span style="font-weight:bold; color:#FF0700">Bootcamp hackathon project:</span> the challange was about to desing a responsive coffee shop website</p>
                     <p><span style="font-weight:bold; color:#FF0700">Tech stack:</span> <span style="font-family: 'Times New Roman', Times, serif";>HTML5, CSS, SASS</span></p>
 
                 </div>
@@ -241,7 +242,7 @@
         
                     <label for="email">Email address</label>
                     <input type="text" id="email" name="email" required>
-                    <input type="hidden" name="_next" value="http://lac0220.github.io/thankyou.html">
+                    <input type="hidden" name="_next" value="http://lac0220.github.io/message.html">
         
                     <label for="subject">Subject</label>
                     <input type="text" id="subject" name="subject">
@@ -293,6 +294,7 @@
     </footer>
 
 <script src="/js/script.js" charset="utf-8"></script>
+
 
 </body>
 </html>
