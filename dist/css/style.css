@@ -239,7 +239,7 @@ a {
   background-color: #0C0032;
   margin-top: 15px;
   height: 100%;
-  padding-top: 25px;
+  padding-top: 10px;
 }
 .nav__socialmedia a {
   border-radius: 2px;
@@ -253,8 +253,14 @@ a {
   color: #FF0700;
 }
 
-.nav__horizontal__line {
+.nav__horizontal__line1, .nav__horizontal__line2 {
   visibility: hidden;
+}
+
+.nav__name__language {
+  visibility: hidden;
+  height: 0;
+  height: 0;
 }
 
 @media screen and (max-width: 700px) {
@@ -269,7 +275,9 @@ a {
 
   .nav__header__logo {
     height: 4rem;
-    margin: 15px auto;
+    position: absolute;
+    left: 5%;
+    bottom: 7px;
   }
 
   .nav {
@@ -305,7 +313,94 @@ a {
     color: #FF0700;
   }
 
-  .nav__horizontal__line {
+  .nav__name__language {
+    visibility: visible;
+    display: inline-block;
+    position: absolute;
+    left: 100%;
+    bottom: 94px;
+    margin-left: -95px;
+    font-size: 15px;
+    color: white;
+  }
+
+  .nav__flag1 {
+    width: 1.2rem;
+    position: absolute;
+    right: 107%;
+    top: 1px;
+  }
+
+  .nav__name__language li {
+    cursor: pointer;
+  }
+
+  .nav__name__language li ul {
+    display: none;
+  }
+
+  .nav__name__language li ul li {
+    position: relative;
+    text-align: left;
+    padding: 5px;
+    z-index: 2;
+    font-size: 15px;
+    margin-left: 20px;
+  }
+  .nav__name__language li ul li span {
+    color: black;
+    font-weight: bold;
+  }
+  .nav__name__language li ul li span:hover {
+    color: #FF0700;
+  }
+
+  .nav__name__language li:hover ul {
+    position: absolute;
+    top: 23px;
+    right: -20px;
+    display: block;
+    background: white;
+    width: 90px;
+    padding-top: 0px;
+    z-index: 1;
+    border-radius: 5px;
+  }
+
+  .nav__name__language li:hover .nav__triangle {
+    position: absolute;
+    top: 12px;
+    right: -11px;
+    z-index: 10;
+    height: 14px;
+    overflow: hidden;
+    width: 30px;
+    background: transparent;
+  }
+
+  .nav__name__language li:hover .nav__triangle:after {
+    content: "";
+    display: block;
+    z-index: 20;
+    width: 15px;
+    transform: rotate(45deg) translateY(0px) translatex(10px);
+    height: 15px;
+    background: white;
+    border-radius: 2px 0px 0px 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav__flag2 {
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    right: 67px;
+    background-image: url("/img/germanflag.svg");
+  }
+
+  .nav__horizontal__line1 {
     visibility: visible;
     display: inline-block;
     border: 2px solid #FF0700;
@@ -314,12 +409,21 @@ a {
     margin: auto;
   }
 
+  .nav__horizontal__line2 {
+    visibility: visible;
+    display: inline-block;
+    border: 2px solid #FF0700;
+    border-radius: 100%;
+    width: 70%;
+    margin-bottom: 10px;
+  }
+
   .drop__bar {
-    display: block;
     cursor: pointer;
+    display: block;
     position: absolute;
-    left: 85%;
-    top: 9%;
+    left: 48%;
+    top: 35%;
   }
 
   .drop__bar__line1, .drop__bar__line2, .drop__bar__line3 {
@@ -354,7 +458,7 @@ a {
   .nav__socialmedia {
     text-align: center;
     background-color: #464866;
-    margin-top: 10px;
+    margin-top: -10px;
     padding-top: 0px;
   }
   .nav__socialmedia a {
@@ -406,8 +510,8 @@ input[type=submit] {
   background-color: #FF0700;
   color: white;
   padding: 10px 10px;
-  border: none;
   border-radius: 15px;
+  border: 2px solid #464866;
   cursor: pointer;
   font-weight: bold;
   font-size: 20px;
@@ -540,7 +644,7 @@ form > label {
   }
 }
 .projects {
-  padding: 40px 0 30px;
+  padding: 35px 0 30px;
   margin: auto;
 }
 
@@ -737,10 +841,6 @@ form > label {
   }
 }
 @media only screen and (max-width: 1080px) {
-  .projects {
-    padding: 25px 0 30px;
-  }
-
   .projects__portfolio {
     grid-template-columns: 1fr;
     margin: auto 100px;
@@ -760,6 +860,10 @@ form > label {
   }
 }
 @media only screen and (max-width: 900px) {
+  .projects {
+    padding: 25px 0 30px;
+  }
+
   .projects__portfolio {
     margin: auto 20px;
   }
@@ -773,7 +877,7 @@ form > label {
 }
 @media only screen and (max-width: 700px) {
   .projects {
-    padding: 25px 0 30px;
+    padding: 20px 0 30px;
     margin: auto;
   }
 
@@ -842,7 +946,6 @@ form > label {
 .home__name__language li ul li {
   position: relative;
   text-align: left;
-  background: transparent;
   padding: 10px 15px;
   z-index: 2;
   font-size: 16px;
@@ -867,24 +970,27 @@ form > label {
   border-radius: 5px;
 }
 
-.home__triangle {
+.home__name__language li:hover .home__triangle {
   position: absolute;
-  top: 26px;
+  top: 42px;
   right: -10px;
   z-index: 10;
   height: 14px;
+  overflow: hidden;
   width: 30px;
+  background: transparent;
 }
 
-.triangle:after {
+.home__name__language li:hover .home__triangle:after {
   content: "";
   display: block;
   z-index: 20;
   width: 15px;
   transform: rotate(45deg) translateY(0px) translatex(10px);
   height: 15px;
-  background: white;
+  background: #fff;
   border-radius: 2px 0px 0px 0px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 .home__flag2 {
@@ -945,18 +1051,17 @@ form > label {
   padding-bottom: 35px;
   text-align: center;
 }
-.home__name__header li:nth-child(4) a {
-  color: white;
+.home__name__header li:nth-child(4) button {
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 15px;
-  display: block;
+  font-size: 14px;
   letter-spacing: 1px;
-}
-.home__name__header li:nth-child(4) button {
-  padding: 5px;
+  padding: 5px 7px;
   background-color: #FF0700;
-  border-radius: 10px;
+  border-radius: 50px;
+  border: 2px solid #464866;
+  color: white;
+  cursor: pointer;
 }
 .home__name__header li:nth-child(4) button:hover {
   background-color: lightcoral;
@@ -1076,40 +1181,54 @@ form > label {
 }
 
 @media only screen and (max-width: 1200px) {
+  .home__name__language {
+    font-size: 15px;
+    margin-left: -100px;
+  }
+
+  .home__flag1 {
+    width: 1.5rem;
+  }
+
+  .home__flag2 {
+    width: 22px;
+    height: 16px;
+    top: 8px;
+    right: 73px;
+  }
+
+  .home__name__language li ul li {
+    padding: 5px;
+    font-size: 15px;
+    margin-left: 28px;
+  }
+
+  .home__name__language li:hover ul {
+    position: absolute;
+    top: 48px;
+    right: -20px;
+    display: block;
+    background: white;
+    width: 100px;
+    padding-top: 0px;
+    z-index: 1;
+    border-radius: 5px;
+  }
+
+  .home__name__language li:hover .home__triangle {
+    top: 37px;
+    right: -11px;
+    z-index: 10;
+    height: 14px;
+    overflow: hidden;
+    width: 30px;
+    background: transparent;
+  }
+
   .home__name__header {
-    margin-top: -5px;
+    margin-top: -13px;
   }
-  .home__name__header li:nth-child(1) {
-    animation: typing 2s steps(100, end) both;
-  }
-  .home__name__header li:nth-child(1) a {
-    font-size: 45px;
-    letter-spacing: 1px;
-  }
-  .home__name__header li:nth-child(2) {
-    animation: typing 2s steps(100, end) both;
-    animation-delay: 2s;
-    font-size: 26px;
-    letter-spacing: 1px;
-  }
-  .home__name__header li:nth-child(3) {
-    animation: typing 2s steps(100, end) both;
-    animation-delay: 4s;
-    font-size: 24px;
-    letter-spacing: 1px;
-    padding: 30px 0 20px;
-  }
-  .home__name__header li:nth-child(4) {
-    padding: 20px 0 50px;
-  }
-  .home__name__header li:nth-child(4) a {
-    font-size: 10px;
-  }
-  .home__name__header li:nth-child(4) button {
-    padding: 3px 4px 5px 4px;
-  }
-}
-@media only screen and (max-width: 1080px) {
+
   .home__text {
     width: auto;
     margin: auto 20px;
@@ -1137,31 +1256,70 @@ form > label {
     padding-bottom: 20px;
   }
 }
+@media only screen and (max-width: 1080px) {
+  .home__name__header {
+    margin-top: 0px;
+  }
+  .home__name__header li:nth-child(1) {
+    animation: typing 2s steps(100, end) both;
+  }
+  .home__name__header li:nth-child(1) a {
+    font-size: 45px;
+    letter-spacing: 1px;
+  }
+  .home__name__header li:nth-child(2) {
+    animation: typing 2s steps(100, end) both;
+    animation-delay: 2s;
+    font-size: 26px;
+    letter-spacing: 1px;
+  }
+  .home__name__header li:nth-child(3) {
+    animation: typing 2s steps(100, end) both;
+    animation-delay: 4s;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 31px 0 20px;
+  }
+  .home__name__header li:nth-child(4) {
+    padding: 20px 0 50px;
+  }
+  .home__name__header li:nth-child(4) button {
+    font-size: 10px;
+  }
+}
 @media only screen and (max-width: 700px) {
+  .home__name__language {
+    display: none;
+  }
+
   .home__name {
     background-attachment: scroll;
     margin: 110px auto 20px;
   }
-  .home__name li:nth-child(1) {
+
+  .home__name__header {
+    margin-top: 0;
+  }
+  .home__name__header li:nth-child(1) {
     animation: typing 2s steps(100, end) both;
     margin: auto;
   }
-  .home__name li:nth-child(1) a {
+  .home__name__header li:nth-child(1) a {
     font-size: 40px;
   }
-  .home__name li:nth-child(2) {
+  .home__name__header li:nth-child(2) {
     animation: typing 2s steps(100, end) both;
     animation-delay: 2s;
     font-size: 22px;
   }
-  .home__name li:nth-child(3) {
+  .home__name__header li:nth-child(3) {
     animation: typing 2s steps(100, end) both;
     animation-delay: 4s;
     font-size: 20px;
-    padding: 30px 0 31.5px;
+    padding: 30px 0 0x;
   }
-  .home__name li:nth-child(4) {
-    padding: 30px 0;
+  .home__name__header li:nth-child(4) {
+    padding: 10px 0 30px;
   }
 
   .home__text {
