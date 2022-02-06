@@ -267,6 +267,7 @@ a {
   .nav__header {
     display: block;
     margin: auto;
+    padding-bottom: 0px;
   }
   .nav__header h3, .nav__header p {
     padding: 0px;
@@ -275,35 +276,36 @@ a {
 
   .nav__header__logo {
     height: 4rem;
-    position: absolute;
-    left: 5%;
-    bottom: 7px;
+    margin: 8px auto auto;
   }
 
   .nav {
     width: 100%;
-    height: 110px;
+    height: 95px;
     position: fixed;
   }
   .nav .nav__menu {
     position: fixed;
     left: -150%;
-    top: 110px;
+    top: 95px;
     z-index: 1;
     height: 100%;
     background-color: #464866;
     width: 100%;
     text-align: center;
     transition: 0.5s;
-    padding-top: 20px;
+    padding-top: 10px;
   }
   .nav .nav__menu h3, .nav .nav__menu p {
     visibility: visible;
     color: white;
     height: auto;
   }
+  .nav .nav__menu p {
+    margin-bottom: -10px;
+  }
   .nav .nav__menu .nav__menu__item {
-    padding: 5px 0;
+    padding: 2px 0;
   }
   .nav .nav__menu .nav__menu__item a {
     font-size: 20px;
@@ -317,18 +319,18 @@ a {
     visibility: visible;
     display: inline-block;
     position: absolute;
-    left: 100%;
-    bottom: 94px;
-    margin-left: -95px;
+    right: 80%;
+    bottom: 88px;
     font-size: 15px;
     color: white;
+    margin-right: -35px;
   }
 
   .nav__flag1 {
     width: 1.2rem;
     position: absolute;
     right: 107%;
-    top: 1px;
+    top: 2.3px;
   }
 
   .nav__name__language li {
@@ -350,9 +352,6 @@ a {
   .nav__name__language li ul li span {
     color: black;
     font-weight: bold;
-  }
-  .nav__name__language li ul li span:hover {
-    color: #FF0700;
   }
 
   .nav__name__language li:hover ul {
@@ -395,7 +394,7 @@ a {
     width: 20px;
     height: 15px;
     position: absolute;
-    top: 8px;
+    top: 9px;
     right: 67px;
     background-image: url("/img/germanflag.svg");
   }
@@ -406,7 +405,7 @@ a {
     border: 2px solid #FF0700;
     border-radius: 100%;
     width: 70%;
-    margin: auto;
+    margin-bottom: -2px;
   }
 
   .nav__horizontal__line2 {
@@ -422,8 +421,8 @@ a {
     cursor: pointer;
     display: block;
     position: absolute;
-    left: 48%;
-    top: 35%;
+    right: 15%;
+    top: 32%;
   }
 
   .drop__bar__line1, .drop__bar__line2, .drop__bar__line3 {
@@ -465,7 +464,7 @@ a {
     border-radius: 2px;
     color: #ffffff;
     font-size: 30px;
-    margin: auto 10px;
+    margin: auto 7px;
   }
   .nav__socialmedia a:hover {
     transform: scale(1.1);
@@ -641,6 +640,12 @@ form > label {
   .contact__text__phone__icon1:hover, .contact__text__email__icon2:hover {
     transform: none;
     cursor: auto;
+  }
+
+  input[type=submit]:hover {
+    background-color: #FF0700;
+    filter: none;
+    transform: none;
   }
 }
 .projects {
@@ -1239,7 +1244,7 @@ form > label {
     /* same sized column */
     column-gap: 100px;
     row-gap: 80px;
-    width: 90%;
+    width: 80%;
   }
 
   .home__skills__text3, .home__skills__img3 {
@@ -1286,6 +1291,10 @@ form > label {
   .home__name__header li:nth-child(4) button {
     font-size: 10px;
   }
+
+  .home__skills {
+    width: 90%;
+  }
 }
 @media only screen and (max-width: 700px) {
   .home__name__language {
@@ -1294,7 +1303,7 @@ form > label {
 
   .home__name {
     background-attachment: scroll;
-    margin: 110px auto 20px;
+    margin: 95px auto 20px;
   }
 
   .home__name__header {
@@ -1306,6 +1315,11 @@ form > label {
   }
   .home__name__header li:nth-child(1) a {
     font-size: 40px;
+  }
+  .home__name__header li:nth-child(1) a:hover {
+    color: white;
+    filter: none;
+    transform: none;
   }
   .home__name__header li:nth-child(2) {
     animation: typing 2s steps(100, end) both;
@@ -1321,6 +1335,11 @@ form > label {
   .home__name__header li:nth-child(4) {
     padding: 10px 0 30px;
   }
+  .home__name__header li:nth-child(4) button:hover {
+    background-color: #FF0700;
+    filter: none;
+    transform: none;
+  }
 
   .home__text {
     text-align: left;
@@ -1329,11 +1348,11 @@ form > label {
   }
 
   .home__skills {
-    grid-template-columns: repeat(1, 1fr);
-    /* same sized column */
-    width: 35%;
+    width: 80%;
     padding-bottom: 40px;
     row-gap: 55px;
+    column-gap: 30px;
+    margin: auto;
   }
 
   .home__skills__text1, .home__skills__text2, .home__skills__text3, .home__skills__text4 {
@@ -1342,21 +1361,6 @@ form > label {
   .home__skills__text1 p, .home__skills__text2 p, .home__skills__text3 p, .home__skills__text4 p {
     font-size: 20px;
     padding-top: 0px;
-  }
-
-  .home__skills__text2, .home__skills__img2 {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .home__skills__text3, .home__skills__img3 {
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-  .home__skills__text4, .home__skills__img4 {
-    grid-column: 1;
-    grid-row: 4;
   }
 
   .home__skills__img1, .home__skills__img2 {
@@ -1386,7 +1390,7 @@ form > label {
   }
 
   .home__skills__img4 {
-    top: 60%;
+    top: 65%;
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
