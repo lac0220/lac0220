@@ -4,7 +4,7 @@ var __webpack_exports__ = {};
   !*** ./src/js/script.js ***!
   \**************************/
 // navigation
-const dropBar = document.querySelector(".drop__bar");
+const dropBar = document.querySelector(".nav__dropbar");
 const navMenu = document.querySelector(".nav__menu");
 
 dropBar.addEventListener("click", mobileMenu);

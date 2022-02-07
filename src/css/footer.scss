@@ -7,3 +7,40 @@ $hover:#659DBD;
 $hover-menu:#FF0700;
 $text-color:white;
 
+footer {
+    display: flex;
+    flex-direction: column;
+    margin:auto -40px;
+    text-align: center;
+    background-color: $first-color;
+    padding: 10px 0 20px;
+  }
+  
+  .footer__socialmedia a {
+    display: inline-block;
+    border-radius: 2px;
+    color: $text-color;
+    margin: auto 10px;
+    font-size: 50px;
+    &:hover {
+      transform:scale(1.1); 
+      -webkit-transform:scale(1.1);
+      color: $hover-menu;
+    }
+  }
+  
+  .footer__copyright {
+    color: $text-color;
+  }
+  
+  @media screen and (max-width: 700px) { 
+  
+  footer {
+    margin:auto;
+  }
+  
+  .footer__copyright {
+    font-size: 16px;
+    }
+  }
+  
