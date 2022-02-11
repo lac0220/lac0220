@@ -465,7 +465,7 @@ form > label {
     padding: 15px 0 50px;
   }
   .contact__form {
-    width: 90%;
+    width: 70%;
     margin: auto;
     padding-bottom: 20px;
     font-size: 18px;
@@ -499,7 +499,16 @@ form > label {
     padding-top: 5px;
   }
 }
+@media only screen and (max-width: 900px) {
+  .contact__form {
+    width: 80%;
+  }
+}
 @media only screen and (max-width: 700px) {
+  .contact__form {
+    width: 90%;
+  }
+
   input[type=submit]:hover {
     background-color: #FF0700;
     filter: none;
