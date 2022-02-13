@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" media="screen" />
+    <link rel="shortcut icon" href="img/logofavicon.webp" type="image/webp" /> <!-- favicon -->
+
+    <title>Coffee shop website - images</title>
+
+<style>
+    
+
+    body {
+        margin: auto;
+        text-align: center;
+        background-color: #211A36;
+    }
+
+    .pictures {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+       
+    }
+
+    .pictures img {
+        max-width: 85%;
+        height: 100%;
+        padding: 20px 0; 
+    }
+
+    .mobile {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+    }
+        .mobile img {
+        max-width: 100%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .mobile h1 {
+        color:white;
+        font-weight: bold;
+        background-color:#659DBD;
+        padding:10px;
+        border-radius: 5px;
+    }
+    
+    .horizontal__line {
+    display: inline-block;
+    border: 2px solid #FF0700;
+    border-radius: 100%;
+    width: 70%;
+    margin: 20px auto;
+  }
+
+
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; /* Enable to scroll */
+        background-color: rgba(0,0,0,0.9); /* Black + opacity */
+    }
+      
+    .modal__content {
+        margin: auto;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+      
+    #caption {
+        margin: auto;
+        text-align: center;
+        color: white;
+        padding-top: 10px;
+    }
+      
+    .modal__content, #caption {  
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+      
+    @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+    }
+      
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: white;
+        font-size: 60px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+  
+
+</style>
+
+</head>
+<body>
+    <div class="pictures">
+    <div>
+        <img id="picture" class="images" src="img/coffee/coffehomepage.webp" alt="Coffee shop website"/>
+    </div>
+
+    <div>
+        <img id="picture" class="images" src="img/coffee/menu.webp" alt="Coffee shop website"/>
+    </div>
+
+    <div>
+        <img id="picture" class="images" src="img/coffee/coffee.webp" alt="Coffee shop website"/>
+    </div>
+
+    <div>
+        <img id="picture" class="images" src="img/coffee/ourstory.webp" alt="Coffee shop website"/>
+    </div>
+</div>
+
+<div class="mobile">  
+    <div>
+        <img id="picture" class="images" src="img/coffee/mobilehomepage.webp" alt="Coffee shop website"/>
+    </div>
+
+    <div>
+        <img id="picture" class="images" src="img/coffee/mobilemenu.webp" alt="Coffee shop website"/>
+    </div>
+
+    <div>
+        <img id="picture" class="images" src="img/coffee/mobilecoffee.webp" alt="Coffee shop website"/>
+    </div>
+
+    <div>
+        <img id="picture" class="images" src="img/coffee/mobileourstory.webp" alt="Coffee shop website"/>
+    </div>
+    </div>   
+    
+
+    <hr class="horizontal__line">
+
+
+
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal__content" id="img"/>
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        // project logo click
+let modal = document.getElementById('modal');
+let images = document.getElementsByClassName('images');
+let modalImg = document.getElementById("img");
+let captionText = document.getElementById("caption");
+
+for (let i = 0; i < images.length; i++) {
+  let img = images[i];
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+let span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+    </script>
+</body>
+</html>
