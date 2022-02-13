@@ -18,25 +18,4 @@ function mobileClose() {
     navMenu.classList.remove("active");
 }
 
-// project logo click
-let modal = document.getElementById('myModal');
-let images = document.getElementsByClassName('myImages');
-var modalImg = document.getElementById("img01");
-let captionText = document.getElementById("caption");
-
-for (let i = 0; i < images.length; i++) {
-  let img = images[i];
-  img.onclick = function(evt) {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-  }
-}
-
-let span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
 

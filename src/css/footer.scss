@@ -7,6 +7,7 @@ $hover:#659DBD;
 $hover-menu:#FF0700;
 $text-color:white;
 
+
 footer {
   display: flex;
   flex-direction: column;
@@ -38,9 +39,14 @@ footer {
 footer {
   margin:auto;
 }
+
+.footer__socialmedia a {
+  font-size: 30px;
+  }
   
 .footer__copyright {
   font-size: 16px;
   }
 }
   
+
