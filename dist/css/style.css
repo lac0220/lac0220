@@ -163,7 +163,7 @@ footer {
     visibility: visible;
     display: inline-block;
     position: absolute;
-    right: 8%;
+    right: 7%;
     top: 39%;
     font-size: 15px;
     color: white;
@@ -180,7 +180,7 @@ footer {
     right: -20px;
     display: block;
     background: white;
-    width: 60px;
+    width: 57px;
     padding-top: 0px;
     z-index: 1;
     border-radius: 5px;
@@ -223,7 +223,7 @@ footer {
   .nav__flag1 {
     width: 1.2rem;
     position: absolute;
-    right: 110%;
+    right: 115%;
     top: 2px;
   }
   .nav__flag2 {
@@ -232,7 +232,7 @@ footer {
     height: 19px;
     position: absolute;
     top: 4px;
-    right: 29px;
+    right: 27px;
     background-image: url("/img/germanflag.svg");
   }
   .nav__header__logo {
@@ -377,6 +377,7 @@ input[type=text], textarea {
   font-size: 22px;
   font-family: Georgia, "Times New Roman", Times, serif;
   resize: vertical;
+  outline: none;
 }
 input[type=text]:hover, textarea:hover {
   border: 2px solid #FF0700;
@@ -1030,35 +1031,28 @@ li:hover .home__triangle:after {
     row-gap: 55px;
     column-gap: 30px;
   }
-  .home__skills__text1, .home__skills__text2 {
-    height: 57%;
-  }
-  .home__skills__text1 p, .home__skills__text2 p {
-    font-size: 20px;
-    padding: 0px;
-  }
-  .home__skills__text3, .home__skills__text4 {
+  .home__skills__text1, .home__skills__text2, .home__skills__text3, .home__skills__text4 {
     height: 60%;
   }
-  .home__skills__text3 p, .home__skills__text4 p {
+  .home__skills__text1 p, .home__skills__text2 p, .home__skills__text3 p, .home__skills__text4 p {
     font-size: 20px;
     padding: 0px;
   }
   .home__skills__img1 {
-    top: 61%;
+    top: 65%;
     max-width: 50px;
   }
   .home__skills__img2 {
-    top: 62%;
+    top: 66%;
     max-width: 50px;
   }
   .home__skills__img3 {
-    top: 71%;
+    top: 67%;
     max-width: 55px;
   }
   .home__skills__img4 {
-    top: 69%;
-    max-width: 60px;
+    top: 67%;
+    max-width: 63px;
   }
 }
 * {
@@ -1159,13 +1153,17 @@ a {
   padding: 10px 20px;
   text-align: left;
 }
-.projects__portfolio__item a {
-  color: white;
+.projects__portfolio__socialmedia {
   cursor: pointer;
   font-weight: bold;
   font-size: 40px;
+  text-align: center;
+  padding-bottom: 10px;
 }
-.projects__portfolio__item a:hover {
+.projects__portfolio__socialmedia a {
+  color: white;
+}
+.projects__portfolio__socialmedia a:hover {
   color: #FF0700;
 }
 .projects__portfolio__flipbox {
@@ -1210,6 +1208,17 @@ a {
   transform: rotateY(180deg);
   z-index: 2;
 }
+.projects__portfolio__flipbox__back a {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  margin: auto;
+  position: relative;
+  top: 30%;
+}
+.projects__portfolio__flipbox__back a:active {
+  color: #FF0700;
+}
 .projects__portfolio__logo1, .projects__portfolio__logo2 {
   max-width: 70%;
   position: relative;
@@ -1230,16 +1239,6 @@ a {
   100% {
     transform: scale(1);
   }
-}
-.projects__web__img1 {
-  max-width: 90%;
-  position: relative;
-  top: 9%;
-}
-.projects__web__img2 {
-  max-width: 90%;
-  position: relative;
-  top: 14%;
 }
 
 @media only screen and (max-width: 1560px) {

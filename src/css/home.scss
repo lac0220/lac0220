@@ -37,7 +37,7 @@ $text-color:white;
     &__name__language li {
         cursor: pointer;
     }
-
+  
     & li ul {
         display: none;
     }
@@ -79,7 +79,7 @@ $text-color:white;
         width: 30px;
         background: transparent;
     }
-
+  
     li:hover &__triangle:after {
         content: '';
         display: block;
@@ -105,7 +105,7 @@ $text-color:white;
     &__name__header {
         margin-top:-19px;
         text-align: center;
-
+  
         li:nth-child(1) {
             overflow: hidden;
             white-space: nowrap;
@@ -198,12 +198,12 @@ $text-color:white;
         grid-column: 2;
         grid-row: 1;
     }
-
+  
     &__skills__text3, &__skills__img3 {
         grid-column: 3;
         grid-row: 1;
     }
-
+  
     &__skills__text4, &__skills__img4 {
         grid-column: 4;
         grid-row: 1;
@@ -255,52 +255,52 @@ $text-color:white;
         max-width: 73px;
         top:88%;
     }
-}
+  }
   
-@media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1200px) {
   
-.home__name__language {
+  .home__name__language {
     font-size: 15px;
     margin-left: -100px;
-}
+  }
   
-.home__flag1 {
+  .home__flag1 {
     width: 1.5rem;
-}
+  }
   
-.home__name__language li ul li {
+  .home__name__language li ul li {
     padding: 5px;
     font-size: 15px;
-}
+  }
     
-.home__name__language li:hover ul {
+  .home__name__language li:hover ul {
     top:48px;
     right:-20px;
     width: 100px;
-}
+  }
   
-.home__triangle {
+  .home__triangle {
     top: 37px;
     right: -11px;
-}
+  }
   
-.home__flag2 {
+  .home__flag2 {
     width: 22px;
     height: 16px;
     top: 8px;
     right: 73px;
-}
+  }
   
-.home__name__header {
+  .home__name__header {
     margin-top:-13px;
-}
+  }
   
-.home__text {
+  .home__text {
     width: auto;
     margin: auto 20px;
-}
+  }
   
-.home__skills {
+  .home__skills {
     grid-template-columns: repeat(2, 1fr);  /* same sized column */
     column-gap: 100px;
     row-gap: 80px;
@@ -315,7 +315,7 @@ $text-color:white;
         grid-column: 1;
         grid-row: 2;
     }
-
+  
     &__text4, &__img4 {
         grid-column: 2;
         grid-row: 2;
@@ -339,13 +339,13 @@ $text-color:white;
         top:82%;
     }
   }
-}
+  }
   
-@media only screen and (max-width: 1080px) {
+  @media only screen and (max-width: 1080px) {
   
-.home__name__header {
+  .home__name__header {
     margin-top: 0px;
-
+  
     li:nth-child(1) {
         animation: typing 2s steps(100, end) both;
         a {
@@ -353,7 +353,7 @@ $text-color:white;
             letter-spacing: 1px; 
         }
     }
-
+  
     li:nth-child(2) {
       animation: typing 2s steps(100, end) both;
       animation-delay: 2s;
@@ -375,20 +375,20 @@ $text-color:white;
             font-size: 10px;
         } 
     }  
-}
+  }
   
-.home__skills {
+  .home__skills {
     width: 90%;
-}
-}
+  }
+  }
   
-@media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 700px) {
   
-.home {
+  .home {
     padding-bottom: 20px;
-}
-
-.home__name {
+  }
+  
+  .home__name {
     background-attachment: scroll;
     margin: 95px auto 20px;
     background-size: 700px;
@@ -437,23 +437,15 @@ $text-color:white;
         margin: auto 25px;
         padding-bottom:20px;
     }
-}
+  }
   
-.home__skills {
+  .home__skills {
     width: 80%;
     padding-bottom: 40px;
     row-gap: 55px;
     column-gap: 30px;
   
-    &__text1, &__text2 {
-        height: 57%;
-        p {
-            font-size: 20px;
-            padding:0px ;
-        }
-    }
-  
-    &__text3, &__text4 {
+    &__text1, &__text2,  &__text3, &__text4 {
         height: 60%;
         p {
             font-size: 20px;
@@ -462,24 +454,24 @@ $text-color:white;
     }
   
     &__img1 {  
-        top:61%;
+        top:65%;
         max-width: 50px;
     }
   
     &__img2 {  
-        top:62%;
+        top:66%;
         max-width: 50px;
     }
   
     &__img3 {
-        top:71%;
+        top:67%;
         max-width: 55px;
     }
   
     &__img4 {
-        top:69%;
-        max-width: 60px;
+        top:67%;
+        max-width: 63px;
     } 
-}
-}
+  }
+  }
   

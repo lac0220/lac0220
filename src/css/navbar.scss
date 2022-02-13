@@ -145,7 +145,7 @@ $text-color:white;
     visibility: visible;
     display: inline-block;
     position: absolute;
-    right:8%;
+    right:7%;
     top:39%;
     font-size: 15px;
     color: $text-color;
@@ -161,7 +161,7 @@ $text-color:white;
       right:-20px;
       display: block;
       background: $text-color;
-      width: 60px;
+      width: 57px;
       padding-top: 0px;
       z-index: 1;
       border-radius:5px;
@@ -208,7 +208,7 @@ $text-color:white;
   &__flag1 {
     width: 1.2rem;
     position: absolute;
-    right:110%;
+    right:115%;
     top:2px;
   }
 
@@ -218,7 +218,7 @@ $text-color:white;
     height: 19px;
     position: absolute;
     top: 4px;
-    right: 29px;
+    right: 27px;
     background-image: url("/img/germanflag.svg");
   }
 
