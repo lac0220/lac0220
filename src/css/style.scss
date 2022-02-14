@@ -129,13 +129,13 @@ section p {
   }
 
   &__portfolio__socialmedia {
-    cursor: pointer;
     font-weight: bold;
     font-size: 40px;
     text-align: center;
     padding-bottom: 10px;
     a {
       color:$text-color;
+      cursor: pointer;
       &:hover {
           color: $hover-menu;
       }
@@ -145,7 +145,6 @@ section p {
   &__portfolio__flipbox {
       max-width: 200px;
       height: 200px;
-      cursor: pointer;
       margin: auto;
   }
     
@@ -174,16 +173,19 @@ section p {
   &__portfolio__flipbox__front1 {
       background-color: #d6c6b4;
       z-index: 1; //so pointer work properly on the back side
+      cursor: pointer;
   }
 
   &__portfolio__flipbox__front2 {
       background-color:#116466;
       z-index: 1; //so pointer work properly on the back side
+      cursor: pointer;
   }
 
   &__portfolio__flipbox__front3 {
       background-color:$text-color;
       z-index: 1; //so pointer work properly on the back side
+      cursor: pointer;
   }
     
   &__portfolio__flipbox__back {
@@ -197,7 +199,7 @@ section p {
         margin: auto;
         position: relative;
         top: 30%;
-        &:active {
+        &:hover {
           color: $hover-menu;
         }
       }
@@ -280,11 +282,34 @@ section p {
 .projects__portfolio__flipbox {
   max-width: 150px;
   height: 150px;
-  cursor: pointer;
   margin: auto;
 }
+
+
+.projects__portfolio__flipbox__back {
+    a {
+    position: relative;
+    top: 25%;
+    font-size: 18px;
+    &:hover {
+      color: $text-color;
+      filter: none;
+      transform: none;
+  
+   &:active {
+     color: $hover-menu;
+   }
+  }
 }
 } 
+}
+}
+
+
+
+
+
+
 
 
 
