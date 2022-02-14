@@ -1019,7 +1019,8 @@ li:hover .home__triangle:after {
   .home__name__header li:nth-child(4) button:hover:active {
     color: lightskyblue;
   }
-  .home__name__text {
+
+  .home__text {
     text-align: left;
     margin: auto 25px;
     padding-bottom: 20px;
@@ -1033,6 +1034,7 @@ li:hover .home__triangle:after {
   }
   .home__skills__text1, .home__skills__text2, .home__skills__text3, .home__skills__text4 {
     height: 60%;
+    padding-top: 2px;
   }
   .home__skills__text1 p, .home__skills__text2 p, .home__skills__text3 p, .home__skills__text4 p {
     font-size: 20px;
@@ -1047,7 +1049,7 @@ li:hover .home__triangle:after {
     max-width: 50px;
   }
   .home__skills__img3 {
-    top: 67%;
+    top: 68%;
     max-width: 55px;
   }
   .home__skills__img4 {
@@ -1154,7 +1156,6 @@ a {
   text-align: left;
 }
 .projects__portfolio__socialmedia {
-  cursor: pointer;
   font-weight: bold;
   font-size: 40px;
   text-align: center;
@@ -1162,6 +1163,7 @@ a {
 }
 .projects__portfolio__socialmedia a {
   color: white;
+  cursor: pointer;
 }
 .projects__portfolio__socialmedia a:hover {
   color: #FF0700;
@@ -1169,7 +1171,6 @@ a {
 .projects__portfolio__flipbox {
   max-width: 200px;
   height: 200px;
-  cursor: pointer;
   margin: auto;
 }
 .projects__portfolio__flipbox__inner {
@@ -1194,14 +1195,17 @@ a {
 .projects__portfolio__flipbox__front1 {
   background-color: #d6c6b4;
   z-index: 1;
+  cursor: pointer;
 }
 .projects__portfolio__flipbox__front2 {
   background-color: #116466;
   z-index: 1;
+  cursor: pointer;
 }
 .projects__portfolio__flipbox__front3 {
   background-color: white;
   z-index: 1;
+  cursor: pointer;
 }
 .projects__portfolio__flipbox__back {
   background-color: #659DBD;
@@ -1216,7 +1220,7 @@ a {
   position: relative;
   top: 30%;
 }
-.projects__portfolio__flipbox__back a:active {
+.projects__portfolio__flipbox__back a:hover {
   color: #FF0700;
 }
 .projects__portfolio__logo1, .projects__portfolio__logo2 {
@@ -1286,8 +1290,21 @@ a {
   .projects__portfolio__flipbox {
     max-width: 150px;
     height: 150px;
-    cursor: pointer;
     margin: auto;
+  }
+
+  .projects__portfolio__flipbox__back a {
+    position: relative;
+    top: 25%;
+    font-size: 18px;
+  }
+  .projects__portfolio__flipbox__back a:hover {
+    color: white;
+    filter: none;
+    transform: none;
+  }
+  .projects__portfolio__flipbox__back a:hover:active {
+    color: #FF0700;
   }
 }
 /*# sourceMappingURL=style.css.map */
