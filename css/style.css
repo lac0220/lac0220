@@ -124,6 +124,7 @@ footer {
   .nav {
     width: 100%;
     height: 95px;
+    border-bottom: 0.5px solid white;
   }
   .nav__header {
     margin: auto;
@@ -143,21 +144,21 @@ footer {
   .nav__dropbar .nav__dropbar__line1, .nav__dropbar .nav__dropbar__line2, .nav__dropbar .nav__dropbar__line3 {
     display: block;
     width: 30px;
-    height: 4px;
+    height: 3px;
     margin: 6px auto;
     background-color: white;
     transition: 0.4s;
   }
   .nav .change .nav__dropbar__line1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 9px);
-    transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-7px, 6px);
   }
   .nav .change .nav__dropbar__line2 {
     opacity: 0;
   }
   .nav .change .nav__dropbar__line3 {
     -webkit-transform: rotate(45deg) translate(-9px, -9px);
-    transform: rotate(45deg) translate(-8px, -6px);
+    transform: rotate(45deg) translate(-7px, -6px);
   }
   .nav__name__language {
     visibility: visible;
@@ -553,6 +554,14 @@ form > label {
 .aboutme p {
   text-align: justify;
   padding: 5px 0;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-limit-before: 3;
+  -webkit-hyphenate-limit-after: 3;
+  -webkit-hyphenate-limit-chars: 6 3 3;
+  -webkit-hyphenate-limit-lines: 2;
+  -webkit-hyphenate-limit-last: always;
+  -webkit-hyphenate-limit-zone: 8%;
 }
 .aboutme__photo {
   margin: 0 40px 0 20px;
@@ -897,11 +906,11 @@ li:hover .home__triangle:after {
 }
 .home__flag2 {
   display: inline-block;
-  width: 25px;
-  height: 19px;
+  width: 29px;
+  height: 22px;
   position: absolute;
-  top: 12px;
-  right: 84px;
+  top: 10px;
+  right: 82px;
   background-image: url("/img/germanflag.svg");
 }
 .home__name__header {
@@ -940,7 +949,7 @@ li:hover .home__triangle:after {
   white-space: nowrap;
   letter-spacing: 5px;
   animation: typing 5s steps(100, end) both;
-  animation-delay: 4s;
+  animation-delay: 4.5s;
   font-size: 30px;
   padding: 28px 0 40px;
   margin: auto;
@@ -978,6 +987,14 @@ li:hover .home__triangle:after {
   width: 80%;
   margin: auto;
   padding-bottom: 30px;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-limit-before: 3;
+  -webkit-hyphenate-limit-after: 3;
+  -webkit-hyphenate-limit-chars: 6 3 3;
+  -webkit-hyphenate-limit-lines: 2;
+  -webkit-hyphenate-limit-last: always;
+  -webkit-hyphenate-limit-zone: 8%;
 }
 .home__skills {
   display: grid;
@@ -1073,10 +1090,10 @@ li:hover .home__triangle:after {
   }
 
   .home__flag2 {
-    width: 22px;
-    height: 16px;
-    top: 8px;
-    right: 73px;
+    width: 23px;
+    height: 17px;
+    top: 7px;
+    right: 71px;
   }
 
   .home__name__header {
@@ -1125,20 +1142,20 @@ li:hover .home__triangle:after {
     margin-top: 0px;
   }
   .home__name__header li:nth-child(1) {
-    animation: typing 2s steps(100, end) both;
+    animation: typing 3s steps(100, end) both;
   }
   .home__name__header li:nth-child(1) a {
     font-size: 45px;
     letter-spacing: 1px;
   }
   .home__name__header li:nth-child(2) {
-    animation: typing 2s steps(100, end) both;
+    animation: typing 3s steps(100, end) both;
     animation-delay: 2s;
     font-size: 26px;
     letter-spacing: 1px;
   }
   .home__name__header li:nth-child(3) {
-    animation: typing 2s steps(100, end) both;
+    animation: typing 3s steps(100, end) both;
     animation-delay: 4s;
     font-size: 24px;
     letter-spacing: 1px;
