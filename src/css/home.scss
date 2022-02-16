@@ -94,11 +94,11 @@ $text-color:white;
   
     &__flag2 {
         display: inline-block;
-        width: 25px;
-        height: 19px;
+        width: 29px;
+        height: 22px;
         position: absolute;
-        top: 12px;
-        right: 84px;
+        top: 10px;
+        right: 82px;
         background-image: url("/img/germanflag.svg");
     }
   
@@ -140,7 +140,7 @@ $text-color:white;
             white-space: nowrap;
             letter-spacing: 5px; 
             animation: typing 5s steps(100, end) both;
-            animation-delay: 4s;
+            animation-delay: 4.5s;
             font-size: 30px;
             padding: 28px 0 40px;
             margin: auto;
@@ -178,6 +178,14 @@ $text-color:white;
         width: 80%;
         margin: auto;
         padding-bottom:30px;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        -webkit-hyphenate-limit-before: 3;
+        -webkit-hyphenate-limit-after: 3;
+        -webkit-hyphenate-limit-chars: 6 3 3;
+        -webkit-hyphenate-limit-lines: 2;
+        -webkit-hyphenate-limit-last: always;
+        -webkit-hyphenate-limit-zone: 8%;
     }
   
     &__skills {
@@ -285,10 +293,10 @@ $text-color:white;
 }
   
 .home__flag2 {
-    width: 22px;
-    height: 16px;
-    top: 8px;
-    right: 73px;
+    width: 23px;
+    height: 17px;
+    top: 7px;
+    right: 71px;
 }
   
 .home__name__header {
@@ -347,7 +355,7 @@ $text-color:white;
     margin-top: 0px;
   
     li:nth-child(1) {
-        animation: typing 2s steps(100, end) both;
+        animation: typing 3s steps(100, end) both;
         a {
             font-size: 45px;
             letter-spacing: 1px; 
@@ -355,14 +363,14 @@ $text-color:white;
     }
   
     li:nth-child(2) {
-      animation: typing 2s steps(100, end) both;
+      animation: typing 3s steps(100, end) both;
       animation-delay: 2s;
       font-size: 26px;
       letter-spacing: 1px; 
     }
   
     li:nth-child(3) {
-      animation: typing 2s steps(100, end) both;
+      animation: typing 3s steps(100, end) both;
       animation-delay: 4s;
       font-size: 24px;
       letter-spacing: 1px; 
@@ -370,16 +378,16 @@ $text-color:white;
     } 
   
     li:nth-child(4) {   
-      padding: 20px 0 50px;
+        padding: 20px 0 50px;
         button {
             font-size: 10px;
         } 
     }  
-  }
+}
   
 .home__skills {
     width: 90%;
-}
+  }
 }
   
 @media only screen and (max-width: 700px) {

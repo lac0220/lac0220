@@ -99,7 +99,7 @@
 
         @media screen and (max-width: 1000px) {
     
-            .pictures {
+        .pictures {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             row-gap: 40px;
@@ -113,28 +113,27 @@
             border: 3px solid transparent;
         }
         }
-    
 
         @media screen and (max-width: 500px) {
     
-            .mobile img {
-            max-width: 80%;
-        }
-
         .mobile h1 {
             font-size: 25px;
         }
-        
+
+        .mobile img {
+            max-width: 80%;
+        }
+
         .pictures img:hover {
             transition: none;
             filter: none;
             border: 3px solid #211A36;
-
         }
+
         .pictures img:active {
             border:3px solid #FF0700;
         }
-}
+        }
     </style>
 </head>
 
@@ -162,7 +161,7 @@
     <div class="mobile"> 
         <h1>Mobile version</h1> 
         <div>
-            <img src="img/coffee/mobilehomepage.webp" alt="Coffee shop website"/>
+            <img src="img/coffee/mobilehomepage.webp" alt="Homepage mobile"/>
         </div>
     </div>   
     
@@ -189,7 +188,7 @@
         span.onclick = function() {
         modal.style.display = "none";
         }
-
+        
     </script>
 </body>
 </html>
