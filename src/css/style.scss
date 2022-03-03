@@ -13,7 +13,7 @@ $second-color: #464866;
 $third-color: #211A36;	
 $contact-form: #edf5e1;
 $main-font: Georgia, 'Times New Roman', Times, serif;
-$hover:#659DBD;
+$hover:#2079AC;
 $hover-menu:#FF0700;
 $text-color:white;
 
@@ -23,19 +23,26 @@ $text-color:white;
     box-sizing: border-box;
   }
   
-  
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1.25rem;
+}
+
 html, body {
   line-height: 1.5;
-  font-size: 20px;
   font-family:$main-font;
   height: 100vh;
   margin-left: 100px;
   padding: 0 20px;   
   background: $third-color;
+  scroll-behavior: smooth;
 }
 
 section h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
   padding: 10px;
   color: $text-color;						
@@ -77,12 +84,12 @@ html, body {
 }
 
 section h1 {
-  font-size: 30px;
+  font-size: 1.875rem;
   padding: 0px;	
 }
 
 section p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 }
   
@@ -145,12 +152,9 @@ section p {
 
 
 
-
-
-
-
-
-
+  
+  
+  
 
 
 

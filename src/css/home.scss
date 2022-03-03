@@ -3,7 +3,7 @@ $second-color: #464866;
 $third-color: #211A36;	
 $contact-form: #edf5e1;
 $main-font: Georgia, 'Times New Roman', Times, serif;
-$hover:#659DBD;
+$hover:#2079AC;
 $hover-menu:#FF0700;
 $text-color:white;
 
@@ -26,15 +26,15 @@ $text-color:white;
         left:100%;
         padding-top:25px;
         margin-left: -130px;
-    }
-  
+    
     &__flag1 {
-        width: 2rem;
+        width: 3rem;
         position: absolute;
-        right:116%;
+        right:115%;
+        top:22px;
     }
   
-    &__name__language li {
+    & li {
         cursor: pointer;
     }
   
@@ -47,7 +47,7 @@ $text-color:white;
         text-align: left;
         padding: 10px 15px;
         z-index: 2;
-        font-size: 16px;
+        font-size: 1rem;
         margin-left: 28px;
         span {
         color: black;
@@ -101,23 +101,21 @@ $text-color:white;
         right: 82px;
         background-image: url("/img/germanflag.svg");
     }
+}
   
     &__name__header {
         margin-top:-19px;
         text-align: center;
-  
         li:nth-child(1) {
             overflow: hidden;
             white-space: nowrap;
             letter-spacing: 5px; 
             animation: typing 5s steps(100, end) both;
-            font-size: 60px;
+            font-size: 3.75rem;
             margin: auto;
             a {
                 color: $text-color;
-                font-size: 60px;
                 font-weight: bold;
-                letter-spacing: 5px; 
                 &:hover {
                     color: lightcoral;
                     filter: drop-shadow(1px 1px 5px $hover-menu);
@@ -131,7 +129,7 @@ $text-color:white;
             letter-spacing: 5px; 
             animation: typing 5s steps(100, end) both;
             animation-delay: 2s;
-            font-size: 40px;
+            font-size: 2.5rem;
             margin: -10px auto auto;
         }  
   
@@ -141,7 +139,7 @@ $text-color:white;
             letter-spacing: 5px; 
             animation: typing 5s steps(100, end) both;
             animation-delay: 4.5s;
-            font-size: 30px;
+            font-size: 1.875rem;
             padding: 28px 0 40px;
             margin: auto;
             font-style: italic;     
@@ -152,7 +150,7 @@ $text-color:white;
             button {
                 font-weight: bold;
                 font-family:Georgia, 'Times New Roman', Times, serif;
-                font-size: 14px;
+                font-size: 0.875rem;
                 letter-spacing: 1px; 
                 padding:5px 7px;
                 background-color: $hover-menu;
@@ -195,29 +193,28 @@ $text-color:white;
         width: 80%;
         margin: auto;
         padding-bottom: 50px;
-    }
   
-    &__skills__text1, &__skills__img1 {
+    &__text1, &__img1 {
         grid-column: 1;
         grid-row: 1;
     }
   
-    &__skills__text2, &__skills__img2 {
+    &__text2, &__img2 {
         grid-column: 2;
         grid-row: 1;
     }
   
-    &__skills__text3, &__skills__img3 {
+    &__text3, &__img3 {
         grid-column: 3;
         grid-row: 1;
     }
   
-    &__skills__text4, &__skills__img4 {
+    &__text4, &__img4 {
         grid-column: 4;
         grid-row: 1;
     }
   
-    &__skills__text1, &__skills__text2, &__skills__text3, &__skills__text4 {
+    &__text1, &__text2, &__text3, &__text4 {
         border-radius: 5px;
         background-color: $hover;
         border-bottom-style: solid;
@@ -226,14 +223,14 @@ $text-color:white;
         p {
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
-            font-size: 25px;
+            font-size: 1.563rem;
             color: $text-color;
             font-weight: bold;
             padding-top:5px;
         }
     }
   
-    &__skills__img1, &__skills__img2,  &__skills__img3,  &__skills__img4 {
+    &__img1, &__img2,  &__img3,  &__img4 {
         height: auto;
         margin: auto;
         position: relative;
@@ -244,157 +241,159 @@ $text-color:white;
         transition: all 1s ease;
     }
   
-    &__skills__img1 {
+    &__img1 {
         max-width: 60px;
         top:89%;
     }
   
-    &__skills__img2 {
+    &__img2 {
         max-width: 60px;
         top:90%;
     }
   
-    &__skills__img3 {
+    &__img3 {
         max-width: 65px;
         top:90%;
     }
   
-    &__skills__img4 {
+    &__img4 {
         max-width: 73px;
         top:88%;
     }
-  }
+}
+}
   
 @media only screen and (max-width: 1200px) {
   
 .home__name__language {
-    font-size: 15px;
+    font-size: 0.938rem;
     margin-left: -100px;
-}
   
-.home__flag1 {
-    width: 1.5rem;
-}
-  
-.home__name__language li ul li {
-    padding: 5px;
-    font-size: 15px;
+    &__flag1 {
+        width: 2rem;
+        top:23px;
+    }
+    
+    & li ul li {
+        padding: 5px;
+        font-size: 0.938rem;
+    }
+        
+    & li:hover ul {
+        top:48px;
+        right:-20px;
+        width: 100px;
+    }
+    
+    &__triangle {
+        top: 37px;
+        right: -11px;
+    }
+    
+    &__flag2 {
+        width: 23px;
+        height: 17px;
+        top: 7px;
+        right: 71px;
+    }
 }
     
-.home__name__language li:hover ul {
-    top:48px;
-    right:-20px;
-    width: 100px;
-}
-  
-.home__triangle {
-    top: 37px;
-    right: -11px;
-}
-  
-.home__flag2 {
-    width: 23px;
-    height: 17px;
-    top: 7px;
-    right: 71px;
-}
-  
 .home__name__header {
     margin-top:-13px;
 }
-  
+    
 .home__text {
     width: auto;
     margin: auto 20px;
 }
-  
+    
 .home__skills {
     grid-template-columns: repeat(2, 1fr);  /* same sized column */
     column-gap: 100px;
     row-gap: 80px;
-    
+        
     &__text1, &__text2, &__text3, &__text4 {
         p {
             padding-bottom:20px;
         }
     }
-  
+    
     &__text3, &__img3 {
         grid-column: 1;
         grid-row: 2;
     }
-  
+    
     &__text4, &__img4 {
         grid-column: 2;
         grid-row: 2;
     }
-  
+    
     &__text1, &__text2 {
         height: 67%;
     }
-  
+    
     &__text3, &__text4 {
         height: 72%;
     }
-  
+    
     &__img1 {
         max-width: 60px;
         top:81%;
     }
-    
+        
     &__img2 {
         max-width: 60px;
         top:82%;
     }
-  }
 }
-  
+}
+    
 @media only screen and (max-width: 1080px) {
-  
+    
 .home__name__header {
     margin-top: 0px;
-  
+    
     li:nth-child(1) {
         animation: typing 3s steps(100, end) both;
         a {
-            font-size: 45px;
+            font-size: 2.813rem;
             letter-spacing: 1px; 
         }
     }
-  
+    
     li:nth-child(2) {
-      animation: typing 3s steps(100, end) both;
-      animation-delay: 2s;
-      font-size: 26px;
-      letter-spacing: 1px; 
-    }
-  
+        animation: typing 3s steps(100, end) both;
+        animation-delay: 2s;
+        font-size: 1.625rem;
+        letter-spacing: 1px; 
+        }
+    
     li:nth-child(3) {
-      animation: typing 3s steps(100, end) both;
-      animation-delay: 4s;
-      font-size: 24px;
-      letter-spacing: 1px; 
-      padding: 31px 0 20px;
-    } 
-  
+        animation: typing 3s steps(100, end) both;
+        animation-delay: 4s;
+        font-size: 1.5rem;
+        letter-spacing: 1px; 
+        padding: 30px 0 20px;
+        } 
+    
     li:nth-child(4) {   
         padding: 20px 0 50px;
         button {
-            font-size: 10px;
+            font-size: 0.800rem;
         } 
     }  
 }
-  
+    
 .home__skills {
     width: 90%;
-  }
+}
 }
   
 @media only screen and (max-width: 700px) {
   
 .home {
     padding-bottom: 20px;
-}
+    }
   
 .home__name {
     background-attachment: scroll;
@@ -410,34 +409,36 @@ $text-color:white;
         li:nth-child(1) {
             animation: typing 2s steps(100, end) both;
             a {
-                font-size: 40px;
+                font-size: 2.5rem;
             }
         }
   
         li:nth-child(2) {
             animation: typing 2s steps(100, end) both;
+            font-size: 1.375rem;
             animation-delay: 2s;
-            font-size: 22px;
         }  
   
         li:nth-child(3) {
             animation: typing 2s steps(100, end) both;
-            animation-delay: 4s;
-            font-size: 17px;
+            font-size: 1.063rem;
             padding: 30px 0 0x;
+            animation-delay: 4s;
         } 
   
         li:nth-child(4) {   
             padding: 10px 0 30px;
-            button:hover {
-                background-color: $hover-menu;
-                filter: none;
-                transform: none;
-                &:active {
-                    color:lightskyblue;
+            button {
+                font-size: 0.650rem;
+                &:hover {
+                    background-color: $hover-menu;
+                    filter: none;
+                    &:active {
+                        color:lightskyblue;
+                    }
                 }
-            }
-        }  
+            }  
+        }
     }
 }
   
@@ -445,6 +446,7 @@ $text-color:white;
     text-align: left;    
     margin: auto 25px;
     padding-bottom:20px;
+    hyphens: none;
 }
   
 .home__skills {
@@ -457,7 +459,7 @@ $text-color:white;
         height: 60%;
         padding-top: 2px;
         p {
-            font-size: 20px;
+            font-size: 1.25rem;
             padding:0px ;
         }
     }
@@ -481,7 +483,5 @@ $text-color:white;
         top:67%;
         max-width: 63px;
     } 
-  }
 }
-  
-  
+}

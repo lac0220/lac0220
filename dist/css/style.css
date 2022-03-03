@@ -12,7 +12,7 @@ footer {
   border-radius: 2px;
   color: white;
   margin: auto 10px;
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 .footer__socialmedia a:hover {
   transform: scale(1.1);
@@ -30,11 +30,11 @@ footer {
   }
 
   .footer__socialmedia a {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .footer__copyright {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 .nav {
@@ -50,40 +50,38 @@ footer {
   display: block;
   text-align: center;
   padding-bottom: 38px;
-}
-.nav__header a {
-  height: 100%;
-  width: 100%;
+  color: white;
 }
 .nav__header h3 {
-  color: white;
   padding: 25px 0 6px;
-}
-.nav__header p {
-  color: white;
 }
 .nav__header__dropbar {
   display: none;
 }
-.nav__name__language {
+.nav__language {
   visibility: hidden;
   height: 0;
   height: 0;
 }
-.nav__header__logo {
-  height: 6rem;
-  margin: 55.5px 0 8px;
+.nav__logo {
+  margin: 60px auto 12px;
+}
+.nav__logo img {
+  height: 7rem;
 }
 .nav__menu {
   background-color: #464866;
   display: block;
   text-align: center;
-  height: 100%;
+  height: 100vh;
   padding: 10px 0;
 }
 .nav__menu h3, .nav__menu p {
   visibility: hidden;
   height: 0;
+}
+.nav__menu__horizontalline1, .nav__menu__horizontalline2 {
+  visibility: hidden;
 }
 .nav__menu__item {
   padding: 15px 0;
@@ -92,32 +90,28 @@ footer {
 .nav__menu__item a {
   font-weight: bold;
   color: white;
-  font-size: 25px;
+  font-size: 1.563rem;
 }
 .nav__menu__item a:hover {
   color: #FF0700;
 }
-.nav__socialmedia {
+.nav__menu__socialmedia {
   text-align: center;
   background-color: #0C0032;
   margin-top: 15px;
-  height: 100%;
+  height: 100vh;
   padding-top: 10px;
 }
-.nav__socialmedia a {
+.nav__menu__socialmedia a {
   border-radius: 2px;
   color: white;
-  font-size: 30px;
+  font-size: 1.875rem;
   margin: auto 10px;
 }
-.nav__socialmedia a:hover {
+.nav__menu__socialmedia a:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   color: #FF0700;
-}
-
-.nav__horizontal__line1, .nav__horizontal__line2 {
-  visibility: hidden;
 }
 
 @media screen and (max-width: 700px) {
@@ -141,7 +135,7 @@ footer {
     left: 10%;
     top: 32%;
   }
-  .nav__dropbar .nav__dropbar__line1, .nav__dropbar .nav__dropbar__line2, .nav__dropbar .nav__dropbar__line3 {
+  .nav__dropbar__line1, .nav__dropbar__line2, .nav__dropbar__line3 {
     display: block;
     width: 30px;
     height: 3px;
@@ -149,33 +143,34 @@ footer {
     background-color: white;
     transition: 0.4s;
   }
-  .nav .change .nav__dropbar__line1 {
+  .change .nav__line1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 9px);
     transform: rotate(-45deg) translate(-7px, 6px);
   }
-  .nav .change .nav__dropbar__line2 {
+  .change .nav__line2 {
     opacity: 0;
   }
-  .nav .change .nav__dropbar__line3 {
+  .change .nav__line3 {
     -webkit-transform: rotate(45deg) translate(-9px, -9px);
     transform: rotate(45deg) translate(-7px, -6px);
   }
-  .nav__name__language {
+
+  .nav__language {
     visibility: visible;
     display: inline-block;
     position: absolute;
     right: 7%;
     top: 39%;
-    font-size: 15px;
+    font-size: 0.938rem;
     color: white;
   }
-  .nav__name__language li {
+  .nav__language li {
     cursor: pointer;
   }
-  .nav__name__language li ul {
+  .nav__language li ul {
     display: none;
   }
-  .nav__name__language li:hover ul {
+  .nav__language li:hover ul {
     position: absolute;
     top: 23px;
     right: -20px;
@@ -186,21 +181,21 @@ footer {
     z-index: 1;
     border-radius: 5px;
   }
-  .nav__name__language li ul li {
+  .nav__language li ul li {
     position: relative;
     text-align: right;
     padding: 5px;
     z-index: 2;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
-  .nav__name__language li ul li span {
+  .nav__language li ul li span {
     color: black;
     font-weight: bold;
   }
-  .nav__name__language li ul li span:active {
+  .nav__language li ul li span:active {
     color: #FF0700;
   }
-  .nav__triangle {
+  .nav__language__triangle {
     position: absolute;
     top: 12px;
     right: -11px;
@@ -210,7 +205,7 @@ footer {
     width: 30px;
     background: transparent;
   }
-  li:hover .nav__triangle:after {
+  li:hover .nav__language__triangle:after {
     content: "";
     display: block;
     z-index: 20;
@@ -221,13 +216,13 @@ footer {
     border-radius: 2px 0px 0px 0px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   }
-  .nav__flag1 {
-    width: 1.2rem;
+  .nav__language__flag1 {
+    width: 1.8rem;
     position: absolute;
     right: 115%;
-    top: 2px;
+    top: 0;
   }
-  .nav__flag2 {
+  .nav__language__flag2 {
     display: inline-block;
     width: 25px;
     height: 19px;
@@ -236,21 +231,21 @@ footer {
     right: 27px;
     background-image: url("/img/germanflag.svg");
   }
-  .nav__header__logo {
-    height: 4rem;
+
+  .nav__logo {
     margin: 8px auto auto;
   }
+  .nav__logo img {
+    height: 5rem;
+  }
+
   .nav__menu {
     position: fixed;
     left: -150%;
     top: 95px;
     z-index: 1;
-    height: 100%;
-    background-color: #464866;
     width: 100%;
-    text-align: center;
     transition: 0.5s;
-    padding-top: 10px;
   }
   .nav__menu h3, .nav__menu p {
     visibility: visible;
@@ -264,38 +259,29 @@ footer {
     padding: 5px 0;
   }
   .nav__menu__item a {
-    font-size: 20px;
-    color: white;
+    font-size: 1.25rem;
   }
-  .nav__menu__item a:hover {
-    color: #FF0700;
-  }
-
-  .nav__horizontal__line1, .nav__horizontal__line2 {
+  .nav__menu__horizontalline1, .nav__menu__horizontalline2 {
     visibility: visible;
     display: inline-block;
     border: 2px solid #FF0700;
     border-radius: 100%;
     width: 70%;
   }
-
-  .nav__horizontal__line1 {
+  .nav__menu__horizontalline1 {
     margin-bottom: -2px;
   }
-
-  .nav__horizontal__line2 {
+  .nav__menu__horizontalline2 {
     margin-bottom: 10px;
   }
-
-  .nav__socialmedia {
+  .nav__menu__socialmedia {
     margin-top: -10px;
     padding-top: 0px;
     height: 0;
   }
-  .nav__socialmedia a {
+  .nav__menu__socialmedia a {
     margin: auto 7px;
   }
-
   .nav__menu.active {
     left: 0;
   }
@@ -311,12 +297,12 @@ footer {
 .message__smile {
   max-width: 100px;
   position: absolute;
-  right: 80px;
-  bottom: 190px;
+  right: 0;
+  bottom: 220px;
 }
 .message h1, .message h2 {
   color: white;
-  padding: 20px 0;
+  padding: 25px 0;
 }
 .message a {
   color: lightblue;
@@ -331,11 +317,11 @@ footer {
   }
   .message__smile {
     position: relative;
-    right: 0px;
+    right: 0;
     top: 5px;
   }
-  .message h1 {
-    padding: 0;
+  .message h1, .message h2 {
+    padding: 15px 0;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -344,12 +330,12 @@ footer {
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 1.563rem;
     padding: 20px 0;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 0;
   }
 }
@@ -361,21 +347,21 @@ footer {
 }
 .contact__form {
   width: 37%;
-  font-size: 22px;
+  font-size: 1.375rem;
   display: block;
 }
 
 input[type=text], textarea {
   display: flex;
   flex-direction: column;
-  background-color: #659DBD;
+  background-color: #2079AC;
   color: white;
   width: 100%;
   padding: 12px;
-  border: 2px solid #659DBD;
+  border: 2px solid #2079AC;
   border-radius: 15px;
   margin: 6px 0 16px;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   resize: vertical;
   outline: none;
@@ -392,15 +378,13 @@ input[type=submit] {
   background-color: #FF0700;
   color: white;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 50px;
   border: 2px solid #464866;
   cursor: pointer;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: Georgia, "Times New Roman", Times, serif;
   width: 30%;
-  position: relative;
-  left: 35%;
 }
 input[type=submit]:hover {
   background-color: lightcoral;
@@ -408,6 +392,10 @@ input[type=submit]:hover {
 }
 input[type=submit]:hover:active {
   color: lightskyblue;
+}
+
+.contact__submit {
+  text-align: center;
 }
 
 form > label {
@@ -432,7 +420,7 @@ form > label {
   columns: 1;
   row-gap: 22px;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 .contact__text p {
   text-align: center;
@@ -449,20 +437,25 @@ form > label {
 }
 
 .contact__text__phone__icon1, .contact__text__email__icon2 {
-  font-size: 80px;
+  font-size: 5rem;
   -webkit-transition: all 1s ease;
   /*reversed animation on mouse out events*/
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
-  color: #659DBD;
+  color: #2079AC;
 }
 .contact__text__phone__icon1:hover, .contact__text__email__icon2:hover {
   transform: scale(1.3);
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1400px) {
+  input[type=submit] {
+    width: 40%;
+  }
+}
 @media only screen and (max-width: 1100px) {
   .contact {
     flex-direction: column;
@@ -472,11 +465,6 @@ form > label {
     width: 70%;
     margin: auto;
     padding-bottom: 20px;
-    font-size: 18px;
-  }
-
-  input[type=text], input[type=submit], textarea {
-    font-size: 18px;
   }
 
   .contact__vertical__line {
@@ -495,9 +483,6 @@ form > label {
     padding-top: 20px;
     row-gap: 30px;
   }
-  .contact__text p {
-    font-size: 20px;
-  }
   .contact__text__address p:nth-child(2) {
     padding-top: 5px;
   }
@@ -511,15 +496,19 @@ form > label {
   .contact__form {
     width: 90%;
     padding: 0;
+    font-size: 1.125rem;
+  }
+
+  input[type=text], input[type=submit], textarea {
+    font-size: 1.125rem;
   }
 
   input[type=submit] {
-    padding: 5px;
+    padding: 8px;
   }
   input[type=submit]:hover {
     background-color: #FF0700;
     filter: none;
-    transform: none;
   }
 
   .contact__horizontal__line {
@@ -531,11 +520,11 @@ form > label {
     padding-top: 0px;
   }
   .contact__text p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .contact__text__phone__icon1, .contact__text__email__icon2 {
-    font-size: 60px;
+    font-size: 3.75rem;
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
@@ -567,7 +556,7 @@ form > label {
   margin: 0 40px 0 20px;
   float: left;
 }
-.aboutme__img {
+.aboutme__photo img {
   max-width: 300px;
   height: auto;
   border-radius: 50%;
@@ -587,15 +576,17 @@ form > label {
   .aboutme__photo {
     margin: auto;
     padding-top: 20px;
+    float: none;
   }
 }
 @media only screen and (max-width: 700px) {
   .aboutme {
     margin: 0 25px;
-    padding-bottom: 20px;
+    padding: 20 20px;
   }
   .aboutme__text p {
     text-align: left;
+    hyphens: none;
   }
 }
 .projects {
@@ -613,28 +604,15 @@ form > label {
   border-bottom-style: solid;
   border-bottom-color: #FF0700;
   border-radius: 10px;
+  text-align: center;
 }
 .projects__portfolio__item h3 {
-  text-align: center;
-  padding-top: 10px;
+  padding: 10px 0;
   color: white;
 }
 .projects__portfolio__item p {
   padding: 10px 20px;
   text-align: left;
-}
-.projects__portfolio__socialmedia {
-  font-weight: bold;
-  font-size: 40px;
-  text-align: center;
-  padding-bottom: 10px;
-}
-.projects__portfolio__socialmedia a {
-  color: white;
-  cursor: pointer;
-}
-.projects__portfolio__socialmedia a:hover {
-  color: #FF0700;
 }
 .projects__portfolio__flipbox {
   max-width: 200px;
@@ -676,19 +654,34 @@ form > label {
   cursor: pointer;
 }
 .projects__portfolio__flipbox__back {
-  background-color: #659DBD;
+  background-color: #2079AC;
   transform: rotateY(180deg);
   z-index: 2;
-}
-.projects__portfolio__flipbox__back a {
-  color: white;
+  font-size: 1.25rem;
   font-weight: bold;
-  font-size: 25px;
-  margin: auto;
-  position: relative;
-  top: 30%;
+  padding-top: 15px;
+  color: white;
 }
-.projects__portfolio__flipbox__back a:hover {
+.projects__portfolio__flipbox__back a:nth-child(1) {
+  color: white;
+}
+.projects__portfolio__flipbox__back a:nth-child(1):hover {
+  color: #FF0700;
+}
+.projects__portfolio__flipbox__back p:nth-child(2) {
+  margin: -5px 0 -15px;
+  text-align: center;
+}
+.projects__portfolio__flipbox__back p:nth-child(3) {
+  text-align: center;
+}
+.projects__portfolio__flipbox__back a:nth-child(4) {
+  color: white;
+  position: relative;
+  bottom: 6%;
+  font-size: 1.875rem;
+}
+.projects__portfolio__flipbox__back a:nth-child(4):hover {
   color: #FF0700;
 }
 .projects__portfolio__logo1, .projects__portfolio__logo2 {
@@ -696,7 +689,7 @@ form > label {
   position: relative;
   top: 15%;
 }
-.projects .pulse img {
+.projects__portfolio .pulse img {
   animation-name: pulse;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -731,9 +724,6 @@ form > label {
   .projects__portfolio {
     margin: auto 20px;
   }
-  .projects__portfolio p {
-    text-align: left;
-  }
 }
 @media only screen and (max-width: 700px) {
   .projects {
@@ -743,36 +733,46 @@ form > label {
   .projects__portfolio {
     margin: auto 50px;
   }
-  .projects__portfolio p {
-    text-align: left;
-  }
   .projects__portfolio__item h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
+  }
+  .projects__portfolio__flipbox__back {
+    font-size: 1.25rem;
+  }
+  .projects__portfolio__flipbox__back p:nth-child(2) {
+    font-size: 1.25rem;
+  }
+  .projects__portfolio__flipbox__back p:nth-child(3) {
+    font-size: 1.25rem;
   }
 }
-@media only screen and (max-width: 700px) and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .projects__portfolio {
     margin: auto 25px;
   }
-
   .projects__portfolio__flipbox {
     max-width: 150px;
     height: 150px;
-    margin: auto;
   }
-
-  .projects__portfolio__flipbox__back a {
-    position: relative;
-    top: 25%;
-    font-size: 18px;
+  .projects__portfolio__flipbox__back {
+    font-size: 0.938rem;
   }
-  .projects__portfolio__flipbox__back a:hover {
+  .projects__portfolio__flipbox__back a:nth-child(1):hover {
     color: white;
-    filter: none;
-    transform: none;
   }
-  .projects__portfolio__flipbox__back a:hover:active {
+  .projects__portfolio__flipbox__back a:nth-child(1):active {
     color: #FF0700;
+  }
+  .projects__portfolio__flipbox__back p:nth-child(2) {
+    margin: -10px 0 -20px;
+    font-size: 0.938rem;
+  }
+  .projects__portfolio__flipbox__back p:nth-child(3) {
+    font-size: 0.938rem;
+  }
+  .projects__portfolio__flipbox__back a:nth-child(4) {
+    bottom: 8%;
+    font-size: 1.875rem;
   }
 }
 .nachricht {
@@ -786,12 +786,12 @@ form > label {
 .nachricht__smile {
   max-width: 100px;
   position: absolute;
-  right: 80px;
-  bottom: 190px;
+  right: 20px;
+  bottom: 220px;
 }
 .nachricht h1, .nachricht h2 {
   color: white;
-  padding: 20px 0;
+  padding: 25px 0;
 }
 .nachricht a {
   color: lightblue;
@@ -806,11 +806,11 @@ form > label {
   }
   .nachricht__smile {
     position: relative;
-    right: 0px;
+    right: 0;
     top: 5px;
   }
-  .nachricht h1 {
-    padding: 0;
+  .nachricht h1, .nachricht h2 {
+    padding: 15px 0;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -819,12 +819,12 @@ form > label {
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 1.563rem;
     padding: 20px 0;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 0;
   }
 }
@@ -847,32 +847,33 @@ form > label {
   padding-top: 25px;
   margin-left: -130px;
 }
-.home__flag1 {
-  width: 2rem;
+.home__name__language__flag1 {
+  width: 3rem;
   position: absolute;
-  right: 116%;
+  right: 115%;
+  top: 22px;
 }
 .home__name__language li {
   cursor: pointer;
 }
-.home li ul {
+.home__name__language li ul {
   display: none;
 }
-.home li ul li {
+.home__name__language li ul li {
   position: relative;
   text-align: left;
   padding: 10px 15px;
   z-index: 2;
-  font-size: 16px;
+  font-size: 1rem;
   margin-left: 28px;
 }
-.home li ul li span {
+.home__name__language li ul li span {
   color: black;
 }
-.home li ul li span:hover {
+.home__name__language li ul li span:hover {
   color: #FF0700;
 }
-.home li:hover ul {
+.home__name__language li:hover ul {
   position: absolute;
   top: 55px;
   right: -15px;
@@ -883,7 +884,7 @@ form > label {
   z-index: 1;
   border-radius: 5px;
 }
-.home__triangle {
+.home__name__language__triangle {
   position: absolute;
   top: 42px;
   right: -10px;
@@ -893,7 +894,7 @@ form > label {
   width: 30px;
   background: transparent;
 }
-li:hover .home__triangle:after {
+li:hover .home__name__language__triangle:after {
   content: "";
   display: block;
   z-index: 20;
@@ -904,7 +905,7 @@ li:hover .home__triangle:after {
   border-radius: 2px 0px 0px 0px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
-.home__flag2 {
+.home__name__language__flag2 {
   display: inline-block;
   width: 29px;
   height: 22px;
@@ -922,14 +923,12 @@ li:hover .home__triangle:after {
   white-space: nowrap;
   letter-spacing: 5px;
   animation: typing 5s steps(100, end) both;
-  font-size: 60px;
+  font-size: 3.75rem;
   margin: auto;
 }
 .home__name__header li:nth-child(1) a {
   color: white;
-  font-size: 60px;
   font-weight: bold;
-  letter-spacing: 5px;
 }
 .home__name__header li:nth-child(1) a:hover {
   color: lightcoral;
@@ -941,7 +940,7 @@ li:hover .home__triangle:after {
   letter-spacing: 5px;
   animation: typing 5s steps(100, end) both;
   animation-delay: 2s;
-  font-size: 40px;
+  font-size: 2.5rem;
   margin: -10px auto auto;
 }
 .home__name__header li:nth-child(3) {
@@ -950,7 +949,7 @@ li:hover .home__triangle:after {
   letter-spacing: 5px;
   animation: typing 5s steps(100, end) both;
   animation-delay: 4.5s;
-  font-size: 30px;
+  font-size: 1.875rem;
   padding: 28px 0 40px;
   margin: auto;
   font-style: italic;
@@ -961,7 +960,7 @@ li:hover .home__triangle:after {
 .home__name__header li:nth-child(4) button {
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 1px;
   padding: 5px 7px;
   background-color: #FF0700;
@@ -1023,7 +1022,7 @@ li:hover .home__triangle:after {
 }
 .home__skills__text1, .home__skills__text2, .home__skills__text3, .home__skills__text4 {
   border-radius: 5px;
-  background-color: #659DBD;
+  background-color: #2079AC;
   border-bottom-style: solid;
   border-bottom-color: #FF0700;
   height: 70%;
@@ -1031,7 +1030,7 @@ li:hover .home__triangle:after {
 .home__skills__text1 p, .home__skills__text2 p, .home__skills__text3 p, .home__skills__text4 p {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
-  font-size: 25px;
+  font-size: 1.563rem;
   color: white;
   font-weight: bold;
   padding-top: 5px;
@@ -1065,31 +1064,27 @@ li:hover .home__triangle:after {
 
 @media only screen and (max-width: 1200px) {
   .home__name__language {
-    font-size: 15px;
+    font-size: 0.938rem;
     margin-left: -100px;
   }
-
-  .home__flag1 {
-    width: 1.5rem;
+  .home__name__language__flag1 {
+    width: 2rem;
+    top: 23px;
   }
-
   .home__name__language li ul li {
     padding: 5px;
-    font-size: 15px;
+    font-size: 0.938rem;
   }
-
   .home__name__language li:hover ul {
     top: 48px;
     right: -20px;
     width: 100px;
   }
-
-  .home__triangle {
+  .home__name__language__triangle {
     top: 37px;
     right: -11px;
   }
-
-  .home__flag2 {
+  .home__name__language__flag2 {
     width: 23px;
     height: 17px;
     top: 7px;
@@ -1145,27 +1140,27 @@ li:hover .home__triangle:after {
     animation: typing 3s steps(100, end) both;
   }
   .home__name__header li:nth-child(1) a {
-    font-size: 45px;
+    font-size: 2.813rem;
     letter-spacing: 1px;
   }
   .home__name__header li:nth-child(2) {
     animation: typing 3s steps(100, end) both;
     animation-delay: 2s;
-    font-size: 26px;
+    font-size: 1.625rem;
     letter-spacing: 1px;
   }
   .home__name__header li:nth-child(3) {
     animation: typing 3s steps(100, end) both;
     animation-delay: 4s;
-    font-size: 24px;
+    font-size: 1.5rem;
     letter-spacing: 1px;
-    padding: 31px 0 20px;
+    padding: 30px 0 20px;
   }
   .home__name__header li:nth-child(4) {
     padding: 20px 0 50px;
   }
   .home__name__header li:nth-child(4) button {
-    font-size: 10px;
+    font-size: 0.8rem;
   }
 
   .home__skills {
@@ -1192,26 +1187,28 @@ li:hover .home__triangle:after {
     animation: typing 2s steps(100, end) both;
   }
   .home__name__header li:nth-child(1) a {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   .home__name__header li:nth-child(2) {
     animation: typing 2s steps(100, end) both;
+    font-size: 1.375rem;
     animation-delay: 2s;
-    font-size: 22px;
   }
   .home__name__header li:nth-child(3) {
     animation: typing 2s steps(100, end) both;
-    animation-delay: 4s;
-    font-size: 17px;
+    font-size: 1.063rem;
     padding: 30px 0 0x;
+    animation-delay: 4s;
   }
   .home__name__header li:nth-child(4) {
     padding: 10px 0 30px;
   }
+  .home__name__header li:nth-child(4) button {
+    font-size: 0.65rem;
+  }
   .home__name__header li:nth-child(4) button:hover {
     background-color: #FF0700;
     filter: none;
-    transform: none;
   }
   .home__name__header li:nth-child(4) button:hover:active {
     color: lightskyblue;
@@ -1221,6 +1218,7 @@ li:hover .home__triangle:after {
     text-align: left;
     margin: auto 25px;
     padding-bottom: 20px;
+    hyphens: none;
   }
 
   .home__skills {
@@ -1234,7 +1232,7 @@ li:hover .home__triangle:after {
     padding-top: 2px;
   }
   .home__skills__text1 p, .home__skills__text2 p, .home__skills__text3 p, .home__skills__text4 p {
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 0px;
   }
   .home__skills__img1 {
@@ -1260,18 +1258,26 @@ li:hover .home__triangle:after {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1.25rem;
+}
+
 html, body {
   line-height: 1.5;
-  font-size: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
   height: 100vh;
   margin-left: 100px;
   padding: 0 20px;
   background: #211A36;
+  scroll-behavior: smooth;
 }
 
 section h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
   padding: 10px;
   color: white;
@@ -1311,12 +1317,12 @@ a {
   }
 
   section h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
     padding: 0px;
   }
 
   section p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

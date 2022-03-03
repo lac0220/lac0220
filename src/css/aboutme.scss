@@ -3,67 +3,67 @@ $second-color: #464866;
 $third-color: #211A36;	
 $contact-form: #edf5e1;
 $main-font: Georgia, 'Times New Roman', Times, serif;
-$hover:#659DBD;
+$hover:#2079AC;
 $hover-menu:#FF0700;
 $text-color:white;
 
 .aboutme {
-  max-width: 1600px;
-  padding: 25px 0;
-  p {
-    text-align:justify;
-    padding: 5px 0;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    -webkit-hyphenate-limit-before: 3;
-    -webkit-hyphenate-limit-after: 3;
-    -webkit-hyphenate-limit-chars: 6 3 3;
-    -webkit-hyphenate-limit-lines: 2;
-    -webkit-hyphenate-limit-last: always;
-    -webkit-hyphenate-limit-zone: 8%;
-  }
-
-  &__photo {
-    margin: 0 40px 0 20px;
-    float: left;
-  }
-
-  &__img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 50%;
-    filter: drop-shadow(1px 1px 15px $hover-menu);
-  }
+    max-width: 1600px;
+    padding: 25px 0;
+    p {
+        text-align:justify;
+        padding: 5px 0;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        -webkit-hyphenate-limit-before: 3;
+        -webkit-hyphenate-limit-after: 3;
+        -webkit-hyphenate-limit-chars: 6 3 3;
+        -webkit-hyphenate-limit-lines: 2;
+        -webkit-hyphenate-limit-last: always;
+        -webkit-hyphenate-limit-zone: 8%;
+    }
+  
+    &__photo {
+        margin: 0 40px 0 20px;
+        float: left;
+        img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 50%;
+            filter: drop-shadow(1px 1px 15px $hover-menu);
+        }
+    }
+}
+      
+@media only screen and (max-width: 900px) {
+    
+.aboutme {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 20px;
+    padding: 10px 0;
+  
+    &__text p { 
+        padding-bottom: 10px;
+    }
+    
+    &__photo {
+        margin: auto;
+        padding-top: 20px;
+        float:none;
+    }
+}
 }
     
-@media only screen and (max-width: 900px) {
-  
-.aboutme {
-  display: flex;
-  flex-direction: column-reverse;
-  margin: 0 20px;
-  padding: 10px 0;
-
-  &__text p { 
-    padding-bottom: 10px;
-  }
-  
-  &__photo {
-    margin: auto;
-    padding-top: 20px;
-  }
-}
-}
-  
 @media only screen and (max-width: 700px) {
-  
+    
 .aboutme {
-  margin: 0 25px;
-  padding-bottom: 20px;
-  &__text p { 
-    text-align: left; 
-  }
+    margin: 0 25px;
+    padding: 20 20px;
+    &__text p { 
+        text-align: left; 
+        hyphens: none;
+    }
 }
 }
-  
-
+    

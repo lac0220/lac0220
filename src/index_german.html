@@ -13,28 +13,23 @@
 
 <style>
 
-.nav__flag1 {
-    width: 1.3rem;
-    border:1px solid white;
-    top:1px;
+    .nav__language__flag1 {
+        width: 1.8rem;
+        border:1px solid white;
+        top:-1px;
     }
 
-    .nav__flag2 {
-    
+    .nav__language__flag2 {
         background-image: url("/img/ukflag.svg");
     }
 
-    .home__flag1 {
-        
+    .home__name__language__flag1 {
         border:0.5px solid white;
         right:110%;
 
     }
-    .home__flag2 {
-        display: inline-block;
+    .home__name__language__flag2 {
         width: 28px;
-        height: 22px;
-        position: absolute;
         top: 11px;
         right: 83px;
         background-image: url("/img/ukflag.svg");
@@ -42,34 +37,37 @@
 
     @media only screen and (max-width: 1200px) {
 
-        .home__flag1 {
-    width: 1.5rem;
-    right:112%;
-}
+    .home__name__language {
+        font-size: 15px;
+    }
 
-.home__name__language {
-    font-size: 15px;
-}
+    .home__name__language__flag1 {
+        width: 2rem;
+        right:112%;
+    }
 
-.home__flag2 {
-    width: 22px;
-    height: 16px;
-    top: 8px;
-    right: 71px;
+    .home__name__language__flag2 {
+        width: 22px;
+        height: 16px;
+        top: 8px;
+        right: 71px;
+    }
 }
-}
-@media only screen and (max-width: 1080px) {
-.home__name__header li:nth-child(3) {
-    font-size: 20px;
-    padding: 36px 0 20px;
-}
-}
-@media only screen and (max-width: 700px) {
+   
+    @media only screen and (max-width: 1080px) {
 
-.home__name__header li:nth-child(3) {
-    font-size: 16px;
+    .home__name__header li:nth-child(3) {
+        font-size: 20px;
+        padding: 36px 0 20px;
+    }
+    }
 
-}
+    @media only screen and (max-width: 700px) {
+
+    .home__name__header li:nth-child(3) {
+        font-size: 16px;
+
+    }
 }
 
 </style>
@@ -85,17 +83,19 @@
                     <span class="nav__dropbar__line3"></span>
                 </div>
 
-                <div class="nav__name__language">
-                    <img class="nav__flag1" src="/img/germanflag.svg" alt="German flag"/>
+                <div class="nav__language">
+                    <img class="nav__language__flag1" src="/img/germanflag.svg" alt="German flag"/>
                     <li><b>DE</b> <i class="fa fa-angle-down"></i>
-                    <div class="nav__triangle"></div>
+                    <div class="nav__language__triangle"></div>
                         <ul>
-                            <li><a href="index.html"><i class="nav__flag2"></i> <span>EN</span></a></li>                      
+                            <li><a href="index.html"><i class="nav__language__flag2"></i> <span>EN</span></a></li>                      
                         </ul>
                     </li>
                 </div>
                 
-                <a href="#home"><img class="nav__header__logo" src="/img/logo.webp" alt="Laszlo Nemeth logo"/></a>
+                <div class="nav__logo">
+                    <a href="#home"><img src="/img/logo.webp" alt="Laszlo Nemeth logo"/></a>
+                </div>
                 <h3>Laszlo Nemeth</h3>
                 <p>Front-End</p>
                 <p>Web-Entwickler</p>
@@ -104,7 +104,7 @@
             <ul class="nav__menu">
                 <h3>Laszlo Nemeth</h3>
                 <p>Front-End Web-Entwickler</p>
-                <hr class="nav__horizontal__line1">
+                <hr class="nav__menu__horizontalline1">
 
                 <li class="nav__menu__item">
                     <a href="#home" class="nav__menu__item__link">Startseite</a>
@@ -119,12 +119,12 @@
                     <a href="#contact" class="nav__menu__item__link">Kontakt</a>
                 </li>
                 <li class="nav__menu__item">
-                    <a href="img/cv/Laszlo_Nemeth_Lebenslauf.pdf" class="nav__menu__item__link" alt="Resume" download>Lebenslauf</a>
+                    <a href="img/cv/Laszlo_Nemeth_Lebenslauf.pdf" alt="Resume" download>Lebenslauf</a>
                 </li>
 
-                <hr class="nav__horizontal__line2">
+                <hr class="nav__menu__horizontalline2">
 
-                <div class="nav__socialmedia">
+                <div class="nav__menu__socialmedia">
                     <a href="https://www.linkedin.com/in/nemeth0220" target="_blank" alt="Linkedin logo"><i class="fab fa-linkedin"></i></a>    <!-- linkedin -->
                     <a href="https://github.com/lac0220" target="_blank"><i class="fab fa-github" alt="Github logo"></i></a>      <!-- github -->
                     <a href="https://codepen.io/lac0220/" target="_blank"><i class="fab fa-codepen" alt="Codepen logo"></i></a>  <!-- codepen-->      
@@ -137,11 +137,11 @@
         <div class="home" id="home">
             <ul class="home__name">
                 <div class="home__name__language">
-                    <img class="home__flag1" src="/img/germanflag.svg" alt="German flag"/>
+                    <img class="home__name__language__flag1" src="/img/germanflag.svg" alt="German flag"/>
                     <li><b>German</b> <i class="fa fa-angle-down"></i>
-                        <div class="home__triangle"></div>
+                        <div class="home__name__language__triangle"></div>
                         <ul>
-                            <li><a href="index.html"><i class="home__flag2"></i> <span>English</span></a></li>                      
+                            <li><a href="index.html"><i class="home__name__language__flag2"></i> <span>English</span></a></li>                      
                          </ul>
                     </li>
                 </div>
@@ -190,10 +190,6 @@
                 <div class="projects__portfolio__item">
                     <h3>GENERIC HIPSTER COFFEE</h3>
 
-                    <div class="projects__portfolio__socialmedia">  
-                        <a href="https://github.com/lac0220/hackaton-coffeeshop" target="_blank" alt="Github link"><i class="fab fa-github"></i></a> 
-                    </div>
-
                     <div class="projects__portfolio__flipbox">
                         <div class="projects__portfolio__flipbox__inner">
                             <div class="projects__portfolio__flipbox__front1 pulse">
@@ -201,7 +197,10 @@
                             </div>
 
                             <div class="projects__portfolio__flipbox__back">
-                                <a href="coffeeshop.html" target="_blank" alt="Coffee shop website">Website anschauen</a> 
+                                <a href="https://lac0220.github.io/hackaton-coffeeshop/index.html" target="_blank" alt="Coffee shop website">Website besuchen</a> 
+                                <p>oder</p>
+                                <p>Code anschauen</p>
+                                <a href="https://github.com/lac0220/hackaton-coffeeshop" target="_blank" alt="Github link"><i class="fab fa-github"></i></a>  
                             </div>
                         </div>
                     </div>
@@ -212,10 +211,6 @@
                 <div class="projects__portfolio__item">
                     <h3>LEGENDARY QUOTES</h3>
 
-                    <div class="projects__portfolio__socialmedia">  
-                        <a href="https://github.com/lac0220/finalproject-quotes" target="_blank" alt="Github link"><i class="fab fa-github"></i></a> 
-                    </div>
-
                     <div class="projects__portfolio__flipbox">
                         <div class="projects__portfolio__flipbox__inner">
                             <div class="projects__portfolio__flipbox__front2 pulse">
@@ -223,7 +218,10 @@
                             </div>
 
                             <div class="projects__portfolio__flipbox__back">
-                                <a href="#" target="_blank" alt="Legendary Quotes website">Website anschauen</a> 
+                                <a href="#" target="_blank" alt="Coffee shop website">Website besuchen</a> 
+                                <p>oder</p>
+                                <p>Code anschauen</p>
+                                <a href="https://github.com/lac0220/finalproject-quotes" target="_blank" alt="Github link"><i class="fab fa-github"></i></a>  
                             </div>
                         </div>
                     </div>
@@ -233,9 +231,6 @@
 
                 <div class="projects__portfolio__item">
                     <h3>MODEL PORTFOLIO</h3>
-                        <div class="projects__portfolio__socialmedia">   
-                            <a href="https://github.com/lac0220/model-portfolio" target="_blank" alt="Github link"><i class="fab fa-github"></i></a> 
-                        </div>
 
                         <div class="projects__portfolio__flipbox">
                             <div class="projects__portfolio__flipbox__inner">
@@ -244,7 +239,10 @@
                                 </div>
 
                                 <div class="projects__portfolio__flipbox__back">
-                                    <a href="#" target="_blank" alt="Model website">Website anschauen</a> 
+                                    <a href="#" target="_blank" alt="Coffee shop website">Website besuchen</a> 
+                                    <p>oder</p>
+                                    <p>Code anschauen</p>
+                                    <a href="https://github.com/lac0220/model-portfolio" target="_blank" alt="Github link"><i class="fab fa-github"></i></a>  
                                 </div>
                             </div>
                         </div>
@@ -263,7 +261,7 @@
 
         <div class="aboutme">
             <div class="aboutme__photo">
-                <img class="aboutme__img" src="/img/profile.webp" alt="Laszlo Nemeth profil picture">
+                <img src="/img/profile.webp" alt="Laszlo Nemeth profile picture">
             </div>
 
             <div class="aboutme__text">
@@ -295,7 +293,9 @@
                     <label for="message">Nachricht</label>
                     <textarea id="comment" name="comment" required style="height:200px" alt="Textarea"></textarea>
         
-                    <input type="submit" value="SENDEN">
+                    <div class="contact__submit">
+                        <input type="submit" value="SENDEN">
+                    </div>
                 </form>
             </div>
 

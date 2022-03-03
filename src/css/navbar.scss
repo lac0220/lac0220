@@ -3,290 +3,292 @@ $second-color: #464866;
 $third-color: #211A36;	
 $contact-form: #edf5e1;
 $main-font: Georgia, 'Times New Roman', Times, serif;
-$hover:#659DBD;
+$hover:#2079AC;
 $hover-menu:#FF0700;
 $text-color:white;
 
 .nav {
-  width: 200px;
-  height: 100vh;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: $first-color;
-
-  &__header {
-  display:block;
-  text-align: center;
-  padding-bottom: 38px;
-    a {
-      height: 100%;
-      width: 100%;
-    }
-    h3 {
-      color: $text-color;
-      padding: 25px 0 6px;
-    }
-    p { 
-      color: $text-color;
-    }
-    &__dropbar {
-      display: none;
-    }
-  }
-
-  &__name__language {
-    visibility: hidden;
-    height: 0;
-    height: 0;
-  }
-
-  &__header__logo {
-    height:6rem;
-    margin: 55.5px 0 8px;
-  }
-
-  &__menu {
-    background-color: $second-color;
-    display: block;
-    text-align: center;
-    height: 100%;
-    padding: 10px 0;
-    h3, p {
-      visibility: hidden;
-      height: 0;
-    }
-  }
-
-  &__menu__item {
-    padding: 15px 0;
-    margin: auto;
-    a {
-      font-weight: bold;
-      color: $text-color;
-      font-size: 25px;  
-      &:hover {
-        color: $hover-menu;
-      } 
-    } 
-  } 
-
-  &__socialmedia  { 
-    text-align: center;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
     background-color: $first-color;
-    margin-top: 15px;
-    height: 100%;
-    padding-top: 10px;
-    a { 
-      border-radius: 2px;
-      color: $text-color;
-      font-size: 30px; 
-      margin: auto 10px;
-      &:hover {
-        transform:scale(1.1); 
-        -webkit-transform:scale(1.1);
-        color: $hover-menu;
-      }
+  
+    &__header {
+        display:block;
+        text-align: center;
+        padding-bottom: 38px;
+        color: $text-color;
+        h3 {
+            padding: 25px 0 6px;
+        }
+
+        &__dropbar {
+            display: none;
+        }
     }
-  }
-}
+  
+    &__language {
+        visibility: hidden;
+        height: 0;
+        height: 0;
+    }
+  
+    &__logo {
+        margin: 60px auto 12px;
+        img {
+            height:7rem;
+        }
+    }
+  
+    &__menu {
+        background-color: $second-color;
+        display: block;
+        text-align: center;
+        height: 100vh;
+        padding: 10px 0;
+        h3, p {
+            visibility: hidden;
+            height: 0;
+        }
 
-.nav__horizontal__line1, .nav__horizontal__line2 {
-  visibility: hidden;
+        &__horizontalline1, &__horizontalline2 {
+            visibility: hidden;
+        }
+  
+        &__item {
+            padding: 15px 0;
+            margin: auto;
+            a {
+                font-weight: bold;
+                color: $text-color;
+                font-size: 1.563rem;  
+                &:hover {
+                    color: $hover-menu;
+                } 
+            } 
+        } 
+  
+        &__socialmedia  { 
+            text-align: center;
+            background-color: $first-color;
+            margin-top: 15px;
+            height: 100vh;
+            padding-top: 10px;
+            a { 
+                border-radius: 2px;
+                color: $text-color;
+                font-size: 1.875rem; 
+                margin: auto 10px;
+                &:hover {
+                transform:scale(1.1); 
+                -webkit-transform:scale(1.1);
+                color: $hover-menu;
+                }
+            }
+        }
+    }
 }
-
+  
 @media screen and (max-width: 700px) {
-
+  
 .nav {
-  width: 100%;
-  height: 95px;
-  border-bottom: 0.5px solid $text-color;
-
-  &__header{
-    margin: auto;
-    padding-bottom: 0px;
-    h3, p { 
-    padding: 0px;
-    visibility: hidden;
+    width: 100%;
+    height: 95px;
+    border-bottom: 0.5px solid $text-color;
+  
+    &__header{
+        margin: auto;
+        padding-bottom: 0px;
+        h3, p { 
+            padding: 0px;
+            visibility: hidden;
+        }
     }
-  }
-
-  &__dropbar {
-    cursor: pointer;
-    display: block;
-    position: absolute;
-    left:10%;
-    top:32%;
-    .nav__dropbar__line1, .nav__dropbar__line2, .nav__dropbar__line3 {
-      display: block;
-      width: 30px;
-      height: 3px;
-      margin: 6px auto;
-      background-color: $text-color;
-      transition: 0.4s;
+  
+    &__dropbar {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        left:10%;
+        top:32%;
+        &__line1, &__line2, &__line3 {
+            display: block;
+            width: 30px;
+            height: 3px;
+            margin: 6px auto;
+            background-color: $text-color;
+            transition: 0.4s;
+        }
     }
-  }
+  
+    .change &__line1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 9px) ;
+      transform: rotate(-45deg) translate(-7px, 6px) ;
+    }  
+     
+    .change &__line2 {
+      opacity: 0;
+    } 
+  
+    .change &__line3 {
+      -webkit-transform: rotate(45deg) translate(-9px, -9px) ;
+      transform: rotate(45deg) translate(-7px, -6px) ;
+    }
+} 
 
-  .change .nav__dropbar__line1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 9px) ;
-    transform: rotate(-45deg) translate(-7px, 6px) ;
-  }  
-   
-  .change .nav__dropbar__line2 {
-    opacity: 0;
-  } 
-
-  .change .nav__dropbar__line3 {
-    -webkit-transform: rotate(45deg) translate(-9px, -9px) ;
-    transform: rotate(45deg) translate(-7px, -6px) ;
-  }
- 
-  &__name__language {
+.nav__language {
     visibility: visible;
     display: inline-block;
     position: absolute;
     right:7%;
     top:39%;
-    font-size: 15px;
+    font-size: 0.938rem;
     color: $text-color;
+
     li {
-      cursor: pointer;
+        cursor: pointer;
     }
+
     li ul {
-      display: none;
+        display: none;
     }
+
     li:hover ul {
-      position: absolute;
-      top:23px;
-      right:-20px;
-      display: block;
-      background: $text-color;
-      width: 57px;
-      padding-top: 0px;
-      z-index: 1;
-      border-radius:5px;
+        position: absolute;
+        top:23px;
+        right:-20px;
+        display: block;
+        background: $text-color;
+        width: 57px;
+        padding-top: 0px;
+        z-index: 1;
+        border-radius:5px;
     }
+
     li ul li {
-      position: relative;
-      text-align: right;
-      padding: 5px;
-      z-index: 2;
-      font-size: 12px;
-      span {
-        color: black;
-        font-weight: bold;
-        &:active {
-          color:$hover-menu;
+        position: relative;
+        text-align: right;
+        padding: 5px;
+        z-index: 2;
+        font-size: 0.75rem;
+        span {
+            color: black;
+            font-weight: bold;
+            &:active {
+                color:$hover-menu;
+            }
         }
-      }
     }
-  }
-
-  &__triangle {
-    position: absolute;
-    top: 12px;
-    right: -11px;
-    z-index:10;
-    height: 14px;
-    overflow:hidden;
-    width: 30px;
-    background: transparent;
-  }
-
-  li:hover &__triangle:after {
-    content: '';
-    display: block;
-    z-index: 20;
-    width: 15px;
-    transform: rotate(45deg) translateY(0px) translatex(10px);
-    height: 15px;
-    background: $text-color;
-    border-radius:2px 0px 0px 0px;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-  }
-
-  &__flag1 {
-    width: 1.2rem;
-    position: absolute;
-    right:115%;
-    top:2px;
-  }
-
-  &__flag2 {
-    display: inline-block;
-    width: 25px;
-    height: 19px;
-    position: absolute;
-    top: 4px;
-    right: 27px;
-    background-image: url("/img/germanflag.svg");
-  }
-
-  &__header__logo {
-    height:4rem;
+  
+    &__triangle {
+        position: absolute;
+        top: 12px;
+        right: -11px;
+        z-index:10;
+        height: 14px;
+        overflow:hidden;
+        width: 30px;
+        background: transparent;
+    }
+  
+    li:hover &__triangle:after {
+        content: '';
+        display: block;
+        z-index: 20;
+        width: 15px;
+        transform: rotate(45deg) translateY(0px) translatex(10px);
+        height: 15px;
+        background: $text-color;
+        border-radius:2px 0px 0px 0px;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    }
+  
+    &__flag1 {
+        width: 1.8rem;
+        position: absolute;
+        right:115%;
+        top:0;
+    }
+  
+    &__flag2 {
+        display: inline-block;
+        width: 25px;
+        height: 19px;
+        position: absolute;
+        top: 4px;
+        right: 27px;
+        background-image: url("/img/germanflag.svg");
+    }
+}
+  
+.nav__logo {
     margin: 8px auto auto;
-  }
-
-  &__menu {
+    img {
+        height:5rem;
+    }
+}
+  
+.nav__menu {
     position: fixed;
     left: -150%;
     top: 95px;
     z-index: 1;
-    height: 100%;
-    background-color: $second-color;
     width: 100%;
-    text-align: center;
     transition: 0.5s;
-    padding-top: 10px;
     h3, p {
-      visibility: visible;
-      color: $text-color;
-      height: auto;
+        visibility: visible;
+        color: $text-color;
+        height: auto;
     }
     p {
-      margin-bottom: -10px;
+        margin-bottom: -10px;
     } 
-  }
-
-    &__menu__item {
-      padding: 5px 0;
-      a {
-        font-size: 20px;
-        color: $text-color;
-        &:hover {
-          color: $hover-menu;           
+    
+    &__item {
+        padding: 5px 0;
+        a {
+            font-size: 1.25rem;
         }
-      }
     }
-  } 
-
-  .nav__horizontal__line1, .nav__horizontal__line2 {
-    visibility: visible;
-    display: inline-block;
-    border: 2px solid $hover-menu;
-    border-radius: 100%;
-    width: 70%;
-  }
-
-  .nav__horizontal__line1 {
-    margin-bottom:-2px;
-  }
-
-  .nav__horizontal__line2 {
-    margin-bottom: 10px;
-  }
-
-  .nav__socialmedia  { 
-    margin-top: -10px;
-    padding-top: 0px;
-    height: 0;
-    a { 
-      margin: auto 7px;
+    
+    &__horizontalline1, &__horizontalline2 {
+        visibility: visible;
+        display: inline-block;
+        border: 2px solid $hover-menu;
+        border-radius: 100%;
+        width: 70%;
     }
-  }
+  
+    &__horizontalline1 {
+        margin-bottom:-2px;
+    }
+  
+    &__horizontalline2 {
+        margin-bottom: 10px;
+    }
+  
+    &__socialmedia  { 
+        margin-top: -10px;
+        padding-top: 0px;
+        height: 0;
+        a { 
+            margin: auto 7px;
+        }
+    }
 
-  .nav__menu.active {
-    left: 0;
-  }
+    &.active {
+        left: 0;
+    }
 }
+}
+  
+  
+  
+  
+  
+  
+  
+  
