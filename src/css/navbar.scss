@@ -125,8 +125,8 @@ $text-color:white;
     }
   
     .change .nav__dropbar__line1 {
-        transform: rotate(-45deg) translate(-7px, 6px) ;
-        -webkit-transform: rotate(-45deg) translate(-7px, 6px) ;
+        transform: rotate(-45deg) translate(-7px, 5.5px) ;
+        -webkit-transform: rotate(-45deg) translate(-7px, 5.5px) ;
   
     }  
        
@@ -135,8 +135,8 @@ $text-color:white;
       } 
     
     .change .nav__dropbar__line3 {
-        transform: rotate(45deg) translate(-7px, -6px) ;
-        -webkit-transform: rotate(45deg) translate(-7px, -6px) ;
+        transform: rotate(45deg) translate(-7px, -5.5px) ;
+        -webkit-transform: rotate(45deg) translate(-7px, -5.5px) ;
     }
 } 
 
@@ -145,7 +145,7 @@ $text-color:white;
     display: inline-block;
     position: absolute;
     right:7%;
-    top:39%;
+    top:38%;
     font-size: 0.938rem;
     color: $text-color;
 

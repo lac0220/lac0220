@@ -187,7 +187,7 @@ input[type=text], input[type=submit], textarea {
 }
   
 input[type=submit] {
-    padding: 8px;
+    padding: 6px;
     &:hover {
         background-color: $hover-menu;
         filter: none;
