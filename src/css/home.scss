@@ -152,7 +152,9 @@ $text-color:white;
                 font-family:Georgia, 'Times New Roman', Times, serif;
                 font-size: 0.875rem;
                 letter-spacing: 1px; 
-                padding:6px;
+                padding:13px;
+                height: 0;
+                line-height: 0;
                 background-color: $hover-menu;
                 border-radius:50px;
                 border: 2px solid $hover;
@@ -377,9 +379,9 @@ $text-color:white;
         } 
     
     li:nth-child(4) {   
-        padding: 20px 0 50px;
+        padding: 19px 0 50px;
         button {
-            font-size: 0.800rem;
+            font-size: 0.775rem;
         } 
     }  
 }
@@ -429,8 +431,8 @@ $text-color:white;
         li:nth-child(4) {   
             padding: 10px 0 30px;
             button {
-                font-size: 0.650rem;
-                padding:4px;
+                font-size: 0.675rem;
+                padding:10px;
                 &:hover {
                     background-color: $hover-menu;
                     filter: none;

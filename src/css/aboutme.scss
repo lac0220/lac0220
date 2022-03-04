@@ -30,7 +30,7 @@ $text-color:white;
             max-width: 300px;
             height: auto;
             border-radius: 50%;
-            filter: drop-shadow(1px 1px 15px $hover-menu);
+            filter: drop-shadow(1px 1px 10px $hover-menu);
         }
     }
 }
@@ -59,7 +59,7 @@ $text-color:white;
     
 .aboutme {
     margin: 0 25px;
-    padding: 20 20px;
+    padding: 10px 10px 18px;
     &__text p { 
         text-align: left; 
         hyphens: none;
