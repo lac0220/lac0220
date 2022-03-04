@@ -537,8 +537,7 @@ form > label {
   }
 }
 .aboutme {
-  max-width: 1600px;
-  padding: 25px 0;
+  padding: 25px 0 20px;
 }
 .aboutme p {
   text-align: justify;
@@ -582,11 +581,14 @@ form > label {
 @media only screen and (max-width: 700px) {
   .aboutme {
     margin: 0 25px;
-    padding: 10px 10px 18px;
+    padding: 10px 0 18px;
   }
   .aboutme__text p {
     text-align: left;
     hyphens: none;
+  }
+  .aboutme__photo {
+    padding-top: 15px;
   }
 }
 .projects {
