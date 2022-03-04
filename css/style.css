@@ -144,15 +144,15 @@ footer {
     transition: 0.4s;
   }
   .nav .change .nav__dropbar__line1 {
-    transform: rotate(-45deg) translate(-7px, 6px);
-    -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+    transform: rotate(-45deg) translate(-7px, 5.5px);
+    -webkit-transform: rotate(-45deg) translate(-7px, 5.5px);
   }
   .nav .change .nav__dropbar__line2 {
     opacity: 0;
   }
   .nav .change .nav__dropbar__line3 {
-    transform: rotate(45deg) translate(-7px, -6px);
-    -webkit-transform: rotate(45deg) translate(-7px, -6px);
+    transform: rotate(45deg) translate(-7px, -5.5px);
+    -webkit-transform: rotate(45deg) translate(-7px, -5.5px);
   }
 
   .nav__language {
@@ -160,7 +160,7 @@ footer {
     display: inline-block;
     position: absolute;
     right: 7%;
-    top: 39%;
+    top: 38%;
     font-size: 0.938rem;
     color: white;
   }
@@ -504,7 +504,7 @@ form > label {
   }
 
   input[type=submit] {
-    padding: 8px;
+    padding: 6px;
   }
   input[type=submit]:hover {
     background-color: #FF0700;
@@ -1211,6 +1211,7 @@ li:hover .home__name__language__triangle:after {
   }
   .home__name__header li:nth-child(4) button {
     font-size: 0.65rem;
+    padding: 4px;
   }
   .home__name__header li:nth-child(4) button:hover {
     background-color: #FF0700;
