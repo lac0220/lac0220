@@ -143,16 +143,16 @@ footer {
     background-color: white;
     transition: 0.4s;
   }
-  .change .nav__line1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 9px);
+  .nav .change .nav__dropbar__line1 {
     transform: rotate(-45deg) translate(-7px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-7px, 6px);
   }
-  .change .nav__line2 {
+  .nav .change .nav__dropbar__line2 {
     opacity: 0;
   }
-  .change .nav__line3 {
-    -webkit-transform: rotate(45deg) translate(-9px, -9px);
+  .nav .change .nav__dropbar__line3 {
     transform: rotate(45deg) translate(-7px, -6px);
+    -webkit-transform: rotate(45deg) translate(-7px, -6px);
   }
 
   .nav__language {
@@ -229,7 +229,7 @@ footer {
     position: absolute;
     top: 4px;
     right: 27px;
-    background-image: url("/img/germanflag.svg");
+    background-image: url("/img/logo/germanflag.svg");
   }
 
   .nav__logo {
@@ -379,7 +379,7 @@ input[type=submit] {
   color: white;
   padding: 10px;
   border-radius: 50px;
-  border: 2px solid #464866;
+  border: 2px solid #2079AC;
   cursor: pointer;
   font-weight: bold;
   font-size: 1.25rem;
@@ -739,11 +739,23 @@ form > label {
   .projects__portfolio__flipbox__back {
     font-size: 1.25rem;
   }
+  .projects__portfolio__flipbox__back a:nth-child(1) {
+    color: #edf5e1;
+  }
+  .projects__portfolio__flipbox__back a:nth-child(1):hover {
+    color: #edf5e1;
+  }
+  .projects__portfolio__flipbox__back a:nth-child(1):active {
+    color: #FF0700;
+  }
   .projects__portfolio__flipbox__back p:nth-child(2) {
     font-size: 1.25rem;
   }
   .projects__portfolio__flipbox__back p:nth-child(3) {
     font-size: 1.25rem;
+  }
+  .projects__portfolio__flipbox__back a:nth-child(4) {
+    color: #edf5e1;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -756,12 +768,6 @@ form > label {
   }
   .projects__portfolio__flipbox__back {
     font-size: 0.938rem;
-  }
-  .projects__portfolio__flipbox__back a:nth-child(1):hover {
-    color: white;
-  }
-  .projects__portfolio__flipbox__back a:nth-child(1):active {
-    color: #FF0700;
   }
   .projects__portfolio__flipbox__back p:nth-child(2) {
     margin: -10px 0 -20px;
@@ -912,7 +918,7 @@ li:hover .home__name__language__triangle:after {
   position: absolute;
   top: 10px;
   right: 82px;
-  background-image: url("/img/germanflag.svg");
+  background-image: url("/img/logo/germanflag.svg");
 }
 .home__name__header {
   margin-top: -19px;
@@ -962,10 +968,10 @@ li:hover .home__name__language__triangle:after {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 0.875rem;
   letter-spacing: 1px;
-  padding: 5px 7px;
+  padding: 6px;
   background-color: #FF0700;
   border-radius: 50px;
-  border: 2px solid #464866;
+  border: 2px solid #2079AC;
   color: white;
   cursor: pointer;
 }
