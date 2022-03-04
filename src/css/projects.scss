@@ -177,13 +177,26 @@ $text-color:white;
     
         &__flipbox__back {
             font-size: 1.25rem;
-    
+            a:nth-child(1) {
+                color:$contact-form;
+                &:hover {
+                    color: $contact-form;
+                }
+                &:active {
+                    color: $hover-menu;
+                }
+            }
+
             p:nth-child(2) {
             font-size: 1.25rem;
             }
     
             p:nth-child(3) {
             font-size: 1.25rem;
+            }
+
+            a:nth-child(4) {
+                color:$contact-form;
             }
         }
     }
@@ -200,15 +213,6 @@ $text-color:white;
         height: 150px;
         &__back {
             font-size: 0.938rem;
-            a:nth-child(1) {
-                &:hover {
-                    color: $text-color;
-                }
-                &:active {
-                    color: $hover-menu;
-                }
-            }
-
             p:nth-child(2) {
                 margin: -10px 0 -20px;
                 font-size: 0.938rem;

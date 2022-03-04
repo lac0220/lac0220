@@ -124,18 +124,19 @@ $text-color:white;
         }
     }
   
-    .change &__line1 {
-      -webkit-transform: rotate(-45deg) translate(-9px, 9px) ;
-      transform: rotate(-45deg) translate(-7px, 6px) ;
-    }  
-     
-    .change &__line2 {
-      opacity: 0;
-    } 
+    .change .nav__dropbar__line1 {
+        transform: rotate(-45deg) translate(-7px, 6px) ;
+        -webkit-transform: rotate(-45deg) translate(-7px, 6px) ;
   
-    .change &__line3 {
-      -webkit-transform: rotate(45deg) translate(-9px, -9px) ;
-      transform: rotate(45deg) translate(-7px, -6px) ;
+    }  
+       
+    .change .nav__dropbar__line2 {
+        opacity: 0;
+      } 
+    
+    .change .nav__dropbar__line3 {
+        transform: rotate(45deg) translate(-7px, -6px) ;
+        -webkit-transform: rotate(45deg) translate(-7px, -6px) ;
     }
 } 
 
@@ -220,7 +221,7 @@ $text-color:white;
         position: absolute;
         top: 4px;
         right: 27px;
-        background-image: url("/img/germanflag.svg");
+        background-image: url("/img/logo/germanflag.svg");
     }
 }
   
@@ -278,6 +279,7 @@ $text-color:white;
             margin: auto 7px;
         }
     }
+    
 
     &.active {
         left: 0;

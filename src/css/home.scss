@@ -99,7 +99,7 @@ $text-color:white;
         position: absolute;
         top: 10px;
         right: 82px;
-        background-image: url("/img/germanflag.svg");
+        background-image: url("/img/logo/germanflag.svg");
     }
 }
   
@@ -152,10 +152,10 @@ $text-color:white;
                 font-family:Georgia, 'Times New Roman', Times, serif;
                 font-size: 0.875rem;
                 letter-spacing: 1px; 
-                padding:5px 7px;
+                padding:6px;
                 background-color: $hover-menu;
                 border-radius:50px;
-                border: 2px solid $second-color;
+                border: 2px solid $hover;
                 color: $text-color;
                 cursor: pointer;
                 &:hover {
