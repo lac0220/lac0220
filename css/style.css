@@ -38,9 +38,9 @@ footer {
   }
 }
 .nav {
+  position: fixed;
   width: 200px;
   height: 100vh;
-  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
@@ -90,7 +90,7 @@ footer {
 .nav__menu__item a {
   font-weight: bold;
   color: white;
-  font-size: 1.563rem;
+  font-size: 1.5rem;
 }
 .nav__menu__item a:hover {
   color: #FF0700;
@@ -114,11 +114,25 @@ footer {
   color: #FF0700;
 }
 
+@media screen and (max-width: 1080px) and (min-height: 600px) {
+  .nav {
+    overflow: auto;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+}
 @media screen and (max-width: 700px) {
   .nav {
     width: 100%;
     height: 95px;
     border-bottom: 0.5px solid white;
+    overflow: unset;
   }
   .nav__header {
     margin: auto;
@@ -143,18 +157,17 @@ footer {
     background-color: white;
     transition: 0.4s;
   }
-  .nav .change .nav__dropbar__line1 {
+  .change .nav__dropbar__line1 {
     transform: rotate(-45deg) translate(-7px, 5.5px);
     -webkit-transform: rotate(-45deg) translate(-7px, 5.5px);
   }
-  .nav .change .nav__dropbar__line2 {
+  .change .nav__dropbar__line2 {
     opacity: 0;
   }
-  .nav .change .nav__dropbar__line3 {
+  .change .nav__dropbar__line3 {
     transform: rotate(45deg) translate(-7px, -5.5px);
     -webkit-transform: rotate(45deg) translate(-7px, -5.5px);
   }
-
   .nav__language {
     visibility: visible;
     display: inline-block;
@@ -231,21 +244,19 @@ footer {
     right: 27px;
     background-image: url("/img/logo/germanflag.svg");
   }
-
   .nav__logo {
     margin: 8px auto auto;
   }
   .nav__logo img {
     height: 5rem;
   }
-
   .nav__menu {
-    position: fixed;
     left: -150%;
     top: 95px;
     z-index: 1;
     width: 100%;
     transition: 0.5s;
+    position: fixed;
   }
   .nav__menu h3, .nav__menu p {
     visibility: visible;
@@ -350,8 +361,7 @@ footer {
   font-size: 1.375rem;
   display: block;
 }
-
-input[type=text], textarea {
+.contact input[type=text], .contact textarea {
   display: flex;
   flex-direction: column;
   background-color: #2079AC;
@@ -366,15 +376,13 @@ input[type=text], textarea {
   resize: vertical;
   outline: none;
 }
-input[type=text]:hover, textarea:hover {
+.contact input[type=text]:hover, .contact textarea:hover {
   border: 2px solid #FF0700;
 }
-
-input[type=text]:required:focus:invalid {
+.contact input[type=text]:required:focus:invalid {
   border: 2px solid #FF0700;
 }
-
-input[type=submit] {
+.contact input[type=submit] {
   background-color: #FF0700;
   color: white;
   padding: 10px;
@@ -386,34 +394,29 @@ input[type=submit] {
   font-family: Georgia, "Times New Roman", Times, serif;
   width: 30%;
 }
-input[type=submit]:hover {
+.contact input[type=submit]:hover {
   background-color: lightcoral;
   filter: drop-shadow(1px 1px 5px #FF0700);
 }
-input[type=submit]:hover:active {
+.contact input[type=submit]:hover:active {
   color: lightskyblue;
 }
-
 .contact__submit {
   text-align: center;
 }
-
-form > label {
+.contact form > label {
   font-weight: bold;
   color: white;
 }
-
 .contact__vertical__line {
   border: 2px solid white;
   height: 500px;
   margin: 80px 100px 0 100px;
   border-radius: 100%;
 }
-
 .contact__horizontal__line {
   display: none;
 }
-
 .contact__text {
   padding-top: 5px;
   display: grid;
@@ -435,7 +438,6 @@ form > label {
 .contact__text__address p:nth-child(2) {
   padding-top: 10px;
 }
-
 .contact__text__phone__icon1, .contact__text__email__icon2 {
   font-size: 5rem;
   -webkit-transition: all 1s ease;
@@ -456,7 +458,7 @@ form > label {
     width: 40%;
   }
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
   .contact {
     flex-direction: column;
     padding: 15px 0 30px;
@@ -466,11 +468,9 @@ form > label {
     margin: auto;
     padding-bottom: 20px;
   }
-
   .contact__vertical__line {
     display: none;
   }
-
   .contact__horizontal__line {
     display: inline-block;
     border: 2px solid white;
@@ -478,7 +478,6 @@ form > label {
     width: 70%;
     margin: 20px auto;
   }
-
   .contact__text {
     padding-top: 20px;
     row-gap: 30px;
@@ -489,7 +488,7 @@ form > label {
 }
 @media only screen and (max-width: 900px) {
   .contact__form {
-    width: 80%;
+    width: 90%;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -498,23 +497,19 @@ form > label {
     padding: 0;
     font-size: 1.125rem;
   }
-
-  input[type=text], input[type=submit], textarea {
+  .contact input[type=text], .contact input[type=submit], .contact textarea {
     font-size: 1.125rem;
   }
-
-  input[type=submit] {
+  .contact input[type=submit] {
     padding: 6px;
   }
-  input[type=submit]:hover {
+  .contact input[type=submit]:hover {
     background-color: #FF0700;
     filter: none;
   }
-
   .contact__horizontal__line {
     margin: 30px auto;
   }
-
   .contact__text {
     row-gap: 10px;
     padding-top: 0px;
@@ -522,7 +517,6 @@ form > label {
   .contact__text p {
     font-size: 1.125rem;
   }
-
   .contact__text__phone__icon1, .contact__text__email__icon2 {
     font-size: 3.75rem;
     -webkit-transition: none;
@@ -562,7 +556,7 @@ form > label {
   filter: drop-shadow(1px 1px 10px #FF0700);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 980px) {
   .aboutme {
     display: flex;
     flex-direction: column-reverse;
@@ -605,21 +599,28 @@ form > label {
   background-color: #464866;
   border-bottom-style: solid;
   border-bottom-color: #FF0700;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
-}
-.projects__portfolio__item h3 {
-  padding: 10px 0;
   color: white;
 }
+.projects__portfolio__item h3 {
+  padding: 5px 0;
+  background-color: #FF0700;
+  margin-bottom: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.projects__portfolio__item h4 {
+  margin: 0 20px 5px 20px;
+}
 .projects__portfolio__item p {
-  padding: 10px 20px;
+  padding: 0 20px 10px;
   text-align: left;
 }
 .projects__portfolio__flipbox {
   max-width: 200px;
   height: 200px;
-  margin: auto;
+  margin: auto auto 15px;
 }
 .projects__portfolio__flipbox__inner {
   position: relative;
@@ -644,16 +645,31 @@ form > label {
   background-color: #d6c6b4;
   z-index: 1;
   cursor: pointer;
+  overflow: hidden;
 }
 .projects__portfolio__flipbox__front2 {
   background-color: #116466;
   z-index: 1;
   cursor: pointer;
+  overflow: hidden;
 }
 .projects__portfolio__flipbox__front3 {
   background-color: white;
   z-index: 1;
   cursor: pointer;
+  overflow: hidden;
+}
+.projects__portfolio__flipbox__triangle {
+  position: absolute;
+  left: 170px;
+  border-top: 100px solid #FF0700;
+  border-left: 100px solid transparent;
+  z-index: 1;
+}
+.projects__portfolio__flipbox__logo1, .projects__portfolio__flipbox__logo2, .projects__portfolio__flipbox__logo3 {
+  max-width: 70%;
+  position: relative;
+  top: 15%;
 }
 .projects__portfolio__flipbox__back {
   background-color: #2079AC;
@@ -661,35 +677,52 @@ form > label {
   z-index: 2;
   font-size: 1.25rem;
   font-weight: bold;
+  color: white;
   padding-top: 15px;
-  color: white;
 }
-.projects__portfolio__flipbox__back a:nth-child(1) {
+.projects__portfolio__flipbox__back button:nth-child(1) {
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  padding: 12px 8px;
+  height: 0;
+  line-height: 0;
+  background-color: #FF0700;
+  border-radius: 10px;
+  border: 2px solid #464866;
   color: white;
+  cursor: pointer;
 }
-.projects__portfolio__flipbox__back a:nth-child(1):hover {
-  color: #FF0700;
+.projects__portfolio__flipbox__back button:nth-child(1):hover {
+  background-color: lightcoral;
+  filter: drop-shadow(1px 1px 5px #FF0700);
 }
 .projects__portfolio__flipbox__back p:nth-child(2) {
-  margin: -5px 0 -15px;
+  margin: 0 0 -10px;
   text-align: center;
 }
 .projects__portfolio__flipbox__back p:nth-child(3) {
   text-align: center;
 }
 .projects__portfolio__flipbox__back a:nth-child(4) {
-  color: white;
   position: relative;
-  bottom: 6%;
+  background-color: #FF0700;
+  padding: 3px 6px;
+  border-radius: 10px;
+  bottom: 4px;
   font-size: 1.875rem;
+  border: 1px solid #464866;
+  color: white;
 }
 .projects__portfolio__flipbox__back a:nth-child(4):hover {
-  color: #FF0700;
+  background-color: lightcoral;
+  filter: drop-shadow(1px 1px 5px #FF0700);
 }
-.projects__portfolio__logo1, .projects__portfolio__logo2 {
-  max-width: 70%;
-  position: relative;
-  top: 15%;
+.projects__portfolio__horizontal__line {
+  border: 2px solid #FF0700;
+  border-radius: 100%;
+  width: 80%;
+  margin: auto auto 10px;
 }
 .projects__portfolio .pulse img {
   animation-name: pulse;
@@ -726,6 +759,9 @@ form > label {
   .projects__portfolio {
     margin: auto 20px;
   }
+  .projects__portfolio__horizontal__line {
+    width: 85%;
+  }
 }
 @media only screen and (max-width: 700px) {
   .projects {
@@ -738,17 +774,18 @@ form > label {
   .projects__portfolio__item h3 {
     font-size: 1.25rem;
   }
+  .projects__portfolio__item h4 {
+    font-size: 1.1rem;
+  }
   .projects__portfolio__flipbox__back {
     font-size: 1.25rem;
   }
-  .projects__portfolio__flipbox__back a:nth-child(1) {
-    color: #edf5e1;
+  .projects__portfolio__flipbox__back button:nth-child(1):hover {
+    background-color: #FF0700;
+    filter: none;
   }
-  .projects__portfolio__flipbox__back a:nth-child(1):hover {
-    color: #edf5e1;
-  }
-  .projects__portfolio__flipbox__back a:nth-child(1):active {
-    color: #FF0700;
+  .projects__portfolio__flipbox__back button:nth-child(1):hover:active {
+    color: lightskyblue;
   }
   .projects__portfolio__flipbox__back p:nth-child(2) {
     font-size: 1.25rem;
@@ -756,8 +793,12 @@ form > label {
   .projects__portfolio__flipbox__back p:nth-child(3) {
     font-size: 1.25rem;
   }
-  .projects__portfolio__flipbox__back a:nth-child(4) {
-    color: #edf5e1;
+  .projects__portfolio__flipbox__back a:nth-child(4):hover {
+    background-color: #FF0700;
+    filter: none;
+  }
+  .projects__portfolio__flipbox__back a:nth-child(4):hover:active {
+    color: lightskyblue;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -768,19 +809,26 @@ form > label {
     max-width: 150px;
     height: 150px;
   }
+  .projects__portfolio__flipbox__triangle {
+    left: 125px;
+  }
   .projects__portfolio__flipbox__back {
     font-size: 0.938rem;
+    padding-top: 10px;
+  }
+  .projects__portfolio__flipbox__back button:nth-child(1) {
+    font-size: 0.938rem;
+    padding: 10px 6px;
   }
   .projects__portfolio__flipbox__back p:nth-child(2) {
-    margin: -10px 0 -20px;
     font-size: 0.938rem;
   }
   .projects__portfolio__flipbox__back p:nth-child(3) {
     font-size: 0.938rem;
   }
   .projects__portfolio__flipbox__back a:nth-child(4) {
-    bottom: 8%;
-    font-size: 1.875rem;
+    bottom: 5%;
+    font-size: 1.5rem;
   }
 }
 .nachricht {
@@ -981,7 +1029,7 @@ li:hover .home__name__language__triangle:after {
 }
 .home__name__header li:nth-child(4) button:hover {
   background-color: lightcoral;
-  filter: drop-shadow(1px 1px 5px red);
+  filter: drop-shadow(1px 1px 5px #FF0700);
 }
 @keyframes typing {
   from {
@@ -1100,16 +1148,13 @@ li:hover .home__name__language__triangle:after {
     top: 7px;
     right: 71px;
   }
-
   .home__name__header {
     margin-top: -13px;
   }
-
   .home__text {
     width: auto;
     margin: auto 20px;
   }
-
   .home__skills {
     grid-template-columns: repeat(2, 1fr);
     /* same sized column */
@@ -1181,7 +1226,6 @@ li:hover .home__name__language__triangle:after {
   .home {
     padding-bottom: 20px;
   }
-
   .home__name {
     background-attachment: scroll;
     margin: 95px auto 20px;
@@ -1198,6 +1242,11 @@ li:hover .home__name__language__triangle:after {
   }
   .home__name__header li:nth-child(1) a {
     font-size: 2.5rem;
+    pointer-events: none;
+  }
+  .home__name__header li:nth-child(1) a:hover {
+    color: white;
+    filter: none;
   }
   .home__name__header li:nth-child(2) {
     animation: typing 2s steps(100, end) both;
@@ -1224,14 +1273,12 @@ li:hover .home__name__language__triangle:after {
   .home__name__header li:nth-child(4) button:hover:active {
     color: lightskyblue;
   }
-
   .home__text {
     text-align: left;
     margin: auto 25px;
     padding-bottom: 20px;
     hyphens: none;
   }
-
   .home__skills {
     width: 80%;
     padding-bottom: 40px;
