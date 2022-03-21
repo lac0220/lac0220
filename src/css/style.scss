@@ -7,57 +7,54 @@
 @import 'nachricht';
 @import 'home';
 
-
 $first-color: #0C0032;						
 $second-color: #464866;		
 $third-color: #211A36;	
 $contact-form: #edf5e1;
-$main-font: Georgia, 'Times New Roman', Times, serif;
 $hover:#2079AC;
 $hover-menu:#FF0700;
 $text-color:white;
+$main-font: Georgia, 'Times New Roman', Times, serif;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
 html {
-  font-size: 100%;
+    font-size: 100%;
 }
 
 body {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 html, body {
-  line-height: 1.5;
-  font-family:$main-font;
-  height: 100vh;
-  margin-left: 100px;
-  padding: 0 20px;   
-  background: $third-color;
-  scroll-behavior: smooth;
+    line-height: 1.5;
+    font-family:$main-font;
+    height: 100vh;
+    margin-left: 100px;
+    padding: 0 40px;   
+    background: $third-color;
+    scroll-behavior: smooth;
 }
 
 section h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  padding: 10px;
-  color: $text-color;						
+    font-size: 2.5rem;
+    text-align: center;
+    color: $text-color;						
 }
 
 section p {
-  color: $text-color;	
-  text-align: justify;
+    color: $text-color;	
 }
 
 .horizontal__line {
-  border: 2px solid $hover-menu;
-  border-radius: 100%;
-  width: 30%;
-  margin: auto;  
+    border: 2px solid $hover-menu;
+    border-radius: 100%;
+    width: 30%;
+    margin: auto;  
 }
 
 li {
@@ -65,64 +62,45 @@ li {
 }
   
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 
 @media screen and (max-width: 1200px) {
-    
-.horizontal__line {
-  width: 60%;
-}
-}
+  
+    html, body {
+            padding: 0 25px;
+    }
 
-@media screen and (max-width: 700px) {
-    
-html, body {
-  margin-left: 0;
-  padding: 0;
-  scroll-padding-top: 110px; /* Equals to fixed navbar height for mobile usage*/
-}
+    section h1 {
+            font-size: 1.875rem;
+    }
 
-section h1 {
-  font-size: 1.875rem;
-  padding: 0px;	
-}
+    section p {
+            font-size: 1.15rem;
+    }
 
-section p {
-  font-size: 1rem;
-}
+    .horizontal__line {
+            width: 50%;
+    }
 }
   
 
+ @media screen and (max-width: 700px) {
+    
+    html, body {
+        margin: 0 10px;
+        padding: 0;
+        scroll-padding-top: 80px; /* Equals to fixed navbar height for mobile usage*/
+    }
 
+    section h1 {
+        font-size: 1.6rem;
+        padding: 0;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    section p {
+        font-size: 1rem;
+    }
+}
   
-
-
-
-
-
-
-
-

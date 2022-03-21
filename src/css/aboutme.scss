@@ -2,16 +2,14 @@ $first-color: #0C0032;
 $second-color: #464866;		
 $third-color: #211A36;	
 $contact-form: #edf5e1;
-$main-font: Georgia, 'Times New Roman', Times, serif;
 $hover:#2079AC;
 $hover-menu:#FF0700;
 $text-color:white;
+$main-font: Georgia, 'Times New Roman', Times, serif;
 
 .aboutme {
-    padding: 25px 0 20px;
+    padding: 20px 0 25px;
     p {
-        text-align:justify;
-        padding: 5px 0;
         hyphens: auto;
         -webkit-hyphens: auto;
         -webkit-hyphenate-limit-before: 3;
@@ -21,54 +19,69 @@ $text-color:white;
         -webkit-hyphenate-limit-last: always;
         -webkit-hyphenate-limit-zone: 8%;
     }
+
+    p:nth-child(2) {
+        padding-bottom: 10px;
+    }
+
+    p:nth-child(3) {
+        padding: 10px 0;
+    }
+
+    p:nth-child(4) {
+        padding-top: 10px;
+    }
   
     &__photo {
-        margin: 0 40px 0 20px;
+        margin: 5px 40px 10px 0;
         float: left;
+
         img {
-            max-width: 300px;
+            max-width: 18.75rem;
             height: auto;
             border-radius: 50%;
             filter: drop-shadow(1px 1px 10px $hover-menu);
         }
     }
 }
-      
-@media only screen and (max-width: 980px) {
-    
-.aboutme {
-    display: flex;
-    flex-direction: column-reverse;
-    margin: 0 20px;
-    padding: 10px 0;
   
-    &__text p { 
-        padding-bottom: 10px;
-  
-    }
+ @media only screen and (max-width: 1200px) {
     
-    &__photo {
-        margin: auto;
-        padding-top: 20px;
-        float:none;
+    .aboutme {
+        padding: 5px 0 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        
+        &__photo {
+            margin: auto;
+            padding-top: 15px;
+            float:none;
+        }
     }
-}
 }
     
 @media only screen and (max-width: 700px) {
     
-.aboutme {
-    margin: 0 25px;
-    padding: 10px 0 18px;
-
-    &__text p { 
-        text-align: left; 
-        hyphens: none;
-    }
-
-    &__photo {
-        padding-top: 15px;
+    .aboutme {
+        padding: 0 0 18px;
+        margin: auto;
+        width: 80%;
+        p { 
+            hyphens: none;
+        }
     }
 }
+  
+@media only screen and (max-width: 500px) {
+    
+    .aboutme {
+        width: 100%;
+
+        &__photo img {
+            max-width: 17.5rem;
+        }
+    }
 }
     
+    
+  

@@ -2,10 +2,10 @@ $first-color: #0C0032;
 $second-color: #464866;		
 $third-color: #211A36;	
 $contact-form: #edf5e1;
-$main-font: Georgia, 'Times New Roman', Times, serif;
 $hover:#2079AC;
 $hover-menu:#FF0700;
 $text-color:white;
+$main-font: Georgia, 'Times New Roman', Times, serif;
 
 .message {
     text-align: center;
@@ -37,24 +37,25 @@ $text-color:white;
   
 @media only screen and (max-width: 1060px) {
     
-.message {
-    width: 90%;
-    &__smile {
-        position: relative;
-        right: 0;
-        top: 5px;
-    }
+    .message {
+        width: 90%;
+        
+        &__smile {
+            position: relative;
+            right: 0;
+            top: 5px;
+        }
 
-    h1, h2 {
-        padding: 15px 0;
+        h1, h2 {
+            padding: 15px 0;
+        }
     }
-}
 }
   
 @media only screen and (max-width: 700px) {
     
-.message__smile {
-    max-width: 80px;
+    .message__smile {
+        max-width: 80px;
     }
 
     h1 {

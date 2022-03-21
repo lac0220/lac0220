@@ -2,49 +2,71 @@ $first-color: #0C0032;
 $second-color: #464866;		
 $third-color: #211A36;	
 $contact-form: #edf5e1;
-$main-font: Georgia, 'Times New Roman', Times, serif;
 $hover:#2079AC;
 $hover-menu:#FF0700;
 $text-color:white;
+$main-font: Georgia, 'Times New Roman', Times, serif;
 
 footer {
     display: flex;
     flex-direction: column;
-    margin:auto -40px;
+    margin: auto -80px;
     text-align: center;
     background-color: $first-color;
     padding: 10px 0 20px;
-    } 
     
-.footer__socialmedia a {
-    display: inline-block;
-    border-radius: 2px;
-    color: $text-color;
-    margin: auto 10px;
-    font-size: 3.125rem;
-    &:hover {
-        transform:scale(1.1); 
-        -webkit-transform:scale(1.1);
-        color: $hover-menu;
+    .footer__socialmedia a {
+        display: inline-block;
+        border-radius: 2px;
+        color: $text-color;
+        margin: auto 10px;
+        font-size: 3.125rem;
+        &:hover {
+            transform:scale(1.1); 
+            -webkit-transform:scale(1.1);
+            color: $hover-menu;
+        }
+    }
+    
+    .footer__copyright {
+        color: $text-color;
+    }
+} 
+  
+@media screen and (max-width: 1200px) { 
+    
+    footer {
+        .footer__socialmedia a {
+            font-size: 2.5rem;
+        }
+            
+        .footer__copyright {
+            font-size: 1.2rem;
+        }
     }
 }
-   
-.footer__copyright {
-    color: $text-color;
-}
-    
+        
 @media screen and (max-width: 700px) { 
     
-footer {
-    margin:auto;
+    footer {
+        margin: auto -20px;
+    
+        .footer__socialmedia a {
+            font-size: 1.875rem;
+        }
+        
+        .footer__copyright {
+            font-size: 1rem;
+        }
+    }
 }
   
-.footer__socialmedia a {
-    font-size: 1.875rem;
-}
-    
-.footer__copyright {
-    font-size: 1rem;
-}
-}
-    
+  
+  
+  
+  
+  
+  
+  
+  
+  
