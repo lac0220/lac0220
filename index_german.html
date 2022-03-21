@@ -4,137 +4,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css" media="screen" />
+    <link href="/css/reset.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" /> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> <!-- linkedin, github and codepen -->
     <link rel="shortcut icon" href="img/logo/logofavicon.webp" type="image/webp" /> <!-- favicon -->
 
     <title>Portfolio - Laszlo Nemeth</title>
 
-<style>
-
-    .nav__language__flag1 {
-        width: 1.8rem;
-        border:1px solid white;
-        top:-1px;
-    }
-
-    .nav__language__flag2 {
-        background-image: url("/img/logo/ukflag.svg");
-    }
-
-    .home__name__language__flag1 {
-        border:0.5px solid white;
-        right:110%;
-
-    }
-
-    .home__name__language__flag2 {
-        width: 28px;
-        top: 11px;
-        right: 83px;
-        background-image: url("/img/logo/ukflag.svg");
-    }
-
-    .projects__portfolio__flipbox__back button:nth-child(1) {
-        padding:12px 2px;
-    }
-
-    @media only screen and (max-width: 1200px) {
-
-    .home__name__language {
-        font-size: 15px;
-    }
-
-    .home__name__language__flag1 {
-        width: 2rem;
-        right:112%;
-    }
-
-    .home__name__language__flag2 {
-        width: 22px;
-        height: 16px;
-        top: 8px;
-        right: 71px;
-    }
-    }
+    <style>
    
-    @media only screen and (max-width: 1080px) {
+        .home__name__language img {
+            border: 2px solid white;
+            right:110%;
+        }
 
-    .home__name__header li:nth-child(3) {
-        font-size: 20px;
-        padding: 36px 0 20px;
-    }
-    }
+        .home__name__language__triangle {
+            left: 79px;
+        }
 
-    @media only screen and (max-width: 700px) {
+        .home__name__language i:nth-child(1) {
+            height: 27px;
+            width: 35px;
+            top: 5px;
+            background-image: url("/img/logo/ukflag.svg");
+        }
 
-    .home__name__header li:nth-child(3) {
-        font-size: 16px;
+        .home__name__language i:nth-child(2) {
+            left: 87px;
+        }
 
-    }
-    }
+        .projects__portfolio__flipbox__back button:nth-child(1) {
+            padding: 12px 2px;
+        }
 
-    @media only screen and (max-width: 700px) {
+        .aboutme__photo {
+            margin: 18px 40px 10px 0;
+        }
 
-    .projects__portfolio__flipbox__back button:nth-child(1) {
-        padding:10px 2px;
-    }
-    }
+        @media only screen and (max-width: 1200px) {
 
-</style>
+            .home__name__language {
+                margin-left: -135px;
+            }
+
+            .home__name__language img {
+                right:112%;
+            }
+
+            .home__name__language__triangle {
+                left: 58px;
+            }
+
+            .home__name__language i:nth-child(1) {
+                height: 21px;
+                width: 28px;
+                top: 3px;
+            }
+
+            .home__name__language i:nth-child(2) {
+                left: 68px;
+            }
+
+            .projects__portfolio__flipbox__back {
+                padding-top: 35px;
+            }
+
+            .aboutme__photo {
+                margin: auto;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+
+            .nav__header__language img {
+                border: 1.5px solid white;
+                top:-1px;
+            }
+
+            nav .nav__header__language i:nth-child(1) {
+                background-image: url("/img/logo/ukflag.svg");
+            }
+
+            .home__name__header li:nth-child(3) {
+                font-size: 1rem;
+            }
+        
+            .projects__portfolio__flipbox__back button:nth-child(1) {
+                padding: 10px 2px;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+
+            .home__name__header li:nth-child(3) {
+                font-size: 0.85rem;
+            }
+
+            .projects__portfolio__flipbox__back {
+                padding-top: 10px;
+            }
+        }
+
+    </style>
 
 </head>
 <body>
     <header>
-        <nav class="nav">
+        <nav>
             <div class="nav__header">
-                <div class="nav__dropbar">
-                    <span class="nav__dropbar__line1"></span>
-                    <span class="nav__dropbar__line2"></span>
-                    <span class="nav__dropbar__line3"></span>
+                <div class="nav__header__dropbar">
+                    <span class="nav__header__dropbar__line1"></span>
+                    <span class="nav__header__dropbar__line2"></span>
+                    <span class="nav__header__dropbar__line3"></span>
                 </div>
 
-                <div class="nav__language">
-                    <img class="nav__language__flag1" src="/img/logo/germanflag.svg" alt="German flag"/>
-                    <li><b>DE</b> <i class="fa fa-angle-down"></i>
-                    <div class="nav__language__triangle"></div>
+                <div class="nav__header__language">
+                    <img src="/img/logo/germanflag.svg" alt="German flag"/>
+                    <li><b>DE</b><i class="fa fa-angle-down"></i>
+                    <div class="nav__header__language__triangle"></div>
                         <ul>
-                            <li><a href="index.html"><i class="nav__language__flag2"></i> <span>EN</span></a></li>                      
+                            <li><a href="index.html"><i></i><span>EN</span></a></li>                      
                         </ul>
                     </li>
                 </div>
                 
-                <div class="nav__logo">
+                <div class="nav__header__logo">
                     <a href="#home"><img src="/img/logo/logo.webp" alt="Laszlo Nemeth logo"/></a>
                 </div>
                 <h3>Laszlo Nemeth</h3>
                 <p>Front-End</p>
                 <p>Web-Entwickler</p>
+                <div class="nav__header__socialmedia">
+                    <a href="https://www.linkedin.com/in/nemeth0220" target="_blank" alt="Linkedin logo"><i class="fab fa-linkedin"></i></a>    <!-- linkedin -->
+                    <a href="https://github.com/lac0220" target="_blank"><i class="fab fa-github" alt="Github logo"></i></a>      <!-- github -->
+                    <a href="https://codepen.io/lac0220/" target="_blank"><i class="fab fa-codepen" alt="Codepen logo"></i></a>  <!-- codepen-->      
+                </div>  
             </div>
             
-            <ul class="nav__menu">
+            <ul id="nav__menu">
                 <h3>Laszlo Nemeth</h3>
                 <p>Front-End Web-Entwickler</p>
                 <hr class="nav__menu__horizontalline1">
 
-                <li class="nav__menu__item">
-                    <a href="#home" class="nav__menu__item__link">Startseite</a>
-                </li>
-                <li class="nav__menu__item">
-                    <a href="#projects" class="nav__menu__item__link">Projekte</a>
-                </li>
-                <li class="nav__menu__item">
-                    <a href="#aboutme" class="nav__menu__item__link">Über mich</a>
-                </li>
-                <li class="nav__menu__item">
-                    <a href="#contact" class="nav__menu__item__link">Kontakt</a>
-                </li>
-                <li class="nav__menu__item">
-                    <a href="img/cv/Laszlo_Nemeth_Lebenslauf.pdf" alt="Resume" download>Lebenslauf</a>
-                </li>
+                <li><a href="#home">Startseite</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#aboutme">Über mich</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="img/cv/Laszlo_Nemeth_Lebenslauf.pdf" alt="Resume" download>Lebenslauf</a></li>
 
                 <hr class="nav__menu__horizontalline2">
+
+                <div class="nav__menu__empty">
 
                 <div class="nav__menu__socialmedia">
                     <a href="https://www.linkedin.com/in/nemeth0220" target="_blank" alt="Linkedin logo"><i class="fab fa-linkedin"></i></a>    <!-- linkedin -->
@@ -149,11 +169,11 @@
         <div class="home" id="home">
             <ul class="home__name">
                 <div class="home__name__language">
-                    <img class="home__name__language__flag1" src="/img/logo/germanflag.svg" alt="German flag"/>
-                    <li><b>German</b> <i class="fa fa-angle-down"></i>
+                    <img src="/img/logo/germanflag.svg" alt="German flag"/>
+                    <li><b>German</b><i class="fa fa-angle-down"></i>
                         <div class="home__name__language__triangle"></div>
                         <ul>
-                            <li><a href="index.html"><i class="home__name__language__flag2"></i> <span>English</span></a></li>                      
+                            <li><a href="index.html"><i></i><span>English</span></a></li>                      
                          </ul>
                     </li>
                 </div>
@@ -171,23 +191,31 @@
             <div class="home__skills">
                 <div class="home__skills__text1">  
                     <p>HTML5</p>
+                    <div class="home__skills__img">  
+                        <img src="./img/logo/html.webp" alt="HTML5 icon">
+                    </div>
                 </div>
-                <img class="home__skills__img1" src="/img/logo/html.webp" alt="HTML5 icon">
 
                 <div class="home__skills__text2">  
                     <p>CSS</p>
+                    <div class="home__skills__img">  
+                        <img src="./img/logo/css.webp" alt="CSS icon">
+                    </div>
                 </div>
-                <img class="home__skills__img2" src="/img/logo/css.webp" alt="CSS icon">
 
                 <div class="home__skills__text3">  
                     <p>JavaScript</p>
+                    <div class="home__skills__img">  
+                        <img src="./img/logo/js.webp" alt="JavaScript icon">
+                    </div>
                 </div>
-                <img class="home__skills__img3" src="/img/logo/js.webp" alt="JavaScript icon">
 
                 <div class="home__skills__text4">  
                     <p>React JS</p>
+                    <div class="home__skills__img">  
+                        <img src="./img/logo/react.webp" alt="React JS icon">
+                    </div>
                 </div>
-                <img class="home__skills__img4" src="/img/logo/react.webp" alt="React JS icon">
             </div>
         </div> 
     </section>
@@ -199,80 +227,77 @@
 
         <div class="projects">
             <div class="projects__portfolio">
-                <div class="projects__portfolio__item">
-                    <h3>GENERIC HIPSTER COFFEE</h3>
+                <h3>GENERIC HIPSTER COFFEE</h3>
 
-                    <div class="projects__portfolio__flipbox">
-                        <div class="projects__portfolio__flipbox__inner">
-                            <div class="projects__portfolio__flipbox__front1 pulse">
-                                <div class="projects__portfolio__flipbox__triangle"></div>
-                                <img class="projects__portfolio__flipbox__logo1" src="img/logo/logocoffee.svg" alt="Coffee shop website logo" />                      
-                            </div>
+                <div class="projects__portfolio__flipbox">
+                    <div class="projects__portfolio__flipbox__inner">
+                        <div class="projects__portfolio__flipbox__front1 pulse">
+                            <div class="projects__portfolio__flipbox__triangle"></div>
+                            <img src="img/logo/logocoffee.svg" alt="Coffee shop website logo" />                      
+                        </div>
 
-                            <div class="projects__portfolio__flipbox__back">
-                                <a href="https://lac0220.github.io/hackaton-coffeeshop/index.html" target="_blank" alt="Coffee shop website"><button>Website besuchen</button></a>
-                                <p>oder</p>
-                                <p>Code anschauen</p>
-                                <a href="https://github.com/lac0220/hackaton-coffeeshop" target="_blank" alt="Github link"><i class="fab fa-github"></i></a>  
-                            </div>
+                        <div class="projects__portfolio__flipbox__back">
+                            <a href="https://lac0220.github.io/hackaton-coffeeshop/index.html" target="_blank" alt="Coffee shop website"><button>Website besuchen</button></a>
+                            <p>oder</p>
+                            <p>Code anschauen</p>
+                            <a href="https://github.com/lac0220/hackaton-coffeeshop" target="_blank" alt="Github link"><i class="fab fa-github"></i></a>  
                         </div>
                     </div>
-                    <h4>BOOTCAMP HACKATHON</h4>
-                    <hr class="projects__portfolio__horizontal__line">
-                    <p>Die Aufgabe war, eine responsive Website für ein Kaffee-Shop zu erstellen</p>
-                    <p><span style="font-weight: bold;">Tech-Stack:</span> <span style="font-family: 'Times New Roman', Times, serif";>HTML5, CSS, SASS</span></p>
                 </div>
+                <h4>BOOTCAMP HACKATHON</h4>
+                <hr class="projects__portfolio__horizontalline">
+                <p>Die Aufgabe war, eine responsive Website für ein Kaffee-Shop zu erstellen, die einige grundsätzliche Informationen, eine Speisekarte, unterschiedliche Kaffeesorten und ein Buchungsformular enthält</p>
+                <p><span style="font-weight: bold;">Tech-Stack:</span> <span style="font-family: 'Times New Roman', Times, serif";>HTML5, CSS, SASS</span></p>
+            </div>
 
-                <div class="projects__portfolio__item">
-                    <h3>LEGENDARY QUOTES</h3>
+            <div class="projects__portfolio">
+                <h3>LEGENDARY QUOTES</h3>
 
-                    <div class="projects__portfolio__flipbox">
-                        <div class="projects__portfolio__flipbox__inner">
-                            <div class="projects__portfolio__flipbox__front2 pulse">
-                                <div class="projects__portfolio__flipbox__triangle"></div>
-                                <img class="projects__portfolio__flipbox__logo2" src="img/logo/logoquotes.webp" alt="Quotes website logo" />                      
-                            </div>
+                <div class="projects__portfolio__flipbox">
+                    <div class="projects__portfolio__flipbox__inner">
+                        <div class="projects__portfolio__flipbox__front2 pulse">
+                            <div class="projects__portfolio__flipbox__triangle"></div>
+                            <img src="img/logo/logoquotes.webp" alt="Quotes website logo" />                      
+                        </div>
 
-                            <div class="projects__portfolio__flipbox__back">
-                                <a href="https://lac0220.github.io/finalproject-quotes/index.html" target="_blank" alt="Legendary Quotes website"><button>Website besuchen</button></a>
-                                <p>oder</p>
-                                <p>Code anschauen</p>
-                                <a href="https://github.com/lac0220/finalproject-quotes" target="_blank" alt="Github link"><i class="fab fa-github"></i></a>  
-                            </div>
+                        <div class="projects__portfolio__flipbox__back">
+                            <a href="https://lac0220.github.io/finalproject-quotes/index.html" target="_blank" alt="Legendary Quotes website"><button>Website besuchen</button></a>
+                            <p>oder</p>
+                            <p>Code anschauen</p>
+                            <a href="https://github.com/lac0220/finalproject-quotes" target="_blank" alt="Github link"><i class="fab fa-github"></i></a>  
                         </div>
                     </div>
-                    <h4>BOOTCAMP ABSCHLUSS</h4> 
-                    <hr class="projects__portfolio__horizontal__line">
-                    <p>Zufällige Zitate von berühmten Personen in verschiedenen Kategorien zu erstellen. Suchmöglichkeiten nach Schlüsselwörtern, alphabetische Filterung, Kontaktformular zur Übermittlung und mobilfreundliches Webdesign mit Navigationsleiste</p>
-                    <p><span style="font-weight: bold;">Tech Stack:</span> <span style="font-family: 'Times New Roman', Times, serif";>HTML5, CSS, SASS, JavaScript, jQuery</span></p>
                 </div>
+                <h4>BOOTCAMP ABSCHLUSS</h4> 
+                <hr class="projects__portfolio__horizontalline">
+                <p>Die Website zeigt zufällige Zitate von berühmten Personen in verschiedenen Kategorien. Suchmöglichkeiten nach Schlüsselwörtern, alphabetische Filterung, Kontaktformular zur Übermittlung und mobilfreundliches Webdesign mit Navigationsleiste</p>
+                <p><span style="font-weight: bold;">Tech Stack:</span> <span style="font-family: 'Times New Roman', Times, serif";>HTML5, CSS, SASS, JavaScript, jQuery</span></p>
+            </div>
 
-                <div class="projects__portfolio__item">
-                    <h3>MODEL PORTFOLIO</h3>
+            <div class="projects__portfolio">
+                <h3>MODEL PORTFOLIO</h3>
 
-                        <div class="projects__portfolio__flipbox">
-                            <div class="projects__portfolio__flipbox__inner">
-                                <div class="projects__portfolio__flipbox__front3 pulse">
-                                    <div class="projects__portfolio__flipbox__triangle"></div>
-                                    <img class="projects__portfolio__flipbox__logo3" src="img/logo/logomodel.webp" alt="Model portfolio logo" />                      
-                                </div>
-
-                                <div class="projects__portfolio__flipbox__back">
-                                    <a href="https://lac0220.github.io/model-portfolio/index.html" target="_blank" alt="Model website"><button>Website besuchen</button></a>
-                                    <p>oder</p>
-                                    <p>Code anschauen</p>
-                                    <a href="https://github.com/lac0220/model-portfolio" target="_blank" alt="Github link"><i class="fab fa-github"></i></a>  
-                                </div>
-                            </div>
+                <div class="projects__portfolio__flipbox">
+                    <div class="projects__portfolio__flipbox__inner">
+                        <div class="projects__portfolio__flipbox__front3 pulse">
+                            <div class="projects__portfolio__flipbox__triangle"></div>
+                            <img src="img/logo/logomodel.webp" alt="Model portfolio logo" />                      
                         </div>
-                        <h4>FREELANCING</h4> 
-                        <hr class="projects__portfolio__horizontal__line">
-                        <p>Erstellung einer Portfolio-Website für ein Model</p>
-                        <p><span style="font-weight: bold;">Tech Stack:</span> <span style="font-family: 'Times New Roman', Times, serif";>React JS, SASS</span></p>
+
+                        <div class="projects__portfolio__flipbox__back">
+                            <a href="https://lac0220.github.io/model-portfolio/index.html" target="_blank" alt="Model website"><button>Website besuchen</button></a>
+                            <p>oder</p>
+                            <p>Code anschauen</p>
+                            <a href="https://github.com/lac0220/model-portfolio" target="_blank" alt="Github link"><i class="fab fa-github"></i></a>  
+                        </div>
                     </div>
                 </div>
-            </div> 
-        </div>    
+                <h4>FREELANCING</h4> 
+                <hr class="projects__portfolio__horizontalline">
+                <p>Erstellung einer Portfolio-Website für ein Model und Künstlerin</p>
+                <p><span style="font-weight: bold;">Tech Stack:</span> <span style="font-family: 'Times New Roman', Times, serif";>React JS, SASS</span></p>
+            </div>
+        </div>
     </section>
 
     <section>
@@ -284,12 +309,9 @@
             <div class="aboutme__photo">
                 <img src="/img/profile.webp" alt="Laszlo Nemeth profile picture">
             </div>
-
-            <div class="aboutme__text">
-                <p>Meine erste Berufserfahrung im IT-Bereich sammelte ich 2015 bei Hewlett-Packard in Irland. Ich arbeitete als German Technical Support Analyst und leistete technischen First-Line-Support für verschiedene Produkte und Anwendungen. Meine Aufgabe bestand unter anderem darin, eine analytische Problemlösung und Fehlersuche zu bieten. Danach habe ich einige Jahre im Bereich der Steuerverwaltung verbracht, wo ich Bearbeitungsprozesse analysierte bzw. erneuerte und neue automatisierte Steuerdienstleistungen implementierte, aber meine Leidenschaft für IT hat mich wieder auf den richtigen Weg gebracht.</p>
-                <p>Ich habe mich entschlossen, in die Welt der Codes einzutauchen und habe im November 2021 einen intensiven 12-wöchigen Fullstack-Webentwicklungskurs bei einem Coding Bootcamp in Prag (CZ) abgeschlossen. Ich bin ein gut ausgebildeter Web-Entwickler geworden.</p>
-                <p>Aufgrund meiner vorherigen Berufserfahrung bin ich detailorientiert und analytisch mit praktischen Problemlösungsmethoden und jetzt möchte ich meine Fähigkeiten als Web-Entwickler in Front-End-Positionen und Projekten erweitern.</p>
-            </div>
+            <p>Meine erste Berufserfahrung im IT-Bereich sammelte ich 2015 bei Hewlett-Packard in Irland. Ich arbeitete als German Technical Support Analyst und leistete technischen First-Line-Support für verschiedene Produkte und Anwendungen. Meine Aufgabe bestand unter anderem darin, eine analytische Problemlösung und Fehlersuche zu bieten. Danach habe ich einige Jahre im Bereich der Steuerverwaltung verbracht, wo ich Bearbeitungsprozesse analysierte bzw. erneuerte und neue automatisierte Steuerdienstleistungen implementierte, aber meine Leidenschaft für IT hat mich wieder auf den richtigen Weg gebracht.</p>
+            <p>Ich habe mich entschlossen, in die Welt der Codes einzutauchen und habe im November 2021 einen intensiven 12-wöchigen Fullstack-Webentwicklungskurs bei einem Coding Bootcamp in Prag (CZ) abgeschlossen. Ich bin ein gut ausgebildeter Web-Entwickler geworden.</p>
+            <p>Aufgrund meiner vorherigen Berufserfahrung bin ich detailorientiert und analytisch mit praktischen Problemlösungsmethoden und jetzt möchte ich meine Fähigkeiten als Web-Entwickler in Front-End-Positionen und Projekten erweitern.</p>
         </div>
     </section>
 
@@ -299,7 +321,6 @@
         <hr class="horizontal__line">
 
         <div class="contact">
-            <div class="contact__form">
                 <form action="https://formsubmit.co/nemeth0220@gmail.com" method="POST">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
@@ -318,20 +339,19 @@
                         <input type="submit" value="SENDEN">
                     </div>
                 </form>
-            </div>
 
-            <div class="contact__vertical__line"></div>
+            <div class="contact__verticalline"></div>
         
-            <hr class="contact__horizontal__line">
+            <hr class="contact__horizontalline">
 
             <div class="contact__text">
                 <div class="contact__text__phone">
-                    <i class="contact__text__phone__icon1 fas fa-mobile-alt" alt="Phone icon"></i>
+                    <i class="fas fa-mobile-alt" alt="Phone icon"></i>
                     <p>+420 792 588 255</p>
                 </div>
                 
                 <div class="contact__text__email">
-                    <i class="contact__text__email__icon2 far fa-envelope" alt="Email icon"></i>
+                    <i class="far fa-envelope" alt="Email icon"></i>
                     <p>nemeth0220@gmail.com</p>
                 </div>
 
