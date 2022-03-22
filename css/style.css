@@ -664,19 +664,20 @@ nav ul .nav__menu__socialmedia {
 
 @media only screen and (max-width: 1200px) {
   .aboutme {
-    padding: 5px 0 20px;
+    padding: 10px 0 20px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .aboutme__photo {
     margin: auto;
-    padding-top: 10px;
+    padding-top: 15px;
     float: none;
+    order: 1;
   }
 }
 @media only screen and (max-width: 700px) {
   .aboutme {
-    padding: 0 0 18px;
+    padding: 10px 0 18px;
     margin: auto;
     width: 80%;
   }
@@ -855,7 +856,7 @@ nav ul .nav__menu__socialmedia {
 }
 @media only screen and (max-width: 1200px) {
   .projects {
-    padding: 25px 0 30px;
+    padding: 20px 0 30px;
   }
   .projects__portfolio h3 {
     font-size: 1.3rem;
@@ -921,6 +922,9 @@ nav ul .nav__menu__socialmedia {
 @media only screen and (max-width: 500px) {
   .projects {
     width: 100%;
+  }
+  .projects p {
+    padding: 0 10px 10px;
   }
   .projects__portfolio__flipbox {
     max-width: 150px;
@@ -1300,7 +1304,7 @@ li:hover .home__name__language__triangle:after {
   }
   .home__skills p {
     font-size: 1.4rem;
-    top: 8px;
+    top: 9px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -1308,7 +1312,11 @@ li:hover .home__name__language__triangle:after {
     grid-template-columns: repeat(2, 1fr);
     /* same sized column */
     column-gap: 70px;
-    row-gap: 40px;
+    row-gap: 95px;
+    padding-bottom: 90px;
+  }
+  .home__skills__text1, .home__skills__text2, .home__skills__text3, .home__skills__text4 {
+    height: 50px;
   }
   .home__skills__text3 {
     grid-column: 1;
@@ -1319,10 +1327,10 @@ li:hover .home__name__language__triangle:after {
     grid-row: 2;
   }
   .home__skills__text3 img {
-    top: 24px;
+    top: 25px;
   }
   .home__skills__text4 img {
-    top: 22px;
+    top: 23px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -1378,17 +1386,17 @@ li:hover .home__name__language__triangle:after {
     width: 80%;
   }
   .home__skills {
-    row-gap: 20px;
+    row-gap: 70px;
     column-gap: 50px;
     width: 80%;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
   }
   .home__skills p {
     font-size: 1.25rem;
     top: 3px;
   }
   .home__skills__text1, .home__skills__text2, .home__skills__text3, .home__skills__text4 {
-    height: 40%;
+    height: 40px;
   }
   .home__skills__text1 img, .home__skills__text2 img {
     max-width: 50px;
@@ -1396,11 +1404,11 @@ li:hover .home__name__language__triangle:after {
   }
   .home__skills__text3 img {
     max-width: 55px;
-    top: 13px;
+    top: 14px;
   }
   .home__skills__text4 img {
     max-width: 58px;
-    top: 12px;
+    top: 14px;
   }
 }
 @media only screen and (max-width: 500px) {

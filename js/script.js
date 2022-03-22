@@ -3,8 +3,7 @@ var __webpack_exports__ = {};
 /*!**************************!*\
   !*** ./src/js/script.js ***!
   \**************************/
-
-// hamburger menu
+// navigation
 const dropBar = document.querySelector(".nav__header__dropbar");
 const navMenu = document.querySelector("#nav__menu");
 
