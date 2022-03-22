@@ -256,8 +256,7 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
         }
     }
 }
-  
-  
+    
 @media only screen and (max-width: 1200px) {
   
     .home {   
@@ -347,7 +346,7 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
             column-gap: 40px;
             p {
                 font-size: 1.4rem;
-                top: 8px;
+                top: 9px;
             } 
         }
     }
@@ -358,7 +357,12 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
     .home__skills {
         grid-template-columns: repeat(2, 1fr);  /* same sized column */
         column-gap: 70px;
-        row-gap: 40px;
+        row-gap: 95px;
+        padding-bottom: 90px;
+
+        &__text1, &__text2, &__text3, &__text4 {
+            height: 50px;
+        }
             
         &__text3 {
             grid-column: 1;
@@ -371,11 +375,11 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
         }
         
         &__text3 img {
-            top: 24px;
+            top: 25px;
         }
         
         &__text4 img {
-            top: 22px;
+            top: 23px;
         }
     }
 }
@@ -442,17 +446,17 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
         }
             
         &__skills {
-            row-gap: 20px;
+            row-gap: 70px;
             column-gap: 50px;
             width: 80%;
-            padding-bottom: 20px;
+            padding-bottom: 70px;
             p {
                 font-size: 1.25rem;
                 top: 3px;
             }
         
             &__text1, &__text2,  &__text3, &__text4 {
-                height: 40%;         
+                height: 40px;         
             }
         
             &__text1 img, &__text2 img {
@@ -462,12 +466,12 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
             
             &__text3 img {
                     max-width: 55px;
-                    top: 13px;
+                    top: 14px;
                 }
             
             &__text4 img {
                 max-width: 58px;
-                top:12px;
+                top: 14px;
             }
         }
     }

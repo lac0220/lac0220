@@ -188,7 +188,7 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
 @media only screen and (max-width: 1200px) {
 
     .projects {
-        padding: 25px 0 30px;
+        padding: 20px 0 30px;
 
         &__portfolio {
             h3 {
@@ -284,6 +284,9 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
 
     .projects {
         width: 100%;
+        p {
+            padding: 0 10px 10px;
+        }
 
         &__portfolio__flipbox {
             max-width: 150px;
