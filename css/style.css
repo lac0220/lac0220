@@ -186,7 +186,7 @@ nav ul .nav__menu__socialmedia {
     visibility: visible;
     display: inline-block;
     position: absolute;
-    right: 4%;
+    right: 6%;
     top: 34%;
     font-size: 0.938rem;
     color: white;
@@ -262,9 +262,9 @@ nav ul .nav__menu__socialmedia {
     background-image: url("/img/logo/germanflag.svg");
   }
   nav .nav__header__language i:nth-child(2) {
-    position: relative;
-    left: 5px;
-    bottom: 1px;
+    position: absolute;
+    left: 28px;
+    top: 2px;
     cursor: pointer;
   }
   nav .nav__header__logo {
@@ -1091,8 +1091,9 @@ li:hover .home__name__language__triangle:after {
   background-image: url("/img/logo/germanflag.svg");
 }
 .home__name__language i:nth-child(2) {
-  position: relative;
-  left: 5px;
+  position: absolute;
+  left: 83px;
+  top: 30px;
   cursor: pointer;
 }
 .home__name__header {
@@ -1242,7 +1243,7 @@ li:hover .home__name__language__triangle:after {
 @media only screen and (max-width: 1200px) {
   .home__name__language {
     font-size: 0.938rem;
-    margin-left: -130px;
+    margin-left: -135px;
   }
   .home__name__language img {
     width: 2rem;
@@ -1254,12 +1255,12 @@ li:hover .home__name__language__triangle:after {
   }
   .home__name__language ul span {
     top: 13px;
-    left: 9px;
+    left: 8px;
     font-size: 0.9rem;
   }
   .home__name__language li:hover ul {
     top: 48px;
-    right: -25px;
+    right: -40px;
     width: 100px;
   }
   .home__name__language__triangle {
@@ -1273,7 +1274,8 @@ li:hover .home__name__language__triangle:after {
     left: 5px;
   }
   .home__name__language i:nth-child(2) {
-    left: 3px;
+    left: 61.5px;
+    top: 28px;
   }
   .home__name__header li:nth-child(1) {
     animation: typing 3s steps(100, end) both;
