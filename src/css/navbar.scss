@@ -10,14 +10,13 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
 nav {
     position: fixed;
     width: 200px;
-    height: 100vh;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: $first-color;
   
     .nav__header {
-        display:block;
+        display: block;
         text-align: center;
         color: $text-color;
         h3 {
@@ -37,7 +36,7 @@ nav {
         &__logo {
             margin: 40px auto 12px;
             img {
-                height:6rem;
+                height: 6rem;
             }
         }
     
@@ -178,7 +177,7 @@ nav {
                 visibility: visible;
                 display: inline-block;
                 position: absolute;
-                right: 7%;
+                right: 4%;
                 top: 34%;
                 font-size: 0.938rem;
                 color: $text-color;
@@ -187,17 +186,23 @@ nav {
                 li ul {
                     display: none;
                     padding: 5px;
+                    a {
+                        display: block;
+                        line-height: 0;
+                    }
+
                     span {
+                        display: block;
                         color: black;
                         font-weight: bold;
                         position: relative;
                         left: 15px;
                         font-size: 0.8rem;
-                        bottom: 10px;
+                        top: 8px;
                         color: black;
                         font-weight: bold;
                         &:active {
-                            color:$hover-menu;
+                            color: $hover-menu;
                         }
                     }
                 }
@@ -218,14 +223,13 @@ nav {
                 img {
                     width: 1.8rem;
                     position: absolute;
-                    right: 118%;
-                    top: 0;
+                    right: 116%;
                 }
             
                 &__triangle {
                     position: absolute;
                     top: 10px;
-                    left: 18px;
+                    left: 11px;
                     z-index: 1;
                     height: 14px;
                     overflow: hidden;
@@ -242,26 +246,23 @@ nav {
                     height: 15px;
                     background: $text-color;
                     border-radius: 2px;
+                    margin: auto;
                 }
             
                 i:nth-child(1) {
-                    display: inline-block;
                     width: 25px;
                     height: 19px;
                     position: absolute;
                     top: 3px;
                     right: 27px;
-                    cursor:auto;
+                    cursor: auto;
                     background-image: url("/img/logo/germanflag.svg");
                 }
                 
                 i:nth-child(2) {
-                    display: inline-block;
-                    width: 25px;
-                    height: 19px;
-                    position: absolute;
-                    top: 2px;
-                    left:20px;
+                    position: relative;
+                    left: 4.5px;
+                    bottom: 1px;
                     cursor: pointer;   
                 }
             }
@@ -374,27 +375,3 @@ nav {
     
     
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
