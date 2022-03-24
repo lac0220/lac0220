@@ -69,7 +69,7 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
                 left: 75px;
                 z-index: 1;
                 height: 14px;
-                overflow:hidden;
+                overflow: hidden;
                 width: 30px;
                 background: transparent;
             }
@@ -92,13 +92,14 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
                 position: absolute;
                 bottom: 5px;
                 right: 78px;
-                cursor:auto;
+                cursor: auto;
                 background-image: url("/img/logo/germanflag.svg");
             }
         
             i:nth-child(2) {
-                position: relative;
-                left: 5px;
+                position: absolute;
+                left: 83px;
+                top: 30px;
                 cursor: pointer;
             }
         }
@@ -267,7 +268,7 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
     
         &__name__language {
             font-size: 0.938rem;
-            margin-left: -130px;
+            margin-left: -135px;
             img {
                 width: 2rem;
                 top: 23px;
@@ -278,14 +279,14 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
                 font-size: 0.938rem;
                 span {
                     top: 13px;
-                    left: 9px;
+                    left: 8px;
                     font-size: 0.9rem;
                 }  
             }
                 
             li:hover ul {
                 top: 48px;
-                right: -25px;
+                right: -40px;
                 width: 100px;
             }
             
@@ -302,7 +303,8 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
             }
 
             i:nth-child(2) {
-                left: 3px;   
+                left: 61.5px;
+                top: 28px;   
             }
         }
             

@@ -177,7 +177,7 @@ nav {
                 visibility: visible;
                 display: inline-block;
                 position: absolute;
-                right: 4%;
+                right: 6%;
                 top: 34%;
                 font-size: 0.938rem;
                 color: $text-color;
@@ -260,9 +260,9 @@ nav {
                 }
                 
                 i:nth-child(2) {
-                    position: relative;
-                    left: 5px;
-                    bottom: 1px;
+                    position: absolute;
+                    left: 28px;
+                    top: 2px;
                     cursor: pointer;   
                 }
             }
@@ -368,9 +368,7 @@ nav {
     }
 }
     
-    
-    
-    
+      
     
     
     
