@@ -1,11 +1,5 @@
-$first-color: #0C0032;						
-$second-color: #464866;		
-$third-color: #211A36;	
-$contact-form: #edf5e1;
-$hover:#2079AC;
-$hover-menu:#FF0700;
 $text-color:white;
-$main-font: Georgia, 'Times New Roman', Times, serif;
+$second-hover:#FF0700;
 
 .nachricht {
     text-align: center;
@@ -30,7 +24,7 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
     a {
         color: lightblue;
         &:hover {
-            color: $hover-menu;
+            color: $second-hover;
         }
     }
 }
@@ -54,18 +48,28 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
   
 @media only screen and (max-width: 700px) {
     
-    .nachricht__smile {
-        max-width: 80px;
-    }
+    .nachricht {
+        &__smile {
+            max-width: 80px;
+        }
 
-    h1 {
-        font-size: 1.563rem;
-        padding: 20px 0;
-    }
+        h1 {
+            font-size: 1.563rem;
+            padding: 20px 0;
+        }
 
-    h2 {
-        font-size: 1.25rem;
-        margin: 0;
+        h2 {
+            font-size: 1.25rem;
+            margin: 0;
+        }
+
+        a:hover {
+            color: lightblue;
+        }
+
+        a:active {
+            color: $second-hover;
+        }
     }
 }
   

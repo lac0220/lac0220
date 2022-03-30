@@ -7,14 +7,14 @@
 @import 'nachricht';
 @import 'home';
 
+$main-font: Georgia, 'Times New Roman', Times, serif;
+$text-color: white;
 $first-color: #0C0032;						
 $second-color: #464866;		
 $third-color: #211A36;	
+$first-hover: #2079AC;
+$second-hover: #FF0700;
 $contact-form: #edf5e1;
-$hover: #2079AC;
-$hover-menu: #FF0700;
-$text-color: white;
-$main-font: Georgia, 'Times New Roman', Times, serif;
 
 * {
     margin: 0;
@@ -51,7 +51,7 @@ section p {
 }
 
 .horizontal__line {
-    border: 2px solid $hover-menu;
+    border: 2px solid $second-hover;
     border-radius: 100%;
     width: 30%;
     margin: auto;  
@@ -109,3 +109,28 @@ a {
 
 
     
+
+      
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+

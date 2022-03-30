@@ -1,11 +1,6 @@
-$first-color: #0C0032;						
-$second-color: #464866;		
-$third-color: #211A36;	
-$contact-form: #edf5e1;
-$hover:#2079AC;
-$hover-menu:#FF0700;
 $text-color:white;
-$main-font: Georgia, 'Times New Roman', Times, serif;
+$first-color: #0C0032;						
+$second-hover:#FF0700;
 
 footer {
     display: flex;
@@ -14,7 +9,6 @@ footer {
     text-align: center;
     background-color: $first-color;
     padding: 10px 0 20px;
-    
     .footer__socialmedia a {
         display: inline-block;
         border-radius: 2px;
@@ -24,7 +18,7 @@ footer {
         &:hover {
             transform:scale(1.1); 
             -webkit-transform:scale(1.1);
-            color: $hover-menu;
+            color: $second-hover;
         }
     }
     
@@ -50,7 +44,6 @@ footer {
     
     footer {
         margin: auto -20px;
-    
         .footer__socialmedia a {
             font-size: 1.875rem;
         }

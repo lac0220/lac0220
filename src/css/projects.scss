@@ -1,11 +1,7 @@
-$first-color: #0C0032;						
-$second-color: #464866;		
-$third-color: #211A36;	
-$contact-form: #edf5e1;
-$hover:#2079AC;
-$hover-menu:#FF0700;
 $text-color:white;
-$main-font: Georgia, 'Times New Roman', Times, serif;
+$second-color: #464866;		
+$first-hover:#2079AC;
+$second-hover:#FF0700;
 
 .projects {
     display: grid;
@@ -13,17 +9,16 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
     column-gap: 60px;
     margin: auto;
     padding: 30px 0;
-
     &__portfolio {
         background-color: $second-color;
         border-bottom-style: solid;
-        border-bottom-color: $hover-menu;
+        border-bottom-color: $second-hover;
         border-radius: 20px;
         text-align: center;
         color: $text-color;
         h3 {
             padding: 5px 0;
-            background-color: $hover-menu;
+            background-color: $second-hover;
             margin-bottom: 15px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
@@ -43,7 +38,6 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
             max-width: 200px;
             height: 200px;
             margin: auto auto 10px;
-        
             &__inner {
                 position: relative;
                 width: 100%;
@@ -89,7 +83,7 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
             &__triangle {
                 position:absolute;
                 left: 170px;
-                border-top: 100px solid $hover-menu;
+                border-top: 100px solid $second-hover;
                 border-left: 100px solid transparent;
                 z-index: 1;
             }    
@@ -101,7 +95,7 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
                 border-radius: 10px;
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
-                background-color: $hover;
+                background-color: $first-hover;
                 transform: rotateY(180deg);
                 z-index: 2; //pointer works properly on the back side
                 font-size: 1.25rem;
@@ -112,20 +106,21 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
                     display: block;
                     height: 0;
                 }
+
                 button:nth-child(1) {
                     display: inline-block;
                     font-weight: bold;
                     font-family:Georgia, 'Times New Roman', Times, serif;
                     font-size: 1.25rem;
                     padding: 3px 6px;
-                    background-color: $hover-menu;
+                    background-color: $second-hover;
                     border-radius: 10px;
                     border: 2px solid $second-color;
                     color: $text-color;
                     cursor: pointer;
                     &:hover {
                         background-color: lightcoral;
-                        filter: drop-shadow(1px 1px 5px $hover-menu);
+                        filter: drop-shadow(1px 1px 5px $second-hover);
                     }
                 }
         
@@ -141,7 +136,7 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
                 a:nth-child(4) {
                     display: inline;
                     position: relative;
-                    background-color: $hover-menu;
+                    background-color: $second-hover;
                     padding: 3px 6px;
                     border-radius: 10px;
                     bottom: 4px;
@@ -150,14 +145,14 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
                     color: $text-color;
                     &:hover {
                         background-color: lightcoral;
-                        filter: drop-shadow(1px 1px 5px $hover-menu);
+                        filter: drop-shadow(1px 1px 5px $second-hover);
                     }
                 }
             } 
         }
 
         &__horizontalline {
-            border: 2px solid $hover-menu;
+            border: 2px solid $second-hover;
             border-radius: 100%;
             width: 80%;
             margin: auto auto 5px; 
@@ -192,7 +187,6 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
 
     .projects {
         padding: 20px 0 30px;
-
         &__portfolio {
             h3 {
                 font-size: 1.3rem;
@@ -226,7 +220,6 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
     .projects {
         grid-template-columns: 1fr;
         width: 80%;
-        
         &__horizontalline {
             width: 85%;
         }
@@ -246,7 +239,6 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
         padding: 20px 0;
         width: 80%;
         row-gap: 20px;
-
         &__portfolio {
             h3 {
                 font-size: 1.15rem;
@@ -259,22 +251,24 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
             &__flipbox__back {
                 button:nth-child(1) {
                     &:hover {
-                        background-color: $hover-menu;
+                        background-color: $second-hover;
                         filter: none;
-                        &:active {
+                    }
+
+                    &:active {
                             color:lightskyblue;
                         }
                     }
-                }
 
                 a:nth-child(4) {
                     &:hover {
-                        background-color: $hover-menu;
+                        background-color: $second-hover;
                         filter: none;
-                        &:active {
-                            color:lightskyblue;
-                        }
                     }
+
+                    &:active {
+                            color:lightskyblue;
+                    }  
                 }
             }
         }
@@ -292,7 +286,6 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
         &__portfolio__flipbox {
             max-width: 150px;
             height: 150px;
-
             &__triangle {
                 left:125px;
             }

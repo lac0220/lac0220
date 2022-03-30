@@ -1,23 +1,16 @@
-$first-color: #0C0032;						
-$second-color: #464866;		
-$third-color: #211A36;	
-$contact-form: #edf5e1;
-$hover:#2079AC;
-$hover-menu:#FF0700;
 $text-color:white;
-$main-font: Georgia, 'Times New Roman', Times, serif;
+$first-hover:#2079AC;
+$second-hover:#FF0700;
 
 .home {
-
     &__name {
         margin: auto -80px;
         color: $text-color;
         font-weight: bold;
         display: block;
-        background: url(/img/background.webp) center center no-repeat;	
+        background: url(/img/background.webp) center no-repeat;	
         background-attachment: fixed;
         background-size: cover;
-  
         &__language {
             display: inline-block;
             position: relative;
@@ -32,6 +25,7 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
                     display: block;
                     line-height: 0;
                 }
+
                 span {
                     display: block;
                     position: relative;
@@ -40,7 +34,7 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
                     font-size: 1rem;
                     color: black;
                     &:hover {
-                        color: $hover-menu;
+                        color: $second-hover;
                     }
                 }
             }
@@ -119,7 +113,7 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
                     font-weight: bold;
                     &:hover {
                         color: lightcoral;
-                        filter: drop-shadow(1px 1px 5px $hover-menu);
+                        filter: drop-shadow(1px 1px 5px $second-hover);
                     }
                 }
             }
@@ -147,25 +141,26 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
             }  
     
             li:nth-child(4) {   
-                padding-bottom: 66px;
+                padding-bottom: 67px;
                 a {
                     display: block;
                     height: 0;
                 }
+
                 button {
                     font-weight: bold;
                     font-family:Georgia, 'Times New Roman', Times, serif;
                     font-size: 0.875rem;
                     letter-spacing: 1px; 
                     padding: 5px 12px;
-                    background-color: $hover-menu;
+                    background-color: $second-hover;
                     border-radius:50px;
-                    border: 2px solid $hover;
+                    border: 2px solid $first-hover;
                     color: $text-color;
                     cursor: pointer;
                     &:hover {
                         background-color: lightcoral;
-                        filter: drop-shadow(1px 1px 5px $hover-menu);
+                        filter: drop-shadow(1px 1px 5px $second-hover);
                     }
                 }
             }
@@ -230,11 +225,10 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
     
         &__text1, &__text2, &__text3, &__text4 {
             border-radius: 10px;
-            background-color: $hover;
+            background-color: $first-hover;
             border-bottom-style: solid;
-            border-bottom-color: $hover-menu;
+            border-bottom-color: $second-hover;
             height: 45%;
-        
             div {
                 text-align: center;
             }
@@ -265,80 +259,81 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
 @media only screen and (max-width: 1200px) {
   
     .home {   
-    
-        &__name__language {
-            font-size: 0.938rem;
-            margin-left: -135px;
-            img {
-                width: 2rem;
-                top: 23px;
-            }
-            
-            ul {
-                padding: 28px;
+        &__name {
+            background-attachment: scroll;
+            &__language {
                 font-size: 0.938rem;
-                span {
-                    top: 13px;
-                    left: 8px;
-                    font-size: 0.9rem;
-                }  
-            }
+                margin-left: -135px;
+                img {
+                    width: 2rem;
+                    top: 23px;
+                }
                 
-            li:hover ul {
-                top: 48px;
-                right: -40px;
-                width: 100px;
-            }
-            
-            &__triangle {
-                top: 37px;
-                left: 52px;
-            }
-            
-            i:nth-child(1) {          
-                width: 28px;
-                height: 20px;
-                top: 4px;
-                left: 5px;
-            }
+                ul {
+                    padding: 28px;
+                    font-size: 0.938rem;
+                    span {
+                        top: 13px;
+                        left: 8px;
+                        font-size: 0.9rem;
+                    }  
+                }
+                    
+                li:hover ul {
+                    top: 48px;
+                    right: -40px;
+                    width: 100px;
+                }
+                
+                &__triangle {
+                    top: 37px;
+                    left: 52px;
+                }
+                
+                i:nth-child(1) {          
+                    width: 28px;
+                    height: 20px;
+                    top: 4px;
+                    left: 5px;
+                }
 
-            i:nth-child(2) {
-                left: 61.5px;
-                top: 28px;   
-            }
-        }
-            
-        &__name__header {
-        
-            li:nth-child(1) {
-                animation: typing 3s steps(100, end) both;
-                a {
-                    font-size: 2.813rem;
-                    letter-spacing: 1px; 
+                i:nth-child(2) {
+                    left: 61px;
+                    top: 28px;   
                 }
             }
-        
-            li:nth-child(2) {
-                animation: typing 3s steps(100, end) both;
-                animation-delay: 2s;
-                font-size: 1.625rem;
-                letter-spacing: 1px; 
-            }
+                
+            &__header {
+                li:nth-child(1) {
+                    animation: typing 3s steps(100, end) both;
+                    a {
+                        font-size: 2.813rem;
+                        letter-spacing: 1px; 
+                    }
+                }
             
-            li:nth-child(3) {
-                animation: typing 3s steps(100, end) both;
-                animation-delay: 4s;
-                font-size: 1.45rem;
-                letter-spacing: 1px; 
-                padding: 30px 0 22px;
-            } 
-            
-            li:nth-child(4) {   
-                padding: 20px 0 72px;
-                button {
-                    font-size: 0.775rem;
+                li:nth-child(2) {
+                    animation: typing 3s steps(100, end) both;
+                    animation-delay: 2s;
+                    font-size: 1.625rem;
+                    letter-spacing: 1px; 
+                }
+                
+                li:nth-child(3) {
+                    animation: typing 3s steps(100, end) both;
+                    animation-delay: 4s;
+                    font-size: 1.45rem;
+                    letter-spacing: 1px; 
+                    padding: 30px 0 22px;
                 } 
-            }  
+                
+                li:nth-child(4) {   
+                    padding: 20px 0 73px;
+                    button {
+                        font-size: 0.775rem;
+                    } 
+                }  
+            }
         }
         
         &__text {
@@ -363,7 +358,6 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
         column-gap: 70px;
         row-gap: 95px;
         padding-bottom: 95px;
-
         &__text1, &__text2, &__text3, &__text4 {
             height: 52px;
         }
@@ -392,16 +386,13 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
   
     .home {
         &__name {
-            background-attachment: scroll;
-            margin: 80px -20px 0;
-            background-size: 700px;
-            
+            margin: auto -20px;
             &__language {
                 display: none;
             }
             
             &__header {
-                margin-top: 0;
+                margin-top: 80px;
                 li:nth-child(1) {
                     animation: typing 2s steps(100, end) both;
                     a {
@@ -433,11 +424,12 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
                         padding: 4px 10px;
                         font-size: 0.675rem;
                         &:hover {
-                            background-color: $hover-menu;
+                            background-color: $second-hover;
                             filter: none;
-                            &:active {
-                                color:lightskyblue;
-                            }
+                        }
+
+                        &:active {
+                            color:lightskyblue;
                         }
                     }  
                 }
@@ -485,7 +477,6 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
 
     .home {
         &__name__header {
-            margin-top: 0;
             li:nth-child(1) {
                 animation: typing 2s steps(100, end) both;
                 a {
@@ -516,8 +507,6 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
         }
     }
 }
-
-
 
 
 

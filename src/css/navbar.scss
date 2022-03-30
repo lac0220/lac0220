@@ -1,11 +1,7 @@
+$text-color:white;
 $first-color: #0C0032;						
 $second-color: #464866;		
-$third-color: #211A36;	
-$contact-form: #edf5e1;
-$hover:#2079AC;
-$hover-menu:#FF0700;
-$text-color:white;
-$main-font: Georgia, 'Times New Roman', Times, serif;
+$second-hover:#FF0700;
 
 nav {
     position: fixed;
@@ -14,7 +10,6 @@ nav {
     top: 0;
     left: 0;
     background-color: $first-color;
-  
     .nav__header {
         display: block;
         text-align: center;
@@ -52,7 +47,7 @@ nav {
             &:hover {
                 transform:scale(1.1); 
                 -webkit-transform:scale(1.1);
-                color: $hover-menu;
+                color: $second-hover;
                 }
             }
         }
@@ -81,7 +76,7 @@ nav {
                 color: $text-color;
                 font-size: 1.5rem;  
                 &:hover {
-                    color: $hover-menu;
+                    color: $second-hover;
                 } 
             } 
         } 
@@ -113,7 +108,6 @@ nav {
 
     nav {
         overflow: auto;
-
         .nav__header {
             h3 {
                 font-size: 1.25rem;
@@ -150,7 +144,6 @@ nav {
         height: 80px;
         border-bottom: 0.5px solid $text-color;
         overflow: unset;
-    
         .nav__header{
             h3, p { 
                 padding: 0px;
@@ -182,7 +175,6 @@ nav {
                 font-size: 0.938rem;
                 color: $text-color;
                 margin-right: 20px;
-        
                 li ul {
                     display: none;
                     padding: 5px;
@@ -196,13 +188,13 @@ nav {
                         color: black;
                         font-weight: bold;
                         position: relative;
-                        left: 15px;
+                        left: 14px;
                         font-size: 0.8rem;
                         top: 8px;
                         color: black;
                         font-weight: bold;
                         &:active {
-                            color: $hover-menu;
+                            color: $second-hover;
                         }
                     }
                 }
@@ -210,10 +202,10 @@ nav {
                 li:hover ul {
                     position: absolute;
                     top: 20px;
-                    left: 5px;
+                    left: 1px;
                     display: block;
                     background: $text-color;
-                    width: 57px;
+                    width: 56px;
                     padding-top: 0px;
                     z-index: 1;
                     border-radius: 5px;
@@ -223,13 +215,13 @@ nav {
                 img {
                     width: 1.8rem;
                     position: absolute;
-                    right: 116%;
+                    right: 118%;
                 }
             
                 &__triangle {
                     position: absolute;
                     top: 10px;
-                    left: 11px;
+                    left: 9px;
                     z-index: 1;
                     height: 14px;
                     overflow: hidden;
@@ -261,7 +253,7 @@ nav {
                 
                 i:nth-child(2) {
                     position: absolute;
-                    left: 28px;
+                    left: 26px;
                     top: 2px;
                     cursor: pointer;   
                 }
@@ -320,7 +312,7 @@ nav {
                     &:hover {
                         transform:scale(1.1); 
                         -webkit-transform:scale(1.1);
-                        color: $hover-menu;
+                        color: $second-hover;
                         }
                     }
                 }
@@ -328,7 +320,7 @@ nav {
             .nav__menu__horizontalline1, .nav__menu__horizontalline2 {
                 visibility: visible;
                 display: inline-block;
-                border: 2px solid $hover-menu;
+                border: 2px solid $second-hover;
                 border-radius: 100%;
                 width: 70%;
             }
@@ -367,9 +359,4 @@ nav {
         }
     }
 }
-    
-      
-    
-    
-    
     
