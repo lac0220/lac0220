@@ -205,7 +205,7 @@ nav ul .nav__menu__socialmedia {
     color: black;
     font-weight: bold;
     position: relative;
-    left: 15px;
+    left: 14px;
     font-size: 0.8rem;
     top: 8px;
     color: black;
@@ -217,10 +217,10 @@ nav ul .nav__menu__socialmedia {
   nav .nav__header__language li:hover ul {
     position: absolute;
     top: 20px;
-    left: 5px;
+    left: 1px;
     display: block;
     background: white;
-    width: 57px;
+    width: 56px;
     padding-top: 0px;
     z-index: 1;
     border-radius: 5px;
@@ -229,12 +229,12 @@ nav ul .nav__menu__socialmedia {
   nav .nav__header__language img {
     width: 1.8rem;
     position: absolute;
-    right: 116%;
+    right: 118%;
   }
   nav .nav__header__language__triangle {
     position: absolute;
     top: 10px;
-    left: 11px;
+    left: 9px;
     z-index: 1;
     height: 14px;
     overflow: hidden;
@@ -263,7 +263,7 @@ nav ul .nav__menu__socialmedia {
   }
   nav .nav__header__language i:nth-child(2) {
     position: absolute;
-    left: 28px;
+    left: 26px;
     top: 2px;
     cursor: pointer;
   }
@@ -392,15 +392,19 @@ nav ul .nav__menu__socialmedia {
   .message__smile {
     max-width: 80px;
   }
-
-  h1 {
+  .message h1 {
     font-size: 1.563rem;
     padding: 20px 0;
   }
-
-  h2 {
+  .message h2 {
     font-size: 1.25rem;
     margin: 0;
+  }
+  .message a:hover {
+    color: lightblue;
+  }
+  .message a:active {
+    color: #FF0700;
   }
 }
 .contact {
@@ -453,7 +457,7 @@ nav ul .nav__menu__socialmedia {
   background-color: lightcoral;
   filter: drop-shadow(1px 1px 5px #FF0700);
 }
-.contact form input[type=submit]:hover:active {
+.contact form input[type=submit]:active {
   color: lightskyblue;
 }
 .contact form .contact__submit {
@@ -670,7 +674,7 @@ nav ul .nav__menu__socialmedia {
   }
   .aboutme__photo {
     margin: auto;
-    padding-top: 15px;
+    padding-top: 20px;
     float: none;
     order: 1;
   }
@@ -912,14 +916,14 @@ nav ul .nav__menu__socialmedia {
     background-color: #FF0700;
     filter: none;
   }
-  .projects__portfolio__flipbox__back button:nth-child(1):hover:active {
+  .projects__portfolio__flipbox__back button:nth-child(1):active {
     color: lightskyblue;
   }
   .projects__portfolio__flipbox__back a:nth-child(4):hover {
     background-color: #FF0700;
     filter: none;
   }
-  .projects__portfolio__flipbox__back a:nth-child(4):hover:active {
+  .projects__portfolio__flipbox__back a:nth-child(4):active {
     color: lightskyblue;
   }
 }
@@ -998,15 +1002,19 @@ nav ul .nav__menu__socialmedia {
   .nachricht__smile {
     max-width: 80px;
   }
-
-  h1 {
+  .nachricht h1 {
     font-size: 1.563rem;
     padding: 20px 0;
   }
-
-  h2 {
+  .nachricht h2 {
     font-size: 1.25rem;
     margin: 0;
+  }
+  .nachricht a:hover {
+    color: lightblue;
+  }
+  .nachricht a:active {
+    color: #FF0700;
   }
 }
 .home__name {
@@ -1014,7 +1022,7 @@ nav ul .nav__menu__socialmedia {
   color: white;
   font-weight: bold;
   display: block;
-  background: url(/img/background.webp) center center no-repeat;
+  background: url(/img/background.webp) center no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -1137,7 +1145,7 @@ li:hover .home__name__language__triangle:after {
   font-style: italic;
 }
 .home__name__header li:nth-child(4) {
-  padding-bottom: 66px;
+  padding-bottom: 67px;
 }
 .home__name__header li:nth-child(4) a {
   display: block;
@@ -1241,6 +1249,9 @@ li:hover .home__name__language__triangle:after {
 }
 
 @media only screen and (max-width: 1200px) {
+  .home__name {
+    background-attachment: scroll;
+  }
   .home__name__language {
     font-size: 0.938rem;
     margin-left: -135px;
@@ -1274,7 +1285,7 @@ li:hover .home__name__language__triangle:after {
     left: 5px;
   }
   .home__name__language i:nth-child(2) {
-    left: 61.5px;
+    left: 61px;
     top: 28px;
   }
   .home__name__header li:nth-child(1) {
@@ -1298,7 +1309,7 @@ li:hover .home__name__language__triangle:after {
     padding: 30px 0 22px;
   }
   .home__name__header li:nth-child(4) {
-    padding: 20px 0 72px;
+    padding: 20px 0 73px;
   }
   .home__name__header li:nth-child(4) button {
     font-size: 0.775rem;
@@ -1343,15 +1354,13 @@ li:hover .home__name__language__triangle:after {
 }
 @media only screen and (max-width: 700px) {
   .home__name {
-    background-attachment: scroll;
-    margin: 80px -20px 0;
-    background-size: 700px;
+    margin: auto -20px;
   }
   .home__name__language {
     display: none;
   }
   .home__name__header {
-    margin-top: 0;
+    margin-top: 80px;
   }
   .home__name__header li:nth-child(1) {
     animation: typing 2s steps(100, end) both;
@@ -1386,7 +1395,7 @@ li:hover .home__name__language__triangle:after {
     background-color: #FF0700;
     filter: none;
   }
-  .home__name__header li:nth-child(4) button:hover:active {
+  .home__name__header li:nth-child(4) button:active {
     color: lightskyblue;
   }
   .home__text {
@@ -1420,9 +1429,6 @@ li:hover .home__name__language__triangle:after {
   }
 }
 @media only screen and (max-width: 500px) {
-  .home__name__header {
-    margin-top: 0;
-  }
   .home__name__header li:nth-child(1) {
     animation: typing 2s steps(100, end) both;
   }
