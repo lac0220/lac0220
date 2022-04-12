@@ -259,7 +259,7 @@ nav ul .nav__menu__socialmedia {
     top: 3px;
     right: 27px;
     cursor: auto;
-    background-image: url("/img/logo/germanflag.svg");
+    background-image: url("../img/logo/germanflag.svg");
   }
   nav .nav__header__language i:nth-child(2) {
     position: absolute;
@@ -1031,7 +1031,7 @@ nav ul .nav__menu__socialmedia {
   color: white;
   font-weight: bold;
   display: block;
-  background: url(/img/background.webp) center no-repeat;
+  background: url(../img/background.webp) center no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
