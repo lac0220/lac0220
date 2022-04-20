@@ -1244,9 +1244,13 @@ li:hover .home__name__language__triangle:after {
 .home__skills__text1 img, .home__skills__text2 img, .home__skills__text3 img, .home__skills__text4 img {
   position: relative;
 }
-.home__skills__text1 img, .home__skills__text2 img {
+.home__skills__text1 img {
   max-width: 60px;
   top: 22px;
+}
+.home__skills__text2 img {
+  max-width: 88px;
+  top: 24px;
 }
 .home__skills__text3 img {
   max-width: 65px;
@@ -1328,7 +1332,7 @@ li:hover .home__name__language__triangle:after {
   }
   .home__skills {
     width: 100%;
-    column-gap: 40px;
+    column-gap: 20px;
   }
   .home__skills p {
     font-size: 1.4rem;
@@ -1413,7 +1417,7 @@ li:hover .home__name__language__triangle:after {
   }
   .home__skills {
     row-gap: 70px;
-    column-gap: 50px;
+    column-gap: 55px;
     width: 80%;
     padding-bottom: 75px;
   }
@@ -1424,9 +1428,13 @@ li:hover .home__name__language__triangle:after {
   .home__skills__text1, .home__skills__text2, .home__skills__text3, .home__skills__text4 {
     height: 40px;
   }
-  .home__skills__text1 img, .home__skills__text2 img {
+  .home__skills__text1 img {
     max-width: 50px;
     top: 13px;
+  }
+  .home__skills__text2 img {
+    max-width: 74px;
+    top: 15px;
   }
   .home__skills__text3 img {
     max-width: 55px;
@@ -1461,6 +1469,9 @@ li:hover .home__name__language__triangle:after {
   }
   .home__text, .home__skills {
     width: 100%;
+  }
+  .home__skills {
+    column-gap: 35px;
   }
 }
 * {
