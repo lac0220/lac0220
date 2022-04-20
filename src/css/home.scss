@@ -239,9 +239,14 @@ $second-hover:#FF0700;
             }
         }
   
-        &__text1 img, &__text2 img {
+        &__text1 img {
             max-width: 60px;
             top: 22px;
+        }
+
+        &__text2 img {
+            max-width: 88px;
+            top: 24px;
         }
             
         &__text3 img {
@@ -342,7 +347,7 @@ $second-hover:#FF0700;
     
         &__skills {
             width: 100%;
-            column-gap: 40px;
+            column-gap: 20px;
             p {
                 font-size: 1.4rem;
                 top: 9px;
@@ -443,7 +448,7 @@ $second-hover:#FF0700;
             
         &__skills {
             row-gap: 70px;
-            column-gap: 50px;
+            column-gap: 55px;
             width: 80%;
             padding-bottom: 75px;
             p {
@@ -455,9 +460,14 @@ $second-hover:#FF0700;
                 height: 40px;         
             }
         
-            &__text1 img, &__text2 img {
+            &__text1 img {
                 max-width: 50px;
                 top: 13px;
+            }
+
+            &__text2 img {
+                max-width: 74px;
+                top: 15px;
             }
             
             &__text3 img {
@@ -505,6 +515,10 @@ $second-hover:#FF0700;
         &__text, &__skills {
             width: 100%;
         }
+
+        &__skills {   
+            column-gap: 35px;
+        }
     }
 }
 
@@ -518,5 +532,16 @@ $second-hover:#FF0700;
 
 
 
+
+
+
+
+
+
+
+
+
+
+    
 
 
