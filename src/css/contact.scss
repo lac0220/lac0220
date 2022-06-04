@@ -10,25 +10,25 @@ $second-hover:#FF0700;
     justify-content: center;
     padding: 20px 0 40px;
     form {
+        display: block;
         width: 40%;
         font-size: 1.375rem;
-        display: block;
         font-weight: bold;
         color: $text-color;
         input[type=text], textarea {
             display: flex;
             flex-direction: column;
-            background-color: $first-hover;
-            color: $text-color;
-            width: 100%;
+            margin: 6px 0 16px;
             padding: 12px;
+            width: 100%;
             border: 2px solid $first-hover;
             border-radius: 15px;
-            margin: 6px 0 16px;
-            font-size: 1.375rem;
-            font-family: $main-font;
             resize: vertical;
             outline: none;
+            font-size: 1.375rem;
+            font-family: $main-font;
+            background-color: $first-hover;
+            color: $text-color;
             &:hover {
                 border: 2px solid $second-hover;
             }
@@ -39,16 +39,16 @@ $second-hover:#FF0700;
         }
             
         input[type=submit] {
-            background-color: $second-hover;
-            color: $text-color;
             padding: 10px;
-            border-radius: 50px;
+            width: 30%;
             border: 2px solid $first-hover;
+            border-radius: 50px;
             cursor: pointer;
             font-weight: bold;
             font-size: 1.25rem;
             font-family: $main-font;
-            width: 30%;
+            background-color: $second-hover;
+            color: $text-color;
             &:hover {
                 background-color: lightcoral;
                 filter: drop-shadow(1px 1px 5px $second-hover);
@@ -58,30 +58,35 @@ $second-hover:#FF0700;
                 color:lightskyblue;
             }
         }
-        
-        .contact__submit {
-            text-align: center;
-        }
     }
-            
-    &__verticalline {
-        border: 2px solid $text-color;	;
-        height: 470px;
+        
+    &-submit {
+        text-align: center;
+    }
+          
+    &-vertical-line {
         margin: 65px 100px 0 100px;
+        height: 470px;
+        border: 2px solid $text-color;	;
         border-radius: 100%;
     }
         
-    &__horizontalline {
+    &-horizontal-line {
         display: none;
     }
         
-    &__text {
-        padding-top: 10px;
+    &-text {
         display: grid;
         columns: 1;
         row-gap: 24px;
+        padding-top: 10px;
         text-align: center;
         font-size: 1.375rem;
+        -webkit-transition: all 1s ease; /*reversed animation on mouse out events*/
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
         p {
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
@@ -101,18 +106,22 @@ $second-hover:#FF0700;
             }
         }
 
-        i {
-            font-size: 5rem;
+        &__phone,
+        &__email {
             -webkit-transition: all 1s ease; /*reversed animation on mouse out events*/
             -moz-transition: all 1s ease;
             -o-transition: all 1s ease;
             -ms-transition: all 1s ease;
             transition: all 1s ease;
-            color: $first-hover;
             &:hover {
                 transform: scale(1.3);
                 cursor: pointer;
             }
+        }
+
+        i {  
+            font-size: 5rem;
+            color: $first-hover;
         }
     }
 }
@@ -144,12 +153,12 @@ $second-hover:#FF0700;
             }
         }
 
-        &__verticalline {
-            height: 450px;
+        &-vertical-line {
             margin: 60px 60px 0 60px;
+            height: 450px;
         }
 
-        &__text {
+        &-text {
             row-gap: 18px;
             p {
                 font-size: 1.2rem;
@@ -163,27 +172,27 @@ $second-hover:#FF0700;
     .contact {
         flex-direction: column;
         form {
-            width: 70%;
             margin: auto;
             padding-bottom: 20px;
+            width: 70%;
             input[type=submit] {
                 width: 30%;
             } 
         }
 
-        &__verticalline {
+        &-vertical-line {
             display: none;
         }
             
-        &__horizontalline {
+        &-horizontal-line {
             display: inline-block;
+            margin: 20px auto;
+            width: 60%;
             border: 2px solid white;
             border-radius: 100%;
-            width: 60%;
-            margin: 20px auto;
         }
             
-        &__text {
+        &-text {
             padding-top: 20px;
             &__address {
                 p:nth-child(2) {
@@ -194,14 +203,14 @@ $second-hover:#FF0700;
     }
 }
   
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
     
     .contact {
         form {
             width: 100%;
         }
 
-        &__horizontalline {
+        &-horizontal-line {
             width: 80%;
         }
     }
@@ -212,8 +221,8 @@ $second-hover:#FF0700;
     .contact {
         padding: 10px 0 30px;
         form {
-            width: 80%;
             padding: 0;
+            width: 80%;
             font-size: 1.125rem;
             input[type=text], input[type=submit], textarea {
                 font-size: 1.125rem;
@@ -228,25 +237,26 @@ $second-hover:#FF0700;
             } 
         }
 
-        &__horizontalline {
+        &-horizontal-line {
             margin: 30px auto;
             width: 65%;
         }
         
-        &__text {
+        &-text {
             row-gap: 10px;
             padding-top: 0px;
             p {
                 font-size: 1.125rem;
             }
             
-            i {
-                font-size: 3.75rem;
+            &__phone,
+            &__email {
                 -webkit-transition: none; 
                 -moz-transition: none;
                 -o-transition: none;
                 -ms-transition: none;
                 transition: none;
+                font-size: 3.75rem;
                 &:hover {
                     transform: none;
                     cursor:auto;
@@ -263,7 +273,7 @@ $second-hover:#FF0700;
             width: 100%;
         }
 
-        &__horizontalline {
+        &-horizontal-line {
             width: 80%;
         }
     }
@@ -272,7 +282,7 @@ $second-hover:#FF0700;
 @media only screen and (max-width: 320px) {
   
     .contact {
-        &__text__address iframe {
+        &-text__address iframe {
             width: 250px;
         }
     }

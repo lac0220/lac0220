@@ -9,20 +9,20 @@ $second-hover:#FF0700;
     column-gap: 60px;
     margin: auto;
     padding: 30px 0;
-    &__portfolio {
-        background-color: $second-color;
+    &-portfolio {
         border-bottom-style: solid;
-        border-bottom-color: $second-hover;
         border-radius: 20px;
+        border-bottom-color: $second-hover;
         text-align: center;
+        background-color: $second-color;
         color: $text-color;
         h3 {
-            padding: 5px 0;
-            background-color: $second-hover;
             margin-bottom: 15px;
+            padding: 5px 0;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             font-size: 1.4rem;
+            background-color: $second-hover;
         }
 
         h4 {
@@ -34,37 +34,39 @@ $second-hover:#FF0700;
             text-align: left;
         }
    
-        &__flipbox {
+        &__flip-box {
+            margin: auto auto 10px;
             max-width: 200px;
             height: 200px;
-            margin: auto auto 10px;
             &__inner {
                 position: relative;
                 width: 100%;
                 height: 100%;
-                text-align: center;
                 transition: transform 0.8s;
                 transform-style: preserve-3d;
+                text-align: center;
             }
             
             &:hover &__inner {
                 transform: rotateY(180deg);
             }
             
-            &__front1, &__front2, &__front3 {
+            &__front1, 
+            &__front2,
+            &__front3 {
                 position: absolute;
+                z-index: 1;
                 width: 100%;
                 height: 100%;
-                border-radius: 10px;
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
-                z-index: 1; //so pointer work properly on the back side
                 cursor: pointer;
                 overflow: hidden;
+                border-radius: 10px;
                 img {
-                    max-width: 70%;
                     position: relative;
                     top: 15%;
+                    max-width: 70%;
                 }
             }
             
@@ -83,25 +85,25 @@ $second-hover:#FF0700;
             &__triangle {
                 position:absolute;
                 left: 170px;
+                z-index: 1;
                 border-top: 100px solid $second-hover;
                 border-left: 100px solid transparent;
-                z-index: 1;
             }    
                 
             &__back {
                 position: absolute;
+                z-index: 2; //pointer works properly on the back side
+                padding-top: 12px;
                 width: 100%;
                 height: 100%;
-                border-radius: 10px;
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
-                background-color: $first-hover;
                 transform: rotateY(180deg);
-                z-index: 2; //pointer works properly on the back side
+                border-radius: 10px;
                 font-size: 1.25rem;
                 font-weight: bold;
+                background-color: $first-hover;
                 color:$text-color;
-                padding-top: 12px;
                 a {
                     display: block;
                     height: 0;
@@ -109,18 +111,18 @@ $second-hover:#FF0700;
 
                 button:nth-child(1) {
                     display: inline-block;
-                    font-weight: bold;
-                    font-family:Georgia, 'Times New Roman', Times, serif;
-                    font-size: 1.25rem;
                     padding: 3px 6px;
-                    background-color: $second-hover;
-                    border-radius: 10px;
                     border: 2px solid $second-color;
-                    color: $text-color;
+                    border-radius: 10px;
                     cursor: pointer;
+                    font-weight: bold;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 1.25rem;
+                    background-color: $second-hover;
+                    color: $text-color;
                     &:hover {
-                        background-color: lightcoral;
                         filter: drop-shadow(1px 1px 5px $second-hover);
+                        background-color: lightcoral;
                     }
                 }
         
@@ -136,26 +138,26 @@ $second-hover:#FF0700;
                 a:nth-child(4) {
                     display: inline;
                     position: relative;
-                    background-color: $second-hover;
-                    padding: 3px 6px;
-                    border-radius: 10px;
                     bottom: 4px;
-                    font-size: 1.875rem;
+                    padding: 3px 6px;
                     border: 1px solid $second-color;
+                    border-radius: 10px;
+                    font-size: 1.875rem;
+                    background-color: $second-hover;
                     color: $text-color;
                     &:hover {
-                        background-color: lightcoral;
                         filter: drop-shadow(1px 1px 5px $second-hover);
+                        background-color: lightcoral;
                     }
                 }
             } 
         }
 
-        &__horizontalline {
+        &__horizontal-line {
+            margin: auto auto 5px; 
+            width: 80%;
             border: 2px solid $second-hover;
             border-radius: 100%;
-            width: 80%;
-            margin: auto auto 5px; 
         }
     }
 
@@ -187,22 +189,16 @@ $second-hover:#FF0700;
 
     .projects {
         padding: 20px 0 30px;
-        &__portfolio {
+        &-portfolio {
             h3 {
                 font-size: 1.3rem;
             }
 
-            &__flipbox__back {
-                font-size: 1.15rem;
+            &__flip-box__back {
                 padding-top: 16px;
-                button:nth-child(1) {
-                    font-size: 1.15rem;
-                }
-            
-                p:nth-child(2) {
-                    font-size: 1.15rem;
-                }
-            
+                font-size: 1.15rem;
+                button:nth-child(1),
+                p:nth-child(2),
                 p:nth-child(3) {
                     font-size: 1.15rem;
                 }
@@ -220,7 +216,7 @@ $second-hover:#FF0700;
     .projects {
         grid-template-columns: 1fr;
         width: 80%;
-        &__horizontalline {
+        &__horizontal-line {
             width: 85%;
         }
     }
@@ -236,10 +232,10 @@ $second-hover:#FF0700;
 @media only screen and (max-width: 700px) {
 
     .projects {
+        row-gap: 20px;
         padding: 20px 0;
         width: 80%;
-        row-gap: 20px;
-        &__portfolio {
+        &-portfolio {
             h3 {
                 font-size: 1.15rem;
             }
@@ -248,26 +244,16 @@ $second-hover:#FF0700;
                 font-size: 1.1rem;
             }
         
-            &__flipbox__back {
-                button:nth-child(1) {
-                    &:hover {
-                        background-color: $second-hover;
-                        filter: none;
-                    }
-
-                    &:active {
-                            color:lightskyblue;
-                        }
-                    }
-
+            &__flip-box__back {
+                button:nth-child(1),
                 a:nth-child(4) {
                     &:hover {
-                        background-color: $second-hover;
                         filter: none;
+                        background-color: $second-hover;
                     }
 
                     &:active {
-                            color:lightskyblue;
+                        color:lightskyblue;
                     }  
                 }
             }
@@ -283,7 +269,7 @@ $second-hover:#FF0700;
             padding: 0 10px 10px;
         }
 
-        &__portfolio__flipbox {
+        &-portfolio__flip-box {
             max-width: 150px;
             height: 150px;
             &__triangle {
@@ -291,15 +277,15 @@ $second-hover:#FF0700;
             }
 
             &__back {
-                font-size: 0.938rem;
                 padding-top: 8px;
+                font-size: 0.938rem;
                 button:nth-child(1) {
                     font-size: 0.938rem;
                 }
 
                 p:nth-child(2) {
-                    font-size: 0.938rem;
                     margin: 30px 0 -10px;
+                    font-size: 0.938rem;
                 }
         
                 p:nth-child(3) {

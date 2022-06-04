@@ -4,10 +4,10 @@
 
 <h1 align="center">
   Hello there, I am Laszlo
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30" height="30"/>
 </h1>
 
-I am a <b>Front-End Web Developer</b> from <b>Hungary</b> <img src="https://github.com/hampusborgos/country-flags/blob/main/png100px/hu.png" title="Trello" alt="Trello" width="20" height="12"/>&nbsp;, currently living in <b>Prague, Czech Republic</b> <img src="https://github.com/hampusborgos/country-flags/blob/main/png100px/cz.png" title="Trello" alt="Trello" width="20" height="12"/>&nbsp;
+I am a <b>Front-End Web Developer</b> from <b>Hungary</b> <img src="https://github.com/hampusborgos/country-flags/blob/main/png100px/hu.png" title="Trello" alt="Trello" width="22" height="14"/>&nbsp;, currently living in <b>Prague, Czech Republic</b> <img src="https://github.com/hampusborgos/country-flags/blob/main/png100px/cz.png" title="Trello" alt="Trello" width="22" height="14"/>&nbsp;
 
 🔎 Seeking to expand the scope of my coding skills in front-end positions and projects
 
@@ -29,8 +29,10 @@ More details on [CodersRank profile](https://profile.codersrank.io/user/lac0220/
   <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML5" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS3" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" title="Sass" **alt="Sass" width="40" height="40"/>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-original-wordmark.svg" title="Bootstrap" alt="Bootstrap" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React.js" alt="React.js" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" title="TypeScript" alt="TypeScript" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/github/github-original.svg" title="GitHub" **alt="GitHub" width="40" height="40"/>
   <img src="https://github.com/devicons/devicon/blob/master/icons/gitlab/gitlab-original-wordmark.svg" title="GitLab" **alt="GitLab" width="40" height="40"/>
   <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original-wordmark.svg" title="Visual Studio Code" alt="Visual Studio Code" width="40" height="40"/>&nbsp;

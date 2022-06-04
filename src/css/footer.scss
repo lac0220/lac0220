@@ -6,15 +6,15 @@ footer {
     display: flex;
     flex-direction: column;
     margin: auto -80px;
+    padding: 10px 0 20px;
     text-align: center;
     background-color: $first-color;
-    padding: 10px 0 20px;
-    .footer__socialmedia a {
+    .footer-social-media a {
         display: inline-block;
-        border-radius: 2px;
-        color: $text-color;
         margin: auto 10px;
+        border-radius: 2px;
         font-size: 3.125rem;
+        color: $text-color;
         &:hover {
             transform:scale(1.1); 
             -webkit-transform:scale(1.1);
@@ -22,7 +22,7 @@ footer {
         }
     }
     
-    .footer__copyright {
+    .footer-copyright {
         color: $text-color;
     }
 } 
@@ -30,11 +30,11 @@ footer {
 @media screen and (max-width: 1200px) { 
     
     footer {
-        .footer__socialmedia a {
+        .footer-social-media a {
             font-size: 2.5rem;
         }
             
-        .footer__copyright {
+        .footer-copyright {
             font-size: 1.2rem;
         }
     }
@@ -44,11 +44,22 @@ footer {
     
     footer {
         margin: auto -20px;
-        .footer__socialmedia a {
+        .footer-social-media a {
             font-size: 1.875rem;
+            &:hover {
+                transform: none; 
+                -webkit-transform: none;
+                color: $text-color;
+            }
+            
+            &:active {
+                transform: scale(1.1); 
+                -webkit-transform: scale(1.1);
+                color: $second-hover;
+            }
         }
         
-        .footer__copyright {
+        .footer-copyright {
             font-size: 1rem;
         }
     }

@@ -2,22 +2,22 @@ $text-color:white;
 $second-hover:#FF0700;
 
 .message {
-    text-align: center;
+    margin-right: -50%;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-right: -50%;
     transform: translate(-50%, -50%);
-    &__smile {
-        max-width: 100px;
+    text-align: center;
+    &-smile {
         position: absolute;
         right: 0;
         bottom: 220px;
+        max-width: 100px;
     }
 
     h1, h2 {
-        color: $text-color;
         padding: 25px 0;
+        color: $text-color;
     }
 
     a {
@@ -32,7 +32,7 @@ $second-hover:#FF0700;
     
     .message {
         width: 90%;
-        &__smile {
+        &-smile {
             position: relative;
             right: 0;
             top: 5px;
@@ -47,18 +47,18 @@ $second-hover:#FF0700;
 @media only screen and (max-width: 700px) {
 
     .message {
-        &__smile {
+        &-smile {
             max-width: 80px;
         }
 
         h1 {
-            font-size: 1.563rem;
             padding: 20px 0;
+            font-size: 1.563rem;
         }
 
         h2 {
-            font-size: 1.25rem;
             margin: 0;
+            font-size: 1.25rem;
         }
         
         a:hover {

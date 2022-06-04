@@ -3,21 +3,20 @@ $first-hover:#2079AC;
 $second-hover:#FF0700;
 
 .home {
-    &__name {
-        margin: auto -80px;
-        color: $text-color;
-        font-weight: bold;
+    &-name {
         display: block;
+        margin: auto -80px;
         background: url(../img/background.webp) center no-repeat;	
         background-attachment: fixed;
         background-size: cover;
+        font-weight: bold;
+        color: $text-color;
         &__language {
             display: inline-block;
             position: relative;
             left: 100%;
-            padding-top: 25px;
             margin-left: -130px;
-    
+            padding-top: 25px;
             ul {
                 display: none;
                 padding: 35px;
@@ -40,21 +39,21 @@ $second-hover:#FF0700;
             }
             
             li:hover ul {
+                display: block;
                 position: absolute;
                 top: 55px;
-                display: block;
-                background: $text-color;
-                width: 120px;
-                padding-top: 0px;
                 z-index: 1;
+                padding-top: 0px;
+                width: 120px;
                 border-radius: 5px;
+                background: $text-color;
             }
             
             img {
-                width: 3rem;
                 position: absolute;
                 right: 112%;
                 top: 22px;
+                width: 3rem;
             }
             
             &__triangle {
@@ -62,30 +61,30 @@ $second-hover:#FF0700;
                 top: 42px;
                 left: 75px;
                 z-index: 1;
+                width: 30px;
                 height: 14px;
                 overflow: hidden;
-                width: 30px;
                 background: transparent;
             }
         
             li:hover &__triangle:after {
-                content: '';
                 display: block;
                 z-index: 2;
                 width: 15px;
-                transform: rotate(45deg) translateY(0px) translatex(10px);
                 height: 15px;
-                background: $text-color;
+                content: '';
+                transform: rotate(45deg) translateY(0px) translatex(10px);
                 border-radius: 2px;
+                background: $text-color;
             }
             
             i:nth-child(1) {
                 display: block;
-                width: 36px;
-                height: 25px;
                 position: absolute;
                 bottom: 5px;
                 right: 78px;
+                width: 36px;
+                height: 25px;
                 cursor: auto;
                 background-image: url("../img/logo/germanflag.svg");
             }
@@ -102,42 +101,42 @@ $second-hover:#FF0700;
             margin-top:-19px;
             text-align: center;
             li:nth-child(1) {
+                margin: auto;
                 overflow: hidden;
-                white-space: nowrap;
-                letter-spacing: 5px; 
                 animation: typing 5s steps(100, end) both;
                 font-size: 3.75rem;
-                margin: auto;
+                white-space: nowrap;
+                letter-spacing: 5px; 
                 a {
-                    color: $text-color;
                     font-weight: bold;
+                    color: $text-color;
                     &:hover {
-                        color: lightcoral;
                         filter: drop-shadow(1px 1px 5px $second-hover);
+                        color: lightcoral;
                     }
                 }
             }
     
             li:nth-child(2) {
+                margin: -10px auto auto;
                 overflow: hidden;
-                white-space: nowrap;
-                letter-spacing: 5px; 
                 animation: typing 5s steps(100, end) both;
                 animation-delay: 2s;
                 font-size: 2.5rem;
-                margin: -10px auto auto;
+                white-space: nowrap;
+                letter-spacing: 5px; 
             }  
     
             li:nth-child(3) {
+                margin: auto;
+                padding: 28px 0 40px;
                 overflow: hidden;
-                white-space: nowrap;
-                letter-spacing: 5px; 
                 animation: typing 5s steps(100, end) both;
                 animation-delay: 4.5s;
                 font-size: 1.875rem;
-                padding: 28px 0 40px;
-                margin: auto;
-                font-style: italic;     
+                font-style: italic; 
+                white-space: nowrap;
+                letter-spacing: 5px;     
             }  
     
             li:nth-child(4) {   
@@ -148,19 +147,19 @@ $second-hover:#FF0700;
                 }
 
                 button {
+                    padding: 5px 12px;
+                    border: 2px solid $first-hover;
+                    border-radius: 50px;
                     font-weight: bold;
-                    font-family:Georgia, 'Times New Roman', Times, serif;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
                     font-size: 0.875rem;
                     letter-spacing: 1px; 
-                    padding: 5px 12px;
                     background-color: $second-hover;
-                    border-radius:50px;
-                    border: 2px solid $first-hover;
                     color: $text-color;
                     cursor: pointer;
                     &:hover {
-                        background-color: lightcoral;
                         filter: drop-shadow(1px 1px 5px $second-hover);
+                        background-color: lightcoral;
                     }
                 }
             }
@@ -172,10 +171,10 @@ $second-hover:#FF0700;
         to { width: 100% }
     }
   
-    &__text {
-        width: 80%;
+    &-text {
         margin: auto;
         padding: 20px 0;
+        width: 80%;
         hyphens: auto;
         -webkit-hyphens: auto;
         -webkit-hyphenate-limit-before: 3;
@@ -186,23 +185,41 @@ $second-hover:#FF0700;
         -webkit-hyphenate-limit-zone: 8%;
     }
   
-    &__skills {
+    &-skills {
         display: grid;
         grid-template-columns: repeat(4, 1fr);  /* same sized column */
         column-gap: 30px;
-        width: 80%;
         margin: auto;
         padding-bottom: 30px;
+        width: 80%;
         p {
             position: relative; 
             top: 7px;
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
             font-size: 1.563rem;
-            color: $text-color;
             font-weight: bold;
+            color: $text-color;
         }
   
+        &__text1, 
+        &__text2, 
+        &__text3, 
+        &__text4 {
+            height: 45%;
+            border-bottom-style: solid;
+            border-radius: 10px;
+            border-bottom-color: $second-hover;
+            background-color: $first-hover;
+            div {
+                text-align: center;
+            }
+    
+            img {
+                position: relative;
+            }
+        }
+
         &__text1 {
             grid-column: 1;
             grid-row: 1;
@@ -221,22 +238,6 @@ $second-hover:#FF0700;
         &__text4 {
             grid-column: 4;
             grid-row: 1;
-        }
-    
-        &__text1, &__text2, &__text3, &__text4 {
-            border-radius: 10px;
-            background-color: $first-hover;
-            border-bottom-style: solid;
-            border-bottom-color: $second-hover;
-            height: 45%;
-            div {
-                text-align: center;
-            }
-    
-            img {
-            position: relative;
-    
-            }
         }
   
         &__text1 img {
@@ -264,11 +265,11 @@ $second-hover:#FF0700;
 @media only screen and (max-width: 1200px) {
   
     .home {   
-        &__name {
+        &-name {
             background-attachment: scroll;
             &__language {
-                font-size: 0.938rem;
                 margin-left: -135px;
+                font-size: 0.938rem;
                 img {
                     width: 2rem;
                     top: 23px;
@@ -295,11 +296,11 @@ $second-hover:#FF0700;
                     left: 52px;
                 }
                 
-                i:nth-child(1) {          
+                i:nth-child(1) {  
+                    top: 4px;
+                    left: 5px;        
                     width: 28px;
                     height: 20px;
-                    top: 4px;
-                    left: 5px;
                 }
 
                 i:nth-child(2) {
@@ -325,11 +326,11 @@ $second-hover:#FF0700;
                 }
                 
                 li:nth-child(3) {
+                    padding: 30px 0 22px;
                     animation: typing 3s steps(100, end) both;
                     animation-delay: 4s;
                     font-size: 1.45rem;
                     letter-spacing: 1px; 
-                    padding: 30px 0 22px;
                 } 
                 
                 li:nth-child(4) {   
@@ -341,16 +342,16 @@ $second-hover:#FF0700;
             }
         }
         
-        &__text {
+        &-text {
             width: 100%;
         }
     
-        &__skills {
+        &-skills {
             width: 100%;
             column-gap: 20px;
             p {
-                font-size: 1.4rem;
                 top: 9px;
+                font-size: 1.4rem;
             } 
         }
     }
@@ -358,12 +359,15 @@ $second-hover:#FF0700;
 
 @media only screen and (max-width: 900px) {
   
-    .home__skills {
-        grid-template-columns: repeat(2, 1fr);  /* same sized column */
+    .home-skills {
+        padding-bottom: 95px;
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 70px;
         row-gap: 95px;
-        padding-bottom: 95px;
-        &__text1, &__text2, &__text3, &__text4 {
+        &__text1, 
+        &__text2, 
+        &__text3,
+        &__text4 {
             height: 52px;
         }
             
@@ -390,7 +394,7 @@ $second-hover:#FF0700;
 @media only screen and (max-width: 700px) {
   
     .home {
-        &__name {
+        &-name {
             margin: auto -20px;
             &__language {
                 display: none;
@@ -401,26 +405,26 @@ $second-hover:#FF0700;
                 li:nth-child(1) {
                     animation: typing 2s steps(100, end) both;
                     a {
-                        font-size: 2.5rem;
                         pointer-events: none;
+                        font-size: 2.5rem;
                         &:hover {
-                            color: $text-color;
                             filter: none;
+                            color: $text-color;
                         }
                     }
                 }
         
                 li:nth-child(2) {
                     animation: typing 2s steps(100, end) both;
-                    font-size: 1.375rem;
                     animation-delay: 2s;
+                    font-size: 1.375rem;
                 }  
             
                 li:nth-child(3) {
-                    animation: typing 2s steps(100, end) both;
-                    font-size: 1.063rem;
                     padding: 30px 0 0;
+                    animation: typing 2s steps(100, end) both;
                     animation-delay: 4s;
+                    font-size: 1.063rem;
                 } 
             
                 li:nth-child(4) {   
@@ -429,8 +433,8 @@ $second-hover:#FF0700;
                         padding: 4px 10px;
                         font-size: 0.675rem;
                         &:hover {
-                            background-color: $second-hover;
                             filter: none;
+                            background-color: $second-hover;
                         }
 
                         &:active {
@@ -441,43 +445,46 @@ $second-hover:#FF0700;
             }
         }
         
-        &__text {
-            hyphens: none;
+        &-text {
             width: 80%;
+            hyphens: none;
         }
             
-        &__skills {
+        &-skills {
             row-gap: 70px;
             column-gap: 55px;
-            width: 80%;
             padding-bottom: 75px;
+            width: 80%;
             p {
-                font-size: 1.25rem;
                 top: 4px;
+                font-size: 1.25rem;
             }
         
-            &__text1, &__text2,  &__text3, &__text4 {
+            &__text1, 
+            &__text2,  
+            &__text3, 
+            &__text4 {
                 height: 40px;         
             }
         
             &__text1 img {
-                max-width: 50px;
                 top: 13px;
+                max-width: 50px;
             }
 
             &__text2 img {
-                max-width: 74px;
                 top: 15px;
+                max-width: 74px;
             }
             
             &__text3 img {
-                max-width: 55px;
                 top: 15.5px;
+                max-width: 55px;
             }
             
             &__text4 img {
-                max-width: 60px;
                 top: 14px;
+                max-width: 60px;
             }
         }
     }
@@ -486,37 +493,38 @@ $second-hover:#FF0700;
 @media only screen and (max-width: 500px) {
 
     .home {
-        &__name__header {
+        &-name__header {
             li:nth-child(1) {
                 animation: typing 2s steps(100, end) both;
                 a {
-                    font-size: 2.2rem;
                     pointer-events: none;
+                    font-size: 2.2rem;
                     &:hover {
-                        color: $text-color;
                         filter: none;
+                        color: $text-color;
                     }
                 }
             }
     
             li:nth-child(2) {
                 animation: typing 2s steps(100, end) both;
-                font-size: 1.2rem;
                 animation-delay: 2s;
+                font-size: 1.2rem;
             }  
         
             li:nth-child(3) {
                 animation: typing 2s steps(100, end) both;
-                font-size: 0.95rem;
                 animation-delay: 4s;
+                font-size: 0.95rem;
             }
         }
     
-        &__text, &__skills {
+        &-text, 
+        &-skills {
             width: 100%;
         }
 
-        &__skills {   
+        &-skills {   
             column-gap: 35px;
         }
     }
