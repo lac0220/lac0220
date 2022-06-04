@@ -642,11 +642,13 @@ nav ul .nav-menu__horizontal-line2 {
     -o-transition: none;
     -ms-transition: none;
     transition: none;
-    font-size: 3.75rem;
   }
   .contact-text__phone:hover, .contact-text__email:hover {
     transform: none;
     cursor: auto;
+  }
+  contact-text i {
+     font-size: 3.75rem;
   }
 }
 @media only screen and (max-width: 500px) {
