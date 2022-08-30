@@ -1,4 +1,4 @@
-$second-hover:#FF0700;
+$first-hover:#FF0700;
 
 .about-me {
     padding: 20px 0 25px;
@@ -26,13 +26,13 @@ $second-hover:#FF0700;
     }
   
     &__photo {
-        margin: 5px 40px 10px 0;
+        margin: 20px 40px 10px 0;
         float: left;
         img {
             max-width: 18.75rem;
             height: auto;
             border-radius: 50%;
-            filter: drop-shadow(1px 1px 10px $second-hover);
+            filter: drop-shadow(1px 1px 10px $first-hover);
         }
     }
 }

@@ -1,5 +1,5 @@
 $text-color:white;
-$second-hover:#FF0700;
+$first-hover:#FF0700;
 
 .message {
     margin-right: -50%;
@@ -23,7 +23,7 @@ $second-hover:#FF0700;
     a {
         color: lightblue;
         &:hover {
-            color: $second-hover;
+            color: $first-hover;
         }
     }
 }
@@ -62,11 +62,11 @@ $second-hover:#FF0700;
         }
         
         a:hover {
-                color: lightblue;
-            }
+            color: lightblue;
+        }
 
         a:active {
-            color: $second-hover;
+            color: $first-hover;
         }
     }
 }

@@ -1,289 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" href="/css/reset.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" /> 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> <!-- linkedin, github and codepen -->
-    <link rel="shortcut icon" href="./img/logo/logofavicon.webp" type="image/webp" /> <!-- favicon -->
-    <title>Portfolio - Laszlo Nemeth</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="nav-header">
-                <div class="nav-header__drop-bar">
-                    <span class="nav-header__drop-bar__line1"></span>
-                    <span class="nav-header__drop-bar__line2"></span>
-                    <span class="nav-header__drop-bar__line3"></span>
-                </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is the web developer portfolio of Laszlo Nemeth">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/reset.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" /> 
+        <link rel="shortcut icon" href="./img/logo/logo_favicon.webp" type="image/webp" /> <!-- favicon -->
+        <title>Portfolio - Laszlo Nemeth</title>
+    </head>
 
-                <div class="nav-header__language">
-                    <img src="./img/logo/ukflag.svg" alt="UK flag"/>
-                    <li><b>EN</b><i class="fa fa-angle-down"></i>
-                    <div class="nav-header__language__triangle"></div>
-                        <ul>
-                            <li><a href="index_german.html"><i></i><span>DE</span></a></li>                      
-                        </ul>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="drop-bar">
+                        <span class="drop-bar__line1"></span>
+                        <span class="drop-bar__line2"></span>
+                        <span class="drop-bar__line3"></span>
                     </li>
-                </div>
-                
-                <div class="nav-header__logo">
-                    <a href="#home" aria-label="Laszlo Nemeth logo"><img src="./img/logo/logo.webp" alt="Laszlo Nemeth logo"/></a>
-                </div>
-                <h3>Laszlo Nemeth</h3>
-                <p>Front-End</p>
-                <p>Web Developer</p>
-                <div class="nav-header__social-media">
-                    <a href="https://www.linkedin.com/in/nemeth0220" aria-label="Linkedin logo" target="_blank"><i class="fab fa-linkedin" title="Linkedin"></i></a>    <!-- linkedin -->
-                    <a href="https://github.com/lac0220" aria-label="Github logo" target="_blank"><i class="fab fa-github" title="Github"></i></a>      <!-- github -->
-                    <a href="https://codepen.io/lac0220/" aria-label="Codepen logo" target="_blank"><i class="fab fa-codepen" title="Codepen"></i></a>  <!-- codepen-->      
-                </div>  
-            </div>
-            
-            <ul id="nav-menu">
-                <h3>Laszlo Nemeth</h3>
-                <p>Front-End Web Developer</p>
-
-                <hr class="nav-menu__horizontal-line1">
-
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="img/cv/Laszlo_Nemeth_Resume.pdf" alt="Resume" download>Resume</a></li>
-
-                <hr class="nav-menu__horizontal-line2">
-
-                <div class="nav-menu__empty">
-
-                <div class="nav-menu__social-media">
-                    <a href="https://www.linkedin.com/in/nemeth0220" aria-label="Linkedin logo" target="_blank"><i class="fab fa-linkedin" title="Linkedin"></i></a>    <!-- linkedin -->
-                    <a href="https://github.com/lac0220" aria-label="Github logo" target="_blank"><i class="fab fa-github" title="Github"></i></a>      <!-- github -->
-                    <a href="https://codepen.io/lac0220/" aria-label="Codepen logo" target="_blank"><i class="fab fa-codepen" title="Codepen"></i></a>  <!-- codepen-->           
-                </div>  
-            </ul>
-        </nav>
-    </header>
-
-    <section>
-        <div class="home" id="home">
-            <ul class="home-name">
-                <div class="home-name__language">
-                    <img src="./img/logo/ukflag.svg" alt="UK flag"/>
-                    <li><b>English</b><i class="fa fa-angle-down"></i>
-                        <div class="home-name__language__triangle"></div>
-                        <ul>
-                            <li><a href="index_german.html"><i></i><span>German</span></a></li>                      
-                        </ul>
+                    <li class="language">
+                        <img src="./img/logo/uk_flag.svg" alt="UK flag"/>
+                        <div><span>EN</span><i class="fa fa-angle-down"></i>
+                            <div class="triangle"></div>
+                            <ul>
+                                <li><a href="german.html"><i></i><span>DE</span></a></li>                      
+                            </ul>
+                        </div>
                     </li>
-                </div>
-                <div class="home-name__header">
-                    <li><a href="#about-me" alt="Laszlo Nemeth contact link">Laszlo Nemeth</a></li>
-                    <li>Front-End Web Developer</li>
-                    <li>"There's no failure, only feedback"</li>
-                    <li><a href="#contact" alt="Work together link"><button>LET'S WORK TOGETHER</button></a></li>
-                </div>
-            </ul>
-            
-            <p class="home-text">I have always been a service-oriented professional with a devotion to excellent customer service. It is no different in programming either. I am passionate about UI design by adding motion to elements and maintaining high discoverability for an enjoyable user experience. My intention is to develop user-friendly websites and web applications that are easy to navigate. I enjoy building a responsive environment by using the following main Front-End Development Technologies:</p>
+                    <li class="logo">
+                        <a href="#home" aria-label="Home page"><img src="./img/logo/logo.webp" alt="Laszlo Nemeth logo"/></a>
+                    </li>
+                    <li>
+                        <h3>Laszlo Nemeth</h3>
+                        <p>Front-End Developer</p>
+                    </li>
+                    <li class="social-media">
+                        <a href="https://www.linkedin.com/in/nemeth0220" aria-label="Linkedin logo" target="_blank"><i class="fab fa-linkedin" title="Visit me on Linkedin"></i></a>    <!-- linkedin -->
+                        <a href="https://github.com/lac0220" aria-label="GitHub link" target="_blank"><i class="fab fa-github" title="Visit me on GitHub"></i></a>      <!-- GitHub -->
+                        <a href="https://gitlab.com/lac0220" aria-label="GitLab link" target="_blank"><i class="fab fa-gitlab" title="Visit me on GitLab"></i></a>      <!-- GitLab -->
+                        <a href="https://codepen.io/lac0220/" aria-label="Codepen link" target="_blank"><i class="fab fa-codepen" title="Visit me on Codepen"></i></a>  <!-- Codepen-->      
+                    </li>  
+                </ul>
+                <ul id="nav-menu">
+                    <li>
+                        <h3>Laszlo Nemeth</h3>
+                        <p>Front-End Developer</p>
+                    </li>
+                    <hr>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#work-history">Work History</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="img/cv/Laszlo_Nemeth_Resume.pdf" aria-label="Resume" download>Resume</a></li>
+                    <hr>
+                    <li>
+                        <div class="social-media-mobile">
+                            <a href="https://www.linkedin.com/in/nemeth0220" aria-label="Linkedin logo" target="_blank"><i class="fab fa-linkedin" title="Visit me on Linkedin"></i></a>    <!-- linkedin -->
+                            <a href="https://github.com/lac0220" aria-label="GitHub link" target="_blank"><i class="fab fa-github" title="Visit me on GitHub"></i></a>      <!-- GitHub -->
+                            <a href="https://gitlab.com/lac0220" aria-label="GitLab link" target="_blank"><i class="fab fa-gitlab" title="Visit me on GitLab"></i></a>      <!-- GitLab -->
+                            <a href="https://codepen.io/lac0220/" aria-label="Codepen link" target="_blank"><i class="fab fa-codepen" title="Visit me on Codepen"></i></a>  <!-- Codepen-->           
+                        </div>  
+                    </li>  
+                </ul>
+            </nav>
+        </header>
 
-            <div class="home-skills">
-                <div class="home-skills__text1">  
+        <section class="home" id="home">
+            <ul>
+                <li>
+                    <img src="./img/logo/uk_flag.svg" alt="UK flag"/>
+                    <div><span>English</span><i class="fa fa-angle-down"></i>
+                        <div class="triangle"></div>
+                        <ul>
+                            <li><a href="german.html"><i></i><span>German</span></a></li>                      
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <p><a href="#about-me" alt="Laszlo Nemeth contact link">Laszlo Nemeth</a></p>
+                    <p>Front-End Developer</p>
+                    <p>"There's no failure, only feedback"</p>
+                    <a href="#contact" alt="Work together link"><button>LET'S WORK TOGETHER</button></a>
+                </li>
+            </ul>
+            <p class="home-text">I have always been a service-oriented professional with a devotion to excellent customer service. It is no different in programming either. I am <span style="color:#ffad6b;">passionate about UI design</span> by adding motion to elements and maintaining high discoverability for an <span style="color:#ffad6b;">enjoyable UX</span>. My intention is to develop user-friendly websites and web applications that are easy to navigate. I like building a responsive environment by <span style="color:#ffad6b;"> using various Front-End Development Technologies and Tools:</span></p>
+            <ul>
+                <li>  
                     <p>HTML5</p>
-                    <div class="home-skills__img">  
-                        <img src="./img/logo/html.webp" alt="HTML5 icon">
-                    </div>
-                </div>
-
-                <div class="home-skills__text2">  
+                    <div><i class="fab fa-html5"></i></div>
+                </li>
+                <li>  
+                    <p>CSS3</p>
+                    <div><i class="fab fa-css3"></i></div>
+                </li>
+                <li>  
                     <p>SCSS</p>
-                    <div class="home-skills__img">  
-                        <img src="./img/logo/sass.webp" alt="SASS icon">
-                    </div>
-                </div>
-
-                <div class="home-skills__text3">  
+                    <div><i class="fab fa-sass"></i></div>
+                </li>
+                <li>  
                     <p>JavaScript</p>
-                    <div class="home-skills__img">  
-                        <img src="./img/logo/js.webp" alt="JavaScript icon">
-                    </div>
-                </div>
-
-                <div class="home-skills__text4">  
+                    <div><i class="fab fa-js"></i></div>
+                </li>
+                <li>  
                     <p>React.js</p>
-                    <div class="home-skills__img">  
-                        <img src="./img/logo/react.webp" alt="React.js icon">
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </section>
+                    <div><i class="fab fa-react"></i></div>
+                </li>
+                <li>  
+                    <p>Gulp.js</p>
+                    <div><i class="fab fa-gulp"></i></div>
+                </li>
+                <li>  
+                    <p>NPM</p>
+                    <div><i class="fab fa-npm"></i></div>
+                </li>
+                <li>  
+                    <p>Git</p>
+                    <div><i class="fab fa-git"></i></div>
+                </li>
+            </ul>
+        </section>
 
-    <section>
-        <h1 id="projects">Projects</h1>
-    
-        <hr class="horizontal-line">
-
-        <div class="projects">
-            <div class="projects-portfolio">
-                <h3>GENERIC HIPSTER COFFEE</h3>
-
-                <div class="projects-portfolio__flip-box">
-                    <div class="projects-portfolio__flip-box__inner">
-                        <div class="projects-portfolio__flip-box__front1 pulse">
-                            <div class="projects-portfolio__flip-box__triangle"></div>
-                            <img src="./img/logo/logocoffee.svg" alt="Coffee shop website logo" />                      
-                        </div>
-
-                        <div class="projects-portfolio__flip-box__back">
-                            <a href="https://lac0220.github.io/hackaton-coffeeshop/index.html" target="_blank" alt="Coffee shop website"><button>Visit the website</button></a> 
-                            <p>or</p>
-                            <p>Check out the coding</p>
-                            <a href="https://github.com/lac0220/hackaton-coffeeshop" target="_blank" aria-label="Github link"><i class="fab fa-github" title="Github"></i></a>  
-                        </div>
-                    </div>
-                </div>
-                <h4>BOOTCAMP HACKATHON</h4>
-                <hr class="projects-portfolio__horizontal-line">
-                <p>The challenge was about to design a responsive coffee shop website that contains some basic information, a menu, types of listed coffees, and a reservation form</p>
-                <p><span style="font-weight: bold;">Tech Stack:</span> <span style="font-family: 'Times New Roman', Times, serif";>HTML5, SCSS</span></p>
-            </div>
-
-            <div class="projects-portfolio">
-                <h3>LEGENDARY QUOTES</h3>
-
-                <div class="projects-portfolio__flip-box">
-                    <div class="projects-portfolio__flip-box__inner">
-                        <div class="projects-portfolio__flip-box__front2 pulse">
-                            <div class="projects-portfolio__flip-box__triangle"></div>
-                            <img src="./img/logo/logoquotes.webp" alt="Quotes website logo" />                      
-                        </div>
-
-                        <div class="projects-portfolio__flip-box__back">
-                            <a href="https://lac0220.github.io/finalproject-quotes/index.html" target="_blank" alt="Legendary Quotes website"><button>Visit the website</button></a> 
-                            <p>or</p>
-                            <p>Check out the coding</p>
-                            <a href="https://github.com/lac0220/finalproject-quotes" target="_blank" aria-label="Github link"><i class="fab fa-github" title="Github"></i></a>  
-                        </div>
-                    </div>
-                </div>
-                <h4>BOOTCAMP FINAL PROJECT</h4> 
-                <hr class="projects-portfolio__horizontal-line">
-                <p>​​The web application uses an API to generate random and daily inspirational quotes. It delivers five different quote categories, alphabetical filtering of authors, text-keyword searching between quotes, contact form submission, and mobile-friendly web design with a navigation bar</p>
-                <p><span style="font-weight: bold;">Tech Stack:</span> <span style="font-family: 'Times New Roman', Times, serif";>HTML5, SCSS, JavaScript</span></p>
-            </div>
-
-            <div class="projects-portfolio">
-                <h3>MODEL PORTFOLIO</h3>
-
-                <div class="projects-portfolio__flip-box">
-                    <div class="projects-portfolio__flip-box__inner">
-                        <div class="projects-portfolio__flip-box__front3 pulse">
-                            <div class="projects-portfolio__flip-box__triangle"></div>
-                            <img src="./img/logo/logomodel.webp" alt="Model portfolio logo" />                      
+        <section class="projects">
+            <h1 id="projects">Projekte</h1>
+            <hr>
+            <ul>
+                <li>
+                    <h2>GENERIC HIPSTER COFFEE</h2>
+                    <ul>
+                        <li>
+                            <div class="projects-flip-box1 pulse">
+                                <div class="projects-flip-box__triangle"></div>
+                                <img src="./img/logo/logo_coffee.svg" alt="Coffee shop website logo" />                      
                             </div>
-
-                            <div class="projects-portfolio__flip-box__back">
-                                <a href="https://lac0220.github.io/model-portfolio/index.html" target="_blank" alt="Model website"><button>Visit the website</button></a> 
-                                <p>or</p>
+                            <div class="projects-flip-box__back">
+                                <a href="https://lac0220.github.io/hackaton-coffeeshop/index.html" target="_blank" alt="Coffee shop website"><button>Visit the website</button></a> 
+                                <p><i>or</i></p>
                                 <p>Check out the coding</p>
-                                <a href="https://github.com/lac0220/model-portfolio" target="_blank" aria-label="Github link"><i class="fab fa-github" title="Github"></i></a>  
+                                <a href="https://github.com/lac0220/hackaton-coffeeshop" target="_blank" aria-label="GitHub link"><i class="fab fa-github" title="GitHub project"></i></a>  
                             </div>
-                        </div>
-                    </div>
-                    <h4>FREELANCING</h4> 
-                    <hr class="projects-portfolio__horizontal-line">
-                    <p>Designing a portfolio website for a model and artist with a gallery and a blog section</p>
-                    <p><span style="font-weight: bold;">Tech Stack:</span> <span style="font-family: 'Times New Roman', Times, serif";>React.js, SCSS</span></p>
+                        </li>
+                    </ul>
+                    <h3>BOOTCAMP HACKATHON</h3>
+                    <hr>
+                    <p>The challenge was about to design a responsive coffee shop website that contains some basic information, a menu, types of listed coffees, and a reservation form</p>
+                    <p>Tech Stack: <span style="font-family: 'Times New Roman', Times, serif; color:#FFE0C2;">HTML5, SCSS, Gulp.js, Webpack, Git</span></p>
+                </li>
+
+                <li>
+                    <h2>LEGENDARY QUOTES</h2>
+                    <ul>
+                        <li>
+                            <div class="projects-flip-box2 pulse">
+                                <div class="projects-flip-box__triangle"></div>
+                                <img src="./img/logo/logo_quotes.webp" alt="Quotes website logo" />                      
+                            </div>
+                            <div class="projects-flip-box__back">
+                                <a href="https://lac0220.github.io/finalproject-quotes/index.html" target="_blank" alt="Legendary Quotes website"><button>Visit the website</button></a> 
+                                <p><i>or</i></p>
+                                <p>Check out the coding</p>
+                                <a href="https://github.com/lac0220/finalproject-quotes" target="_blank" aria-label="GitHub link"><i class="fab fa-github" title="GitHub project"></i></a>  
+                            </div>
+                        </li>
+                    </ul>
+                    <h3>BOOTCAMP FINAL PROJECT</h3> 
+                    <hr>
+                    <p>​​The web application uses an API to generate random and daily inspirational quotes. It delivers five different quote categories, alphabetical filtering of authors, text-keyword searching between quotes, contact form submission, and mobile-friendly web design with a navigation bar</p>
+                    <p>Tech Stack: <span style="font-family: 'Times New Roman', Times, serif; color:#FFE0C2;">HTML5, SCSS, JavaScript, Gulp.js, Webpack, Git</span></p>
+                </li>
+
+                <li>
+                    <h2>MODEL PORTFOLIO</h2>
+                    <ul>
+                        <li>
+                            <div class="projects-flip-box3 pulse">
+                                <div class="projects-flip-box__triangle"></div>
+                                <img src="./img/logo/logo_model.webp" alt="Model portfolio logo" />                      
+                            </div>
+                            <div class="projects-flip-box__back">
+                                <a href="https://lac0220.github.io/catalina-plamadeala-portfolio" target="_blank" alt="Model website"><button>Visit the website</button></a> 
+                                <p><i>or</i></p>
+                                <p>Check out the coding</p>
+                                <a href="https://github.com/lac0220/model-portfolio" target="_blank" aria-label="GitHub link"><i class="fab fa-github" title="GitHub project"></i></a>  
+                            </div>
+                        </li>
+                    </ul>
+                    <h3>FREELANCING</h3> 
+                    <hr>
+                    <p>Designed a portfolio website for a model | artist with a gallery and a blog section. Used third-party libraries like react-router-dom and react-router-hash-link for routing, react-alice-carousel for sliding images and react-modal-image with zoom option. Mobile-friendly web design </p>
+                    <p>Tech Stack: <span style="font-family: 'Times New Roman', Times, serif; color:#FFE0C2;">React.js, SCSS, NPM, Git</span></p>
+                </li>
+            </ul> 
+        </section>
+
+        <section class="work-history">
+            <h1 id="work-history">Work History</h1>
+            <hr>
+            <ul>
+                <li>
+                    <h2>MARKETUP S.R.O.</h2>
+                    <ul>
+                        <li>
+                            <div class="work-history-flip-box1 pulse">
+                                <div class="work-history-flip-box__triangle"></div>
+                                <img src="./img/logo/coding.webp" alt="Coding logo" />                      
+                            </div>
+                            <div class="work-history-flip-box__back">
+                                <a href="https://www.marketup.cz/en" target="_blank" alt="Marketup s.r.o. website"><button>Company's website</button></a>   
+                            </div>
+                        </li>
+                    </ul>
+                    <h3>FRONT-END DEVELOPER (INTERNSHIP)</h3> 
+                    <p><span style="font-family: 'Times New Roman', Times, serif";>05/2022</span> - present</p>
+                    <hr>
+                    <ul>
+                        <li><span>Creating and maintaining front-end code in React.js and TypeScript</span></li>
+                        <li><span>Customizing components with MUI library to meet product requirements</span></li>
+                        <li><span>Deploying to Google Cloud Platform environment</span></li>
+                        <li><span>Adjusting proper visual hierarchy and alignment to optimize UI design</span></li>
+                        <li><span>Replacing CSS with SCSS for extra features</span></li>
+                    </ul>
+                    <p>Tech Stack: <span style="font-family: 'Times New Roman', Times, serif; color:#FFE0C2;">React.js, TypeScript, Redux.js, CSS, SCSS, Bootstrap 5, Git, GitLab, Webpack, NPM, Google Cloud Platform</span></p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1 id="about-me">About Me</h1>
+            <hr>
+            <div class="about-me">
+                <div class="about-me__photo">
+                    <img src="./img/profile.webp" alt="Laszlo Nemeth profile picture">
                 </div>
+                <p>My first job experience in IT was at <span style="color:#ffad6b">Hewlett-Packard</span> in Ireland back in <span style="font-family: 'Times New Roman', Times, serif";>2015</span>. I worked as a <span style="color:#ffad6b">German Technical Support Analyst</span> providing first-line technical support on the full range of products and applications. My mission was, among others, to deliver solution through <span style="color:#ffad6b">analytical trouble shooting and problem research.</span> Later, I have spent a few years in taxation analysing and remodelling processing practises, implementing new automated tax services but my passion for IT got me back on track.</p>
+                <p>I decided to <span style="color:#ffad6b">dive into The World of Coding</span> and graduated from a Coding Bootcamp &#45; <span style="font-family: 'Times New Roman', Times, serif";>12</span> weeks intense Full-Stack Web Development course &#45; in Prague, Czech Republic in November <span style="font-family: 'Times New Roman', Times, serif";>2021</span>. I became a well trained Web Developer and then <span style="color:#ffad6b">started my first internship as a Front-End Developer in May 2022.</span></p>
+                <p>My prior experiences made me detail-oriented and analytical with a practical approach to problem-solving and <span style="color:#ffad6b">I am constantly seeking to expand the scope of my coding skills in front-end positions and projects.</span></p>
             </div>
-        </div> 
-    </section>
+        </section>
 
-    <section>
-        <h1 id="about-me">About Me</h1>
-
-        <hr class="horizontal-line">
-
-        <div class="about-me">
-            <div class="about-me__photo">
-                <img src="./img/profile.webp" alt="Laszlo Nemeth profile picture">
-            </div>
-            <p>My first job experience in IT was at Hewlett-Packard in Ireland back in <span style="font-family: 'Times New Roman', Times, serif";>2015</span>. I worked as a German Technical Support Analyst providing first-line technical support on the full range of products and applications. My mission was, among others, to deliver solution through analytical trouble shooting and problem research. Later, I have spent a few years in taxation analysing and remodelling processing practises, implementing new automated tax services but my passion for IT got me back on track.</p>
-            <p>I decided to dive into The World of Coding and graduated from a Coding Bootcamp - <span style="font-family: 'Times New Roman', Times, serif";>12</span> weeks intense Full-Stack Web Development course - in Prague, Czech Republic in November <span style="font-family: 'Times New Roman', Times, serif";>2021</span>. I became a well trained Front-End Web Developer.</p>
-            <p>My prior experiences made me detail-oriented and analytical with a practical approach to problem-solving and now I am seeking to expand the scope of my coding skills in front-end positions and projects.</p>
-        </div>
-    </section>
-
-    <section>
-        <h1 id="contact">Contact</h1>
-
-        <hr class="horizontal-line">
-
-        <div class="contact">
+        <section>
+            <h1 id="contact">Contact</h1>
+            <hr>
+            <div class="contact">
                 <form action="https://formsubmit.co/nemeth0220@gmail.com" method="POST">
                     <label for="name">Name
                         <input type="text" id="name" name="name" required>
                     </label>
-        
                     <label for="email">Email address
                         <input type="text" id="email" name="email" required>
                         <input type="hidden" name="_next" value="http://lac0220.github.io/lac0220/message.html">
                     </label>
-        
                     <label for="subject">Subject
                         <input type="text" id="subject" name="subject">
                     </label>
-        
                     <label for="message">Message
                         <textarea id="comment" name="comment" required style="height:200px" alt="Textarea"></textarea>
                     </label>
-        
                     <div class="contact-submit">
-                        <input type="submit" value="SEND">
+                        <label>
+                            <input type="submit" value="SEND">
+                        </label>
                     </div>
                 </form>
-
-            <div class="contact-vertical-line"></div>
-        
-            <hr class="contact-horizontal-line">
-
-            <div class="contact-text">
-                <div class="contact-text__phone">
-                    <i class="fas fa-mobile-alt" alt="Phone icon"></i>
-                    <p>+420 792 588 255</p>
-                </div>
-                
-                <div class="contact-text__email">
-                    <i class="far fa-envelope" alt="Email icon"></i>
-                    <p>nemeth0220@gmail.com</p>
-                </div>
-
-                <div class="contact-text__address">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.4916669857494!2d14.411178515871843!3d50.02088232610443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b96ae5345e725%3A0x3123d83174ecb1fd!2zVSBaw6F0acWhw60gNTQ1LCAxNDcgMDAgUHJhaGEgNC1Ib2Rrb3ZpxI1reQ!5e0!3m2!1sen!2scz!4v1641166073063!5m2!1sen!2scz" width="300" height="250" style="border: 2px solid white; border-radius: 50px; filter: drop-shadow(1px 1px 5px #87CEFA);" allowfullscreen="" loading="lazy" title="Map"></iframe>
-                    <p>U Zátiší 545/1, 147 00 Prague 4</p>
-                    <p>Czech Republic</p>
-                </div>
+                <div class="contact-vertical-line"></div>
+                <hr>
+                <ul>
+                    <li>
+                        <p><a href="tel:420792588255" aria-label="Phone number"><i class="fas fa-mobile-alt" alt="Phone icon"></i></a></p>
+                    </li>
+                    <li>
+                        <p><a href="mailto:nemeth0220@gmail.com?subject=Contact" aria-label="Email address"><i class="far fa-envelope" alt="Email icon"></i></a></p>
+                    </li>
+                    <li>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.4916669857494!2d14.411178515871843!3d50.02088232610443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b96ae5345e725%3A0x3123d83174ecb1fd!2zVSBaw6F0acWhw60gNTQ1LCAxNDcgMDAgUHJhaGEgNC1Ib2Rrb3ZpxI1reQ!5e0!3m2!1sen!2scz!4v1641166073063!5m2!1sen!2scz" width="300" height="250" style="border: 2px solid white; border-radius: 50px; filter: drop-shadow(1px 1px 5px #87CEFA);" allowfullscreen="" loading="lazy" title="Map"></iframe>
+                        <p>U Zátiší 545/1, 147 00 Prague 4</p>
+                        <p>Czech Republic</p>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <div class="footer-social-media">
-            <a href="https://www.linkedin.com/in/nemeth0220" aria-label="Linkedin logo" target="_blank"><i class="fab fa-linkedin" title="Linkedin"></i></a>    <!-- linkedin -->
-            <a href="https://github.com/lac0220" aria-label="Github logo" target="_blank"><i class="fab fa-github" title="Github"></i></a>      <!-- github -->
-            <a href="https://codepen.io/lac0220/" aria-label="Codepen logo" target="_blank"><i class="fab fa-codepen" title="Codepen"></i></a>  <!-- codepen-->        
-        </div>
-
-        <div class="footer-copyright">
-            <p>Copyright &copy; Laszlo Nemeth 2022</p>
-        </div>
-    </footer>
-
-<script src="./js/script.js" charset="utf-8"></script>
-
-</body>
+        <footer>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/nemeth0220" aria-label="Linkedin logo" target="_blank"><i class="fab fa-linkedin" title="Visit me on Linkedin"></i></a></li>    <!-- linkedin -->
+                <li><a href="https://github.com/lac0220" aria-label="GitHub link" target="_blank"><i class="fab fa-github" title="Visit me on GitHub"></i></a></li>      <!-- GitHub -->
+                <li><a href="https://gitlab.com/lac0220" aria-label="GitLab link" target="_blank"><i class="fab fa-gitlab" title="Visit me on GitLab"></i></a></li>      <!-- GitLab -->
+                <li><a href="https://codepen.io/lac0220/" aria-label="Codepen link" target="_blank"><i class="fab fa-codepen" title="Visit me on Codepen"></i></a></li>  <!-- Codepen-->        
+            </ul>
+            <ul>
+                <li><p>Copyright &copy; Laszlo Nemeth 2022</p></li>
+            </ul>
+        </footer>
+        
+        <script src="./js/script.js" charset="utf-8"></script>
+    </body>
 </html>

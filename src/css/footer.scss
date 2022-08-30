@@ -1,28 +1,31 @@
 $text-color:white;
 $first-color: #0C0032;						
-$second-hover:#FF0700;
+$first-hover:#FF0700;
 
 footer {
     display: flex;
     flex-direction: column;
     margin: auto -80px;
-    padding: 10px 0 20px;
+    padding: 10px 0 15px;
     text-align: center;
     background-color: $first-color;
-    .footer-social-media a {
-        display: inline-block;
-        margin: auto 10px;
-        border-radius: 2px;
-        font-size: 3.125rem;
-        color: $text-color;
-        &:hover {
-            transform:scale(1.1); 
-            -webkit-transform:scale(1.1);
-            color: $second-hover;
+    ul:nth-child(1) {
+        display: flex;
+        margin: auto;
+        li a {
+            margin: auto 10px;
+            border-radius: 2px;
+            font-size: 3.125rem;
+            color: $text-color;
+            &:hover {
+                transform:scale(1.1); 
+                -webkit-transform:scale(1.1);
+                color: $first-hover;
+            }
         }
     }
     
-    .footer-copyright {
+    ul:nth-child(2) li {
         color: $text-color;
     }
 } 
@@ -30,12 +33,12 @@ footer {
 @media screen and (max-width: 1200px) { 
     
     footer {
-        .footer-social-media a {
+        ul:nth-child(1) li a {
             font-size: 2.5rem;
         }
             
-        .footer-copyright {
-            font-size: 1.2rem;
+        ul:nth-child(2) li {
+            font-size: 1.1rem;
         }
     }
 }
@@ -44,7 +47,8 @@ footer {
     
     footer {
         margin: auto -20px;
-        .footer-social-media a {
+        padding: 5px 0 10px;
+        ul:nth-child(1) li a {
             font-size: 1.875rem;
             &:hover {
                 transform: none; 
@@ -55,22 +59,15 @@ footer {
             &:active {
                 transform: scale(1.1); 
                 -webkit-transform: scale(1.1);
-                color: $second-hover;
+                color: $first-hover;
             }
         }
         
-        .footer-copyright {
-            font-size: 1rem;
+        ul:nth-child(2) li {
+            font-size: 0.95rem;
         }
     }
 }
-  
-  
-  
-  
-  
-  
-  
   
   
   

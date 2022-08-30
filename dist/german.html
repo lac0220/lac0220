@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Dies ist die Portfolio-Webseite von Laszlo Nemeth">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/reset.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" /> 
+        <link rel="shortcut icon" href="./img/logo/logo_favicon.webp" type="image/webp" /> <!-- favicon -->
+        <title>Portfolio - Laszlo Nemeth</title>
+
+        <style>
+            .home ul:nth-child(1) li:nth-child(1) img {
+                border: 2px solid white;
+                right: 110%;
+            }
+
+            .home ul:nth-child(1) li:nth-child(1) .triangle {
+                left: 80px;
+            }
+
+            .home ul:nth-child(1) li:nth-child(1) div ul:nth-child(4) span {
+                left: 88px;
+            }
+
+            .home ul:nth-child(1) li:nth-child(1) i:nth-child(1) {
+                height: 25px;
+                bottom: 4px;
+                width: 33px;
+                background-image: url("./img/logo/uk_flag.svg");
+            }
+
+            .home ul:nth-child(1) li:nth-child(1) i:nth-child(2) {
+                left: 88px;
+            }
+
+            .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back button:nth-child(1) {
+                padding: 3px;
+            }
+
+            .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back p:nth-child(2) {
+                margin: 35px 0 -10px;
+            }
+
+            .about-me__photo {
+                margin: 35px 40px 5px 0;
+            }
+
+            @media only screen and (max-width: 1200px) {
+
+                .home ul:nth-child(1) li:nth-child(1) {
+                    margin-left: -140px;
+                }
+
+                .home ul:nth-child(1) li:nth-child(1) img {
+                    right: 112%;
+                }
+
+                .home ul:nth-child(1) li:nth-child(1) .triangle {
+                    left: 58px;
+                }
+
+                .home ul:nth-child(1) li:nth-child(1) div ul:nth-child(4) span {
+                    left: 102px;
+                }
+
+                .home ul:nth-child(1) li:nth-child(1) i:nth-child(1) {
+                    height: 21px;
+                    top: 4px;
+                    left: 72px;
+                    width: 28px;
+                }
+
+                .home ul:nth-child(1) li:nth-child(1) i:nth-child(2) {
+                    left: 67px;
+                }
+
+                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back {
+                    padding-top: 30px;
+                }
+
+                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back button:nth-child(1) {
+                    padding: 2px 5px;
+                }
+
+                .about-me__photo {
+                    margin: auto;
+                }
+            }
+
+            @media only screen and (max-width: 700px) {
+
+                nav ul:nth-child(1) .language i:nth-child(1) {
+                    background-image: url("./img/logo/uk_flag.svg");
+                }
+
+                .language img {
+                    border: 1.5px solid white;
+                }
+
+                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back {
+                    padding-top: 38px;
+                }
+            }
+
+            @media only screen and (max-width: 500px) {
+
+                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back {
+                    padding-top: 5px;
+                }
+
+                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back p:nth-child(2) {
+                    margin: 30px 0 -10px;
+                }
+
+                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back button:nth-child(1) {
+                    padding: 4px 1px;
+                }
+            }
+
+            @media only screen and (max-width: 380px) {
+
+                .contact form input[type=submit] {
+                    width: 40%;
+                }
+            } 
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li class="drop-bar">
+                        <span class="drop-bar__line1"></span>
+                        <span class="drop-bar__line2"></span>
+                        <span class="drop-bar__line3"></span>
+                    </li>
+                    <li class="language">
+                        <img src="./img/logo/german_flag.svg" alt="German flag"/>
+                        <div><span>DE</span><i class="fa fa-angle-down"></i>
+                            <div class="triangle"></div>
+                            <ul>
+                                <li><a href="index.html"><i></i><span>EN</span></a></li>                      
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="logo">
+                        <a href="#home" aria-label="Home page"><img src="./img/logo/logo.webp" alt="Laszlo Nemeth logo"/></a>
+                    </li>
+                    <li>
+                        <h3>Laszlo Nemeth</h3>
+                        <p>Frontend Entwickler</p>
+                    </li>
+                    <li class="social-media">
+                        <a href="https://www.linkedin.com/in/nemeth0220" aria-label="Linkedin logo" target="_blank"><i class="fab fa-linkedin" title="Besuchen Sie mich auf Linkedin"></i></a>    <!-- linkedin -->
+                        <a href="https://github.com/lac0220" aria-label="GitHub link" target="_blank"><i class="fab fa-github" title="Besuchen Sie mich auf GitHub"></i></a>      <!-- GitHub -->
+                        <a href="https://gitlab.com/lac0220" aria-label="GitLab link" target="_blank"><i class="fab fa-gitlab" title="Besuchen Sie mich auf GitLab"></i></a>      <!-- GitLab -->
+                        <a href="https://codepen.io/lac0220/" aria-label="Codepen link" target="_blank"><i class="fab fa-codepen" title="Besuchen Sie mich auf Codepen"></i></a>  <!-- Codepen-->      
+                    </li>  
+                </ul>
+                <ul id="nav-menu">
+                    <li>
+                        <h3>Laszlo Nemeth</h3>
+                        <p>Frontend Entwickler</p>
+                    </li>
+                    <hr>
+                    <li><a href="#home">Startseite</a></li>
+                    <li><a href="#projects">Projekte</a></li>
+                    <li><a href="#work-history">B-erfahrung</a></li>
+                    <li><a href="#about-me">Über mich</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="img/cv/Laszlo_Nemeth_Lebenslauf.pdf" aria-label="Resume" download>Lebenslauf</a></li>
+                    <hr>
+                    <li>
+                        <div class="social-media-mobile">
+                            <a href="https://www.linkedin.com/in/nemeth0220" aria-label="Linkedin logo" target="_blank"><i class="fab fa-linkedin" title="Besuchen Sie mich auf Linkedin"></i></a>    <!-- linkedin -->
+                            <a href="https://github.com/lac0220" aria-label="GitHub link" target="_blank"><i class="fab fa-github" title="Besuchen Sie mich auf GitHub"></i></a>      <!-- GitHub -->
+                            <a href="https://gitlab.com/lac0220" aria-label="GitLab link" target="_blank"><i class="fab fa-gitlab" title="Besuchen Sie mich auf GitLab"></i></a>      <!-- GitLab -->
+                            <a href="https://codepen.io/lac0220/" aria-label="Codepen link" target="_blank"><i class="fab fa-codepen" title="Besuchen Sie mich auf Codepen"></i></a>  <!-- Codepen-->           
+                        </div>  
+                    </li>  
+                </ul>
+            </nav>
+        </header>
+
+        <section class="home" id="home">
+            <ul>
+                <li>
+                    <img src="./img/logo/german_flag.svg" alt="German flag"/>
+                    <div><span>Deutsch</span><i class="fa fa-angle-down"></i>
+                        <div class="triangle"></div>
+                        <ul>
+                            <li><a href="index.html"><i></i><span>Englisch</span></a></li>                      
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <p><a href="#about-me" alt="Laszlo Nemeth contact link">Laszlo Nemeth</a></p>
+                    <p>Frontend Entwickler</p>
+                    <p>"Es gibt kein Versagen, nur Feedback"</p>
+                    <a href="#contact" alt="Work together link"><button>ARBEITEN WIR ZUSAMMEN</button></a>
+                </li>
+            </ul>
+            <p class="home-text">Ich war schon immer ein dienstleistungsorientierter Fachmann mit Leidenschaft für ausgezeichneten Kundenservice. Das gilt auch bei der Programmierung. Meine <span style="color:#ffad6b;"> Begeisterung für UI-Design</span> liegt darin, dass ich die Elemente in Bewegung bringe und ein hervorragendes <span style="color:#ffad6b;">Benutzererlebnis (UX)</span> biete. Mein Ziel ist es, benutzerfreundliche Websites und Webapplikationen zu erstellen, die einfach zu navigieren sind. Ich entwickle gerne responsive Websites <span style="color:#ffad6b;"> mit verschiedenen Front-End-Entwicklungstechnologien und Tools:</span></p>
+            <ul>
+                <li>  
+                    <p>HTML5</p>
+                    <div><i class="fab fa-html5"></i></div>
+                </li>
+                <li>  
+                    <p>CSS3</p>
+                    <div><i class="fab fa-css3"></i></div>
+                </li>
+                <li>  
+                    <p>SCSS</p>
+                    <div><i class="fab fa-sass"></i></div>
+                </li>
+                <li>  
+                    <p>JavaScript</p>
+                    <div><i class="fab fa-js"></i></div>
+                </li>
+                <li>  
+                    <p>React.js</p>
+                    <div><i class="fab fa-react"></i></div>
+                </li>
+                <li>  
+                    <p>Gulp.js</p>
+                    <div><i class="fab fa-gulp"></i></div>
+                </li>
+                <li>  
+                    <p>NPM</p>
+                    <div><i class="fab fa-npm"></i></div>
+                </li>
+                <li>  
+                    <p>Git</p>
+                    <div><i class="fab fa-git"></i></div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h1 id="projects">Projects</h1>
+            <hr>
+            <ul>
+                <li>
+                    <h2>GENERIC HIPSTER COFFEE</h2>
+                    <ul>
+                        <li>
+                            <div class="projects-flip-box1 pulse">
+                                <div class="projects-flip-box__triangle"></div>
+                                <img src="./img/logo/logo_coffee.svg" alt="Coffee shop website logo" />                      
+                            </div>
+                            <div class="projects-flip-box__back">
+                                <a href="https://lac0220.github.io/hackaton-coffeeshop/index.html" target="_blank" alt="Coffee shop website"><button>Website besuchen</button></a>
+                                <p><i>oder</i></p>
+                                <p>Code anschauen</p>
+                                <a href="https://github.com/lac0220/hackaton-coffeeshop" target="_blank" aria-label="GitHub link"><i class="fab fa-github" title="GitHub Projekt"></i></a>  
+                            </div>
+                        </li>
+                    </ul>
+                    <h3>BOOTCAMP HACKATHON</h3>
+                    <hr>
+                    <p>Die Aufgabe war, eine responsive Website für ein Kaffee-Shop zu erstellen, die einige grundsätzliche Informationen, eine Speisekarte, die angebotenen Kaffeesorten und ein Buchungsformular enthält</p>
+                    <p>Tech-Stack: <span style="font-family: 'Times New Roman', Times, serif; color:#FFE0C2;">HTML5, SCSS, Gulp.js, Webpack, Git</span></p>
+                </li>
+
+                <li>
+                    <h2>LEGENDARY QUOTES</h2>
+                    <ul>
+                        <li>
+                            <div class="projects-flip-box2 pulse">
+                                <div class="projects-flip-box__triangle"></div>
+                                <img src="./img/logo/logo_quotes.webp" alt="Quotes website logo" />                      
+                            </div>
+                            <div class="projects-flip-box__back">
+                                <a href="https://lac0220.github.io/finalproject-quotes/index.html" target="_blank" alt="Legendary Quotes website"><button>Website besuchen</button></a>
+                                <p><i>oder</i></p>
+                                <p>Code anschauen</p>
+                                <a href="https://github.com/lac0220/finalproject-quotes" target="_blank" aria-label="GitHub link"><i class="fab fa-github" title="GitHub Projekt"></i></a>  
+                            </div>
+                        </li>
+                    </ul>
+                    <h3>BOOTCAMP ABSCHLUSS</h3> 
+                    <hr>
+                    <p>Die Web-Applikation verwendet eine API, um zufällige und tägliche inspirierende Zitate zu generieren. Sie bietet fünf verschiedene Zitat-Kategorien, alphabetische Filterung der Autoren, Suchmöglichkeiten nach Schlüsselwörtern zwischen den Zitaten, Kontaktformular zur Übermittlung und mobilfreundliches Webdesign mit Navigationsleiste</p> 
+                    <p>Tech-Stack: <span style="font-family: 'Times New Roman', Times, serif; color:#FFE0C2;">HTML5, SCSS, JavaScript, Gulp.js, Webpack, Git</span></p>
+                </li>
+
+                <li>
+                    <h2>MODEL PORTFOLIO</h2>
+                    <ul>
+                        <li>
+                            <div class="projects-flip-box3 pulse">
+                                <div class="projects-flip-box__triangle"></div>
+                                <img src="./img/logo/logo_model.webp" alt="Model portfolio logo" />                      
+                            </div>
+                            <div class="projects-flip-box__back">
+                                <a href="https://lac0220.github.io/catalina-plamadeala-portfolio" target="_blank" alt="Model website"><button>Website besuchen</button></a>
+                                <p><i>oder</i></p>
+                                <p>Code anschauen</p>
+                                <a href="https://github.com/lac0220/model-portfolio" target="_blank" aria-label="GitHub link"><i class="fab fa-github" title="GitHub Projekt"></i></a>  
+                            </div>
+                        </li>
+                    </ul>
+                    <h3>FREELANCING</h3> 
+                    <hr>
+                    <p>Erstellung einer Portfolio-Website für ein Model | eine Künstlerin mit einer Galerie und mit einem Blog. Verwendung von Third-Party-Bibliotheken wie react-router-dom und react-router-hash-link für Routing, react-alice-carousel für Image Slider und react-modal-image mit Zoom-Option. Mobilfreundliches Webdesign</p>
+                    <p>Tech-Stack: <span style="font-family: 'Times New Roman', Times, serif; color:#FFE0C2;">React.js, SCSS, NPM, Git</span></p>            
+                </li>
+            </ul>
+        </section>
+
+        <section class="work-history">
+            <h1 id="work-history">Berufserfahrung</h1>
+            <hr>
+            <ul>
+                <li>
+                    <h2>MARKETUP S.R.O.</h2>
+                    <ul>
+                        <li>
+                            <div class="work-history-flip-box1 pulse">
+                                <div class="work-history-flip-box__triangle"></div>
+                                <img src="./img/logo/coding.webp" alt="Coding logo" />                      
+                            </div>
+                            <div class="work-history-flip-box__back">
+                                    <a href="https://www.marketup.cz/en" target="_blank" alt="Marketup s.r.o. website"><button>Website der Firma</button></a>   
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h3>FRONTEND ENTWICKLER (PRAKTIKUM)</h3> 
+                    <p><span style="font-family: 'Times New Roman', Times, serif";>05/2022</span> - heute</p>
+                    <hr>
+                    <ul>
+                        <li><span>Erstellung und Bearbeitung von Front-End-Code in React.js und TypeScript</span></li>
+                        <li><span>Komponenten mit der MUI-Library an die Produktanforderungen anpassen</span></li>
+                        <li><span>Bereitstellung in der Google Cloud Platform-Umgebung</span></li>
+                        <li><span>Anpassung der visuellen Hierarchie und Einstellungen zur Optimierung des UI-Designs</span></li>
+                        <li><span>Ersetzung von CSS durch SCSS für zusätzliche Funktionen</span></li>
+                    </ul>
+                    <p>Tech-Stack: <span style="font-family: 'Times New Roman', Times, serif; color:#FFE0C2;">React.js, TypeScript, Redux.js, CSS, SCSS, Bootstrap 5, Git, GitLab, Webpack, NPM, Google Cloud Platform</span></p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1 id="about-me">Über mich</h1>
+            <hr>
+            <div class="about-me">
+                <div class="about-me__photo">
+                    <img src="./img/profile.webp" alt="Laszlo Nemeth profile picture">
+                </div>
+                <p>Meine erste Berufserfahrung im IT-Bereich sammelte ich im Jahr <span style="font-family: 'Times New Roman', Times, serif;">2015</span> bei <span style="color:#ffad6b;">Hewlett-Packard</span> in Irland. Ich arbeitete als <span style="color:#ffad6b;">German Technical Support Analyst</span> und leistete technischen First-Line-Support für verschiedene Produkte und Anwendungen. Meine Aufgabe bestand unter anderem darin, eine <span style="color:#ffad6b;">analytische Problemlösung und Fehlersuche</span> zu bieten. Danach habe ich einige Jahre im Bereich der Steuerverwaltung verbracht, wo ich Bearbeitungsprozesse analysierte bzw. erneuerte und neue automatisierte Steuerdienstleistungen implementierte, aber meine Leidenschaft für IT hat mich wieder auf den richtigen Weg gebracht.</p>
+                <p>Ich habe mich entschlossen, <span style="color:#ffad6b;">in die Welt der Codes einzutauchen</span> und habe im November <span style="font-family: 'Times New Roman', Times, serif;">2021</span> einen intensiven <span style="font-family: 'Times New Roman', Times, serif;">12</span>&#45;wöchigen Full-Stack-Webentwicklungskurs bei einem Coding Bootcamp in Prag (CZ) abgeschlossen. Ich bin ein gut ausgebildeter Web-Entwickler geworden und habe dann <span style="color:#ffad6b;">mein erstes Praktikum als Frontend Entwickler im Mai 2022 begonnen.</p>
+                <p>Aufgrund meiner vorherigen Berufserfahrung bin ich detailorientiert und analytisch mit praktischen Problemlösungsmethoden und <span style="color:#ffad6b;">bin ständig bemüht, meine Fähigkeiten als Web-Entwickler in Front-End-Positionen und Projekten zu erweitern.</span></p>
+            </div>
+        </section>
+
+        <section>
+            <h1 id="contact">Kontakt</h1>
+            <hr>
+            <div class="contact">
+                <form action="https://formsubmit.co/nemeth0220@gmail.com" method="POST">
+                    <label for="name">Name
+                        <input type="text" id="name" name="name" required>
+                    </label>
+                    <label for="email">E-Mail-Adresse
+                        <input type="text" id="email" name="email" required>
+                        <input type="hidden" name="_next" value="http://lac0220.github.io/lac0220/nachricht.html">
+                    </label>
+                    <label for="subject">Betreff
+                        <input type="text" id="subject" name="subject">
+                    </label>
+                    <label for="message">Nachricht
+                        <textarea id="comment" name="comment" required style="height:200px" alt="Textarea"></textarea>
+                    </label>
+                    <div class="contact-submit">
+                        <label>
+                            <input type="submit" value="SENDEN">
+                        </label>
+                    </div>
+                </form>
+                <div class="contact-vertical-line"></div>
+                <hr>
+                <ul>
+                    <li>
+                        <p><a href="tel:420792588255" aria-label="Telefonnummer"><i class="fas fa-mobile-alt" alt="Phone icon"></i></a></p>
+                    </li>
+                    <li>
+                        <p><a href="mailto:nemeth0220@gmail.com?subject=Contact" aria-label="E-Mail Adresse"><i class="far fa-envelope" alt="Email icon"></i></a></p>
+                    </li>
+                    <li>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.4916669857494!2d14.411178515871843!3d50.02088232610443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b96ae5345e725%3A0x3123d83174ecb1fd!2zVSBaw6F0acWhw60gNTQ1LCAxNDcgMDAgUHJhaGEgNC1Ib2Rrb3ZpxI1reQ!5e0!3m2!1sen!2scz!4v1641166073063!5m2!1sen!2scz" width="300" height="250" style="border: 2px solid white; border-radius: 50px; filter: drop-shadow(1px 1px 5px #87CEFA);" allowfullscreen="" loading="lazy" title="Map"></iframe>
+                        <p>U Zátiší 545/1, 147 00 Prag 4</p>
+                        <p>Tschechien</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/nemeth0220" aria-label="Linkedin logo" target="_blank"><i class="fab fa-linkedin" title="Besuchen Sie mich auf Linkedin"></i></a></li>    <!-- linkedin -->
+                <li><a href="https://github.com/lac0220" aria-label="GitHub link" target="_blank"><i class="fab fa-github" title="Besuchen Sie mich auf GitHub"></i></a></li>      <!-- GitHub -->
+                <li><a href="https://gitlab.com/lac0220" aria-label="GitLab link" target="_blank"><i class="fab fa-gitlab" title="Besuchen Sie mich auf GitLab"></i></a></li>      <!-- GitLab -->
+                <li><a href="https://codepen.io/lac0220/" aria-label="Codepen link" target="_blank"><i class="fab fa-codepen" title="Besuchen Sie mich auf Codepen"></i></a></li>  <!-- Codepen-->        
+            </ul>
+            <ul>
+                <li><p>Copyright &copy; Laszlo Nemeth 2022</p></li>
+            </ul>
+        </footer>
+        
+        <script src="./js/script.js" charset="utf-8"></script>
+    </body>
+</html>
