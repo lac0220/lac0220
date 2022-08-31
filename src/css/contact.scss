@@ -1,8 +1,9 @@
 $main-font: Georgia, 'Times New Roman', Times, serif;	
 $text-color:white;
 $contact-form: #edf5e1;
-$first-hover:#FF0700;
+$first-hover:#B30600;
 $second-hover:#2079AC;
+$third-hover: #FF0700;
 
 .contact {
     display: flex;
@@ -30,12 +31,12 @@ $second-hover:#2079AC;
             background-color: $second-hover;
             color: $text-color;
             &:hover {
-                border: 2px solid $first-hover;
+                border: 2px solid $third-hover;
             }
         }
             
         input[type=text]:required:focus:invalid {
-            border: 2px solid $first-hover;
+            border: 2px solid $third-hover;
         }
             
         input[type=submit] {

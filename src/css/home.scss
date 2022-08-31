@@ -1,6 +1,7 @@
 $text-color:white;
-$first-hover:#FF0700;
+$first-hover:#B30600;
 $second-hover:#2079AC;
+$third-hover: #FF0700;
 
 .home {
     ul:nth-child(1) {
@@ -40,7 +41,7 @@ $second-hover:#2079AC;
                     font-size: 1rem;
                     color: black;
                     &:hover {
-                        color: $first-hover;
+                        color: $third-hover;
                     }
                 }
             }
@@ -133,7 +134,7 @@ $second-hover:#2079AC;
                 padding: 28px 0 40px;
                 overflow: hidden;
                 animation: typing 5s steps(100, end) both;
-                animation-delay: 4.5s;
+                animation-delay: 4s;
                 white-space: nowrap;
                 letter-spacing: 5px;  
                 font-size: 1.875rem;
@@ -196,7 +197,7 @@ $second-hover:#2079AC;
             border: initial;
             border-radius: 10px;
             border-bottom-style: solid;
-            border-bottom-color: $first-hover;
+            border-bottom-color: $third-hover;
             background-color: $second-hover;
             p {
                 position: relative; 
@@ -273,7 +274,7 @@ $second-hover:#2079AC;
             li:nth-child(2) {
                 margin-top: -12px;
                 p:nth-child(1) {
-                    animation: typing 3s steps(100, end) both;
+                    animation: typing 4s steps(100, end) both;
                     a {
                         letter-spacing: 1px; 
                         font-size: 2.813rem;
@@ -281,7 +282,7 @@ $second-hover:#2079AC;
                 }
             
                 p:nth-child(2) {
-                    animation: typing 3s steps(100, end) both;
+                    animation: typing 4s steps(100, end) both;
                     animation-delay: 2s;
                     letter-spacing: 1px; 
                     font-size: 1.625rem;
@@ -289,8 +290,8 @@ $second-hover:#2079AC;
                 
                 p:nth-child(3) {
                     padding: 30px 0 42px;
-                    animation: typing 3s steps(100, end) both;
-                    animation-delay: 4s;
+                    animation: typing 4s steps(100, end) both;
+                    animation-delay: 3.5s;
                     letter-spacing: 1px; 
                     font-size: 1.45rem;
                 } 
@@ -348,7 +349,7 @@ $second-hover:#2079AC;
             li:nth-child(2) {
                 margin-top: -20px;
                 p:nth-child(1) {
-                    animation: typing 2s steps(100, end) both;
+                    animation: typing 3s steps(100, end) both;
                     a {
                         pointer-events: none;
                         font-size: 2.5rem;
@@ -360,15 +361,15 @@ $second-hover:#2079AC;
                 }
                 
                 p:nth-child(2) {
-                    animation: typing 2s steps(100, end) both;
+                    animation: typing 3s steps(100, end) both;
                     animation-delay: 2s;
                     font-size: 1.375rem;
                 }  
             
                 p:nth-child(3) {
                     padding: 30px 0 20px;
-                    animation: typing 2s steps(100, end) both;
-                    animation-delay: 4s;
+                    animation: typing 3s steps(100, end) both;
+                    animation-delay: 3.5s;
                     font-size: 1.063rem;
                 } 
             
@@ -441,7 +442,7 @@ $second-hover:#2079AC;
         
             p:nth-child(3) {
                 animation: typing 2s steps(100, end) both;
-                animation-delay: 4s;
+                animation-delay: 3.5s;
                 font-size: 0.95rem;
             }
         }

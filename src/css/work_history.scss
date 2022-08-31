@@ -1,7 +1,8 @@
 $text-color:white;
 $second-color: #464866;		
-$first-hover:#FF0700;
+$first-hover:#B30600;
 $second-hover:#2079AC;
+$third-hover: #FF0700;
 
 .work-history {
     ul:nth-child(3) {
@@ -14,7 +15,7 @@ $second-hover:#2079AC;
             border: initial;
             border-radius: 20px;
             border-bottom-style: solid;
-            border-bottom-color: $first-hover;
+            border-bottom-color: $third-hover;
             text-align: center;
             background-color: $second-color;
             color: $text-color;
@@ -50,7 +51,7 @@ $second-hover:#2079AC;
             hr {
                 margin: auto auto 5px; 
                 width: 80%;
-                border: 2px solid $first-hover;
+                border: 2px solid $third-hover;
                 border-radius: 100%;
             }
 

@@ -49,7 +49,6 @@ nav ul:nth-child(1) .social-media a:hover {
 }
 nav ul:nth-child(2) {
   display: block;
-  padding-top: 5px;
   height: 100vh;
   text-align: center;
   background-color: #464866;
@@ -71,6 +70,9 @@ nav ul:nth-child(2) li:nth-child(1) {
   visibility: hidden;
   height: 0;
 }
+nav ul:nth-child(2) li:nth-child(3) {
+  padding-top: 20px;
+}
 nav ul:nth-child(2) li:nth-child(8) {
   padding-bottom: 20px;
 }
@@ -78,20 +80,19 @@ nav ul:nth-child(2) li:nth-child(10) {
   height: 100vh;
   background-color: #0C0032;
 }
-nav ul:nth-child(2) hr:nth-child(2),
-nav ul:nth-child(2) hr:nth-child(9),
+nav ul:nth-child(2) li:nth-child(2),
+nav ul:nth-child(2) li:nth-child(9),
 nav ul:nth-child(2) .social-media-mobile {
   visibility: hidden;
   height: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 1200px) {
   ::-webkit-scrollbar {
     display: none;
     -ms-overflow-style: none;
-    /* IE and Edge */
     scrollbar-width: none;
-    /* Firefox */
   }
 
   nav {
@@ -266,6 +267,9 @@ nav ul:nth-child(1) p {
   nav ul:nth-child(2) li:nth-child(1) p {
     margin-bottom: -10px;
   }
+  nav ul:nth-child(2) li:nth-child(3) {
+    padding-top: 35px;
+  }
   nav ul:nth-child(2) li:nth-child(8) {
     padding-bottom: 5px;
   }
@@ -273,22 +277,31 @@ nav ul:nth-child(1) p {
     visibility: hidden;
     height: 0;
   }
-  nav ul:nth-child(2) hr:nth-child(2),
-nav ul:nth-child(2) hr:nth-child(9) {
-    display: inline-block;
+  nav ul:nth-child(2) li:nth-child(2),
+nav ul:nth-child(2) li:nth-child(9) {
     visibility: visible;
+  }
+  nav ul:nth-child(2) li:nth-child(2) hr,
+nav ul:nth-child(2) li:nth-child(9) hr {
+    display: inline-block;
     width: 70%;
     border: 2px solid #FF0700;
     border-radius: 100%;
   }
-  nav ul:nth-child(2) hr:nth-child(2) {
+  nav ul:nth-child(2) li:nth-child(2) {
+    padding: 0;
+  }
+  nav ul:nth-child(2) li:nth-child(2) hr {
     margin-bottom: -2px;
   }
-  nav ul:nth-child(2) hr:nth-child(9) {
+  nav ul:nth-child(2) li:nth-child(9) {
+    padding: 0;
+  }
+  nav ul:nth-child(2) li:nth-child(9) hr {
     margin-bottom: 10px;
   }
   nav ul:nth-child(2) .social-media-mobile {
-    margin-top: -15px;
+    margin-top: 15px;
     padding-top: 0;
     visibility: visible;
     height: 0;
@@ -428,7 +441,7 @@ nav ul:nth-child(2) hr:nth-child(9) {
   color: white;
 }
 .home ul:nth-child(1) li:nth-child(2) p:nth-child(1) a:hover {
-  filter: drop-shadow(1px 1px 5px #FF0700);
+  filter: drop-shadow(1px 1px 5px #B30600);
   color: lightcoral;
 }
 .home ul:nth-child(1) li:nth-child(2) p:nth-child(2) {
@@ -445,7 +458,7 @@ nav ul:nth-child(2) hr:nth-child(9) {
   padding: 28px 0 40px;
   overflow: hidden;
   animation: typing 5s steps(100, end) both;
-  animation-delay: 4.5s;
+  animation-delay: 4s;
   white-space: nowrap;
   letter-spacing: 5px;
   font-size: 1.875rem;
@@ -463,12 +476,12 @@ nav ul:nth-child(2) hr:nth-child(9) {
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 0.875rem;
-  background-color: #FF0700;
+  background-color: #B30600;
   color: white;
   cursor: pointer;
 }
 .home ul:nth-child(1) li:nth-child(2) a:nth-child(4) button:hover {
-  filter: drop-shadow(1px 1px 5px #FF0700);
+  filter: drop-shadow(1px 1px 5px #B30600);
   background-color: lightcoral;
 }
 @keyframes typing {
@@ -574,22 +587,22 @@ nav ul:nth-child(2) hr:nth-child(9) {
     margin-top: -12px;
   }
   .home ul:nth-child(1) li:nth-child(2) p:nth-child(1) {
-    animation: typing 3s steps(100, end) both;
+    animation: typing 4s steps(100, end) both;
   }
   .home ul:nth-child(1) li:nth-child(2) p:nth-child(1) a {
     letter-spacing: 1px;
     font-size: 2.813rem;
   }
   .home ul:nth-child(1) li:nth-child(2) p:nth-child(2) {
-    animation: typing 3s steps(100, end) both;
+    animation: typing 4s steps(100, end) both;
     animation-delay: 2s;
     letter-spacing: 1px;
     font-size: 1.625rem;
   }
   .home ul:nth-child(1) li:nth-child(2) p:nth-child(3) {
     padding: 30px 0 42px;
-    animation: typing 3s steps(100, end) both;
-    animation-delay: 4s;
+    animation: typing 4s steps(100, end) both;
+    animation-delay: 3.5s;
     letter-spacing: 1px;
     font-size: 1.45rem;
   }
@@ -636,7 +649,7 @@ nav ul:nth-child(2) hr:nth-child(9) {
     margin-top: -20px;
   }
   .home ul:nth-child(1) li:nth-child(2) p:nth-child(1) {
-    animation: typing 2s steps(100, end) both;
+    animation: typing 3s steps(100, end) both;
   }
   .home ul:nth-child(1) li:nth-child(2) p:nth-child(1) a {
     pointer-events: none;
@@ -647,14 +660,14 @@ nav ul:nth-child(2) hr:nth-child(9) {
     color: white;
   }
   .home ul:nth-child(1) li:nth-child(2) p:nth-child(2) {
-    animation: typing 2s steps(100, end) both;
+    animation: typing 3s steps(100, end) both;
     animation-delay: 2s;
     font-size: 1.375rem;
   }
   .home ul:nth-child(1) li:nth-child(2) p:nth-child(3) {
     padding: 30px 0 20px;
-    animation: typing 2s steps(100, end) both;
-    animation-delay: 4s;
+    animation: typing 3s steps(100, end) both;
+    animation-delay: 3.5s;
     font-size: 1.063rem;
   }
   .home ul:nth-child(1) li:nth-child(2) a:nth-child(4) {
@@ -666,7 +679,7 @@ nav ul:nth-child(2) hr:nth-child(9) {
   }
   .home ul:nth-child(1) li:nth-child(2) a:nth-child(4) button:hover {
     filter: none;
-    background-color: #FF0700;
+    background-color: #B30600;
   }
   .home ul:nth-child(1) li:nth-child(2) a:nth-child(4) button:active {
     color: lightskyblue;
@@ -713,7 +726,7 @@ nav ul:nth-child(2) hr:nth-child(9) {
   }
   .home ul:nth-child(1) li:nth-child(2) p:nth-child(3) {
     animation: typing 2s steps(100, end) both;
-    animation-delay: 4s;
+    animation-delay: 3.5s;
     font-size: 0.95rem;
   }
   .home-text,
@@ -748,7 +761,7 @@ nav ul:nth-child(2) hr:nth-child(9) {
   border-top-right-radius: 20px;
   font-weight: bold;
   font-size: 1.4rem;
-  background-color: #FF0700;
+  background-color: #B30600;
 }
 .projects ul:nth-child(3) li h3 {
   margin: 0 20px 5px;
@@ -815,7 +828,7 @@ nav ul:nth-child(2) hr:nth-child(9) {
   position: absolute;
   left: 160px;
   z-index: 1;
-  border-top: 100px solid #FF0700;
+  border-top: 100px solid #B30600;
   border-left: 100px solid transparent;
 }
 .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back {
@@ -846,11 +859,11 @@ nav ul:nth-child(2) hr:nth-child(9) {
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.25rem;
-  background-color: #FF0700;
+  background-color: #B30600;
   color: white;
 }
 .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back button:nth-child(1):hover {
-  filter: drop-shadow(1px 1px 5px #FF0700);
+  filter: drop-shadow(1px 1px 5px #B30600);
   background-color: lightcoral;
 }
 .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back p:nth-child(2) {
@@ -868,11 +881,11 @@ nav ul:nth-child(2) hr:nth-child(9) {
   border: 1px solid #464866;
   border-radius: 10px;
   font-size: 1.875rem;
-  background-color: #FF0700;
+  background-color: #B30600;
   color: white;
 }
 .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back a:nth-child(4):hover {
-  filter: drop-shadow(1px 1px 5px #FF0700);
+  filter: drop-shadow(1px 1px 5px #B30600);
   background-color: lightcoral;
 }
 .projects ul:nth-child(3) .pulse img {
@@ -953,7 +966,7 @@ nav ul:nth-child(2) hr:nth-child(9) {
   .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back button:nth-child(1):hover,
 .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back a:nth-child(4):hover {
     filter: none;
-    background-color: #FF0700;
+    background-color: #B30600;
   }
   .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back button:nth-child(1):active,
 .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back a:nth-child(4):active {
@@ -1012,7 +1025,7 @@ nav ul:nth-child(2) hr:nth-child(9) {
   border-top-right-radius: 20px;
   font-weight: bold;
   font-size: 1.4rem;
-  background-color: #FF0700;
+  background-color: #B30600;
 }
 .work-history ul:nth-child(3) li h3 {
   margin: 0 20px;
@@ -1073,7 +1086,7 @@ nav ul:nth-child(2) hr:nth-child(9) {
   position: absolute;
   left: 160px;
   z-index: 1;
-  border-top: 100px solid #FF0700;
+  border-top: 100px solid #B30600;
   border-left: 100px solid transparent;
 }
 .work-history ul:nth-child(3) li ul:nth-child(2) li .work-history-flip-box__back {
@@ -1104,11 +1117,11 @@ nav ul:nth-child(2) hr:nth-child(9) {
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.25rem;
-  background-color: #FF0700;
+  background-color: #B30600;
   color: white;
 }
 .work-history ul:nth-child(3) li ul:nth-child(2) li .work-history-flip-box__back button:hover {
-  filter: drop-shadow(1px 1px 5px #FF0700);
+  filter: drop-shadow(1px 1px 5px #B30600);
   background-color: lightcoral;
 }
 .work-history ul:nth-child(3) li ul:nth-child(6) {
@@ -1199,7 +1212,7 @@ nav ul:nth-child(2) hr:nth-child(9) {
   }
   .work-history ul:nth-child(3) li ul:nth-child(2) li .work-history-flip-box__back button:hover {
     filter: none;
-    background-color: #FF0700;
+    background-color: #B30600;
   }
   .work-history ul:nth-child(3) li ul:nth-child(2) li .work-history-flip-box__back button:hover:active {
     color: lightskyblue;
@@ -1352,12 +1365,12 @@ nav ul:nth-child(2) hr:nth-child(9) {
   font-weight: bold;
   font-size: 1.25rem;
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: #FF0700;
+  background-color: #B30600;
   color: white;
 }
 .contact form input[type=submit]:hover {
   background-color: lightcoral;
-  filter: drop-shadow(1px 1px 5px #FF0700);
+  filter: drop-shadow(1px 1px 5px #B30600);
 }
 .contact form input[type=submit]:active {
   color: lightskyblue;
@@ -1490,7 +1503,7 @@ nav ul:nth-child(2) hr:nth-child(9) {
     padding: 6px;
   }
   .contact form input[type=submit]:hover {
-    background-color: #FF0700;
+    background-color: #B30600;
     filter: none;
   }
   .contact hr:nth-child(3) {
@@ -1539,13 +1552,21 @@ nav ul:nth-child(2) hr:nth-child(9) {
 }
 .message-smile {
   position: absolute;
-  right: 0;
-  bottom: 220px;
+  left: 640px;
+  bottom: 210px;
   max-width: 100px;
 }
-.message h1, .message h2 {
+.message h1,
+.message h2 {
   padding: 25px 0;
+  font-weight: bold;
   color: white;
+}
+.message h1 {
+  font-size: 2.5rem;
+}
+.message h2 {
+  font-size: 2rem;
 }
 .message a {
   color: lightblue;
@@ -1560,10 +1581,11 @@ nav ul:nth-child(2) hr:nth-child(9) {
   }
   .message-smile {
     position: relative;
-    right: 0;
-    top: 5px;
+    left: 0;
+    bottom: 0;
   }
-  .message h1, .message h2 {
+  .message h1,
+.message h2 {
     padding: 15px 0;
   }
 }
@@ -1576,7 +1598,6 @@ nav ul:nth-child(2) hr:nth-child(9) {
     font-size: 1.563rem;
   }
   .message h2 {
-    margin: 0;
     font-size: 1.25rem;
   }
   .message a:hover {
@@ -1596,13 +1617,21 @@ nav ul:nth-child(2) hr:nth-child(9) {
 }
 .nachricht-smile {
   position: absolute;
-  right: 0;
-  bottom: 220px;
+  left: 710px;
+  bottom: 210px;
   max-width: 100px;
 }
-.nachricht h1, .nachricht h2 {
+.nachricht h1,
+.nachricht h2 {
   padding: 25px 0;
+  font-weight: bold;
   color: white;
+}
+.nachricht h1 {
+  font-size: 2.5rem;
+}
+.nachricht h2 {
+  font-size: 2rem;
 }
 .nachricht a {
   color: lightblue;
@@ -1617,10 +1646,11 @@ nav ul:nth-child(2) hr:nth-child(9) {
   }
   .nachricht-smile {
     position: relative;
-    right: 0;
-    top: 5px;
+    left: 0;
+    bottom: 0;
   }
-  .nachricht h1, .nachricht h2 {
+  .nachricht h1,
+.nachricht h2 {
     padding: 15px 0;
   }
 }
@@ -1633,7 +1663,6 @@ nav ul:nth-child(2) hr:nth-child(9) {
     font-size: 1.563rem;
   }
   .nachricht h2 {
-    margin: 0;
     font-size: 1.25rem;
   }
   .nachricht a:hover {

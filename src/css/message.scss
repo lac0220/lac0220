@@ -10,14 +10,24 @@ $first-hover:#FF0700;
     text-align: center;
     &-smile {
         position: absolute;
-        right: 0;
-        bottom: 220px;
+        left: 640px;
+        bottom: 210px;
         max-width: 100px;
     }
 
-    h1, h2 {
+    h1, 
+    h2 {
         padding: 25px 0;
+        font-weight: bold;
         color: $text-color;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
     }
 
     a {
@@ -34,11 +44,12 @@ $first-hover:#FF0700;
         width: 90%;
         &-smile {
             position: relative;
-            right: 0;
-            top: 5px;
+            left: 0;
+            bottom: 0;
         }
 
-        h1, h2 {
+        h1, 
+        h2 {
             padding: 15px 0;
         }
     }
@@ -57,7 +68,6 @@ $first-hover:#FF0700;
         }
 
         h2 {
-            margin: 0;
             font-size: 1.25rem;
         }
         
@@ -70,6 +80,3 @@ $first-hover:#FF0700;
         }
     }
 }
-    
-    
-    
