@@ -1,0 +1,94 @@
+$text-color:white;
+$third-hover: #FF0700;
+
+@mixin language {
+    display: inline-block;
+    position: absolute;
+    right: 6%;
+    top: 34%;
+    visibility: visible;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 0.938rem;
+    color: $text-color;
+    img {
+        position: absolute;
+        right: 118%;
+        width: 1.8rem;
+    }
+    
+    div ul {
+        display: none;
+        padding: 5px;
+        a {
+            display: block;
+            line-height: 0;
+        }
+
+        span {
+            display: block;
+            position: relative;
+            left: 14px;
+            top: 13px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: black;
+            &:active {
+                color: $third-hover;
+            }
+        }
+    }
+
+    div:hover ul {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 1px;
+        z-index: 1;
+        padding-top: 0;
+        width: 56px;
+        height: 25px;
+        border-radius: 5px;
+        background: $text-color;
+    }
+
+    .triangle {
+        position: absolute;
+        top: 10px;
+        left: 9px;
+        z-index: 1;
+        height: 14px;
+        width: 30px;
+        overflow: hidden;
+        background: transparent;
+    }
+
+    div:hover .triangle:after {
+        display: block;
+        z-index: 2;
+        margin: auto;
+        height: 15px;
+        width: 15px;
+        content: '';
+        transform: rotate(45deg) translateY(0px) translatex(10px);
+        border-radius: 2px;
+        background: $text-color;
+    }
+
+    i:nth-child(1) {
+        position: absolute;
+        top: 3px;
+        right: 27px;
+        width: 25px;
+        height: 19px;
+        cursor: auto;
+        background-image: url("../img/logo/german_flag.svg");
+    }
+    
+    i:nth-child(2) {
+        position: absolute;
+        top: -1px;
+        left: 26px;
+        cursor: pointer;   
+    }
+}

@@ -1,7 +1,23 @@
+@use 'language_menu';
+
 $text-color:white;
 $first-color: #0C0032;						
 $second-color: #464866;		
 $third-hover:#FF0700;
+
+@mixin social-media-logo {
+    text-align: center;
+    background-color: $first-color;
+    a { 
+        border-radius: 2px;
+        font-size: 1.875rem; 
+        color: $text-color;
+        &:hover {
+            transform:scale(1.1); 
+            -webkit-transform:scale(1.1);
+        }
+    }
+}
 
 nav {
     position: fixed;
@@ -38,17 +54,11 @@ nav {
         }
     
         .social-media  { 
+            @include social-media-logo;
             padding: 30px 0;
-            text-align: center;
-            background-color: $first-color;
             a { 
                 margin: auto 5px;
-                border-radius: 2px;
-                font-size: 1.875rem; 
-                color: $text-color;
                 &:hover {
-                    transform:scale(1.1); 
-                    -webkit-transform:scale(1.1);
                     color: $third-hover;
                 }
             }
@@ -105,13 +115,6 @@ nav {
   
 @media screen and (max-width: 1200px) {
 
-    // side scrollbar active
-    ::-webkit-scrollbar {
-        display: none;
-        -ms-overflow-style: none;  
-        scrollbar-width: none;  
-    }
-
     nav {
         overflow: auto;
         ul:nth-child(1) {
@@ -135,11 +138,9 @@ nav {
             }
         } 
         
-        ul:nth-child(2) {
-            li a {
-                font-size: 1.25rem;
-            }
-        }     
+        ul:nth-child(2) li a {
+            font-size: 1.25rem;
+        }    
     }
 }
   
@@ -170,95 +171,7 @@ nav {
             }
         
             .language {
-                display: inline-block;
-                position: absolute;
-                right: 6%;
-                top: 34%;
-                visibility: visible;
-                margin-right: 20px;
-                font-weight: bold;
-                font-size: 0.938rem;
-                color: $text-color;
-                div ul {
-                    display: none;
-                    padding: 5px;
-                    a {
-                        display: block;
-                        line-height: 0;
-                    }
-
-                    span {
-                        display: block;
-                        position: relative;
-                        left: 14px;
-                        top: 13px;
-                        font-size: 0.8rem;
-                        font-weight: bold;
-                        color: black;
-                        &:active {
-                            color: $third-hover;
-                        }
-                    }
-                }
-
-                div:hover ul {
-                    display: block;
-                    position: absolute;
-                    top: 20px;
-                    left: 1px;
-                    z-index: 1;
-                    padding-top: 0px;
-                    width: 56px;
-                    height: 25px;
-                    border-radius: 5px;
-                    background: $text-color;
-                }
-            
-                img {
-                    position: absolute;
-                    right: 118%;
-                    width: 1.8rem;
-                }
-            
-                .triangle {
-                    position: absolute;
-                    top: 10px;
-                    left: 9px;
-                    z-index: 1;
-                    height: 14px;
-                    width: 30px;
-                    overflow: hidden;
-                    background: transparent;
-                }
-            
-                div:hover .triangle:after {
-                    display: block;
-                    z-index: 2;
-                    margin: auto;
-                    height: 15px;
-                    width: 15px;
-                    content: '';
-                    transform: rotate(45deg) translateY(0px) translatex(10px);
-                    border-radius: 2px;
-                    background: $text-color;
-                }
-            
-                i:nth-child(1) {
-                    position: absolute;
-                    top: 3px;
-                    right: 27px;
-                    width: 25px;
-                    height: 19px;
-                    cursor: auto;
-                    background-image: url("../img/logo/german_flag.svg");
-                }
-                
-                i:nth-child(2) {
-                    position: absolute;
-                    left: 26px;
-                    top: 2px;
-                    cursor: pointer;   
-                }
+                @include language_menu.language;
             }
         
             .logo {
@@ -351,22 +264,13 @@ nav {
             }
     
             .social-media-mobile { 
+                @include social-media-logo;
                 margin-top: 15px;
                 padding-top: 0;
                 visibility: visible;
                 height: 0;
-                text-align: center;
-                background-color: $first-color;
                 a { 
                     margin: auto 7px;
-                    border-radius: 2px;
-                    font-size: 1.875rem; 
-                    color: $text-color;
-                    &:hover {
-                        transform:scale(1.1); 
-                        -webkit-transform:scale(1.1);
-                    }
-
                     &:active {
                         color: $third-hover;
                     }

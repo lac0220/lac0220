@@ -3,14 +3,7 @@ $first-hover:#FF0700;
 .about-me {
     padding: 20px 0 25px;
     p {
-        hyphens: auto;
-        -webkit-hyphens: auto;
-        -webkit-hyphenate-limit-before: 3;
-        -webkit-hyphenate-limit-after: 3;
-        -webkit-hyphenate-limit-chars: 6 3 3;
-        -webkit-hyphenate-limit-lines: 2;
-        -webkit-hyphenate-limit-last: always;
-        -webkit-hyphenate-limit-zone: 8%;
+        @extend .hyphens;
     }
 
     p:nth-child(2) {
@@ -58,9 +51,6 @@ $first-hover:#FF0700;
         padding: 10px 0 18px;
         margin: auto;
         width: 80%;
-        p { 
-            hyphens: none;
-        }
 
         p:nth-child(2) {
             padding-bottom: 5px;

@@ -2,82 +2,15 @@ $text-color:white;
 $first-hover:#FF0700;
 
 .nachricht {
-    margin-right: -50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    &-smile {
-        position: absolute;
+    @extend .message;
+    img {
         left: 710px;
-        bottom: 210px;
-        max-width: 100px;
-    }
-
-    h1, 
-    h2 {
-        padding: 25px 0;
-        font-weight: bold;
-        color: $text-color;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    a {
-        color: lightblue;
-        &:hover {
-            color: $first-hover;
-        }
     }
 }
-  
+
 @media only screen and (max-width: 1060px) {
     
-    .nachricht {
-        width: 90%;
-        &-smile {
-            position: relative;
+    .nachricht img {
             left: 0;
-            bottom: 0;
-        }
-
-        h1, 
-        h2 {
-            padding: 15px 0;
         }
     }
-}
-  
-@media only screen and (max-width: 700px) {
-    
-    .nachricht {
-        &-smile {
-            max-width: 80px;
-        }
-
-        h1 {
-            padding: 20px 0;
-            font-size: 1.563rem;
-        }
-
-        h2 {
-            font-size: 1.25rem;
-        }
-
-        a:hover {
-            color: lightblue;
-        }
-
-        a:active {
-            color: $first-hover;
-        }
-    }
-}
-  

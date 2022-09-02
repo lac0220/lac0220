@@ -1,3 +1,4 @@
+$main-font: Georgia, 'Times New Roman', Times, serif;
 $text-color:white;
 $second-color: #464866;		
 $first-hover:#B30600;
@@ -128,7 +129,7 @@ $third-hover: #FF0700;
                             border-radius: 10px;
                             cursor: pointer;
                             font-weight: bold;
-                            font-family: Georgia, 'Times New Roman', Times, serif;
+                            font-family: $main-font;
                             font-size: 1.25rem;
                             background-color: $first-hover;
                             color: $text-color;
@@ -165,19 +166,6 @@ $third-hover: #FF0700;
                     } 
                 }
             }
-        }
-
-        //animation
-        .pulse img {
-            animation-name: pulse;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-        }
-        
-        @keyframes pulse {
-            0% {transform: scale(1);}
-            50% {transform: scale(1.3);}
-            100% {transform: scale(1);}
         }
     }
 }
