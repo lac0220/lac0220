@@ -1,19 +1,12 @@
 "use strict";
-// nav menu opens
-const dropBar = document.querySelector(".drop-bar");
-const navMenu = document.querySelector("#nav-menu");
+//loader-animation
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader-animation");
 
-const mobileMenu = () => {
-    dropBar.classList.toggle("change");
-    navMenu.classList.toggle("active");
-}
-dropBar.addEventListener("click", mobileMenu);
+    loader.classList.add("loader-animation-hidden");
 
-// nav menu closes
-const navLinks = document.querySelector("#nav-menu");
+    loader.addEventListener("transform", () => {
+        document.body.removeChild("loader");
+    })
+}) 
 
-const mobileClose = () => {
-    dropBar.classList.toggle("change");
-    navMenu.classList.remove("active");
-}
-navLinks.addEventListener("click", mobileClose);
