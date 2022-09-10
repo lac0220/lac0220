@@ -80,13 +80,6 @@ a {
     -webkit-hyphenate-limit-zone: 8%;
 }
 
-// side scrollbar active
-::-webkit-scrollbar {
-    display: none;
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
-}
-
 // for typing text effect
 @keyframes typing {
     from { width: 0 }
@@ -123,6 +116,13 @@ a {
 
     section hr:nth-child(2) {
         width: 50%;
+    }
+
+    // navbar side scrollbar deactivated
+    ::-webkit-scrollbar {
+        display: none;
+        -ms-overflow-style: none;  
+        scrollbar-width: none;  
     }
 }
   

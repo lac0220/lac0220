@@ -11482,12 +11482,6 @@ a {
   -webkit-hyphenate-limit-zone: 8%;
 }
 
-::-webkit-scrollbar {
-  display: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
 @keyframes typing {
   from {
     width: 0;
@@ -11529,6 +11523,12 @@ body {
 
   section hr:nth-child(2) {
     width: 50%;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 @media screen and (max-width: 700px) {
