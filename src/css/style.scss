@@ -44,9 +44,10 @@ body {
 
 section h1 {
     text-align: center;
+    text-shadow: 2px 2px gray, 1px 1px gray;					
     font-weight: bold;
     font-size: 2.5rem;
-    color: $text-color;						
+    color: $text-color;
 }
 
 section p {

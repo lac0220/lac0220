@@ -5,172 +5,177 @@ $first-hover:#B30600;
 $second-hover:#2079AC;
 $third-hover: #FF0700;
 
-.projects {
-    ul:nth-child(3) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        column-gap: 60px;
-        row-gap: 30px; 
-        margin: auto;
-        padding: 30px 0;
-        li {
-            border: initial;
-            border-radius: 20px;
-            border-bottom-style: solid;
-            border-bottom-color: $third-hover;
-            text-align: center;
-            background-color: $second-color;
-            color: $text-color;
-            h2 {
-                margin-bottom: 15px;
-                padding: 5px 0;
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
-                font-weight: bold;
-                font-size: 1.4rem;
-                background-color: $first-hover;
+.projects ul:nth-child(3) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    column-gap: 60px;
+    row-gap: 30px; 
+    margin: auto;
+    padding: 30px 0;
+    li {
+        border: initial;
+        border-radius: 20px;
+        border-bottom-style: solid;
+        border-bottom-color: $third-hover;
+        text-align: center;
+        background-color: $second-color;
+        color: $text-color;
+        h2 {
+            margin-bottom: 15px;
+            padding: 5px 0;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            text-shadow: 1px 1px gray, 1px 1px gray;
+            font-weight: bold;
+            font-size: 1.4rem;
+            background-color: $first-hover;
+        }
+
+        h3 {
+            margin: 0 20px 5px;
+            text-shadow: 1px 1px gray, 1px 1px gray;
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+
+        p {
+            padding: 0 20px 10px;
+            text-align: left;
+        }
+
+        hr {
+            margin: auto auto 5px; 
+            width: 80%;
+            border: 2px solid $third-hover;
+            border-radius: 100%;
+        }
+
+        ul:nth-child(2) {
+            margin: auto auto 10px;
+            max-width: 200px;
+            height: 200px;
+            &:hover li {
+                transform: rotateY(180deg);
             }
 
-            h3 {
-                margin: 0 20px 5px;
-                font-weight: bold;
-                font-size: 1.25rem;
-            }
-
-            p {
-                padding: 0 20px 10px;
-                text-align: left;
-            }
-
-            hr {
-                margin: auto auto 5px; 
-                width: 80%;
-                border: 2px solid $third-hover;
-                border-radius: 100%;
-            }
-    
-            ul:nth-child(2) {
-                margin: auto auto 10px;
-                max-width: 200px;
-                height: 200px;
-                &:hover li {
-                    transform: rotateY(180deg);
-                }
-
-                li {
-                    position: relative;
+            li {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border: none;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+                text-align: center;
+                .projects-flip-box1, 
+                .projects-flip-box2,
+                .projects-flip-box3,
+                .projects-flip-box4,
+                .projects-flip-box5 {
+                    position: absolute;
+                    z-index: 1;
                     width: 100%;
                     height: 100%;
-                    border: none;
-                    transition: transform 0.8s;
-                    transform-style: preserve-3d;
-                    text-align: center;
-                    .projects-flip-box1, 
-                    .projects-flip-box2,
-                    .projects-flip-box3,
-                    .projects-flip-box4 {
-                        position: absolute;
-                        z-index: 1;
-                        width: 100%;
-                        height: 100%;
-                        -webkit-backface-visibility: hidden;
-                        backface-visibility: hidden;
-                        cursor: pointer;
-                        overflow: hidden;
-                        border-radius: 10px;
-                        img {
-                            position: relative;
-                            top: 15%;
-                            max-width: 70%;
-                        }
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    cursor: pointer;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    img {
+                        position: relative;
+                        top: 15%;
+                        max-width: 70%;
                     }
-                    
-                    .projects-flip-box1 {
-                        background-color: #d6c6b4;
-                    }
-                    
-                    .projects-flip-box2 {
-                        background-color: #116466;
-                    }
-                    
-                    .projects-flip-box3 {
-                        background-color: $text-color;
-                    }
-
-                    .projects-flip-box4 {
-                        background-color: #885d0f;
-                    }
-                    
-                    .projects-flip-box__triangle {
-                        position:absolute;
-                        left: 160px;
-                        z-index: 1;
-                        border-top: 100px solid $first-hover;
-                        border-left: 100px solid transparent;
-                    }    
-                        
-                    .projects-flip-box__back {
-                        position: absolute;
-                        z-index: 2; //pointer works properly on the back side
-                        padding-top: 13px;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 10px;
-                        -webkit-backface-visibility: hidden;
-                        backface-visibility: hidden;
-                        transform: rotateY(180deg);
-                        font-size: 1.25rem;
-                        font-weight: bold;
-                        background-color: $second-hover;
-                        color:$text-color;
-                        a {
-                            display: block;
-                            height: 0;
-                        }
-
-                        button:nth-child(1) {
-                            display: inline-block;
-                            padding: 5px 8px;
-                            border: 2px solid $second-color;
-                            border-radius: 10px;
-                            cursor: pointer;
-                            font-weight: bold;
-                            font-family: $main-font;
-                            font-size: 1.25rem;
-                            background-color: $first-hover;
-                            color: $text-color;
-                            &:hover {
-                                filter: drop-shadow(1px 1px 5px $first-hover);
-                                background-color: lightcoral;
-                            }
-                        }
-                
-                        p:nth-child(2) {
-                            margin: 35px 0 -10px;
-                            text-align: center;
-                        }
-                    
-                        p:nth-child(3) {
-                            text-align: center;
-                        }
-                    
-                        a:nth-child(4) {
-                            display: inline;
-                            position: relative;
-                            bottom: 4px;
-                            padding: 3px 6px;
-                            border: 1px solid $second-color;
-                            border-radius: 10px;
-                            font-size: 1.875rem;
-                            background-color: $first-hover;
-                            color: $text-color;
-                            &:hover {
-                                filter: drop-shadow(1px 1px 5px $first-hover);
-                                background-color: lightcoral;
-                            }
-                        }
-                    } 
                 }
+                
+                .projects-flip-box1 {
+                    background-color: #d6c6b4;
+                }
+                
+                .projects-flip-box2 {
+                    background-color: #116466;
+                }
+                
+                .projects-flip-box3 {
+                    background-color: $text-color;
+                }
+
+                .projects-flip-box4 {
+                    background-color: #885d0f;
+                }
+
+                .projects-flip-box5 {
+                    background-color: #A7BBD7;
+                }
+                
+                .projects-flip-box__triangle {
+                    position:absolute;
+                    left: 160px;
+                    z-index: 1;
+                    border-top: 100px solid $first-hover;
+                    border-left: 100px solid transparent;
+                }    
+                    
+                .projects-flip-box__back {
+                    position: absolute;
+                    z-index: 2; //pointer works properly on the back side
+                    padding-top: 13px;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    transform: rotateY(180deg);
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                    background-color: $second-hover;
+                    color:$text-color;
+                    a {
+                        display: block;
+                        height: 0;
+                    }
+
+                    button:nth-child(1) {
+                        display: inline-block;
+                        padding: 5px 8px;
+                        border: 2px solid $second-color;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        font-weight: bold;
+                        font-family: $main-font;
+                        font-size: 1.25rem;
+                        background-color: $first-hover;
+                        color: $text-color;
+                        &:hover {
+                            filter: drop-shadow(1px 1px 5px $first-hover);
+                            background-color: lightcoral;
+                        }
+                    }
+            
+                    p:nth-child(2) {
+                        margin: 35px 0 -10px;
+                        text-align: center;
+                    }
+                
+                    p:nth-child(3) {
+                        text-align: center;
+                    }
+                
+                    a:nth-child(4) {
+                        display: inline;
+                        position: relative;
+                        bottom: 4px;
+                        padding: 3px 6px;
+                        border: 1px solid $second-color;
+                        border-radius: 10px;
+                        font-size: 1.875rem;
+                        background-color: $first-hover;
+                        color: $text-color;
+                        &:hover {
+                            filter: drop-shadow(1px 1px 5px $first-hover);
+                            background-color: lightcoral;
+                        }
+                    }
+                } 
             }
         }
     }
