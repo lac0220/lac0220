@@ -75,7 +75,19 @@ $third-hover: #FF0700;
         li:nth-child(2) {
             margin-top: -19px;
             text-align: center;
-            p:nth-child(1) {
+            p:nth-child(1)  {
+                position: absolute;
+                top: 20px;
+                left: 230px;
+                font-size: 1.2rem;
+                color:#ffad6b;
+                span {
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 1.5rem;
+                }
+            } 
+
+            p:nth-child(2) {
                 @include list;
                 margin: auto;
                 text-shadow: 2px 2px gray, 1px 1px gray;
@@ -90,7 +102,7 @@ $third-hover: #FF0700;
                 }
             }
             
-            p:nth-child(2) {
+            p:nth-child(3) {
                 @include list;
                 margin: -10px auto auto;
                 animation-delay: 2s;
@@ -98,7 +110,7 @@ $third-hover: #FF0700;
                 font-size: 2.5rem; 
             }  
     
-            p:nth-child(3) {
+            p:nth-child(4) {
                 @include list;
                 margin: auto;
                 padding: 28px 0 40px;
@@ -108,7 +120,7 @@ $third-hover: #FF0700;
                 font-style: italic;   
             }  
     
-            a:nth-child(4) {   
+            a:nth-child(5) {   
                 height: 0;
                 button {
                     margin-bottom: 34px;
@@ -226,7 +238,15 @@ $third-hover: #FF0700;
                 
             li:nth-child(2) {
                 margin-top: -11px;
-                p:nth-child(1) {
+                p:nth-child(1)  {
+                    top: 22px;
+                    font-size: 1rem;
+                    span {
+                        font-size: 1.2rem;
+                    }
+                } 
+
+                p:nth-child(2) {
                     animation: typing 4s steps(100, end) both;
                     a {
                         letter-spacing: 1px; 
@@ -234,14 +254,14 @@ $third-hover: #FF0700;
                     }
                 }
             
-                p:nth-child(2) {
+                p:nth-child(3) {
                     animation: typing 4s steps(100, end) both;
                     animation-delay: 2s;
                     letter-spacing: 1px; 
                     font-size: 1.625rem;
                 }
                 
-                p:nth-child(3) {
+                p:nth-child(4) {
                     padding: 30px 0 42px;
                     animation: typing 4s steps(100, end) both;
                     animation-delay: 3.5s;
@@ -249,7 +269,7 @@ $third-hover: #FF0700;
                     font-size: 1.45rem;
                 } 
                 
-                a:nth-child(4) {   
+                a:nth-child(5) {   
                     padding: 20px 0 73px;
                     button {
                         font-size: 0.775rem;
@@ -302,8 +322,17 @@ $third-hover: #FF0700;
             }
             
             li:nth-child(2) {
-                margin-top: -20px;
-                p:nth-child(1) {
+                margin-top: 0;
+                p:nth-child(1)  {
+                    top: 90px;
+                    left: 50px; 
+                    font-size: 0.8rem;
+                    span {
+                        font-size: 1rem;
+                    }
+                } 
+
+                p:nth-child(2) {
                     animation: typing 3s steps(100, end) both;
                     a {
                         pointer-events: none;
@@ -315,20 +344,20 @@ $third-hover: #FF0700;
                     }
                 }
                 
-                p:nth-child(2) {
+                p:nth-child(3) {
                     animation: typing 3s steps(100, end) both;
                     animation-delay: 2s;
                     font-size: 1.375rem;
                 }  
             
-                p:nth-child(3) {
+                p:nth-child(4) {
                     padding: 30px 0 20px;
                     animation: typing 3s steps(100, end) both;
                     animation-delay: 3.5s;
                     font-size: 1.063rem;
                 } 
             
-                a:nth-child(4) {   
+                a:nth-child(5) {   
                     padding: 0;
                     button {
                         padding: 4px 10px;
@@ -376,7 +405,11 @@ $third-hover: #FF0700;
 
     .home {
         ul:nth-child(1) li:nth-child(2) {
-            p:nth-child(1) {
+            p:nth-child(1)  {
+                left: 15px; 
+            } 
+
+            p:nth-child(2) {
                 animation: typing 2s steps(100, end) both;
                 a {
                     pointer-events: none;
@@ -388,13 +421,13 @@ $third-hover: #FF0700;
                 }
             }
     
-            p:nth-child(2) {
+            p:nth-child(3) {
                 animation: typing 2s steps(100, end) both;
                 animation-delay: 2s;
                 font-size: 1.2rem;
             }  
         
-            p:nth-child(3) {
+            p:nth-child(4) {
                 animation: typing 2s steps(100, end) both;
                 animation-delay: 3.5s;
                 font-size: 0.95rem;
@@ -411,4 +444,11 @@ $third-hover: #FF0700;
             row-gap: 0;
         }
     }
+}
+
+@media only screen and (max-width: 345px) {
+
+    .home ul:nth-child(1) li:nth-child(2) p:nth-child(4) {
+        font-size: 0.85rem;
+    }   
 }
