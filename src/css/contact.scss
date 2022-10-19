@@ -1,11 +1,4 @@
-$main-font: Georgia, 'Times New Roman', Times, serif;	
-$text-color:white;
-$contact-form: #edf5e1;
-$first-hover:#B30600;
-$second-hover:#2079AC;
-$third-hover: #FF0700;
-
-@mixin standard {
+%standard {
     border: 2px solid $second-hover;
     font-family: $main-font;
     color: $text-color;
@@ -34,7 +27,7 @@ $third-hover: #FF0700;
             outline: none;
             font-size: 1.375rem;
             background-color: $second-hover;
-            @include standard;
+            @extend %standard;
             &:hover {
                 border: 2px solid $third-hover;
             }
@@ -52,7 +45,7 @@ $third-hover: #FF0700;
             font-weight: bold;
             font-size: 1.25rem;
             background-color: $first-hover;
-            @include standard;
+            @extend %standard;
             &:hover {
                 background-color: lightcoral;
                 filter: drop-shadow(1px 1px 5px $first-hover);

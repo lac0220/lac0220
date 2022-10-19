@@ -13,8 +13,6 @@ window.addEventListener("load", () => {
 // counting number of visitors
 const visitorsNumber = document.getElementById('visitors-number');
 
-counting();
-
 function counting() {
 	fetch('https://api.countapi.xyz/update/lac0220/ce2d2945-acf3-4d7a-b45c-8f78b0e5ae92/?amount=1')
 	.then(result => result.json())
@@ -22,6 +20,7 @@ function counting() {
 		visitorsNumber.innerHTML = result.value;
 	})
 }
+counting();
 
 // nav menu opens
 const dropBar = document.querySelector(".drop-bar");

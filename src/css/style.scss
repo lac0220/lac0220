@@ -1,3 +1,4 @@
+@import 'variables';
 @import 'navbar';
 @import 'home';
 @import 'projects';
@@ -11,11 +12,6 @@
 @import "../fonts/brands.scss";
 @import "../fonts/solid.scss";
 @import "../fonts/_icons.scss";
-
-$main-font: Georgia, 'Times New Roman', Times, serif;
-$text-color: white;
-$third-color: #140627;	
-$third-hover: #FF0700;
 
 * {
     margin: 0;

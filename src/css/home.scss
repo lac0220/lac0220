@@ -1,12 +1,6 @@
 @use 'language_menu';
 
-$main-font: Georgia, 'Times New Roman', Times, serif;
-$text-color:white;
-$first-hover:#B30600;
-$second-hover:#2079AC;
-$third-hover: #FF0700;
-
-@mixin list {
+%list {
     overflow: hidden;
     animation: typing 5s steps(100, end) both;
     white-space: nowrap;
@@ -88,7 +82,7 @@ $third-hover: #FF0700;
             } 
 
             p:nth-child(2) {
-                @include list;
+                @extend %list;
                 margin: auto;
                 text-shadow: 2px 2px gray, 1px 1px gray;
                 font-size: 3.75rem;
@@ -103,7 +97,7 @@ $third-hover: #FF0700;
             }
             
             p:nth-child(3) {
-                @include list;
+                @extend %list;
                 margin: -10px auto auto;
                 animation-delay: 2s;
                 text-shadow: 1px 1px gray, 1px 1px gray;
@@ -111,7 +105,7 @@ $third-hover: #FF0700;
             }  
     
             p:nth-child(4) {
-                @include list;
+                @extend %list;
                 margin: auto;
                 padding: 28px 0 40px;
                 animation-delay: 4s;

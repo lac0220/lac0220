@@ -1,10 +1,5 @@
 @use 'language_menu';
 
-$text-color:white;
-$first-color: #0C0032;						
-$second-color: #464866;		
-$third-hover:#FF0700;
-
 @mixin social-media-logo {
     text-align: center;
     background-color: $first-color;

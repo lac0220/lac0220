@@ -336,6 +336,13 @@ nav ul:nth-child(2) li:nth-child(9) hr {
     -webkit-transform: rotate(45deg) translate(-7px, -5.5px);
   }
 }
+.home ul:nth-child(1) li:nth-child(2) p:nth-child(4), .home ul:nth-child(1) li:nth-child(2) p:nth-child(3), .home ul:nth-child(1) li:nth-child(2) p:nth-child(2) {
+  overflow: hidden;
+  animation: typing 5s steps(100, end) both;
+  white-space: nowrap;
+  letter-spacing: 5px;
+}
+
 .home ul:nth-child(1) {
   display: block;
   margin: auto -80px;
@@ -486,10 +493,6 @@ nav ul:nth-child(2) li:nth-child(9) hr {
   font-size: 1.5rem;
 }
 .home ul:nth-child(1) li:nth-child(2) p:nth-child(2) {
-  overflow: hidden;
-  animation: typing 5s steps(100, end) both;
-  white-space: nowrap;
-  letter-spacing: 5px;
   margin: auto;
   text-shadow: 2px 2px gray, 1px 1px gray;
   font-size: 3.75rem;
@@ -503,20 +506,12 @@ nav ul:nth-child(2) li:nth-child(9) hr {
   color: lightcoral;
 }
 .home ul:nth-child(1) li:nth-child(2) p:nth-child(3) {
-  overflow: hidden;
-  animation: typing 5s steps(100, end) both;
-  white-space: nowrap;
-  letter-spacing: 5px;
   margin: -10px auto auto;
   animation-delay: 2s;
   text-shadow: 1px 1px gray, 1px 1px gray;
   font-size: 2.5rem;
 }
 .home ul:nth-child(1) li:nth-child(2) p:nth-child(4) {
-  overflow: hidden;
-  animation: typing 5s steps(100, end) both;
-  white-space: nowrap;
-  letter-spacing: 5px;
   margin: auto;
   padding: 28px 0 40px;
   animation-delay: 4s;
@@ -1154,7 +1149,7 @@ nav ul:nth-child(2) li:nth-child(9) hr {
   max-width: 18.75rem;
   height: auto;
   border-radius: 50%;
-  filter: drop-shadow(1px 1px 10px #FF0700);
+  filter: drop-shadow(1px 1px 10px #B30600);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1194,6 +1189,13 @@ nav ul:nth-child(2) li:nth-child(9) hr {
     max-width: 17.5rem;
   }
 }
+.contact form input[type=submit], .contact form input[type=text],
+.contact form textarea {
+  border: 2px solid #2079AC;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+}
+
 .contact {
   display: flex;
   flex-direction: row;
@@ -1219,9 +1221,6 @@ nav ul:nth-child(2) li:nth-child(9) hr {
   outline: none;
   font-size: 1.375rem;
   background-color: #2079AC;
-  border: 2px solid #2079AC;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: white;
 }
 .contact form input[type=text]:hover,
 .contact form textarea:hover {
@@ -1238,9 +1237,6 @@ nav ul:nth-child(2) li:nth-child(9) hr {
   font-weight: bold;
   font-size: 1.25rem;
   background-color: #B30600;
-  border: 2px solid #2079AC;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: white;
 }
 .contact form input[type=submit]:hover {
   background-color: lightcoral;
@@ -1478,7 +1474,7 @@ nav ul:nth-child(2) li:nth-child(9) hr {
   color: lightblue;
 }
 .message a:hover, .nachricht a:hover {
-  color: #FF0700;
+  color: #B30600;
 }
 
 @media only screen and (max-width: 1060px) {
@@ -1511,7 +1507,7 @@ nav ul:nth-child(2) li:nth-child(9) hr {
     color: lightblue;
   }
   .message a:active, .nachricht a:active {
-    color: #FF0700;
+    color: #B30600;
   }
 }
 .nachricht img {
@@ -1544,7 +1540,7 @@ footer ul:nth-child(1) li a {
 footer ul:nth-child(1) li a:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
-  color: #FF0700;
+  color: #B30600;
 }
 footer ul:nth-child(2) li {
   color: white;
@@ -1574,7 +1570,7 @@ footer ul:nth-child(2) li {
   footer ul:nth-child(1) li a:active {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
-    color: #FF0700;
+    color: #B30600;
   }
   footer ul:nth-child(2) li {
     font-size: 0.95rem;
