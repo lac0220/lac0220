@@ -29,7 +29,7 @@ I am a <b>Front-End Developer</b> from <b>Hungary</b> <img src="https://github.c
 <br />
 
 <div>
-I have always been a <b>service-oriented professional</b> with a devotion to excellent customer service. It is no different in programming either. I am <b>passionate about UI design</b> by adding motion to elements and maintaining high discoverability for an <b>enjoyable UX</b>. My intention is to develop user-friendly websites and web applications that are easy to navigate.
+I have always been a <b>service-oriented professional</b> with a devotion to excellent customer service. It is no different in programming. I am <b>passionate about UI design</b> by adding motion to elements and maintaining high discoverability for an <b>enjoyable UX</b>. I intend to develop user-friendly websites and web applications that are easy to navigate
 </div>
 <br />
 
@@ -37,7 +37,7 @@ I have always been a <b>service-oriented professional</b> with a devotion to exc
 
 💻 Love building a responsive environment and web design by using various <b>Front-End Development Technologies and Tools</b>
 
-🔎 <b>Constantly seeking</b> to expand the scope of my coding skills in <b>front-end positions and projects</b> 
+🔎 <b>Always open to discussing new front-end positions and constantly seeking to join challenging projects to expand my coding skills</b>
 <br />
 
 ---
