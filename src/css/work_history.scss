@@ -19,8 +19,8 @@
         }
 
         ul:nth-child(2) li {
-            .work-history-flip-box1 {
-                @extend .projects-flip-box1;
+            .work-history-flip-box {
+                @extend .projects-flip-box;
                 img {
                     top: 0;
                     right: 70%;
@@ -32,21 +32,11 @@
                 @extend .projects-flip-box__triangle;
             }    
                 
-            .work-history-flip-box__back {
-                @extend .projects-flip-box__back;
+            .work-history-flip-box__back-site {
+                @extend .projects-flip-box__back-site;
                 padding: 80px 10px 0;
             } 
-        }
-        
-        ul:nth-child(6) {
-            padding: 0 20px 0 40px;
-            li {
-                padding-bottom: 10px;
-                border: none;
-                list-style: outside;
-                text-align: left; 
-            }
-        }
+        } 
     }
 }
 
@@ -77,15 +67,8 @@
             padding: 0 10px 5px;
         }
 
-        ul:nth-child(2) li .work-history-flip-box__back {
+        ul:nth-child(2) li .work-history-flip-box__back-site {
             padding: 60px 10px 0;
         } 
-        
-        ul:nth-child(6) {
-            padding: 0 10px 0 30px;
-            li {
-                padding-bottom: 5px;
-            }
-        }
     }
 } 

@@ -12,8 +12,8 @@
         <title>Portfolio - Laszlo Nemeth</title>
         <style>
             .home ul:nth-child(1) li:nth-child(1) img {
-                border: 2px solid white;
                 right: 110%;
+                border: 2px solid white;
             }
 
             .home ul:nth-child(1) li:nth-child(1) div ul:nth-child(4) span {
@@ -35,12 +35,12 @@
                 left: 87px;
             }
 
-            .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back {
-                padding-top: 15px;
+            .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back-site {
+                padding-top: 11px;
             }
 
-            .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back button:nth-child(1) {
-                margin-top: -5px;
+            .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back-site p:nth-child(2) {
+                margin: 40px 0 -3px;
             }
 
             @media only screen and (max-width: 1200px) {
@@ -71,12 +71,12 @@
                     left: 67px;
                 }
 
-                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back {
-                    padding-top: 30px;
+                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back-site {
+                    padding-top: 28px;
                 }
 
-                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back button:nth-child(1) {
-                    padding: 2px 5px;
+                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back-site a:nth-child(4) {
+                    bottom: -1px;
                 }
 
                 .about-me__photo {
@@ -91,22 +91,30 @@
                 }
 
                 .language img {
-                    border: 1.5px solid white;
+                    border: 1px solid white;
                 }
 
-                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back {
-                    padding-top: 38px;
+                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back-site {
+                    padding-top: 32px;
                 }
             }
 
             @media only screen and (max-width: 500px) {
 
-                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back {
-                    padding-top: 5px;
+                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back-site {
+                    padding-top: 6px;
                 }
 
-                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back button:nth-child(1) {
-                    margin-top: 2px;
+                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back-site button:nth-child(1) {
+                    padding: 3px 5px;
+                }
+
+                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back-site p:nth-child(2) {
+                    margin: 30px 0 -5px;
+                }
+
+                .projects ul:nth-child(3) li ul:nth-child(2) li .projects-flip-box__back-site a:nth-child(4) {
+                    bottom: 4px;
                 }
             }
 
@@ -237,11 +245,11 @@
                     <h2>GENERIC HIPSTER COFFEE</h2>
                     <ul>
                         <li>
-                            <div class="projects-flip-box1 pulse">
+                            <div class="projects-flip-box pulse" id="background-color-coffee">
                                 <div class="projects-flip-box__triangle"></div>
                                 <img src="./img/logo/logo_coffee.svg" loading="lazy" alt="Coffee shop" />                      
                             </div>
-                            <div class="projects-flip-box__back">
+                            <div class="projects-flip-box__back-site">
                                 <a href="https://lac0220.github.io/hackaton-coffeeshop/index.html" rel="noopener noreferrer" target="_blank" aria-label="Coffee shop"><button>Siehe Website</button></a>
                                 <p><i>oder</i></p>
                                 <p>Code anschauen</p>
@@ -251,18 +259,24 @@
                     </ul>
                     <h3>BOOTCAMP HACKATHON</h3>
                     <hr>
-                    <p>Die Aufgabe war, eine responsive Website für ein Kaffee-Shop zu erstellen, die einige grundsätzliche Informationen, eine Speisekarte, die angebotenen Kaffeesorten und ein Buchungsformular enthält</p>
-                    <p>Tech-Stack: <span style="color:#FFE0C2;">HTML<span style="font-family: 'Times New Roman', Times, serif;">5</span>, SCSS, Gulp.js, Git</span></p>
+                    <p>Die Aufgabe war, eine <span style="color:#FFE0C2;">responsive statische Website</span> für ein Kaffee-Shop zu erstellen. Diese enthält:</p>
+                    <ul>
+                        <li><span>eine Startseite mit einigen grundsätzlichen Informationen</span></li>
+                        <li><span>eine Menüseite</span></li>
+                        <li><span>eine Seite mit den angebotenen Kaffeesorten</span></li>
+                        <li><span>eine Seite über die Firmengeschichte mit einem Kontaktformular für Reservierungen</span></li>
+                    </ul>
+                    <p><span style="color:#ffad6b">Tech-Stack: </span><span style="color:#FFE0C2;">HTML<span style="font-family: 'Times New Roman', Times, serif;">5</span>, SCSS, Gulp.js</span></p>
                 </li>
                 <li>
                     <h2>LEGENDARY QUOTES</h2>
                     <ul>
                         <li>
-                            <div class="projects-flip-box2 pulse">
+                            <div class="projects-flip-box pulse" id="background-color-quotes">
                                 <div class="projects-flip-box__triangle"></div>
                                 <img src="./img/logo/logo_quotes.webp" loading="lazy" alt="Quotes website logo" />                      
                             </div>
-                            <div class="projects-flip-box__back">
+                            <div class="projects-flip-box__back-site">
                                 <a href="https://lac0220.github.io/finalproject-quotes/index.html" rel="noopener noreferrer" target="_blank" aria-label="Legendary Quotes"><button>Siehe Website</button></a>
                                 <p><i>oder</i></p>
                                 <p>Code anschauen</p>
@@ -272,18 +286,24 @@
                     </ul>
                     <h3>BOOTCAMP ABSCHLUSS</h3> 
                     <hr>
-                    <p>Die Web-Applikation verwendet eine API, um zufällige und tägliche inspirierende Zitate zu generieren. Sie bietet fünf verschiedene Zitat-Kategorien, alphabetische Filterung der Autoren, Suchmöglichkeiten nach Schlüsselwörtern zwischen den Zitaten, Weiterleitung des Kontaktformulars an eine E-Mail Adresse und mobilfreundliches Webdesign mit Navigationsleiste</p> 
-                    <p>Tech-Stack: <span style="color:#FFE0C2;">HTML<span style="font-family: 'Times New Roman', Times, serif;">5</span>, SCSS, JavaScript, Gulp.js, Git</span></p>
+                    <p>Die mobilfreundliche Web-Applikation verwendet eine <span style="color:#FFE0C2;">API, um zufällige und tägliche inspirierende Zitate zu generieren</span>. Sie bietet dem Nutzer Funktionen wie:</p> 
+                    <ul>
+                        <li><span>sortierte Zitatkategorien</span></li>
+                        <li><span>alphabetische Filterung der Autoren</span></li>
+                        <li><span>Stichwortsuche zwischen den Zitaten</span></li>
+                        <li><span>Kontaktformular zur Übermittlung an eine E-Mail Adresse</span></li>
+                    </ul>
+                    <p><span style="color:#ffad6b">Tech-Stack: </span><span style="color:#FFE0C2;">HTML<span style="font-family: 'Times New Roman', Times, serif;">5</span>, SCSS, JavaScript, Gulp.js</span></p>
                 </li>
                 <li>
                     <h2>JOKES GENERATOR</h2>
                     <ul>
                         <li>
-                            <div class="projects-flip-box4 pulse">
+                            <div class="projects-flip-box pulse" id="background-color-jokes">
                                 <div class="projects-flip-box__triangle"></div>
                                 <img src="./img/logo/jokes.webp" loading="lazy" alt="Jokes generator logo" />                      
                             </div>
-                            <div class="projects-flip-box__back">
+                            <div class="projects-flip-box__back-site">
                                 <a href="https://lac0220.github.io/joke-api" rel="noopener noreferrer" target="_blank" aria-label="Jokes Generator"><button>Siehe Website</button></a> 
                                 <p><i>oder</i></p>
                                 <p>Code anschauen</p>
@@ -293,18 +313,22 @@
                     </ul>
                     <h3>FREELANCING</h3> 
                     <hr>
-                    <p>Ein Witzegenerator, der API-Daten von einer URL abruft und Zugang zur Witzeplattform bietet. Die Web-Applikation zählt die Anzahl der gelesenen Witze</p>
-                    <p>Tech-Stack: <span style="color:#FFE0C2;">React.js, Bootstrap <span style="font-family: 'Times New Roman', Times, serif;">5</span>, Git</span></p>
+                    <p><span style="color:#FFE0C2;">Ein Witzegenerator, der API-Daten von einer URL abruft</span> und Zugang zur Witzeplattform bietet. Gleichzeitig zählt die Web-Applikation auch die Anzahl der gelesenen Witze. <span style="color:#FFE0C2;">Verwendung von Third-Party-NPM-Pakete:</span></p>
+                    <ul>
+                        <li><span>react-bootstrap: zum Hinzufügen des Bootstrap-CSS-Frameworks</span></li>
+                        <li><span>font-awesome: für Symbolbibliothek und Toolkit</span></li>
+                    </ul>
+                    <p><span style="color:#ffad6b">Tech-Stack: </span><span style="color:#FFE0C2;">React.js, Bootstrap <span style="font-family: 'Times New Roman', Times, serif;">5</span></span></p>
                 </li>
                 <li>
                     <h2>WIKI SEARCH ENGINE</h2>
                     <ul>
                         <li>
-                            <div class="projects-flip-box5 pulse">
+                            <div class="projects-flip-box pulse" id="background-color-wiki">
                                 <div class="projects-flip-box__triangle"></div>
                                 <img src="./img/logo/wiki.webp" loading="lazy" alt="Wiki search engine" />                      
                             </div>
-                            <div class="projects-flip-box__back">
+                            <div class="projects-flip-box__back-site">
                                 <a href="https://lac0220.github.io/wiki-search" rel="noopener noreferrer" target="_blank" aria-label="Wiki search engine"><button>Siehe Website</button></a> 
                                 <p><i>oder</i></p>
                                 <p>Code anschauen</p>
@@ -314,18 +338,23 @@
                     </ul>
                     <h3>FREELANCING</h3> 
                     <hr>
-                    <p>Wikipedia-Suchmaschine, die die Wikipedia-API nutzt und die ersten fünf gelisteten Treffer anzeigt - der Rest wird auf Anfrage angezeigt. Die Treffer leiten uns zu dem jeweiligen Wikipedia-Eintrag, der sogenannten Wiki-Seite, weiter</p>
-                    <p>Tech-Stack: <span style="color:#FFE0C2;">React.js, Bootstrap <span style="font-family: 'Times New Roman', Times, serif;">5</span>, Git</span></p>
+                    <p><span style="color:#FFE0C2;">Die Suchmaschine nutzt die Wikipedia-API, die die ersten fünf gelisteten Treffer liefert</span> und den Rest auf Anfrage anzeigt. Die Treffer leiten uns zu dem jeweiligen Wikipedia-Eintrag, der sogenannten Wiki-Seite, weiter. <span style="color:#FFE0C2;">Verwendung von Third-Party-NPM-Pakete:</span></p>
+                    <ul>
+                        <li><span>react-router-dom: für das client-seitige Routing</span></li>
+                        <li><span>react-hook-form für die Formularvalidierung</span></li>
+                        <li><span>react-bootstrap: zum Hinzufügen des Bootstrap-CSS-Frameworks</span></li>
+                    </ul>
+                    <p><span style="color:#ffad6b">Tech-Stack: </span><span style="color:#FFE0C2;">React.js, Bootstrap <span style="font-family: 'Times New Roman', Times, serif;">5</span></span></p>
                 </li>
                 <li>
                     <h2>MODEL PORTFOLIO</h2>
                     <ul>
                         <li>
-                            <div class="projects-flip-box3 pulse">
+                            <div class="projects-flip-box pulse" id="background-color-model">
                                 <div class="projects-flip-box__triangle"></div>
                                 <img src="./img/logo/logo_model.webp" loading="lazy" alt="Model portfolio" />                      
                             </div>
-                            <div class="projects-flip-box__back">
+                            <div class="projects-flip-box__back-site">
                                 <a href="https://lac0220.github.io/model-portfolio" rel="noopener noreferrer" target="_blank" aria-label="Model Portfolio"><button>Siehe Website</button></a>
                                 <p><i>oder</i></p>
                                 <p>Code anschauen</p>
@@ -335,8 +364,43 @@
                     </ul>
                     <h3>FREELANCING</h3> 
                     <hr>
-                    <p>Erstellung einer Portfolio-Website für ein Model und eine Künstlerin mit einer Galerie und einem Blog. Verwendung von Third-Party-NPM-Pakete wie react-router-dom und -hash-link für clientseitiges Routing, react-alice-carousel für Image Slider, react-modal-image mit Zoom-Option und react-hook-form für die Formularüberprüfung. Das Kontaktformular ist mit einem EmailsJS-Konto für den Empfang von Nachrichten an eine Gmail-E-Mail-Adresse eingerichtet. Mobilfreundliches Web-Design</p>
-                    <p>Tech-Stack: <span style="color:#FFE0C2;">React.js, SCSS, Git</span></p>            
+                    <p>Erstellung einer <span style="color:#FFE0C2;">mobilfreundlichen Portfolio-Website für ein Model &amp; eine Künstlerin</span> mit einer Galerie und einem Blog. Das Kontaktformular ist mit einem EmailsJS-Konto für den Empfang von Nachrichten an eine Gmail-E-Mail-Adresse eingerichtet. <span style="color:#FFE0C2;">Verwendung von Third-Party-NPM-Pakete:</span></p>
+                    <ul>
+                        <li><span>react-router-dom und hash-link für das client-seitige Routing</span></li>
+                        <li><span>react-alice-carousel für Bild-Slider</span></li>
+                        <li><span>react-modal-image mit Zoom-Option</span></li>
+                        <li><span>react-hook-form für die Formularvalidierung</span></li>
+                        <li><span>node-sass für die Umwandlung von SCSS-Dateien in CSS</span></li>
+                    </ul>
+                    <p><span style="color:#ffad6b">Tech-Stack: </span><span style="color:#FFE0C2;">React.js, SCSS</span></p>            
+                </li>
+                <li>
+                    <h2>E-COMMERCE</h2>
+                    <ul>
+                        <li>
+                            <div class="projects-flip-box pulse" id="background-color-e-commerce">
+                                <div class="projects-flip-box__triangle"></div>
+                                <img src="./img/logo/e-commerce.webp" loading="lazy" alt="E-commerce" />                      
+                            </div>
+                            <div class="projects-flip-box__back-site">
+                                <a href="https://lac0220.github.io/e-commerce" rel="noopener noreferrer" target="_blank" aria-label="E-commerce"><button>Siehe Website</button></a> 
+                                <p><i>oder</i></p>
+                                <p>Code anschauen</p>
+                                <a href="https://github.com/lac0220/e-commerce" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><i class="fab fa-github" title="GitHub project"></i></a>  
+                            </div>
+                        </li>
+                    </ul>
+                    <h3>FREELANCING</h3> 
+                    <hr>
+                    <p>Die Web-Applikation <span style="color:#FFE0C2;">enthält zwei Seiten mit der Auflistung aller Produkte aus einer MySQL-Datenbank und das Hinzufügen von Produkten mit einer bestimmten SKU</span> und zusätzlichen Daten wie Name, Preis, Größe, Höhe, Breite, Länge und Gewicht. Diese Produkte können auch mit Hilfe eines Kontrollkästchens gelöscht werden. Die Datenbank wird auf <span style="font-family: 'Times New Roman', Times, serif;">000</span>webhost gehostet und mit phpMyAdmin verwaltet. <span style="color:#FFE0C2;">Verwendung von Third-Party-NPM-Pakete:</span></p>
+                    <ul>
+                        <li><span>react-router-dom für client-seitiges Routing</span></li>
+                        <li><span>react-hook-form für die Formularvalidierung</span></li>
+                        <li><span>axios für die Erstellung von HTTP-Anfragen</span></li>
+                        <li><span>mui/material für erweiterte UI-Elemente</span></li>
+                        <li><span>node-sass für die Umwandlung von SCSS-Dateien in CSS</span></li>
+                    </ul>
+                    <p><span style="color:#ffad6b">Tech-Stack: </span><span style="color:#FFE0C2;">React.js, SCSS, PHP, MySQL</span></p>
                 </li>
             </ul>
         </section>
@@ -348,11 +412,11 @@
                     <h2>MARKETUP S.R.O.</h2>
                     <ul>
                         <li>
-                            <div class="work-history-flip-box1 pulse">
+                            <div class="work-history-flip-box pulse" id="background-color-work">
                                 <div class="work-history-flip-box__triangle"></div>
                                 <img src="./img/logo/coding.webp" alt="Coding logo" />                      
                             </div>
-                            <div class="work-history-flip-box__back">
+                            <div class="work-history-flip-box__back-site">
                                 <a href="https://www.marketup.cz/en" rel="noopener noreferrer" target="_blank" aria-label="Marketup s.r.o."><button>Siehe Website</button></a>   
                             </div>
                         </li>
@@ -368,7 +432,7 @@
                         <li><span>Unterstützung und Kooperation mit dem Softwareentwicklungsteam auf <span style="color:#FFE0C2;">GitLab </span>und <span style="color:#FFE0C2;">Asana</span></span></li>
                         <li><span>Bereitstellung in der <span style="color:#FFE0C2;">Google Cloud Platform</span>-Umgebung</span></li>
                     </ul>
-                    <p>Tech-Stack: <span style="color:#FFE0C2;">React.js, TypeScript, CSS<span style="font-family: 'Times New Roman', Times, serif;">3</span>, SCSS, Bootstrap <span style="font-family: 'Times New Roman', Times, serif;">5</span>, Git, GitLab, Webpack, Google Cloud Platform</span></p>
+                    <p><span style="color:#ffad6b">Tech-Stack: </span><span style="color:#FFE0C2;">React.js, TypeScript, CSS, SCSS, Bootstrap <span style="font-family: 'Times New Roman', Times, serif;">5</span>, Git, GitLab, Webpack, GCP</span></p>
                 </li>
             </ul>
         </section>
@@ -377,7 +441,7 @@
             <hr>
             <div class="about-me">
                 <div class="about-me__photo">
-                    <img src="./img/profile.webp" loading="lazy" alt="Laszlo Nemeth">
+                    <img src="./img/profile.webp" width="300" height="300" loading="lazy" alt="Laszlo Nemeth">
                 </div>
                 <p>Im Jahr <span style="font-family: 'Times New Roman', Times, serif;">2015</span> sammelte ich meine erste Berufserfahrung im IT-Bereich bei <span style="color:#ffad6b;">Hewlett-Packard</span> in Irland. Ich arbeitete als <span style="color:#ffad6b;">German Technical Support Analyst</span> und leistete technischen First-Line-Support für verschiedene Produkte und Anwendungen. Meine Aufgabe war eine <span style="color:#ffad6b;">analytische Fehlersuche und Problemlösung </span> zu bieten. Danach verbrachte ich einige Jahre im Steuerbereich, wo ich Bearbeitungsprozesse analysierte bzw. erneuerte und automatisierte Steuerdienstleistungen in Zusammenarbeit mit dem IT-Team implementierte. Aufgrund dieser beruflichen Erfahrungen bin ich <span style="color:#ffad6b;">detailorientiert, analytisch und kann erfolgreich Probleme lösen.</span></p>
                 <p>Letztendlich war es meine Leidenschaft für IT, die mich wieder auf den richtigen Weg brachte. Ich beschloss, in die Welt der Codes einzutauchen und <span style="color:#ffad6b;">absolvierte im November <span style="font-family: 'Times New Roman', Times, serif;">2021</span> einen intensiven <span style="font-family: 'Times New Roman', Times, serif;">12</span>&#45;wöchigen Full-Stack-Webentwicklungskurs</span> bei einem Coding Bootcamp. Ich fing an, die am häufigsten genutzten Programmiersprachen und Frameworks wie JavaScript, PHP und React.js kennenzulernen. Da mich das UI-Design und der dahinter stehende Code in einer Applikation besonders faszinierten, konzentrierte ich mich auf Frontend-Entwicklung. Mit der Zeit fand ich immer <span style="color:#ffad6b;">mehr Spaß am Coding mit React.js und seinen UI-gesteuerten Designs.</span></p>
@@ -400,7 +464,7 @@
                         <input type="text" id="subject" name="subject">
                     </label>
                     <label for="message">Nachricht
-                        <textarea id="comment" name="comment" required style="height:200px" alt="Textarea"></textarea>
+                        <textarea id="comment" name="comment" style="height: 200px" alt="Textarea" required></textarea>
                     </label>
                     <div class="contact-submit">
                         <label>
@@ -433,7 +497,9 @@
                 <li><a href="https://codepen.io/lac0220/" aria-label="Codepen" rel="noopener noreferrer" target="_blank"><i class="fab fa-codepen" title="Besuchen Sie mich auf Codepen"></i></a></li>  <!-- Codepen-->        
             </ul>
             <ul>
-                <li><p>Copyright &copy; Laszlo Nemeth 2022</p></li>
+                <li>
+                    <p>Copyright &copy; Laszlo Nemeth <span style="font-family: 'Times New Roman', Times, serif;">2023</span></p>
+                </li>
             </ul>
         </footer>
         <div class="loader-animation"</div>
