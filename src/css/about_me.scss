@@ -1,5 +1,5 @@
 .about-me {
-    padding: 20px 0 25px;
+    padding: 20px 0 15px;
     p {
         @extend .hyphens;
     }
@@ -15,9 +15,15 @@
     p:nth-child(4) {
         padding-top: 10px;
     }
+
+    p:nth-child(5) {
+        padding-top: 25px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
   
     &__photo {
-        margin: 30px 40px 15px 0;
+        margin: 10px 40px 15px 0;
         float: left;
         img {
             max-width: 19rem;
@@ -26,19 +32,37 @@
             filter: drop-shadow(1px 1px 10px $first-hover);
         }
     }
+
+    div  {
+        text-align: center;
+        i {
+            font-size: 3rem;
+            color: $text-color;
+        }
+    }
 }
   
  @media only screen and (max-width: 1200px) {
     
     .about-me {
-        padding: 10px 0 20px;
+        padding: 10px 0 30px;
         display: flex;
         flex-direction: column;
+
+        p:nth-child(5) {
+            padding: 20px 0;
+            font-size: 1.3rem;
+        }
+
         &__photo {
             margin: auto;
             padding-top: 20px;
             float: none;
             order: 1;
+        } 
+
+        div i { 
+            display: none;
         }
     }
 }
@@ -59,6 +83,11 @@
     
         p:nth-child(4) {
             padding-top: 5px;
+        }
+
+        p:nth-child(5) {
+            padding: 10px 0;
+            font-size: 1.15rem;
         }
     }
 }

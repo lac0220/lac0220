@@ -1,20 +1,27 @@
 .work-history {
-    @extend .projects;
+    @extend .projects; 
     ul:nth-child(3) li {
         h3 {
-            margin: 0 20px;
+            margin: 0 10px;
         }
 
         p {
             text-align: center;
-        }
-
-        p:nth-child(4) {
-            padding: 0 20px 5px;
             color:#FFE0C2;
         }
 
-        p:nth-child(7) {
+        p:nth-child(4) {
+            padding: 0;
+        } 
+
+        p:nth-child(5) {
+            padding: 0 20px 5px;
+        }
+
+        p:nth-child(8) {
+            position: absolute;
+            bottom: 0;
+            padding-bottom: 10px;
             text-align: left;
         }
 
@@ -22,9 +29,9 @@
             .work-history-flip-box {
                 @extend .projects-flip-box;
                 img {
-                    top: 0;
-                    right: 70%;
-                    max-width: 180%;
+                    top: -10%;
+                    right: 22%;
+                    max-width: 150%;
                 }
             }
             
@@ -34,9 +41,20 @@
                 
             .work-history-flip-box__back-site {
                 @extend .projects-flip-box__back-site;
-                padding: 80px 10px 0;
+                padding: 110px 10px 0;
             } 
         } 
+
+        ul:nth-child(7) {
+            padding: 0 20px 70px 40px;
+            li {
+                @extend .hyphens;
+                padding-bottom: 5px;
+                border: none;
+                list-style: outside;
+                text-align: left; 
+            }
+        }
     }
 }
 
@@ -57,18 +75,33 @@
         p {
             font-size: 1rem;
         }
+
+        ul:nth-child(7) {
+            padding: 0 20px 60px 40px;
+        }
     }
 }
 
 @media only screen and (max-width: 500px) {
 
     .work-history ul:nth-child(3) li {
-        p:nth-child(4) {
-            padding: 0 10px 5px;
+        p:nth-child(8) {
+            padding: 5px 10px 10px;
         }
 
         ul:nth-child(2) li .work-history-flip-box__back-site {
-            padding: 60px 10px 0;
+            padding: 80px 10px 0;
         } 
+
+        ul:nth-child(7) {
+            padding: 0 10px 60px 30px;
+        }
     }
 } 
+
+@media only screen and (max-width: 380px) {
+
+    .work-history ul:nth-child(3) li ul:nth-child(7) {
+        padding: 0 10px 80px 30px;
+    }
+}

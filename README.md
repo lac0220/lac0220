@@ -35,7 +35,7 @@
 
 💻 Love building a responsive environment and web design by using various <b>Front-End Development Technologies and Tools</b>
 
-🔎 <b>Constantly seeking to join challenging projects and always open to discussing new front-end positions to expand my coding skills</b>
+🔎 <b>To expand my coding skills, I am always open to discussing and joining challenging front-end projects</b>
 <br />
 
 ---
