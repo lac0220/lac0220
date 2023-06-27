@@ -72,8 +72,3 @@
 [![Laszlo's GitHub stats](https://github-readme-stats.vercel.app/api?username=lac0220&theme=swift&show_icons=true)](https://github.com/lac0220/github-readme-stats)
   
 </div>
-
-<div align="center">
-  
-More details on [CodersRank profile](https://profile.codersrank.io/user/lac0220/)
-</div>
