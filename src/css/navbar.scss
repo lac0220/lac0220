@@ -47,12 +47,16 @@ nav {
             font-weight: bold;
             font-size: 1.463rem; 
         }
+
+        p {
+            padding: 5px 0 0;
+        }
     
         .social-media  { 
             @include social-media-logo;
-            padding: 30px 0;
+            padding: 10px 0;
             a { 
-                margin: auto 5px;
+                margin: auto 7px;
                 &:hover {
                     color: $third-hover;
                 }
@@ -115,7 +119,7 @@ nav {
         overflow: auto;
         ul:nth-child(1) {
             .logo {
-                margin: 54px 0 16px;
+                margin: 57px 0 16px;
                 img {
                     height:5.5rem;
                 }
@@ -266,7 +270,7 @@ nav {
                 visibility: visible;
                 height: 0;
                 a { 
-                    margin: auto 7px;
+                    margin: auto 5px;
                     &:active {
                         color: $third-hover;
                     }

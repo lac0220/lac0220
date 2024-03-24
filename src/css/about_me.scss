@@ -5,19 +5,20 @@
     }
 
     p:nth-child(2) {
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
 
-    p:nth-child(3) {
-        padding: 10px 0;
-    }
-
+    p:nth-child(3),
     p:nth-child(4) {
-        padding-top: 10px;
+        padding: 5px 0;
     }
 
     p:nth-child(5) {
-        padding-top: 25px;
+        padding-top: 5px;
+    }
+
+    p:nth-child(6) {
+        padding-top: 15px;
         text-align: center;
         font-size: 1.5rem;
     }
@@ -49,7 +50,7 @@
         display: flex;
         flex-direction: column;
 
-        p:nth-child(5) {
+        p:nth-child(6) {
             padding: 20px 0;
             font-size: 1.3rem;
         }
@@ -73,22 +74,14 @@
         padding: 10px 0 18px;
         margin: auto;
         width: 80%;
-        p:nth-child(2) {
-            padding-bottom: 5px;
-        }
-    
-        p:nth-child(3) {
-            padding: 5px 0;
-        }
-    
-        p:nth-child(4) {
-            padding-top: 5px;
-        }
-
-        p:nth-child(5) {
+        p:nth-child(6) {
             padding: 10px 0;
             font-size: 1.15rem;
         }
+        
+        &__photo {
+            padding-top: 10px;
+        } 
     }
 }
   

@@ -2,7 +2,7 @@
 <html lang="de">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="Frontend Entwickler Portfolio-Webseite von Laszlo Nemeth">
+        <meta name="description" content="FE Entwickler - UAT Spezialist Portfolio von Laszlo Nemeth">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="/css/reset.css" media="screen" />
@@ -39,10 +39,6 @@
                 margin: 0 6px;
             }
 
-            .about-me__photo {
-                margin: 20px 40px 15px 0;
-            }
-
             @media only screen and (max-width: 1200px) {
 
                 .home ul:nth-child(1) li:nth-child(1) {
@@ -71,8 +67,18 @@
                     left: 67px;
                 }
 
-                .about-me__photo {
-                    margin: auto;
+                .projects ul:nth-child(3) li ul:nth-child(6) {
+                    padding: 0 10px 40px 40px;
+                }
+            }
+
+            @media only screen and (max-width: 900px) {
+                .projects ul:nth-child(3) li ul:nth-child(6) {
+                    padding: 0 10px 65px 40px;
+                }
+
+                .work-history ul:nth-child(3) li ul:nth-child(7) {
+                    padding: 0 10px 90px 40px;
                 }
             }
 
@@ -89,6 +95,10 @@
                 .projects ul:nth-child(3) li ul:nth-child(6) {
                     padding: 0 10px 60px 40px;
                 }
+
+                .work-history ul:nth-child(3) li ul:nth-child(7) {
+                    padding: 0 10px 60px 40px;
+                }
             }
 
             @media only screen and (max-width: 500px) {
@@ -99,6 +109,10 @@
             } 
 
             @media only screen and (max-width: 380px) {
+
+                .work-history ul:nth-child(3) li ul:nth-child(7) {
+                    padding: 0 10px 80px 40px;
+                }
 
                 .contact form input[type=submit] {
                     width: 40%;
@@ -130,18 +144,18 @@
                     <li>
                         <h3>Laszlo Nemeth</h3>
                         <p>Frontend Entwickler</p>
+                        <p>UAT Spezialist</p>
                     </li>
                     <li class="social-media">
                         <a href="https://www.linkedin.com/in/nemeth0220" aria-label="Linkedin" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin" title="Besuchen Sie mich auf Linkedin"></i></a>    <!-- linkedin -->
                         <a href="https://github.com/lac0220" aria-label="GitHub" rel="noopener noreferrer" target="_blank"><i class="fab fa-github" title="Besuchen Sie mich auf GitHub"></i></a>      <!-- GitHub -->
-                        <a href="https://gitlab.com/lac0220" aria-label="GitLab" rel="noopener noreferrer" target="_blank"><i class="fab fa-gitlab" title="Besuchen Sie mich auf GitLab"></i></a>      <!-- GitLab -->
                         <a href="https://codepen.io/lac0220/" aria-label="Codepen" rel="noopener noreferrer" target="_blank"><i class="fab fa-codepen" title="Besuchen Sie mich auf Codepen"></i></a>  <!-- Codepen-->      
                     </li>  
                 </ul>
                 <ul id="nav-menu">
                     <li>
                         <h3>Laszlo Nemeth</h3>
-                        <p>Frontend Entwickler</p>
+                        <p>FE Entwickler - UAT Spezialist</p>
                     </li>
                     <li><hr></li>
                     <li><a href="#home">Startseite</a></li>
@@ -155,7 +169,6 @@
                         <div class="social-media-mobile">
                             <a href="https://www.linkedin.com/in/nemeth0220" aria-label="Linkedin" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin" title="Besuchen Sie mich auf Linkedin"></i></a>    <!-- linkedin -->
                             <a href="https://github.com/lac0220" aria-label="GitHub" rel="noopener noreferrer" target="_blank"><i class="fab fa-github" title="Besuchen Sie mich auf GitHub"></i></a>      <!-- GitHub -->
-                            <a href="https://gitlab.com/lac0220" aria-label="GitLab" rel="noopener noreferrer" target="_blank"><i class="fab fa-gitlab" title="Besuchen Sie mich auf GitLab"></i></a>      <!-- GitLab -->
                             <a href="https://codepen.io/lac0220/" aria-label="Codepen" rel="noopener noreferrer" target="_blank"><i class="fab fa-codepen" title="Besuchen Sie mich auf Codepen"></i></a>  <!-- Codepen-->           
                         </div>  
                     </li>  
@@ -176,23 +189,19 @@
                 <li>
                     <p><span id="visitors-number"></span></p>
                     <p><a href="#about-me">Laszlo Nemeth</a></p>
-                    <p>Frontend Entwickler</p>
+                    <p>FE Entwickler - UAT Spezialist</p>
                     <p>"Es gibt kein Versagen, nur Feedback"</p>
                     <a href="#contact"><button>ARBEITEN WIR ZUSAMMEN</button></a>
                 </li>
             </ul>
             <div class="home-text">
-                <p>Ich war schon immer ein dienstleistungsorientierter Fachmann, der sich für einen hervorragenden Kundenservice engagiert. Bei der Softwareentwicklung ist das nicht anders. <span style="color:#ffad6b;">Meine Leidenschaft gilt der Identifizierung von Geschäftsbedürfnissen</span> und der Analyse von Anforderungen, <span style="color:#ffad6b;">um innovative IT-Lösungen zu bieten</span></span>.</p> 
-                <p>In meiner Freizeit <span style="color:#ffad6b;">entwickle ich benutzerfreundliche Websites und Webapplikationen</span>, die einfach zu navigieren sind. Ich bringe gerne Elemente in Bewegung und sorge für ein hervorragendes Benutzererlebnis (UX). Außerdem erstelle ich gerne responsives Webdesign<span style="color:#ffad6b;"> mit verschiedenen Front-End-Entwicklungstechnologien und Tools</span>:</p>
+                <p>Ich war schon immer ein <span style="color:#ffad6b;">dienstleistungsorientierter Fachmann</span>, der sich für einen hervorragenden Kundenservice engagiert, unabhängig von dem beruflichen Tätigkeitsbereich. Grundsätzlich ist es meine Leidenschaft, Geschäftsbedürfnisse zu identifizieren und Anforderungen zu analysieren, um <span style="color:#ffad6b;">innovative IT-Lösungen anzubieten.</span></span></p> 
+                <p>In meiner Freizeit <span style="color:#ffad6b;">entwickle ich benutzerfreundliche Websites und Webapplikationen</span> mit responsivem Design. Ich bringe gerne Elemente in Bewegung und sorge für ein hervorragendes Benutzererlebnis (UX), während ich<span style="color:#ffad6b;"> verschiedene Webtechnologien und Softwareentwicklungstools verwende:</span></p>
             </div>
             <ul>
                 <li>  
                     <p>HTML5</p>
                     <div><i class="fab fa-html5"></i></div>
-                </li>
-                <li>  
-                    <p>CSS3</p>
-                    <div><i class="fab fa-css3"></i></div>
                 </li>
                 <li>  
                     <p>SCSS</p>
@@ -203,20 +212,24 @@
                     <div><i class="fab fa-bootstrap"></i></div>
                 </li>
                 <li>  
-                    <p>React.js</p>
-                    <div><i class="fab fa-react"></i></div>
-                </li>
-                <li>  
                     <p>JavaScript</p>
                     <div><i class="fab fa-js"></i></div>
                 </li>
                 <li>  
-                    <p>Gulp.js</p>
-                    <div><i class="fab fa-gulp"></i></div>
+                    <p>React.js</p>
+                    <div><i class="fab fa-react"></i></div>
                 </li>
                 <li>  
                     <p>Git</p>
                     <div><i class="fab fa-git"></i></div>
+                </li>
+                <li>  
+                    <p>SQL</p>
+                    <div><i class="fa-solid fa-database"></i></div>
+                </li>
+                <li>  
+                    <p>Jira</p>
+                    <div><i class="fab fa-jira"></i></div>
                 </li>
             </ul>
         </section>
@@ -409,12 +422,11 @@
                     <p><span style="font-family: 'Times New Roman', Times, serif";>05/2022 - 01/2023</span></p>
                     <hr>
                     <ul>
-                        <li><span>Erstellung und Bearbeitung von Front-End-Code in <span style="color:#FFE0C2;">React.js</span> und <span style="color:#FFE0C2;">TypeScript</span></span></li>
+                        <li><span>Unterstützung des Software-Entwicklungsteams und Mitwirkung an der <span style="color:#FFE0C2;">Entwicklung einer internen Auftragsbearbeitungssoftware</span></span></li>
+                        <li><span>Erstellung und Bearbeitung von Front-End-Code in <span style="color:#FFE0C2;">React.js (TypeScript)</span> und Kooperation auf <span style="color:#FFE0C2;">GitLab </span>und <span style="color:#FFE0C2;">Asana</span></span></li>
                         <li><span>Komponenten der Benutzeroberfläche mit der <span style="color:#FFE0C2;">MUI-Library</span> entsprechend den operativen Anforderungen anpassen</span></li>
                         <li><span>Einrichtung der visuellen Hierarchie und Ausrichtung zur Optimierung des <span style="color:#FFE0C2;">UI-Designs</span></span></li>
                         <li><span>Ersetzung von CSS durch <span style="color:#FFE0C2;">SCSS</span> für erweiterte Funktionen</span></li>
-                        <li><span>Unterstützung und Kooperation mit dem Softwareentwicklungsteam auf <span style="color:#FFE0C2;">GitLab </span>und <span style="color:#FFE0C2;">Asana</span></span></li>
-                        <li><span>Bereitstellung in der <span style="color:#FFE0C2;">Google Cloud Platform</span>-Umgebung</span></li>
                     </ul>
                     <p><span style="color:#ffad6b">Tech-Stack: </span><span style="color:#FFE0C2;">React.js, TypeScript, CSS, SCSS, Bootstrap <span style="font-family: 'Times New Roman', Times, serif;">5</span>, Git, GitLab, Webpack, GCP</span></p>
                 </li>
@@ -431,18 +443,18 @@
                             </div>
                         </li>
                     </ul>
-                    <h3>BUSINESS TEST SPEZIALIST</h3> 
+                    <h3>UAT SPEZIALIST</h3> 
                     <p>Vollzeit</p> 
                     <p><span style="font-family: 'Times New Roman', Times, serif";>02/2023</span> - aktuell</p>
                     <hr>
                     <ul>
-                        <li><span><span style="color:#FFE0C2;">Analyse</span> der Anforderungen in bestimmten <span style="color:#FFE0C2;">User Stories</span> und Identifizierung der geschäftlichen Bedürfnisse der Kunden in den Sicherheitenmanagement-Dienstleistungen</span></li>
-                        <li><span>Einrichtung und Ausführung von Testszenarien in einer <span style="color:#FFE0C2;">Business Acceptance Testing</span>-Umgebung mit einem <span style="color:#FFE0C2;">agilen methodischen Ansatz</span></span></li>
-                        <li><span>Erstellung von Testdokumenten und <span style="color:#FFE0C2;">Meldung aller auftretenden Fehlfunktionen an die Entwickler über Jira</span></span></li>
-                        <li><span>Ständige Kollaboration mit Produktmanagement und <span style="color:#FFE0C2;">Aktualisierung des Statusberichts in ALM</span></span></li>
-                        <li><span>Unterstützung der Geschäftseinheit Global Securities Financing bei der Erledigung der alltäglichen Aufgaben</span></li>
+                        <li><span><span style="color:#FFE0C2;">Analyse</span> der Anforderungen <span style="color:#FFE0C2;">spezifischer Benutzergeschichten</span> in den Sicherheitenmanagement-Dienstleistungen</span></li>
+                        <li><span>Erstellung und Ausführung von Testszenarien in der Xact Web Portal-Anwendung innerhalb einer <span style="color:#FFE0C2;">Business Acceptance Testing</span>-Umgebung mit einem <span style="color:#FFE0C2;">agilen methodischen Ansatz</span></span></li>
+                        <li><span>Simulation des Kundenverhaltens durch Versendung von <span style="color:#FFE0C2;">SWIFT-Nachrichten im XML-Format</span> und Zuweisung von Wertpapieren mit Überwachung der Abrechnungen</span></li>
+                        <li><span><span style="color:#FFE0C2;">Dokumentation der Testergebnisse</span> und <span style="color:#FFE0C2;">Meldung von Fehlern</span> an die Entwickler über Jira</span></li>
+                        <li><span>Ständige Kollaboration mit Produktmanagement und <span style="color:#FFE0C2;">Aktualisierung der Statusberichten in ALM</span></span></li>
                     </ul>
-                    <p><span style="color:#ffad6b">Tech-Stack: </span><span style="color:#FFE0C2;">Jira, ALM, XACT Web Portal, SQL, BAT</span></p>
+                    <p><span style="color:#ffad6b">Tech-Stack: </span><span style="color:#FFE0C2;">SQL, XML, Jira, ALM Desktop Client, Xact Web Portal-Anwendung</span></p>
                 </li>
             </ul>
         </section>
@@ -453,9 +465,10 @@
                 <div class="about-me__photo">
                     <img src="./img/profile.webp" width="300" height="300" loading="lazy" alt="Laszlo Nemeth">
                 </div>
-                <p>Im Jahr <span style="font-family: 'Times New Roman', Times, serif;">2015</span> sammelte ich meine erste Berufserfahrung im IT-Bereich bei <span style="color:#ffad6b;">Hewlett-Packard</span> in Irland. Ich arbeitete als <span style="color:#ffad6b;">German Technical Support Analyst</span> und leistete technischen First-Line-Support für verschiedene Produkte und Anwendungen. Meine Aufgabe war eine <span style="color:#ffad6b;">analytische Fehlersuche und Problemlösung </span> zu bieten. Danach verbrachte ich einige Jahre im Steuerbereich, wo ich Bearbeitungsprozesse analysierte bzw. erneuerte und automatisierte Steuerdienstleistungen in Zusammenarbeit mit dem IT-Team implementierte. Aufgrund dieser beruflichen Erfahrungen bin ich <span style="color:#ffad6b;">detailorientiert, analytisch und kann erfolgreich Probleme lösen.</span></p>
-                <p>Letztendlich war es meine Leidenschaft für IT, die mich wieder auf den richtigen Weg brachte. Ich beschloss, in die Welt der Codes einzutauchen und <span style="color:#ffad6b;">absolvierte im November <span style="font-family: 'Times New Roman', Times, serif;">2021</span> einen intensiven <span style="font-family: 'Times New Roman', Times, serif;">12</span>&#45;wöchigen Full-Stack-Webentwicklungskurs</span> bei einem Coding Bootcamp. Ich fing an, die am häufigsten genutzten Programmiersprachen und Frameworks wie JavaScript, PHP und React.js kennenzulernen. Da mich das UI-Design und der dahinter stehende Code in einer Applikation besonders faszinierten, konzentrierte ich mich auf Frontend-Entwicklung. Mit der Zeit fand ich immer <span style="color:#ffad6b;">mehr Spaß am Coding mit React.js und seinen UI-gesteuerten Designs.</span></p>
-                <p>Schließlich begann <span style="color:#ffad6b;">im Mai <span style="font-family: 'Times New Roman', Times, serif";>2022</span> mein erstes Praktikum als Junior Frontend Entwickler,</span> um Erfahrungen in der Unterstützung der Softwareentwicklung zu sammeln und beim Design von Applikationen mitzuwirken. <span style="color:#ffad6b">Derzeit arbeite ich als Business Test Specialist</span> bei einem Finanzdienstleister, wo ich <span style="color:#ffad6b">spezifische User Stories in einer Business Acceptance Testing Umgebung</span> mit einem agilen methodischen Ansatz <span style="color:#ffad6b">analysiere und teste.</span></p>
+                <p>Im Jahr <span style="font-family: 'Times New Roman', Times, serif;">2015</span> sammelte ich meine erste Berufserfahrung im IT-Bereich bei <span style="color:#ffad6b;">Hewlett-Packard</span> in Irland. Ich arbeitete als <span style="color:#ffad6b;">German Technical Support Analyst</span> und leistete technischen First-Line-Support für die gesamte Palette von Hardware und Software. Zu meinen täglichen Aufgaben gehörte es, <span style="color:#ffad6b;">Lösungen durch Problem-Recherche und analytische Fehlersuche </span> zu bieten. Danach verbrachte ich einige Jahre im Steuerbereich, wo ich automatisierte Steuerdienstleistungen in Übereinstimmung mit den rechtlichen Anforderungen und in Zusammenarbeit mit Softwareentwicklern implementierte. Diese Erfahrungen brachten mich zur <span style="color:#ffad6b;">Detailorientierung und zur Entdeckung neuer Arbeitsmethoden und Technologien.</span></p>
+                <p>Letztendlich war es meine Leidenschaft für IT, die mich wieder auf den richtigen Weg brachte. Ich beschloss, in die Welt der Codes einzutauchen und <span style="color:#ffad6b;">absolvierte im November <span style="font-family: 'Times New Roman', Times, serif;">2021</span> einen intensiven <span style="font-family: 'Times New Roman', Times, serif;">12</span>&#45;wöchigen Full-Stack-Webentwicklungskurs</span>. Ich fing an, die am häufigsten genutzten Programmiersprachen und Frameworks wie JavaScript, PHP und React.js kennenzulernen. Da mich das UI-Design und der dahinter stehende Code in einer Applikation besonders faszinierten, konzentrierte ich mich auf Frontend-Entwicklung. Mit der Zeit fand ich immer <span style="color:#ffad6b;">mehr Spaß am Coding mit React.js und seinen UI-gesteuerten Designs.</span></p>
+                <p>Schließlich begann im Mai <span style="font-family: 'Times New Roman', Times, serif";>2022</span> <span style="color:#ffad6b;">mein erstes Praktikum als Junior Frontend Entwickler,</span> um Erfahrungen in der Unterstützung der Softwareentwicklung zu sammeln. Das Projekt war die Entwicklung und das Hosting einer internen Auftragsbearbeitungssoftware auf der Google Cloud Platform für ein digitales Marketingunternehmen. Ich unterstützte die <span style="color:#ffad6b">Erstellung und Betreuung von Front-End-Code in React.js (TypeScript)</span> und arbeitete mit Entwicklerkollegen über GitLab und Asana zusammen. Meine Aufgabe lag unter anderem in der Optimierung des Designs der Benutzeroberfläche und der Anpassung der benutzerorientierten Komponenten an die betrieblichen Anforderungen.</p>
+                <p><span style="color:#ffad6b">Derzeit arbeite ich als User Acceptance Testing Spezialist</span> und analysiere sowie teste spezifische Benutzergeschichte in den Sicherheitenmanagement-Dienstleistungen <span style="color:#ffad6b">innerhalb einer Business Acceptance Testing-Umgebung</span> mit einem agilen methodischen Ansatz. Ich führe Testszenarien auf der Xact Web Portal Applikation aus und simuliere das Kundenverhalten, indem ich verschiedene SWIFT-Nachrichten im XML-Format an die Software sende. Außerdem erstelle ich Testdokumente, die zeigen, dass Systemänderungen und -verbesserungen ordnungsgemäß durchgeführt werden.</span></p>
                 <p><span style="color:#ffad6b"><u>Um meine Coding-Fähigkeiten zu erweitern, bin ich immer offen für die Diskussion und Teilnahme an spannenden Front-End-Projekten</u></span></p>
                 <div>
                     <i class="fa-solid fa-angles-down"></i>
@@ -507,12 +520,11 @@
             <ul>
                 <li><a href="https://www.linkedin.com/in/nemeth0220" aria-label="Linkedin" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin" title="Besuchen Sie mich auf Linkedin"></i></a></li>    <!-- linkedin -->
                 <li><a href="https://github.com/lac0220" aria-label="GitHub" rel="noopener noreferrer" target="_blank"><i class="fab fa-github" title="Besuchen Sie mich auf GitHub"></i></a></li>      <!-- GitHub -->
-                <li><a href="https://gitlab.com/lac0220" aria-label="GitLab" rel="noopener noreferrer" target="_blank"><i class="fab fa-gitlab" title="Besuchen Sie mich auf GitLab"></i></a></li>      <!-- GitLab -->
                 <li><a href="https://codepen.io/lac0220/" aria-label="Codepen" rel="noopener noreferrer" target="_blank"><i class="fab fa-codepen" title="Besuchen Sie mich auf Codepen"></i></a></li>  <!-- Codepen-->        
             </ul>
             <ul>
                 <li>
-                    <p>Copyright &copy; Laszlo Nemeth <span style="font-family: 'Times New Roman', Times, serif;">2023</span></p>
+                    <p>Copyright &copy; Laszlo Nemeth <span style="font-family: 'Times New Roman', Times, serif;">2024</span></p>
                 </li>
             </ul>
         </footer>

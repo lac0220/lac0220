@@ -33,7 +33,7 @@
 
 🤓 <b>Keen to learn more and more</b> about the core technologies of programming and UI design
 
-💻 Love building a responsive environment and web design by using various <b>Front-End Development Technologies and Tools</b>
+💻 Love building user-friendly websites and web applications with a responsive design by <b>using various web technologies and software development tools</b>
 
 🔎 <b>To expand my coding skills, I am always open to discussing and joining challenging front-end projects</b>
 <br />
