@@ -6,7 +6,7 @@
 <h2 align="center">Front-End Developer - React.js</h2>
 
 <div align="center" id="badges">
-    <a href="https://lac0220.github.io/lac0220/">
+    <a href="https://lac0220.github.io/laszlo-nemeth-portfolio">
         <img src="https://img.shields.io/badge/Portfolio-darkblue?style=for-the-badge&logo=logoColor=white" title="Visit my portfolio" alt="Portfolio Badge"/>
     </a>
     <a href="https://www.linkedin.com/in/nemeth0220">
