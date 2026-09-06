@@ -2,7 +2,7 @@
     <img src="https://media.giphy.com/media/MeJgB3yMMwIaHmKD4z/giphy.gif" width="200" height="150"/>
 </div>
 
-<h1 align="center">Product Manager - APIs & Data Standardization</h1>
+<h1 align="center">Product Manager - APIs & Data Models</h1>
 <h2 align="center">Front-End Developer - React.js</h2>
 
 <div align="center" id="badges">
